@@ -41,7 +41,16 @@ export function SiteShell({
                 className="h-6 w-auto dark:invert"
               />
               <span className="sr-only">Open brand menu</span>
-              <span className="text-xs text-zinc-500 group-open:rotate-180 dark:text-zinc-400">▾</span>
+              <svg
+                aria-hidden="true"
+                viewBox="0 0 20 20"
+                className="h-4 w-4 text-zinc-500 transition-transform duration-150 group-open:rotate-180 dark:text-zinc-400"
+              >
+                <path
+                  fill="currentColor"
+                  d="M5.25 7.5a.75.75 0 0 1 1.06 0L10 11.19l3.69-3.69a.75.75 0 1 1 1.06 1.06l-4.22 4.22a.75.75 0 0 1-1.06 0L5.25 8.56a.75.75 0 0 1 0-1.06Z"
+                />
+              </svg>
             </summary>
 
             <div className="absolute left-0 mt-2 w-56 overflow-hidden rounded-2xl border border-zinc-200 bg-white shadow-lg shadow-zinc-900/10 dark:border-zinc-800 dark:bg-black">
