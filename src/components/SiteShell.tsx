@@ -19,32 +19,60 @@ export function SiteShell({ children }: { children: React.ReactNode }) {
     <div className="min-h-screen bg-zinc-50 text-zinc-950 antialiased dark:bg-black dark:text-zinc-50">
       <header className="sticky top-0 z-50 border-b border-zinc-200/70 bg-white/70 backdrop-blur dark:border-zinc-800/70 dark:bg-black/60">
         <div className="mx-auto flex w-full max-w-6xl items-center justify-between px-5 py-4">
-          <Link href="/" className="flex items-center gap-2">
-            <Image
-              src="/brand/nichegolfhq/logo.png"
-              alt="nichegolfHQ"
-              width={300}
-              height={60}
-              priority
-              className="h-6 w-auto dark:invert"
-            />
-            <span className="sr-only">nichegolfHQ</span>
-          </Link>
+          <details className="group relative">
+            <summary className="flex cursor-pointer list-none items-center gap-2 rounded-lg px-2 py-1 hover:bg-zinc-100 focus:outline-none focus-visible:ring-2 focus-visible:ring-zinc-400/60 dark:hover:bg-zinc-900">
+              <Image
+                src="/brand/nichegolfhq/logo.png"
+                alt="nichegolfHQ"
+                width={300}
+                height={60}
+                priority
+                className="h-6 w-auto dark:invert"
+              />
+              <span className="sr-only">Open brand menu</span>
+              <span className="text-xs text-zinc-500 group-open:rotate-180 dark:text-zinc-400">▾</span>
+            </summary>
 
-          <nav className="hidden items-center gap-6 text-sm text-zinc-700 md:flex dark:text-zinc-300">
-            <Link href="/midamgolfhq" className="hover:text-zinc-950 dark:hover:text-zinc-50">
-              midamgolfHQ
-            </Link>
-            <Link href="/juniorgolfhq" className="hover:text-zinc-950 dark:hover:text-zinc-50">
-              juniorgolfHQ
-            </Link>
-            <Link href="/seniorgolfhq" className="hover:text-zinc-950 dark:hover:text-zinc-50">
-              seniorgolfHQ
-            </Link>
-            <Link href="/sponsors" className="hover:text-zinc-950 dark:hover:text-zinc-50">
-              sponsor
-            </Link>
-          </nav>
+            <div className="absolute left-0 mt-2 w-56 overflow-hidden rounded-2xl border border-zinc-200 bg-white shadow-lg shadow-zinc-900/10 dark:border-zinc-800 dark:bg-black">
+              <div className="p-2">
+                <Link
+                  href="/"
+                  className="block rounded-xl px-3 py-2 text-sm text-zinc-800 hover:bg-zinc-50 dark:text-zinc-200 dark:hover:bg-zinc-900"
+                >
+                  nichegolfHQ (home)
+                </Link>
+                <Link
+                  href="/midamgolfhq"
+                  className="mt-1 block rounded-xl px-3 py-2 text-sm text-zinc-800 hover:bg-zinc-50 dark:text-zinc-200 dark:hover:bg-zinc-900"
+                >
+                  midamgolfHQ
+                </Link>
+                <Link
+                  href="/juniorgolfhq"
+                  className="mt-1 block rounded-xl px-3 py-2 text-sm text-zinc-800 hover:bg-zinc-50 dark:text-zinc-200 dark:hover:bg-zinc-900"
+                >
+                  juniorgolfHQ
+                </Link>
+                <Link
+                  href="/seniorgolfhq"
+                  className="mt-1 block rounded-xl px-3 py-2 text-sm text-zinc-800 hover:bg-zinc-50 dark:text-zinc-200 dark:hover:bg-zinc-900"
+                >
+                  seniorgolfHQ
+                </Link>
+
+                <div className="my-2 border-t border-zinc-200 dark:border-zinc-800" />
+
+                <Link
+                  href="/sponsors"
+                  className="block rounded-xl px-3 py-2 text-sm text-zinc-800 hover:bg-zinc-50 dark:text-zinc-200 dark:hover:bg-zinc-900"
+                >
+                  sponsor
+                </Link>
+              </div>
+            </div>
+          </details>
+
+          <div className="hidden md:block" />
 
           <div className="flex items-center gap-2">
             <a
