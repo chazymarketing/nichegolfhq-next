@@ -9,12 +9,13 @@ export function generateStaticParams() {
   return FEEDS.map((f) => ({ newsletter: f.slug }));
 }
 
-export function generateMetadata({
+export async function generateMetadata({
   params,
 }: {
-  params: { newsletter: string };
-}): Metadata {
-  const feed = getFeedBySlug(params.newsletter);
+  params: { newsletter: string } | Promise<{ newsletter: string }>;
+}): Promise<Metadata> {
+  const resolved = await Promise.resolve(params);
+  const feed = getFeedBySlug(resolved.newsletter);
   if (!feed) return { title: "nichegolfHQ" };
   return {
     title: `${feed.name} — nichegolfHQ`,
@@ -25,9 +26,10 @@ export function generateMetadata({
 export default async function NewsletterPage({
   params,
 }: {
-  params: { newsletter: string };
+  params: { newsletter: string } | Promise<{ newsletter: string }>;
 }) {
-  const feed = getFeedBySlug(params.newsletter);
+  const resolved = await Promise.resolve(params);
+  const feed = getFeedBySlug(resolved.newsletter);
 
   if (!feed) {
     return (
