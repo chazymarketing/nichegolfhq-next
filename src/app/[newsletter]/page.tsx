@@ -1,5 +1,6 @@
 import { SiteShell } from "@/components/SiteShell";
 import { IssueCard } from "@/components/IssueCard";
+import { BeehiivEmbed } from "@/components/BeehiivEmbed";
 import { FEEDS, getFeedBySlug } from "@/lib/feeds";
 import { fetchFeedItems } from "@/lib/rss";
 import type { Metadata } from "next";
@@ -68,24 +69,25 @@ export default async function NewsletterPage({
         </div>
 
         <div id="subscribe" className="mt-14 rounded-3xl border border-zinc-200 bg-white p-8">
-          <div className="text-sm font-semibold text-zinc-900">Subscribe</div>
-          <p className="mt-2 max-w-2xl text-sm text-zinc-600">
-            This is a placeholder. Once you share the BeeHiiv subscribe URL/embed for {feed.name}, we’ll wire this up.
-          </p>
-          <div className="mt-5 flex flex-col gap-3 sm:flex-row">
-            <input
-              disabled
-              placeholder="Email address"
-              className="h-11 w-full rounded-xl border border-zinc-200 bg-zinc-50 px-4 text-sm text-zinc-500"
-            />
-            <button
-              disabled
-              className="h-11 rounded-xl bg-zinc-200 px-5 text-sm font-medium text-zinc-500"
-            >
-              Join free
-            </button>
+          <div className="flex flex-col gap-6 md:flex-row md:items-start md:justify-between">
+            <div className="max-w-xl">
+              <div className="text-sm font-semibold text-zinc-900">Subscribe</div>
+              <p className="mt-2 text-sm text-zinc-600">
+                Get {feed.name} in your inbox. Free.
+              </p>
+              <p className="mt-2 text-xs text-zinc-500">
+                If the form looks weird on mobile, we can swap to a simple button that opens the BeeHiiv subscribe page.
+              </p>
+            </div>
+
+            <div className="w-full md:max-w-sm">
+              <BeehiivEmbed
+                src={feed.subscribeEmbedUrl}
+                height={feed.subscribeEmbedHeight}
+                title={`${feed.name} subscribe`}
+              />
+            </div>
           </div>
-          <div className="mt-2 text-xs text-zinc-500">Wiring this to BeeHiiv takes ~5 minutes once we have the embed/snippet.</div>
         </div>
       </div>
     </SiteShell>

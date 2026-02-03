@@ -6,10 +6,11 @@ export type FeedConfig = {
   slug: string; // route slug
   tagline: string;
   rssUrl: string;
+  subscribeEmbedUrl: string;
+  // Height BeeHiiv recommends for the embed iframe. We'll render responsively but preserve height.
+  subscribeEmbedHeight: number;
 };
 
-// TODO: replace RSS URLs with the BeeHiiv RSS URLs for each newsletter.
-// If you prefer env vars, we can swap these to process.env.*.
 export const FEEDS: FeedConfig[] = [
   {
     key: "junior",
@@ -17,6 +18,8 @@ export const FEEDS: FeedConfig[] = [
     slug: "juniorgolfhq",
     tagline: "Junior golf stories, recruiting, and competitive prep — beyond the mainstream.",
     rssUrl: "https://rss.beehiiv.com/feeds/ug2svosKWc.xml",
+    subscribeEmbedUrl: "https://subscribe-forms.beehiiv.com/91af4bc6-784d-4631-b50e-9e3e1fa9615f",
+    subscribeEmbedHeight: 567,
   },
   {
     key: "midam",
@@ -24,6 +27,8 @@ export const FEEDS: FeedConfig[] = [
     slug: "midamgolfhq",
     tagline: "Mid-am life: tournaments, gear, travel, and the stuff nobody covers.",
     rssUrl: "https://rss.beehiiv.com/feeds/cUc6JEAOIK.xml",
+    subscribeEmbedUrl: "https://subscribe-forms.beehiiv.com/6cf3e924-a8fd-4097-95ac-3ce085407e52",
+    subscribeEmbedHeight: 627,
   },
   {
     key: "senior",
@@ -31,6 +36,8 @@ export const FEEDS: FeedConfig[] = [
     slug: "seniorgolfhq",
     tagline: "Senior competitive golf — sharp coverage, smart prep, zero fluff.",
     rssUrl: "https://rss.beehiiv.com/feeds/JcpdwP5K1m.xml",
+    subscribeEmbedUrl: "https://subscribe-forms.beehiiv.com/3c2071dc-19ed-44c1-8990-7db48d82c043",
+    subscribeEmbedHeight: 375,
   },
 ];
 

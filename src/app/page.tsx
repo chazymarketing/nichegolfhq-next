@@ -117,24 +117,33 @@ export default async function Home() {
       <section id="subscribe" className="mx-auto w-full max-w-6xl px-5 pb-20">
         <div className="rounded-3xl border border-zinc-200 bg-white p-8">
           <div className="text-sm font-semibold text-zinc-900">Subscribe</div>
-          <p className="mt-2 max-w-2xl text-sm text-zinc-600">
-            This mock uses placeholders. Once you drop the BeeHiiv embed/subscription links for each newsletter, I’ll wire in the real forms.
-          </p>
+          <p className="mt-2 max-w-2xl text-sm text-zinc-600">Pick a newsletter and subscribe free.</p>
 
-          <div className="mt-5 grid grid-cols-1 gap-3 sm:grid-cols-3">
-            <input
-              disabled
-              placeholder="Email address"
-              className="h-11 w-full rounded-xl border border-zinc-200 bg-zinc-50 px-4 text-sm text-zinc-500 sm:col-span-2"
-            />
-            <button disabled className="h-11 rounded-xl bg-zinc-200 text-sm font-medium text-zinc-500">
-              Join free
-            </button>
+          <div className="mt-6 grid grid-cols-1 gap-6 md:grid-cols-3">
+            <Link
+              className="rounded-2xl border border-zinc-200 bg-zinc-50 p-5 hover:border-zinc-300 hover:bg-white"
+              href="/midamgolfhq#subscribe"
+            >
+              <div className="text-sm font-semibold">midamgolfHQ</div>
+              <div className="mt-1 text-sm text-zinc-600">Subscribe</div>
+            </Link>
+            <Link
+              className="rounded-2xl border border-zinc-200 bg-zinc-50 p-5 hover:border-zinc-300 hover:bg-white"
+              href="/juniorgolfhq#subscribe"
+            >
+              <div className="text-sm font-semibold">juniorgolfHQ</div>
+              <div className="mt-1 text-sm text-zinc-600">Subscribe</div>
+            </Link>
+            <Link
+              className="rounded-2xl border border-zinc-200 bg-zinc-50 p-5 hover:border-zinc-300 hover:bg-white"
+              href="/seniorgolfhq#subscribe"
+            >
+              <div className="text-sm font-semibold">seniorgolfHQ</div>
+              <div className="mt-1 text-sm text-zinc-600">Subscribe</div>
+            </Link>
           </div>
 
-          <div className="mt-2 text-xs text-zinc-500">
-            Next step: you send me the 3 BeeHiiv RSS URLs + 3 subscribe URLs, and this turns into a live site.
-          </div>
+          <div className="mt-3 text-xs text-zinc-500">Subscribe forms are embedded on each newsletter page.</div>
         </div>
       </section>
     </SiteShell>
