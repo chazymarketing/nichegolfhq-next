@@ -38,17 +38,17 @@ export default async function Home() {
             </p>
 
             <div className="mt-7 flex flex-col gap-3 sm:flex-row">
-              <a
-                href="#subscribe"
-                className="inline-flex items-center justify-center rounded-full bg-zinc-950 px-6 py-3 text-sm font-medium text-white hover:bg-zinc-800"
-              >
-                Subscribe free
-              </a>
               <Link
                 href="#latest"
+                className="inline-flex items-center justify-center rounded-full bg-zinc-950 px-6 py-3 text-sm font-medium text-white hover:bg-zinc-800"
+              >
+                Browse newsletters
+              </Link>
+              <Link
+                href="/midamgolfhq#subscribe"
                 className="inline-flex items-center justify-center rounded-full border border-zinc-300 bg-white px-6 py-3 text-sm font-medium text-zinc-900 hover:bg-zinc-50"
               >
-                Browse latest
+                Subscribe free
               </Link>
             </div>
           </div>
@@ -77,9 +77,9 @@ export default async function Home() {
         </div>
       </section>
 
-      <section id="latest" className="mx-auto w-full max-w-6xl px-5 pb-16">
+      <section id="latest" className="mx-auto w-full max-w-6xl px-5 pb-20">
         <div className="flex items-end justify-between">
-          <h2 className="text-xl font-semibold tracking-tight">Latest from the newsletters</h2>
+          <h2 className="text-xl font-semibold tracking-tight">Newsletters</h2>
           <Link href="/sponsors" className="text-sm text-zinc-600 hover:text-zinc-950">
             Sponsor →
           </Link>
@@ -88,14 +88,26 @@ export default async function Home() {
         <div className="mt-6 grid grid-cols-1 gap-10">
           {results.map(({ feed, items }) => (
             <div key={feed.slug} className="rounded-3xl border border-zinc-200 bg-white p-6">
-              <div className="flex flex-col gap-2 md:flex-row md:items-end md:justify-between">
+              <div className="flex flex-col gap-3 md:flex-row md:items-end md:justify-between">
                 <div>
                   <div className="text-sm font-semibold">{feed.name}</div>
                   <div className="mt-1 text-sm text-zinc-600">{feed.tagline}</div>
                 </div>
-                <Link href={`/${feed.slug}`} className="text-sm font-medium text-zinc-900 hover:underline">
-                  View archive
-                </Link>
+
+                <div className="flex flex-col gap-2 sm:flex-row">
+                  <Link
+                    href={`/${feed.slug}`}
+                    className="inline-flex items-center justify-center rounded-full border border-zinc-300 bg-white px-4 py-2 text-sm font-medium text-zinc-900 hover:bg-zinc-50"
+                  >
+                    View archive
+                  </Link>
+                  <Link
+                    href={`/${feed.slug}#subscribe`}
+                    className="inline-flex items-center justify-center rounded-full bg-zinc-950 px-4 py-2 text-sm font-medium text-white hover:bg-zinc-800"
+                  >
+                    Subscribe
+                  </Link>
+                </div>
               </div>
 
               <div className="mt-5 grid grid-cols-1 gap-4 md:grid-cols-2">
@@ -109,39 +121,6 @@ export default async function Home() {
               </div>
             </div>
           ))}
-        </div>
-      </section>
-
-      <section id="subscribe" className="mx-auto w-full max-w-6xl px-5 pb-20">
-        <div className="rounded-3xl border border-zinc-200 bg-white p-8">
-          <div className="text-sm font-semibold text-zinc-900">Subscribe</div>
-          <p className="mt-2 max-w-2xl text-sm text-zinc-600">Pick a newsletter and subscribe free.</p>
-
-          <div className="mt-6 grid grid-cols-1 gap-6 md:grid-cols-3">
-            <Link
-              className="rounded-2xl border border-zinc-200 bg-zinc-50 p-5 hover:border-zinc-300 hover:bg-white"
-              href="/midamgolfhq#subscribe"
-            >
-              <div className="text-sm font-semibold">midamgolfHQ</div>
-              <div className="mt-1 text-sm text-zinc-600">Subscribe</div>
-            </Link>
-            <Link
-              className="rounded-2xl border border-zinc-200 bg-zinc-50 p-5 hover:border-zinc-300 hover:bg-white"
-              href="/juniorgolfhq#subscribe"
-            >
-              <div className="text-sm font-semibold">juniorgolfHQ</div>
-              <div className="mt-1 text-sm text-zinc-600">Subscribe</div>
-            </Link>
-            <Link
-              className="rounded-2xl border border-zinc-200 bg-zinc-50 p-5 hover:border-zinc-300 hover:bg-white"
-              href="/seniorgolfhq#subscribe"
-            >
-              <div className="text-sm font-semibold">seniorgolfHQ</div>
-              <div className="mt-1 text-sm text-zinc-600">Subscribe</div>
-            </Link>
-          </div>
-
-          <div className="mt-3 text-xs text-zinc-500">Subscribe forms are embedded on each newsletter page.</div>
         </div>
       </section>
     </SiteShell>
