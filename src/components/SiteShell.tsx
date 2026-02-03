@@ -2,9 +2,9 @@ import Link from "next/link";
 import { ThemeToggle } from "@/components/ThemeToggle";
 
 const SOCIAL = {
-  midamgolfhq: { x: "", instagram: "" },
-  juniorgolfhq: { x: "", instagram: "" },
-  seniorgolfhq: { x: "", instagram: "" },
+  midamgolfhq: { x: "https://www.x.com/midamgolfhq", instagram: "https://www.instagram.com/midamgolfhq" },
+  juniorgolfhq: { x: "https://www.x.com/juniorgolfhq", instagram: "https://www.instagram.com/juniorgolfhq" },
+  seniorgolfhq: { x: "https://www.x.com/seniorgolfhq", instagram: "https://www.instagram.com/seniorgolfhq" },
 } as const;
 
 type BrandKey = keyof typeof SOCIAL;
