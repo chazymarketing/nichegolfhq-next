@@ -1,7 +1,17 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  /* config options here */
+  images: {
+    remotePatterns: [
+      // BeeHiiv CDN + common image hosts
+      { protocol: "https", hostname: "**.beehiiv.com" },
+      { protocol: "https", hostname: "**.beehiivimages.com" },
+      { protocol: "https", hostname: "**.beehiivcdn.com" },
+      { protocol: "https", hostname: "images.beehiiv.com" },
+      { protocol: "https", hostname: "storage.googleapis.com" },
+      { protocol: "https", hostname: "cdn-images-1.medium.com" },
+    ],
+  },
 };
 
 export default nextConfig;
