@@ -46,7 +46,7 @@ export default async function NewsletterPage({
   const logoSrc = `/brand/${feed.slug}/logo.png`;
 
   return (
-    <SiteShell>
+    <SiteShell brandSlug={feed.slug}>
       <div className="mx-auto w-full max-w-6xl px-5 py-14">
         <div className="flex flex-col gap-3 md:flex-row md:items-end md:justify-between">
           <div>

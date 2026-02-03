@@ -10,10 +10,21 @@ const SOCIAL = {
 
 type BrandKey = keyof typeof SOCIAL;
 
-export function SiteShell({ children }: { children: React.ReactNode }) {
+export function SiteShell({
+  children,
+  brandSlug,
+}: {
+  children: React.ReactNode;
+  brandSlug?: string;
+}) {
   const hasAnySocial = (Object.keys(SOCIAL) as BrandKey[]).some(
     (k) => Boolean(SOCIAL[k].x) || Boolean(SOCIAL[k].instagram)
   );
+
+  const headerBrand =
+    brandSlug === "midamgolfhq" || brandSlug === "juniorgolfhq" || brandSlug === "seniorgolfhq"
+      ? brandSlug
+      : "nichegolfhq";
 
   return (
     <div className="min-h-screen bg-zinc-50 text-zinc-950 antialiased dark:bg-black dark:text-zinc-50">
@@ -22,8 +33,8 @@ export function SiteShell({ children }: { children: React.ReactNode }) {
           <details className="group relative">
             <summary className="flex cursor-pointer list-none items-center gap-2 rounded-lg px-2 py-1 hover:bg-zinc-100 focus:outline-none focus-visible:ring-2 focus-visible:ring-zinc-400/60 dark:hover:bg-zinc-900">
               <Image
-                src="/brand/nichegolfhq/logo.png"
-                alt="nichegolfHQ"
+                src={`/brand/${headerBrand}/logo.png`}
+                alt={headerBrand === "nichegolfhq" ? "nichegolfHQ" : headerBrand}
                 width={300}
                 height={60}
                 priority
