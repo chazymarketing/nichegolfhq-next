@@ -52,79 +52,46 @@ export function SiteShell({ children }: { children: React.ReactNode }) {
       <main>{children}</main>
 
       <footer className="border-t border-zinc-200 bg-white dark:border-zinc-800 dark:bg-black">
-        <div className="mx-auto grid w-full max-w-6xl grid-cols-1 gap-8 px-5 py-10 md:grid-cols-2">
-          <div>
-            <div className="font-semibold">nichegolfHQ</div>
-            <p className="mt-2 text-sm text-zinc-600 dark:text-zinc-400">
-              Competitive golfers covering the game beyond the mainstream.
-            </p>
-          </div>
-
-          <div>
-            <div className="text-sm font-semibold text-zinc-900 dark:text-zinc-50">Work with us</div>
-            <div className="mt-3 flex flex-col gap-2 text-sm text-zinc-600 dark:text-zinc-400">
-              <Link className="hover:text-zinc-950 dark:hover:text-zinc-50" href="/sponsors">
-                Sponsorships
-              </Link>
-              <a className="hover:text-zinc-950 dark:hover:text-zinc-50" href="#subscribe">
-                Subscribe
-              </a>
-            </div>
-          </div>
-        </div>
-
-        <div className="border-t border-zinc-200 dark:border-zinc-800">
-          <div className="mx-auto w-full max-w-6xl px-5 py-6">
+        <div className="mx-auto w-full max-w-6xl px-5 py-8">
+          {hasAnySocial ? (
             <div className="flex flex-col gap-4 md:flex-row md:items-center md:justify-between">
-              <div className="text-xs font-semibold uppercase tracking-wider text-zinc-600 dark:text-zinc-400">
-                Follow
-              </div>
+              {(Object.keys(SOCIAL) as BrandKey[]).map((key) => {
+                const label =
+                  key === "midamgolfhq" ? "midamgolfHQ" : key === "juniorgolfhq" ? "juniorgolfHQ" : "seniorgolfHQ";
+                const x = SOCIAL[key].x;
+                const ig = SOCIAL[key].instagram;
+                if (!x && !ig) return null;
 
-              {hasAnySocial ? (
-                <div className="flex flex-col gap-3 text-sm text-zinc-600 md:flex-row md:items-center md:gap-6 dark:text-zinc-400">
-                  {(Object.keys(SOCIAL) as BrandKey[]).map((key) => {
-                    const label =
-                      key === "midamgolfhq" ? "midamgolfHQ" : key === "juniorgolfhq" ? "juniorgolfHQ" : "seniorgolfHQ";
-                    const x = SOCIAL[key].x;
-                    const ig = SOCIAL[key].instagram;
-                    if (!x && !ig) return null;
-
-                    return (
-                      <div key={key} className="flex items-center gap-3">
-                        <span className="text-zinc-900 dark:text-zinc-50">{label}</span>
-                        {x ? (
-                          <a
-                            className="underline decoration-zinc-300 underline-offset-4 hover:text-zinc-950 dark:decoration-zinc-700 dark:hover:text-zinc-50"
-                            href={x}
-                            target="_blank"
-                            rel="noreferrer"
-                          >
-                            X
-                          </a>
-                        ) : null}
-                        {ig ? (
-                          <a
-                            className="underline decoration-zinc-300 underline-offset-4 hover:text-zinc-950 dark:decoration-zinc-700 dark:hover:text-zinc-50"
-                            href={ig}
-                            target="_blank"
-                            rel="noreferrer"
-                          >
-                            Instagram
-                          </a>
-                        ) : null}
-                      </div>
-                    );
-                  })}
-                </div>
-              ) : (
-                <div className="text-sm text-zinc-600 dark:text-zinc-400">Social links coming next.</div>
-              )}
+                return (
+                  <div key={key} className="flex items-center gap-3 text-sm text-zinc-600 dark:text-zinc-400">
+                    <span className="text-zinc-900 dark:text-zinc-50">{label}</span>
+                    {x ? (
+                      <a
+                        className="underline decoration-zinc-300 underline-offset-4 hover:text-zinc-950 dark:decoration-zinc-700 dark:hover:text-zinc-50"
+                        href={x}
+                        target="_blank"
+                        rel="noreferrer"
+                      >
+                        X
+                      </a>
+                    ) : null}
+                    {ig ? (
+                      <a
+                        className="underline decoration-zinc-300 underline-offset-4 hover:text-zinc-950 dark:decoration-zinc-700 dark:hover:text-zinc-50"
+                        href={ig}
+                        target="_blank"
+                        rel="noreferrer"
+                      >
+                        Instagram
+                      </a>
+                    ) : null}
+                  </div>
+                );
+              })}
             </div>
-
-            <div className="mt-6 text-center text-xs text-zinc-500 dark:text-zinc-500">
-              © {new Date().getFullYear()} nichegolfHQ
-            </div>
-          </div>
+          ) : (
+            <div className="text-sm text-zinc-600 dark:text-zinc-400">Social links coming next.</div>
+          )}
         </div>
       </footer>
     </div>
