@@ -34,7 +34,8 @@ export default async function Home() {
               Overlooked stories. Sharp opinions. Zero fluff.
             </h1>
             <p className="mt-4 max-w-xl text-lg leading-8 text-zinc-600">
-              nichegolfHQ pulls together three newsletters for serious golfers (mid-am, senior, junior).            </p>
+              nichegolfHQ pulls together three newsletters for serious golfers (mid-am, senior, junior).
+            </p>
 
             <div className="mt-7 flex flex-col gap-3 sm:flex-row">
               <a
@@ -49,12 +50,6 @@ export default async function Home() {
               >
                 Browse latest
               </Link>
-            </div>
-
-            <div className="mt-6 flex flex-wrap gap-2 text-xs text-zinc-500">
-              <span className="rounded-full border border-zinc-200 bg-white px-3 py-1">3 newsletters</span>
-              <span className="rounded-full border border-zinc-200 bg-white px-3 py-1">Weekly drops</span>
-              <span className="rounded-full border border-zinc-200 bg-white px-3 py-1">Built for competitive golfers</span>
             </div>
           </div>
 

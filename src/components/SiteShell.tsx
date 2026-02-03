@@ -59,7 +59,7 @@ export function SiteShell({
                   href="/"
                   className="block rounded-xl px-3 py-2 text-sm text-zinc-800 hover:bg-zinc-50 dark:text-zinc-200 dark:hover:bg-zinc-900"
                 >
-                  nichegolfHQ (home)
+                  home
                 </Link>
                 <Link
                   href="/midamgolfhq"
