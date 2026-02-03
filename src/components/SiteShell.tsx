@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 import { ThemeToggle } from "@/components/ThemeToggle";
 
@@ -18,8 +19,16 @@ export function SiteShell({ children }: { children: React.ReactNode }) {
     <div className="min-h-screen bg-zinc-50 text-zinc-950 antialiased dark:bg-black dark:text-zinc-50">
       <header className="sticky top-0 z-50 border-b border-zinc-200/70 bg-white/70 backdrop-blur dark:border-zinc-800/70 dark:bg-black/60">
         <div className="mx-auto flex w-full max-w-6xl items-center justify-between px-5 py-4">
-          <Link href="/" className="font-semibold tracking-tight">
-            nichegolfHQ
+          <Link href="/" className="flex items-center gap-2">
+            <Image
+              src="/brand/nichegolfhq/logo.png"
+              alt="nichegolfHQ"
+              width={300}
+              height={60}
+              priority
+              className="h-6 w-auto dark:invert"
+            />
+            <span className="sr-only">nichegolfHQ</span>
           </Link>
 
           <nav className="hidden items-center gap-6 text-sm text-zinc-700 md:flex dark:text-zinc-300">
