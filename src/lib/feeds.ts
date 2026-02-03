@@ -16,21 +16,21 @@ export const FEEDS: FeedConfig[] = [
     name: "juniorgolfHQ",
     slug: "juniorgolfhq",
     tagline: "Junior golf stories, recruiting, and competitive prep — beyond the mainstream.",
-    rssUrl: "https://example.com/juniorgolfhq/rss",
+    rssUrl: "https://rss.beehiiv.com/feeds/ug2svosKWc.xml",
   },
   {
     key: "midam",
     name: "midamgolfHQ",
     slug: "midamgolfhq",
     tagline: "Mid-am life: tournaments, gear, travel, and the stuff nobody covers.",
-    rssUrl: "https://example.com/midamgolfhq/rss",
+    rssUrl: "https://rss.beehiiv.com/feeds/cUc6JEAOIK.xml",
   },
   {
     key: "senior",
     name: "seniorgolfHQ",
     slug: "seniorgolfhq",
     tagline: "Senior competitive golf — sharp coverage, smart prep, zero fluff.",
-    rssUrl: "https://example.com/seniorgolfhq/rss",
+    rssUrl: "https://rss.beehiiv.com/feeds/JcpdwP5K1m.xml",
   },
 ];
 
