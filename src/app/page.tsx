@@ -9,14 +9,18 @@ export default async function Home() {
     FEEDS.map(async (f) => ({ feed: f, items: await fetchFeedItems(f.rssUrl, 4) }))
   );
 
-  const featured = results
-    .flatMap((r) => r.items.map((it) => ({ ...it, feedName: r.feed.name, feedSlug: r.feed.slug })))
-    .sort((a, b) => {
-      const da = a.isoDate ? new Date(a.isoDate).getTime() : 0;
-      const db = b.isoDate ? new Date(b.isoDate).getTime() : 0;
-      return db - da;
-    })
-    .slice(0, 1)[0];
+  // Homepage “Latest issue” should always feature midamgolfHQ.
+  const midam = results.find((r) => r.feed.slug === "midamgolfhq");
+  const featured = midam
+    ? midam.items
+        .map((it) => ({ ...it, feedName: midam.feed.name, feedSlug: midam.feed.slug }))
+        .sort((a, b) => {
+          const da = a.isoDate ? new Date(a.isoDate).getTime() : 0;
+          const db = b.isoDate ? new Date(b.isoDate).getTime() : 0;
+          return db - da;
+        })
+        .slice(0, 1)[0]
+    : undefined;
 
   return (
     <SiteShell>
