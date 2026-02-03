@@ -30,8 +30,7 @@ export default async function Home() {
               Overlooked stories. Sharp opinions. Zero fluff.
             </h1>
             <p className="mt-4 max-w-xl text-lg leading-8 text-zinc-600">
-              nichegolfHQ pulls together three newsletters for serious golfers (mid-am, junior, senior) — plus evergreen guides.
-            </p>
+              nichegolfHQ pulls together three newsletters for serious golfers (mid-am, senior, junior).            </p>
 
             <div className="mt-7 flex flex-col gap-3 sm:flex-row">
               <a

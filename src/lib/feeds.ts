@@ -13,15 +13,6 @@ export type FeedConfig = {
 
 export const FEEDS: FeedConfig[] = [
   {
-    key: "junior",
-    name: "juniorgolfHQ",
-    slug: "juniorgolfhq",
-    tagline: "Junior golf stories, recruiting, and competitive prep — beyond the mainstream.",
-    rssUrl: "https://rss.beehiiv.com/feeds/ug2svosKWc.xml",
-    subscribeEmbedUrl: "https://subscribe-forms.beehiiv.com/91af4bc6-784d-4631-b50e-9e3e1fa9615f",
-    subscribeEmbedHeight: 567,
-  },
-  {
     key: "midam",
     name: "midamgolfHQ",
     slug: "midamgolfhq",
@@ -38,6 +29,15 @@ export const FEEDS: FeedConfig[] = [
     rssUrl: "https://rss.beehiiv.com/feeds/JcpdwP5K1m.xml",
     subscribeEmbedUrl: "https://subscribe-forms.beehiiv.com/3c2071dc-19ed-44c1-8990-7db48d82c043",
     subscribeEmbedHeight: 375,
+  },
+  {
+    key: "junior",
+    name: "juniorgolfHQ",
+    slug: "juniorgolfhq",
+    tagline: "Junior golf stories, recruiting, and competitive prep — beyond the mainstream.",
+    rssUrl: "https://rss.beehiiv.com/feeds/ug2svosKWc.xml",
+    subscribeEmbedUrl: "https://subscribe-forms.beehiiv.com/91af4bc6-784d-4631-b50e-9e3e1fa9615f",
+    subscribeEmbedHeight: 567,
   },
 ];
 
