@@ -88,12 +88,12 @@ export function SiteShell({
           <div className="hidden md:block" />
 
           <div className="flex items-center gap-2">
-            <a
-              href="#latest"
+            <Link
+              href="/subscribe"
               className="rounded-full bg-zinc-950 px-4 py-2 text-sm font-medium text-white hover:bg-zinc-800"
             >
-              newsletters
-            </a>
+              subscribe
+            </Link>
           </div>
         </div>
       </header>

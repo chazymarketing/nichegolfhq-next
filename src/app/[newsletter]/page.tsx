@@ -88,9 +88,7 @@ export default async function NewsletterPage({
               <p className="mt-2 text-sm text-zinc-600">
                 Get {feed.name} in your inbox. Free.
               </p>
-              <p className="mt-2 text-xs text-zinc-500">
-                If the form looks weird on mobile, we can swap to a simple button that opens the BeeHiiv subscribe page.
-              </p>
+              <p className="mt-2 text-xs text-zinc-500">No spam. Unsubscribe anytime.</p>
             </div>
 
             <div className="w-full md:max-w-sm">
