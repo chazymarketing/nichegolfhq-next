@@ -21,7 +21,7 @@ export default async function Home() {
               Overlooked stories. Sharp opinions. Zero fluff.
             </h1>
             <p className="mt-4 max-w-xl text-lg leading-8 text-zinc-600">
-              nichegolfHQ pulls together three newsletters for serious golfers (mid-am, senior, junior).
+              nichegolfHQ covers the corners of the amateur game mainstream golf media ignores — the junior, mid-am, and senior games.
             </p>
 
             {/* buttons removed */}
