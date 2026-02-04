@@ -56,19 +56,14 @@ export default async function NewsletterPage({
                 alt={feed.name}
                 width={320}
                 height={64}
-                className="h-7 w-auto dark:invert"
+                className="h-11 w-auto md:h-12 dark:invert"
               />
               <h1 className="sr-only">{feed.name}</h1>
             </div>
             {/* tagline removed */}
           </div>
 
-          <a
-            href="#subscribe"
-            className="inline-flex w-fit items-center justify-center rounded-full bg-zinc-950 px-5 py-2.5 text-sm font-medium text-white hover:bg-zinc-800"
-          >
-            Subscribe free
-          </a>
+          {/* subscribe button removed (header already has one) */}
         </div>
 
         <div className="mt-10 grid grid-cols-1 gap-4 md:grid-cols-2">
