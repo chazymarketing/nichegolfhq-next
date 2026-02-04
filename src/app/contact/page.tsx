@@ -9,6 +9,9 @@ export default function ContactPage() {
         <p className="mt-3 max-w-2xl text-sm text-zinc-600">
           Want to work together? Send a quick note and we’ll get back to you.
         </p>
+        <p className="mt-2 max-w-2xl text-sm text-zinc-600">
+          Prefer a quick DM? Feel free to reach out on any of our social media accounts.
+        </p>
 
         <div className="mt-10 max-w-2xl">
           <ContactForm />
