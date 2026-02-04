@@ -1,4 +1,3 @@
-import Image from "next/image";
 import { SiteShell } from "@/components/SiteShell";
 import { IssueCard } from "@/components/IssueCard";
 import { BeehiivEmbed } from "@/components/BeehiivEmbed";
@@ -43,23 +42,17 @@ export default async function NewsletterPage({
   }
 
   const items = await fetchFeedItems(feed.rssUrl, 12);
-  const logoSrc = `/brand/${feed.slug}/logo.png`;
 
   return (
     <SiteShell brandSlug={feed.slug}>
       <div className="mx-auto w-full max-w-6xl px-5 py-14">
-        <div className="flex flex-col items-center gap-3 text-center">
-          <div className="flex items-center justify-center gap-3">
-            <Image
-              src={logoSrc}
-              alt={feed.name}
-              width={320}
-              height={64}
-              className="h-32 w-auto md:h-40"
-            />
-            <h1 className="sr-only">{feed.name}</h1>
+        <div className="flex flex-col items-center gap-4 text-center">
+          <div className="text-xs font-semibold uppercase tracking-wider text-zinc-600">
+            {feed.name}
           </div>
-          {/* tagline removed */}
+          <h1 className="text-2xl font-semibold tracking-tight md:text-3xl">
+            Latest newsletter volumes
+          </h1>
         </div>
 
         <div className="mt-10 grid grid-cols-1 gap-4 md:grid-cols-2">
