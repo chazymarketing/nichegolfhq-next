@@ -37,7 +37,7 @@ export function SiteShell({
                 width={300}
                 height={60}
                 priority
-                className="h-8 w-auto md:h-9"
+                className="h-10 w-auto md:h-12"
               />
               <span className="sr-only">Open brand menu</span>
               <svg
@@ -80,6 +80,9 @@ export function SiteShell({
 
                 <Link href="/sponsors" className="block rounded-xl px-3 py-2 text-sm text-zinc-800 hover:bg-zinc-50">
                   sponsor
+                </Link>
+                <Link href="/contact" className="mt-1 block rounded-xl px-3 py-2 text-sm text-zinc-800 hover:bg-zinc-50">
+                  contact us
                 </Link>
               </div>
             </div>

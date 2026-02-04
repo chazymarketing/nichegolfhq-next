@@ -56,7 +56,7 @@ export default async function NewsletterPage({
                 alt={feed.name}
                 width={320}
                 height={64}
-                className="h-11 w-auto md:h-12 dark:invert"
+                className="h-16 w-auto md:h-20 dark:invert"
               />
               <h1 className="sr-only">{feed.name}</h1>
             </div>
