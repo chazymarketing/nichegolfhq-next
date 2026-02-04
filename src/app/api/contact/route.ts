@@ -1,58 +1,71 @@
 import { NextResponse } from "next/server";
 import { Resend } from "resend";
 
-type Payload = {
-  name?: string;
-  email?: string;
-  message?: string;
-};
+export const runtime = "nodejs";
 
 export async function POST(req: Request) {
-  const apiKey = process.env.RESEND_API_KEY;
-  const to = process.env.SPONSOR_TO_EMAIL;
-  const from = process.env.SPONSOR_FROM_EMAIL;
-
-  if (!apiKey) {
-    return NextResponse.json({ ok: false, error: "Missing RESEND_API_KEY" }, { status: 500 });
-  }
-  if (!to || !from) {
-    return NextResponse.json(
-      { ok: false, error: "Missing SPONSOR_TO_EMAIL or SPONSOR_FROM_EMAIL" },
-      { status: 500 }
-    );
-  }
-
-  let body: Payload;
   try {
-    body = (await req.json()) as Payload;
-  } catch {
-    return NextResponse.json({ ok: false, error: "Invalid JSON" }, { status: 400 });
-  }
+    const { name, email, message } = (await req.json()) as {
+      name?: string;
+      email?: string;
+      message?: string;
+    };
 
-  const name = (body.name || "").toString().trim();
-  const email = (body.email || "").toString().trim();
-  const message = (body.message || "").toString().trim();
+    const cleanName = (name || "").trim();
+    const cleanEmail = (email || "").trim();
+    const cleanMessage = (message || "").trim();
 
-  if (!name || !email || !message) {
-    return NextResponse.json({ ok: false, error: "Missing required fields" }, { status: 400 });
-  }
+    if (!cleanName || !cleanEmail || !cleanMessage) {
+      return NextResponse.json(
+        { ok: false, error: "Missing required fields." },
+        { status: 400 }
+      );
+    }
 
-  const subject = "nichegolfHQ contact";
-  const text = [`Name: ${name}`, `Email: ${email}`, "", message].join("\n");
+    const resendKey = process.env.RESEND_API_KEY;
+    const toEmail = process.env.CONTACT_TO_EMAIL;
+    const fromEmail = process.env.RESEND_FROM;
 
-  try {
-    const resend = new Resend(apiKey);
-    await resend.emails.send({
-      to,
-      from,
+    if (!resendKey) {
+      return NextResponse.json(
+        { ok: false, error: "Server not configured: RESEND_API_KEY missing." },
+        { status: 500 }
+      );
+    }
+    if (!toEmail) {
+      return NextResponse.json(
+        { ok: false, error: "Server not configured: CONTACT_TO_EMAIL missing." },
+        { status: 500 }
+      );
+    }
+    if (!fromEmail) {
+      return NextResponse.json(
+        { ok: false, error: "Server not configured: RESEND_FROM missing." },
+        { status: 500 }
+      );
+    }
+
+    const resend = new Resend(resendKey);
+
+    const subject = `nichegolfHQ contact: ${cleanName}`;
+
+    const { error } = await resend.emails.send({
+      from: `nichegolfHQ <${fromEmail}>`,
+      to: [toEmail],
+      replyTo: cleanEmail,
       subject,
-      text,
-      replyTo: email,
+      text: `Name: ${cleanName}\nEmail: ${cleanEmail}\n\n${cleanMessage}`,
     });
 
-    return NextResponse.json({ ok: true });
-  } catch (err) {
-    const msg = err instanceof Error ? err.message : "Failed to send";
-    return NextResponse.json({ ok: false, error: msg }, { status: 500 });
+    if (error) {
+      return NextResponse.json({ ok: false, error: error.message }, { status: 502 });
+    }
+
+    return NextResponse.json({ ok: true }, { status: 200 });
+  } catch (e: any) {
+    return NextResponse.json(
+      { ok: false, error: e?.message || "Unexpected error" },
+      { status: 500 }
+    );
   }
 }
