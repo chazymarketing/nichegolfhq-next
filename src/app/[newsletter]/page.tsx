@@ -48,22 +48,18 @@ export default async function NewsletterPage({
   return (
     <SiteShell brandSlug={feed.slug}>
       <div className="mx-auto w-full max-w-6xl px-5 py-14">
-        <div className="flex flex-col gap-3 md:flex-row md:items-end md:justify-between">
-          <div>
-            <div className="flex items-center gap-3">
-              <Image
-                src={logoSrc}
-                alt={feed.name}
-                width={320}
-                height={64}
-                className="h-32 w-auto md:h-40"
-              />
-              <h1 className="sr-only">{feed.name}</h1>
-            </div>
-            {/* tagline removed */}
+        <div className="flex flex-col items-center gap-3 text-center">
+          <div className="flex items-center justify-center gap-3">
+            <Image
+              src={logoSrc}
+              alt={feed.name}
+              width={320}
+              height={64}
+              className="h-32 w-auto md:h-40"
+            />
+            <h1 className="sr-only">{feed.name}</h1>
           </div>
-
-          {/* subscribe button removed (header already has one) */}
+          {/* tagline removed */}
         </div>
 
         <div className="mt-10 grid grid-cols-1 gap-4 md:grid-cols-2">
