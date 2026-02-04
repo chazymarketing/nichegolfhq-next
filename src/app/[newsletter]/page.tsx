@@ -47,11 +47,11 @@ export default async function NewsletterPage({
     <SiteShell brandSlug={feed.slug}>
       <div className="mx-auto w-full max-w-6xl px-5 py-14">
         <div className="flex flex-col items-center gap-4 text-center">
-          <div className="text-xs font-semibold uppercase tracking-wider text-zinc-600">
+          <div className="text-xs font-semibold tracking-wider text-zinc-600">
             {feed.name}
           </div>
           <h1 className="text-2xl font-semibold tracking-tight md:text-3xl">
-            Latest newsletter volumes
+            latest newsletter volumes
           </h1>
         </div>
 
