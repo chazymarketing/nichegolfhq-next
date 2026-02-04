@@ -65,11 +65,8 @@ export default async function Home() {
       </section>
 
       <section id="latest" className="mx-auto w-full max-w-6xl px-5 pb-20">
-        <div className="flex items-end justify-between">
+        <div className="flex items-end justify-center">
           <h2 className="text-xl font-semibold tracking-tight">Newsletters</h2>
-          <Link href="/sponsors" className="text-sm text-zinc-600 hover:text-zinc-950">
-            Sponsor →
-          </Link>
         </div>
 
         <div className="mt-6 grid grid-cols-1 gap-10">
