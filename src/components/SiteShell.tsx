@@ -28,22 +28,22 @@ export function SiteShell({
   return (
     <div className="min-h-screen bg-zinc-50 text-zinc-950 antialiased">
       <header className="sticky top-0 z-50 border-b border-zinc-200/70 bg-white/70 backdrop-blur">
-        <div className="mx-auto flex w-full max-w-6xl items-center justify-between px-5 py-4">
+        <div className="mx-auto flex w-full max-w-6xl items-center justify-between px-5 py-5">
           <details className="group relative">
-            <summary className="flex cursor-pointer list-none items-center gap-2 rounded-lg px-2 py-1 hover:bg-zinc-100 focus:outline-none focus-visible:ring-2 focus-visible:ring-zinc-400/60">
+            <summary className="flex cursor-pointer list-none items-center gap-2 rounded-xl px-3 py-2 hover:bg-zinc-100 focus:outline-none focus-visible:ring-2 focus-visible:ring-zinc-400/60">
               <Image
                 src={`/brand/${headerBrand}/logo.png`}
                 alt={headerBrand === "nichegolfhq" ? "nichegolfHQ" : headerBrand}
                 width={300}
                 height={60}
                 priority
-                className="h-6 w-auto"
+                className="h-8 w-auto md:h-9"
               />
               <span className="sr-only">Open brand menu</span>
               <svg
                 aria-hidden="true"
                 viewBox="0 0 20 20"
-                className="h-4 w-4 text-zinc-500 transition-transform duration-150 group-open:rotate-180"
+                className="h-5 w-5 text-zinc-500 transition-transform duration-150 group-open:rotate-180"
               >
                 <path
                   fill="currentColor"
@@ -52,7 +52,7 @@ export function SiteShell({
               </svg>
             </summary>
 
-            <div className="absolute left-0 mt-2 w-56 overflow-hidden rounded-2xl border border-zinc-200 bg-white shadow-lg shadow-zinc-900/10">
+            <div className="absolute left-0 mt-2 w-64 overflow-hidden rounded-2xl border border-zinc-200 bg-white shadow-lg shadow-zinc-900/10">
               <div className="p-2">
                 <Link href="/" className="block rounded-xl px-3 py-2 text-sm text-zinc-800 hover:bg-zinc-50">
                   home
