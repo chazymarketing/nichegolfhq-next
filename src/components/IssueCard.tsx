@@ -28,10 +28,10 @@ export function IssueCard({ item }: { item: RssItem }) {
       href={item.link}
       target="_blank"
       rel="noreferrer"
-      className="group overflow-hidden rounded-2xl border border-zinc-200 bg-white transition hover:border-zinc-300 hover:shadow-sm dark:border-zinc-800 dark:bg-black"
+      className="group overflow-hidden rounded-2xl border border-zinc-200 bg-white transition hover:border-zinc-300 hover:shadow-sm"
     >
       {item.imageUrl ? (
-        <div className="relative aspect-[16/10] w-full overflow-hidden bg-zinc-100 dark:bg-zinc-900">
+        <div className="relative aspect-[16/10] w-full overflow-hidden bg-zinc-100">
           <Image
             src={item.imageUrl}
             alt=""

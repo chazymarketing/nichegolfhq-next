@@ -17,9 +17,12 @@ export default async function Home() {
             <div className="text-xs font-semibold uppercase tracking-wider text-zinc-600">
               Competitive golf beyond the mainstream
             </div>
-            <h1 className="mt-3 max-w-3xl text-4xl font-semibold tracking-tight md:text-5xl">
-              nichegolfHQ covers the corners of the amateur game mainstream golf media ignores - the junior, mid-am, and senior games.
+            <h1 className="mt-3 text-4xl font-semibold tracking-tight md:text-5xl">
+              Overlooked stories. Sharp opinions. Zero fluff.
             </h1>
+            <p className="mt-4 max-w-xl text-lg leading-8 text-zinc-600">
+              nichegolfHQ covers the corners of the amateur game mainstream golf media ignores — the junior, mid-am, and senior games.
+            </p>
 
             {/* buttons removed */}
           </div>
