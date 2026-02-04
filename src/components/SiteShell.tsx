@@ -32,7 +32,9 @@ export function SiteShell({
           <details className="group relative">
             <summary className="flex cursor-pointer list-none items-center gap-2 rounded-xl px-3 py-2 hover:bg-zinc-100 focus:outline-none focus-visible:ring-2 focus-visible:ring-zinc-400/60">
               <Image
-                src={`/brand/${headerBrand}/logo.png`}
+                src={
+                  headerBrand === "nichegolfhq" ? "/brand/nichegolfhq/logo-v2.png" : `/brand/${headerBrand}/logo.png`
+                }
                 alt={headerBrand === "nichegolfhq" ? "nichegolfHQ" : headerBrand}
                 width={300}
                 height={60}

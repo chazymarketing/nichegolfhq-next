@@ -27,7 +27,7 @@ export default async function Home() {
 
             <div className="mt-10 flex justify-center">
               <Image
-                src="/brand/nichegolfhq/logo.png"
+                src="/brand/nichegolfhq/logo-v2.png"
                 alt="nichegolfHQ"
                 width={320}
                 height={64}
