@@ -37,7 +37,7 @@ export function SiteShell({
                 width={300}
                 height={60}
                 priority
-                className="h-10 w-auto md:h-12"
+                className="h-11 w-auto md:h-14"
               />
               <span className="sr-only">Open brand menu</span>
               <svg
