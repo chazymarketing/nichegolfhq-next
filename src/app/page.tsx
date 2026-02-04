@@ -1,4 +1,3 @@
-import Image from "next/image";
 import Link from "next/link";
 import { SiteShell } from "@/components/SiteShell";
 import { IssueCard } from "@/components/IssueCard";
@@ -24,18 +23,6 @@ export default async function Home() {
             <p className="mx-auto mt-4 max-w-xl text-lg leading-8 text-zinc-600">
               nichegolfHQ covers the corners of the competitive amateur game that the golf media currently ignores.
             </p>
-
-            <div className="mt-10 flex justify-center">
-              <Image
-                src="/brand/nichegolfhq/logo-v2.png"
-                alt="nichegolfHQ"
-                width={320}
-                height={64}
-                className="h-32 w-auto md:h-40"
-                priority
-              />
-            </div>
-
             {/* buttons removed */}
           </div>
         </div>
