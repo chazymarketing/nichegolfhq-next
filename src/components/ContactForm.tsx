@@ -41,36 +41,36 @@ export function ContactForm() {
   }
 
   return (
-    <form onSubmit={onSubmit} className="rounded-3xl border border-zinc-200 bg-white p-8">
+    <form onSubmit={onSubmit} className="rounded-3xl border border-zinc-200 bg-white p-8 text-center">
       <div className="grid grid-cols-1 gap-4">
-        <label className="grid gap-2">
+        <label className="grid gap-2 text-center">
           <span className="text-sm font-medium text-zinc-900">Name</span>
           <input
             name="name"
             required
-            className="h-11 rounded-xl border border-zinc-200 bg-white px-4 text-sm outline-none focus:border-zinc-400"
+            className="h-11 rounded-xl border border-zinc-200 bg-white px-4 text-center text-sm outline-none focus:border-zinc-400"
             placeholder="Your name"
           />
         </label>
 
-        <label className="grid gap-2">
+        <label className="grid gap-2 text-center">
           <span className="text-sm font-medium text-zinc-900">Email</span>
           <input
             name="email"
             type="email"
             required
-            className="h-11 rounded-xl border border-zinc-200 bg-white px-4 text-sm outline-none focus:border-zinc-400"
+            className="h-11 rounded-xl border border-zinc-200 bg-white px-4 text-center text-sm outline-none focus:border-zinc-400"
             placeholder="you@company.com"
           />
         </label>
 
-        <label className="grid gap-2">
+        <label className="grid gap-2 text-center">
           <span className="text-sm font-medium text-zinc-900">Message</span>
           <textarea
             name="message"
             required
             rows={6}
-            className="rounded-xl border border-zinc-200 bg-white px-4 py-3 text-sm outline-none focus:border-zinc-400"
+            className="rounded-xl border border-zinc-200 bg-white px-4 py-3 text-center text-sm outline-none focus:border-zinc-400"
             placeholder="What are you looking to do?"
           />
         </label>
@@ -78,7 +78,7 @@ export function ContactForm() {
         <button
           type="submit"
           disabled={state.status === "sending"}
-          className="mt-2 inline-flex h-11 w-fit items-center justify-center rounded-full bg-zinc-950 px-5 text-sm font-medium text-white hover:bg-zinc-800 disabled:opacity-60"
+          className="mx-auto mt-2 inline-flex h-11 w-fit items-center justify-center rounded-full bg-zinc-950 px-5 text-sm font-medium text-white hover:bg-zinc-800 disabled:opacity-60"
         >
           {state.status === "sending" ? "Sending…" : "Send"}
         </button>

@@ -4,16 +4,16 @@ import { ContactForm } from "@/components/ContactForm";
 export default function ContactPage() {
   return (
     <SiteShell>
-      <div className="mx-auto w-full max-w-6xl px-5 py-16">
+      <div className="mx-auto w-full max-w-6xl px-5 py-16 text-center">
         <h1 className="text-3xl font-semibold tracking-tight">Contact us</h1>
-        <p className="mt-3 max-w-2xl text-sm text-zinc-600">
+        <p className="mx-auto mt-3 max-w-2xl text-sm text-zinc-600">
           Want to work together? Send a quick note and we’ll get back to you.
         </p>
-        <p className="mt-2 max-w-2xl text-sm text-zinc-600">
+        <p className="mx-auto mt-2 max-w-2xl text-sm text-zinc-600">
           Prefer a quick DM? Feel free to reach out on any of our social media accounts.
         </p>
 
-        <div className="mt-10 max-w-2xl">
+        <div className="mx-auto mt-10 w-full max-w-2xl">
           <ContactForm />
         </div>
       </div>
