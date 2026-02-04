@@ -6,7 +6,7 @@ import { fetchFeedItems } from "@/lib/rss";
 
 export default async function Home() {
   const results = await Promise.all(
-    FEEDS.map(async (f) => ({ feed: f, items: await fetchFeedItems(f.rssUrl, 4) }))
+    FEEDS.map(async (f) => ({ feed: f, items: await fetchFeedItems(f.rssUrl, 2) }))
   );
 
   // Homepage “Latest issue” should always feature midamgolfHQ.
