@@ -9,6 +9,11 @@ export type FeedConfig = {
   subscribeEmbedUrl: string;
   // Height BeeHiiv recommends for the embed iframe. We'll render responsively but preserve height.
   subscribeEmbedHeight: number;
+
+  // Social
+  xProfileUrl?: string;
+  instagramProfileUrl?: string;
+  instagramBusinessAccountId?: string;
 };
 
 export const FEEDS: FeedConfig[] = [
@@ -20,6 +25,10 @@ export const FEEDS: FeedConfig[] = [
     rssUrl: "https://rss.beehiiv.com/feeds/cUc6JEAOIK.xml",
     subscribeEmbedUrl: "https://subscribe-forms.beehiiv.com/6cf3e924-a8fd-4097-95ac-3ce085407e52",
     subscribeEmbedHeight: 627,
+    xProfileUrl: "https://x.com/midamgolfhq",
+    instagramProfileUrl: "https://www.instagram.com/midamgolfhq/",
+    // Provided once Meta is wired up (IG Graph API)
+    instagramBusinessAccountId: process.env.IG_BUSINESS_ID_MIDAMGOLFHQ,
   },
   {
     key: "senior",
@@ -29,6 +38,9 @@ export const FEEDS: FeedConfig[] = [
     rssUrl: "https://rss.beehiiv.com/feeds/JcpdwP5K1m.xml",
     subscribeEmbedUrl: "https://subscribe-forms.beehiiv.com/3c2071dc-19ed-44c1-8990-7db48d82c043",
     subscribeEmbedHeight: 375,
+    xProfileUrl: "https://x.com/seniorgolfhq",
+    instagramProfileUrl: "https://www.instagram.com/seniorgolfhq/",
+    instagramBusinessAccountId: process.env.IG_BUSINESS_ID_SENIORGOLFHQ,
   },
   {
     key: "junior",
@@ -38,6 +50,9 @@ export const FEEDS: FeedConfig[] = [
     rssUrl: "https://rss.beehiiv.com/feeds/ug2svosKWc.xml",
     subscribeEmbedUrl: "https://subscribe-forms.beehiiv.com/91af4bc6-784d-4631-b50e-9e3e1fa9615f",
     subscribeEmbedHeight: 567,
+    xProfileUrl: "https://x.com/juniorgolfhq",
+    instagramProfileUrl: "https://www.instagram.com/juniorgolfhq/",
+    instagramBusinessAccountId: process.env.IG_BUSINESS_ID_JUNIORGOLFHQ,
   },
 ];
 
