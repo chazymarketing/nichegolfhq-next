@@ -15,7 +15,11 @@ export function ContactForm() {
     e.preventDefault();
     if (state.status === "sending") return;
 
-    const fd = new FormData(e.currentTarget);
+    // React can null out event targets after an async boundary.
+    // Capture the form element immediately.
+    const form = e.currentTarget as HTMLFormElement;
+
+    const fd = new FormData(form);
     const name = (fd.get("name") || "").toString();
     const email = (fd.get("email") || "").toString();
     const message = (fd.get("message") || "").toString();
@@ -32,7 +36,8 @@ export function ContactForm() {
       if (!res.ok || !data.ok) {
         throw new Error(data.error || "Failed to send");
       }
-      (e.currentTarget as HTMLFormElement).reset();
+
+      form.reset();
       setState({ status: "sent" });
     } catch (err) {
       const msg = err instanceof Error ? err.message : "Failed to send";
