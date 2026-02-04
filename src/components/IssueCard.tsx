@@ -1,7 +1,23 @@
 import Image from "next/image";
 import type { RssItem } from "@/lib/rss";
 
+function cleanSnippet(input?: string) {
+  if (!input) return "";
+  // Beehiiv RSS snippets sometimes contain decorative divider lines. Strip them.
+  let s = input
+    .replace(/\r\n/g, "\n")
+    .replace(/^(?:\s*[—–\-_=*•·]{3,}\s*\n)+/g, "")
+    .replace(/\n(?:\s*[—–\-_=*•·]{3,}\s*\n)+/g, "\n")
+    .trim();
+
+  // If the snippet is basically just a divider after cleanup, drop it.
+  if (/^[—–\-_=*•·\s]+$/.test(s)) return "";
+  return s;
+}
+
 export function IssueCard({ item }: { item: RssItem }) {
+  const snippet = cleanSnippet(item.contentSnippet);
+
   return (
     <a
       href={item.link}
@@ -28,9 +44,9 @@ export function IssueCard({ item }: { item: RssItem }) {
         <div className="mt-2 font-semibold tracking-tight group-hover:underline">
           {item.title}
         </div>
-        {item.contentSnippet ? (
+        {snippet ? (
           <p className="mt-2 line-clamp-3 text-sm text-zinc-600 dark:text-zinc-400">
-            {item.contentSnippet}
+            {snippet}
           </p>
         ) : null}
       </div>
