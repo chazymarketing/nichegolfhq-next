@@ -81,6 +81,14 @@ export function SiteShell({
                 <Link href="/sponsors" className="block rounded-xl px-3 py-2 text-sm text-zinc-800 hover:bg-zinc-50">
                   sponsor
                 </Link>
+                <Link
+                  href="https://midamgolfhq.myshopify.com/?utm_source=shop_app"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="mt-1 block rounded-xl px-3 py-2 text-sm text-zinc-800 hover:bg-zinc-50"
+                >
+                  shop
+                </Link>
                 <Link href="/contact" className="mt-1 block rounded-xl px-3 py-2 text-sm text-zinc-800 hover:bg-zinc-50">
                   contact us
                 </Link>
