@@ -4,7 +4,7 @@ import { BeehiivEmbed } from "@/components/BeehiivEmbed";
 import { FEEDS, getFeedBySlug } from "@/lib/feeds";
 import { fetchFeedItems } from "@/lib/rss";
 import type { Metadata } from "next";
-import Script from "next/script";
+// import Script from "next/script";
 
 export function generateStaticParams() {
   return FEEDS.map((f) => ({ newsletter: f.slug }));
@@ -43,6 +43,8 @@ export default async function NewsletterPage({
   }
 
   const items = await fetchFeedItems(feed.rssUrl, 12);
+
+  const showSocial = false; // temporarily disabled (X embed + IG)
 
   // Instagram (server-side). Only renders when configured.
   const igToken = process.env.IG_GRAPH_ACCESS_TOKEN;
@@ -109,94 +111,96 @@ export default async function NewsletterPage({
           )}
         </div>
 
-        <section className="mt-14">
-          <div className="grid grid-cols-1 gap-6 md:grid-cols-2">
-            <div className="rounded-3xl border border-zinc-200 bg-white p-6">
-              <div className="flex items-center justify-between">
-                <div className="text-sm font-semibold text-zinc-900">latest on x</div>
-                {feed.xProfileUrl ? (
-                  <a
-                    href={feed.xProfileUrl}
-                    target="_blank"
-                    rel="noreferrer"
-                    className="text-xs font-medium text-zinc-600 hover:text-zinc-900"
-                  >
-                    view profile
-                  </a>
-                ) : null}
-              </div>
-              <div className="mt-3 overflow-hidden rounded-2xl border border-zinc-200 bg-white">
-                {feed.xProfileUrl ? (
-                  <div className="h-[560px] overflow-hidden">
+        {showSocial ? (
+          <section className="mt-14">
+            <div className="grid grid-cols-1 gap-6 md:grid-cols-2">
+              <div className="rounded-3xl border border-zinc-200 bg-white p-6">
+                <div className="flex items-center justify-between">
+                  <div className="text-sm font-semibold text-zinc-900">latest on x</div>
+                  {feed.xProfileUrl ? (
                     <a
-                      className="twitter-timeline"
-                      data-height="560"
-                      data-dnt="true"
-                      data-theme="light"
                       href={feed.xProfileUrl}
+                      target="_blank"
+                      rel="noreferrer"
+                      className="text-xs font-medium text-zinc-600 hover:text-zinc-900"
                     >
-                      posts by {feed.name}
+                      view profile
                     </a>
+                  ) : null}
+                </div>
+                <div className="mt-3 overflow-hidden rounded-2xl border border-zinc-200 bg-white">
+                  {feed.xProfileUrl ? (
+                    <div className="h-[560px] overflow-hidden">
+                      <a
+                        className="twitter-timeline"
+                        data-height="560"
+                        data-dnt="true"
+                        data-theme="light"
+                        href={feed.xProfileUrl}
+                      >
+                        posts by {feed.name}
+                      </a>
+                    </div>
+                  ) : (
+                    <div className="p-4 text-sm text-zinc-600">X profile not set.</div>
+                  )}
+                </div>
+              </div>
+
+              <div className="rounded-3xl border border-zinc-200 bg-white p-6">
+                <div className="flex items-center justify-between">
+                  <div className="text-sm font-semibold text-zinc-900">latest on instagram</div>
+                  {feed.instagramProfileUrl ? (
+                    <a
+                      href={feed.instagramProfileUrl}
+                      target="_blank"
+                      rel="noreferrer"
+                      className="text-xs font-medium text-zinc-600 hover:text-zinc-900"
+                    >
+                      view profile
+                    </a>
+                  ) : null}
+                </div>
+
+                {igItems && igItems.length ? (
+                  <div className="mt-4 grid grid-cols-2 gap-3 sm:grid-cols-3">
+                    {igItems.map((it) => {
+                      const src = it.media_type === "VIDEO" ? it.thumbnail_url : it.media_url;
+                      if (!src || !it.permalink) return null;
+
+                      return (
+                        <a
+                          key={it.id}
+                          href={it.permalink}
+                          target="_blank"
+                          rel="noreferrer"
+                          className="group relative overflow-hidden rounded-2xl border border-zinc-200 bg-zinc-50"
+                          title={it.caption || "instagram"}
+                        >
+                          {/* eslint-disable-next-line @next/next/no-img-element */}
+                          <img
+                            src={src}
+                            alt={it.caption || "instagram"}
+                            className="h-36 w-full object-cover transition-transform duration-200 group-hover:scale-[1.02]"
+                            loading="lazy"
+                          />
+                        </a>
+                      );
+                    })}
                   </div>
                 ) : (
-                  <div className="p-4 text-sm text-zinc-600">X profile not set.</div>
+                  <div className="mt-4 rounded-2xl border border-zinc-200 bg-zinc-50 p-4 text-sm text-zinc-600">
+                    Instagram feed will appear here once each brand is connected to a Facebook Page (Meta) and we drop in the IG Graph
+                    credentials.
+                  </div>
                 )}
               </div>
             </div>
 
-            <div className="rounded-3xl border border-zinc-200 bg-white p-6">
-              <div className="flex items-center justify-between">
-                <div className="text-sm font-semibold text-zinc-900">latest on instagram</div>
-                {feed.instagramProfileUrl ? (
-                  <a
-                    href={feed.instagramProfileUrl}
-                    target="_blank"
-                    rel="noreferrer"
-                    className="text-xs font-medium text-zinc-600 hover:text-zinc-900"
-                  >
-                    view profile
-                  </a>
-                ) : null}
-              </div>
-
-              {igItems && igItems.length ? (
-                <div className="mt-4 grid grid-cols-2 gap-3 sm:grid-cols-3">
-                  {igItems.map((it) => {
-                    const src = it.media_type === "VIDEO" ? it.thumbnail_url : it.media_url;
-                    if (!src || !it.permalink) return null;
-
-                    return (
-                      <a
-                        key={it.id}
-                        href={it.permalink}
-                        target="_blank"
-                        rel="noreferrer"
-                        className="group relative overflow-hidden rounded-2xl border border-zinc-200 bg-zinc-50"
-                        title={it.caption || "instagram"}
-                      >
-                        {/* eslint-disable-next-line @next/next/no-img-element */}
-                        <img
-                          src={src}
-                          alt={it.caption || "instagram"}
-                          className="h-36 w-full object-cover transition-transform duration-200 group-hover:scale-[1.02]"
-                          loading="lazy"
-                        />
-                      </a>
-                    );
-                  })}
-                </div>
-              ) : (
-                <div className="mt-4 rounded-2xl border border-zinc-200 bg-zinc-50 p-4 text-sm text-zinc-600">
-                  Instagram feed will appear here once each brand is connected to a Facebook Page (Meta) and we drop in the IG Graph
-                  credentials.
-                </div>
-              )}
-            </div>
-          </div>
-
-          {/* X widgets script */}
-          <Script src="https://platform.twitter.com/widgets.js" strategy="lazyOnload" />
-        </section>
+            {/* X widgets script */}
+            {/* <Script src="https://platform.twitter.com/widgets.js" strategy="lazyOnload" /> */}
+          </section>
+        ) : null}
 
         <div id="subscribe" className="mt-14 rounded-3xl border border-zinc-200 bg-white p-8">
           <div className="flex flex-col gap-6 md:flex-row md:items-start md:justify-between">
