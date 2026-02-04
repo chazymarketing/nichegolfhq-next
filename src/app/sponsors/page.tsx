@@ -1,5 +1,5 @@
+import Link from "next/link";
 import { SiteShell } from "@/components/SiteShell";
-import { SponsorInquiryForm } from "@/components/SponsorInquiryForm";
 
 export default function SponsorsPage() {
   return (
@@ -22,8 +22,19 @@ export default function SponsorsPage() {
           </div>
         </div>
 
-        <div className="mt-10">
-          <SponsorInquiryForm />
+        <div className="mt-10 rounded-2xl border border-zinc-200 bg-white p-8">
+          <h2 className="text-lg font-semibold">Want to sponsor?</h2>
+          <p className="mt-2 text-sm text-zinc-600">
+            Hit us up and we’ll put together a clean package + pricing.
+          </p>
+          <div className="mt-6">
+            <Link
+              href="/contact"
+              className="inline-flex items-center justify-center rounded-xl bg-zinc-950 px-5 py-3 text-sm font-semibold text-white hover:bg-zinc-800"
+            >
+              Contact us
+            </Link>
+          </div>
         </div>
       </div>
     </SiteShell>
