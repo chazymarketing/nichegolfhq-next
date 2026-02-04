@@ -60,7 +60,7 @@ export default async function NewsletterPage({
               />
               <h1 className="sr-only">{feed.name}</h1>
             </div>
-            <p className="mt-3 max-w-2xl text-zinc-600 dark:text-zinc-300">{feed.tagline}</p>
+            {/* tagline removed */}
           </div>
 
           <a

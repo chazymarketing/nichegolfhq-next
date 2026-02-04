@@ -6,9 +6,14 @@ function cleanSnippet(input?: string) {
   // Beehiiv RSS snippets sometimes contain decorative divider lines. Strip them.
   let s = input
     .replace(/\r\n/g, "\n")
-    .replace(/^(?:\s*[—–\-_=*•·]{3,}\s*\n)+/g, "")
-    .replace(/\n(?:\s*[—–\-_=*•·]{3,}\s*\n)+/g, "\n")
+    // Remove divider runs even if they show up mid-text.
+    .replace(/\s*[—–\-_=*•·]{3,}\s*/g, " ")
+    // Normalize line breaks
+    .replace(/\n{3,}/g, "\n\n")
     .trim();
+
+  // Collapse extra whitespace after divider removal.
+  s = s.replace(/\s{2,}/g, " ").trim();
 
   // If the snippet is basically just a divider after cleanup, drop it.
   if (/^[—–\-_=*•·\s]+$/.test(s)) return "";
