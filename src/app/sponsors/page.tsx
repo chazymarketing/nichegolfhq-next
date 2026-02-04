@@ -32,7 +32,7 @@ export default function SponsorsPage() {
           <div className="rounded-2xl border border-zinc-200 bg-white p-6">
             <div className="text-sm font-semibold">Digital reach</div>
             <div className="mt-2 text-sm text-zinc-600">
-              Leverage our programmatic platform to extend your reach beyond Niche Golf HQ.
+              Leverage our programmatic platform to extend your reach beyond nichegolfHQ.
             </div>
           </div>
         </div>
