@@ -11,7 +11,7 @@ export default async function Home() {
 
   return (
     <SiteShell>
-      <section className="mx-auto w-full max-w-6xl px-5 py-16">
+      <section className="mx-auto w-full max-w-6xl px-5 py-16 text-center">
         <div className="grid grid-cols-1 gap-10">
           <div>
             <div className="text-xs font-semibold uppercase tracking-wider text-zinc-600">
@@ -20,7 +20,7 @@ export default async function Home() {
             <h1 className="mt-3 text-4xl font-semibold tracking-tight md:text-5xl">
               Overlooked stories. Sharp opinions. Zero fluff.
             </h1>
-            <p className="mt-4 max-w-xl text-lg leading-8 text-zinc-600">
+            <p className="mx-auto mt-4 max-w-xl text-lg leading-8 text-zinc-600">
               nichegolfHQ covers the corners of the competitive amateur game that the golf media currently ignores.
             </p>
 
