@@ -9,23 +9,10 @@ export default async function Home() {
     FEEDS.map(async (f) => ({ feed: f, items: await fetchFeedItems(f.rssUrl, 2) }))
   );
 
-  // Homepage “Latest issue” should always feature midamgolfHQ.
-  const midam = results.find((r) => r.feed.slug === "midamgolfhq");
-  const featured = midam
-    ? midam.items
-        .map((it) => ({ ...it, feedName: midam.feed.name, feedSlug: midam.feed.slug }))
-        .sort((a, b) => {
-          const da = a.isoDate ? new Date(a.isoDate).getTime() : 0;
-          const db = b.isoDate ? new Date(b.isoDate).getTime() : 0;
-          return db - da;
-        })
-        .slice(0, 1)[0]
-    : undefined;
-
   return (
     <SiteShell>
       <section className="mx-auto w-full max-w-6xl px-5 py-16">
-        <div className="grid grid-cols-1 gap-10 md:grid-cols-2 md:items-center">
+        <div className="grid grid-cols-1 gap-10">
           <div>
             <div className="text-xs font-semibold uppercase tracking-wider text-zinc-600">
               Competitive golf beyond the mainstream
@@ -38,28 +25,6 @@ export default async function Home() {
             </p>
 
             {/* buttons removed */}
-          </div>
-
-          <div className="rounded-3xl border border-zinc-200 bg-white p-6">
-            <div className="text-sm font-semibold">Latest issue</div>
-            <p className="mt-1 text-sm text-zinc-600">Most recent post across all three newsletters.</p>
-            <div className="mt-4">
-              {featured ? (
-                <IssueCard item={featured} />
-              ) : (
-                <div className="rounded-2xl border border-zinc-200 bg-zinc-50 p-5 text-sm text-zinc-600">
-                  Once we plug in the BeeHiiv RSS URLs, this will populate automatically.
-                </div>
-              )}
-              {featured?.feedSlug ? (
-                <div className="mt-3 text-xs text-zinc-500">
-                  From{" "}
-                  <Link className="underline hover:text-zinc-900" href={`/${featured.feedSlug}`}>
-                    {featured.feedName}
-                  </Link>
-                </div>
-              ) : null}
-            </div>
           </div>
         </div>
       </section>
