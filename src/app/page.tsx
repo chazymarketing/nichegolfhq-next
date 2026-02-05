@@ -22,7 +22,7 @@ export default async function Home() {
             </h1>
             <p className="mx-auto mt-4 max-w-xl text-lg leading-8 text-zinc-600">
               nichegolfHQ covers the corners of competitive amateur golf the mainstream ignores - with dedicated junior,
-              mid-amateur, and senior amateur coverage across our channels.
+              mid-am, and senior amateur coverage across our channels.
             </p>
             {/* buttons removed */}
           </div>
