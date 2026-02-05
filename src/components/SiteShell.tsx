@@ -119,62 +119,7 @@ export function SiteShell({
 
       <footer className="border-t border-zinc-200 bg-white">
         <div className="mx-auto w-full max-w-6xl px-5 py-8">
-          {hasAnySocial ? (
-            <div className="grid grid-cols-1 gap-4 sm:grid-cols-3">
-              {(Object.keys(SOCIAL) as BrandKey[]).map((key) => {
-                const label =
-                  key === "midamgolfhq" ? "midamgolfHQ" : key === "juniorgolfhq" ? "juniorgolfHQ" : "seniorgolfHQ";
-                const x = SOCIAL[key].x;
-                const ig = SOCIAL[key].instagram;
-                if (!x && !ig) return null;
-
-                return (
-                  <div
-                    key={key}
-                    className="flex items-center justify-between rounded-2xl border border-zinc-200 bg-white px-4 py-3"
-                  >
-                    <div className="text-sm font-medium text-zinc-900">{label}</div>
-
-                    <div className="flex items-center gap-1">
-                      {x ? (
-                        <a
-                          className="inline-flex h-9 w-9 items-center justify-center rounded-full text-zinc-700 hover:bg-zinc-100 hover:text-zinc-950"
-                          href={x}
-                          target="_blank"
-                          rel="noreferrer"
-                          aria-label={`${label} on X`}
-                          title="X"
-                        >
-                          <svg aria-hidden="true" viewBox="0 0 24 24" className="h-4 w-4 fill-current">
-                            <path d="M18.901 1.153h3.68l-8.04 9.19L24 22.847h-7.406l-5.8-7.584-6.636 7.584H.47l8.6-9.83L0 1.153h7.594l5.243 6.932 6.064-6.932Zm-1.29 19.493h2.04L6.49 3.24H4.304l13.307 17.406Z" />
-                          </svg>
-                          <span className="sr-only">X</span>
-                        </a>
-                      ) : null}
-
-                      {ig ? (
-                        <a
-                          className="inline-flex h-9 w-9 items-center justify-center rounded-full text-zinc-700 hover:bg-zinc-100 hover:text-zinc-950"
-                          href={ig}
-                          target="_blank"
-                          rel="noreferrer"
-                          aria-label={`${label} on Instagram`}
-                          title="Instagram"
-                        >
-                          <svg aria-hidden="true" viewBox="0 0 24 24" className="h-4 w-4 fill-current">
-                            <path d="M7.5 2h9A5.5 5.5 0 0 1 22 7.5v9A5.5 5.5 0 0 1 16.5 22h-9A5.5 5.5 0 0 1 2 16.5v-9A5.5 5.5 0 0 1 7.5 2Zm0 2A3.5 3.5 0 0 0 4 7.5v9A3.5 3.5 0 0 0 7.5 20h9a3.5 3.5 0 0 0 3.5-3.5v-9A3.5 3.5 0 0 0 16.5 4h-9ZM12 7a5 5 0 1 1 0 10 5 5 0 0 1 0-10Zm0 2a3 3 0 1 0 0 6 3 3 0 0 0 0-6Zm6.2-2.3a1.1 1.1 0 1 1 0 2.2 1.1 1.1 0 0 1 0-2.2Z" />
-                          </svg>
-                          <span className="sr-only">Instagram</span>
-                        </a>
-                      ) : null}
-                    </div>
-                  </div>
-                );
-              })}
-            </div>
-          ) : (
-            <div className="text-sm text-zinc-600">Social links coming next.</div>
-          )}
+          <div className="text-center text-sm text-zinc-600">2026 nichegolfHQ all rights reserved</div>
         </div>
       </footer>
     </div>
