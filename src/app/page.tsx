@@ -56,27 +56,25 @@ export default async function Home() {
                 </div>
 
                 {(feed.xProfileUrl || feed.instagramProfileUrl) && (
-                  <div className="text-sm text-zinc-600">
-                    <span className="mr-2">follow:</span>
+                  <div className="flex flex-col justify-center gap-2 sm:flex-row">
                     {feed.xProfileUrl && (
                       <Link
                         href={feed.xProfileUrl}
                         target="_blank"
                         rel="noreferrer"
-                        className="font-medium text-zinc-900 underline underline-offset-4 hover:text-zinc-700"
+                        className="inline-flex items-center justify-center rounded-full border border-zinc-300 bg-white px-4 py-2 text-sm font-medium text-zinc-900 hover:bg-zinc-50"
                       >
-                        x
+                        X
                       </Link>
                     )}
-                    {feed.xProfileUrl && feed.instagramProfileUrl && <span className="mx-2 text-zinc-400">·</span>}
                     {feed.instagramProfileUrl && (
                       <Link
                         href={feed.instagramProfileUrl}
                         target="_blank"
                         rel="noreferrer"
-                        className="font-medium text-zinc-900 underline underline-offset-4 hover:text-zinc-700"
+                        className="inline-flex items-center justify-center rounded-full border border-zinc-300 bg-white px-4 py-2 text-sm font-medium text-zinc-900 hover:bg-zinc-50"
                       >
-                        instagram
+                        Instagram
                       </Link>
                     )}
                   </div>
