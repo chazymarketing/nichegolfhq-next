@@ -19,7 +19,10 @@ export const metadata: Metadata = {
     siteName: "nichegolfHQ",
     images: [
       {
-        url: "/brand/nichegolfhq/logo-v2.png",
+        url: "/og/og-nichegolfhq.png",
+        width: 1200,
+        height: 630,
+        alt: "nichegolfHQ",
       },
     ],
   },
@@ -28,7 +31,7 @@ export const metadata: Metadata = {
     title: "nichegolfHQ",
     description:
       "Competitive golfers covering the game beyond the mainstream. Overlooked stories, thoughtful coverage, off the beaten path.",
-    images: ["/brand/nichegolfhq/logo-v2.png"],
+    images: ["/og/og-nichegolfhq.png"],
   },
 };
 
