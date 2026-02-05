@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import { SiteShell } from "@/components/SiteShell";
 import { IssueCard } from "@/components/IssueCard";
 import { FEEDS } from "@/lib/feeds";
@@ -36,7 +37,17 @@ export default async function Home() {
 
         <div className="mt-6 grid grid-cols-1 gap-10">
           {results.map(({ feed, items }) => (
-            <div key={feed.slug} className="rounded-3xl border border-zinc-200 bg-white p-6">
+            <div key={feed.slug} className="relative rounded-3xl border border-zinc-200 bg-white p-6">
+              <div className="absolute left-5 top-5">
+                <Image
+                  src={`/brand/${feed.slug}/logo.png`}
+                  alt={`${feed.name} logo`}
+                  width={90}
+                  height={28}
+                  className="h-7 w-auto"
+                  priority={false}
+                />
+              </div>
               <div className="flex flex-col items-center gap-3 text-center">
                 <div className="text-base font-semibold tracking-tight md:text-lg">{feed.name}</div>
 
