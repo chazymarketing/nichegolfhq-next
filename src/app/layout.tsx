@@ -7,12 +7,29 @@ const sans = Inter({ subsets: ["latin"], variable: "--font-sans" });
 const serif = Source_Serif_4({ subsets: ["latin"], variable: "--font-serif" });
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://nichegolfhq.com"),
   title: {
     default: "nichegolfHQ",
     template: "%s | nichegolfHQ",
   },
   description:
     "Competitive golfers covering the game beyond the mainstream. Overlooked stories, thoughtful coverage, off the beaten path.",
+  openGraph: {
+    type: "website",
+    siteName: "nichegolfHQ",
+    images: [
+      {
+        url: "/brand/nichegolfhq/logo-v2.png",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "nichegolfHQ",
+    description:
+      "Competitive golfers covering the game beyond the mainstream. Overlooked stories, thoughtful coverage, off the beaten path.",
+    images: ["/brand/nichegolfhq/logo-v2.png"],
+  },
 };
 
 export default function RootLayout({
