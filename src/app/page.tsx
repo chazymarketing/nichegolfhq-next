@@ -80,7 +80,7 @@ export default async function Home() {
                 </div>
               </div>
 
-              <div className="mt-5 grid grid-cols-1 gap-4 md:grid-cols-2">
+              <div className="mx-auto mt-5 grid w-full max-w-xl grid-cols-1 gap-4">
                 {items.length ? (
                   items.map((it) => <IssueCard key={it.link + it.title} item={it} />)
                 ) : (
