@@ -21,7 +21,8 @@ export default async function Home() {
               Overlooked stories. Sharp opinions. Zero fluff.
             </h1>
             <p className="mx-auto mt-4 max-w-xl text-lg leading-8 text-zinc-600">
-              nichegolfHQ covers the corners of the competitive amateur game that the golf media currently ignores.
+              nichegolfHQ covers the corners of competitive amateur golf the mainstream ignores — with dedicated junior,
+              mid-amateur, and senior amateur coverage across newsletters and social.
             </p>
             {/* buttons removed */}
           </div>
