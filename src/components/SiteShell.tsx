@@ -95,10 +95,10 @@ export function SiteShell({
               <Image
                 src={logoSrc}
                 alt={headerBrand === "nichegolfhq" ? "nichegolfHQ" : headerBrand}
-                width={300}
-                height={60}
+                width={420}
+                height={120}
                 priority
-                className="h-11 w-auto md:h-14"
+                className="h-16 w-auto md:h-20"
               />
             </Link>
           </div>
