@@ -42,9 +42,9 @@ export default async function Home() {
                 <Image
                   src={`/brand/${feed.slug}/logo.png`}
                   alt={`${feed.name} logo`}
-                  width={90}
-                  height={28}
-                  className="h-7 w-auto"
+                  width={180}
+                  height={56}
+                  className="h-14 w-auto"
                   priority={false}
                 />
               </div>
