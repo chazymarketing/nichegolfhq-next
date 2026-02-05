@@ -22,7 +22,7 @@ export default async function Home() {
             </h1>
             <p className="mx-auto mt-4 max-w-xl text-lg leading-8 text-zinc-600">
               nichegolfHQ covers the corners of competitive amateur golf the mainstream ignores — with dedicated junior,
-              mid-amateur, and senior amateur coverage across newsletters and social.
+              mid-amateur, and senior amateur coverage across channels and social.
             </p>
             {/* buttons removed */}
           </div>
@@ -31,7 +31,7 @@ export default async function Home() {
 
       <section id="latest" className="mx-auto w-full max-w-6xl px-5 pb-20">
         <div className="flex items-end justify-center">
-          <h2 className="text-xl font-semibold tracking-tight">Newsletters</h2>
+          <h2 className="text-xl font-semibold tracking-tight">Channels</h2>
         </div>
 
         <div className="mt-6 grid grid-cols-1 gap-10">
@@ -54,6 +54,33 @@ export default async function Home() {
                     View archive
                   </Link>
                 </div>
+
+                {(feed.xProfileUrl || feed.instagramProfileUrl) && (
+                  <div className="text-sm text-zinc-600">
+                    <span className="mr-2">follow:</span>
+                    {feed.xProfileUrl && (
+                      <Link
+                        href={feed.xProfileUrl}
+                        target="_blank"
+                        rel="noreferrer"
+                        className="font-medium text-zinc-900 underline underline-offset-4 hover:text-zinc-700"
+                      >
+                        x
+                      </Link>
+                    )}
+                    {feed.xProfileUrl && feed.instagramProfileUrl && <span className="mx-2 text-zinc-400">·</span>}
+                    {feed.instagramProfileUrl && (
+                      <Link
+                        href={feed.instagramProfileUrl}
+                        target="_blank"
+                        rel="noreferrer"
+                        className="font-medium text-zinc-900 underline underline-offset-4 hover:text-zinc-700"
+                      >
+                        instagram
+                      </Link>
+                    )}
+                  </div>
+                )}
               </div>
 
               <div className="mt-5 grid grid-cols-1 gap-4 md:grid-cols-2">
