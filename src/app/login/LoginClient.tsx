@@ -35,10 +35,11 @@ export function LoginClient() {
       if (!supabase) throw new Error("Supabase env is not set for this deployment.");
 
       const origin = window.location.origin;
+      const redirectTo = `${origin}/auth/callback?next=${encodeURIComponent(next)}`;
       const { error: err } = await supabase.auth.signInWithOtp({
         email,
         options: {
-          emailRedirectTo: `${origin}${next}`,
+          emailRedirectTo: redirectTo,
         },
       });
       if (err) throw err;
