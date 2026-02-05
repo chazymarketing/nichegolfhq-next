@@ -40,7 +40,7 @@ export default async function Home() {
               <div className="flex flex-col items-center gap-3 text-center">
                 <div className="text-base font-semibold tracking-tight md:text-lg">{feed.name}</div>
 
-                <div className="flex flex-col justify-center gap-2 sm:flex-row">
+                <div className="grid w-full max-w-xs grid-cols-2 gap-2">
                   <Link
                     href={`/${feed.slug}#subscribe`}
                     className="inline-flex items-center justify-center rounded-full bg-zinc-950 px-4 py-2 text-sm font-medium text-white hover:bg-zinc-800"
@@ -49,36 +49,32 @@ export default async function Home() {
                   </Link>
                   <Link
                     href={`/${feed.slug}`}
-                    className="inline-flex items-center justify-center rounded-full border border-zinc-300 bg-white px-4 py-2 text-sm font-medium text-zinc-900 hover:bg-zinc-50"
+                    className="inline-flex items-center justify-center rounded-full bg-zinc-950 px-4 py-2 text-sm font-medium text-white hover:bg-zinc-800"
                   >
                     View archive
                   </Link>
-                </div>
 
-                {(feed.xProfileUrl || feed.instagramProfileUrl) && (
-                  <div className="flex flex-col justify-center gap-2 sm:flex-row">
-                    {feed.xProfileUrl && (
-                      <Link
-                        href={feed.xProfileUrl}
-                        target="_blank"
-                        rel="noreferrer"
-                        className="inline-flex items-center justify-center rounded-full border border-zinc-300 bg-white px-4 py-2 text-sm font-medium text-zinc-900 hover:bg-zinc-50"
-                      >
-                        X
-                      </Link>
-                    )}
-                    {feed.instagramProfileUrl && (
-                      <Link
-                        href={feed.instagramProfileUrl}
-                        target="_blank"
-                        rel="noreferrer"
-                        className="inline-flex items-center justify-center rounded-full border border-zinc-300 bg-white px-4 py-2 text-sm font-medium text-zinc-900 hover:bg-zinc-50"
-                      >
-                        Instagram
-                      </Link>
-                    )}
-                  </div>
-                )}
+                  {feed.xProfileUrl && (
+                    <Link
+                      href={feed.xProfileUrl}
+                      target="_blank"
+                      rel="noreferrer"
+                      className="inline-flex items-center justify-center rounded-full bg-zinc-950 px-4 py-2 text-sm font-medium text-white hover:bg-zinc-800"
+                    >
+                      X
+                    </Link>
+                  )}
+                  {feed.instagramProfileUrl && (
+                    <Link
+                      href={feed.instagramProfileUrl}
+                      target="_blank"
+                      rel="noreferrer"
+                      className="inline-flex items-center justify-center rounded-full bg-zinc-950 px-4 py-2 text-sm font-medium text-white hover:bg-zinc-800"
+                    >
+                      Instagram
+                    </Link>
+                  )}
+                </div>
               </div>
 
               <div className="mt-5 grid grid-cols-1 gap-4 md:grid-cols-2">
