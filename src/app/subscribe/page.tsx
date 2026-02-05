@@ -31,7 +31,7 @@ export default function SubscribePage() {
                 <div className="text-xs text-zinc-500">{feed.name}</div>
               </div>
 
-              <div className="mx-auto w-full md:max-w-lg">
+              <div className="mx-auto w-full md:max-w-2xl">
                 <BeehiivEmbed
                 src={feed.subscribeEmbedUrl}
                 height={feed.subscribeEmbedHeight}

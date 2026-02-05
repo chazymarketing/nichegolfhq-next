@@ -212,7 +212,7 @@ export default async function NewsletterPage({
               <p className="mt-2 text-xs text-zinc-500">No spam. Unsubscribe anytime.</p>
             </div>
 
-            <div className="w-full md:max-w-sm">
+            <div className="w-full md:max-w-lg">
               <BeehiivEmbed
                 src={feed.subscribeEmbedUrl}
                 height={feed.subscribeEmbedHeight}
