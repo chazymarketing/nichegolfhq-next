@@ -210,6 +210,31 @@ export default async function NewsletterPage({
                 Get {feed.name} in your inbox. Free.
               </p>
               <p className="mt-2 text-xs text-zinc-500">No spam. Unsubscribe anytime.</p>
+
+              {(feed.xProfileUrl || feed.instagramProfileUrl) && (
+                <div className="mt-4 flex flex-col gap-2 sm:flex-row">
+                  {feed.xProfileUrl && (
+                    <a
+                      href={feed.xProfileUrl}
+                      target="_blank"
+                      rel="noreferrer"
+                      className="inline-flex items-center justify-center rounded-full border border-zinc-300 bg-white px-4 py-2 text-sm font-medium text-zinc-900 hover:bg-zinc-50"
+                    >
+                      follow on x
+                    </a>
+                  )}
+                  {feed.instagramProfileUrl && (
+                    <a
+                      href={feed.instagramProfileUrl}
+                      target="_blank"
+                      rel="noreferrer"
+                      className="inline-flex items-center justify-center rounded-full border border-zinc-300 bg-white px-4 py-2 text-sm font-medium text-zinc-900 hover:bg-zinc-50"
+                    >
+                      follow on instagram
+                    </a>
+                  )}
+                </div>
+              )}
             </div>
 
             <div className="w-full md:max-w-lg">
