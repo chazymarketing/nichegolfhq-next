@@ -120,17 +120,15 @@ export default async function IssuePage({
 
   return (
     <SiteShell brandSlug={feed.slug}>
-      <article className="mx-auto w-full max-w-3xl px-5 py-16">
-        <header className="mx-auto max-w-2xl text-center">
+      <article className="mx-auto flex w-full max-w-3xl flex-col items-center px-5 py-16">
+        <header className="mx-auto w-full max-w-2xl text-center">
           <div className="text-xs font-semibold uppercase tracking-wider text-zinc-600">{feed.name}</div>
           <h1 className="mt-3 text-3xl font-semibold tracking-tight md:text-4xl">{found.title}</h1>
           <div className="mt-3 text-sm text-zinc-500">{found.isoDate ? new Date(found.isoDate).toLocaleDateString() : ""}</div>
         </header>
 
         {contentHtml ? (
-          <div
-            className="mx-auto mt-12 max-w-2xl rounded-3xl border border-zinc-200 bg-white px-7 py-8 md:px-10 md:py-10"
-          >
+          <div className="mx-auto mt-12 w-full max-w-2xl rounded-3xl border border-zinc-200 bg-white px-7 py-8 md:px-10 md:py-10">
             <div
               className="prose prose-zinc prose-lg max-w-none leading-7
                 prose-headings:tracking-tight prose-headings:scroll-mt-24
@@ -146,7 +144,7 @@ export default async function IssuePage({
             />
           </div>
         ) : snippet ? (
-          <div className="mx-auto mt-12 max-w-2xl rounded-3xl border border-zinc-200 bg-white px-7 py-8 md:px-10 md:py-10">
+          <div className="mx-auto mt-12 w-full max-w-2xl rounded-3xl border border-zinc-200 bg-white px-7 py-8 md:px-10 md:py-10">
             <p className="text-base leading-7 text-zinc-700">{snippet}</p>
           </div>
         ) : null}
