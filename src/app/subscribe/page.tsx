@@ -1,4 +1,3 @@
-import Image from "next/image";
 import { SiteShell } from "@/components/SiteShell";
 import { BeehiivEmbed } from "@/components/BeehiivEmbed";
 import { getFeedBySlug } from "@/lib/feeds";
@@ -20,16 +19,7 @@ export default function SubscribePage() {
         <div className="flex flex-col gap-10">
           {feeds.map((feed) => (
             <section key={feed.slug} className="flex flex-col gap-4">
-              <div className="flex flex-col items-center gap-3">
-                <Image
-                  src={`/brand/${feed.slug}/logo.png`}
-                  alt={feed.name}
-                  width={320}
-                  height={64}
-                  className="h-7 w-auto dark:invert"
-                />
-                <div className="text-xs text-zinc-500">{feed.name}</div>
-              </div>
+              <div className="text-xs text-zinc-500">{feed.name}</div>
 
               <div className="mx-auto w-full md:max-w-2xl">
                 <BeehiivEmbed
