@@ -1,9 +1,9 @@
 import Link from "next/link";
 import type { Metadata } from "next";
 import { SiteShell } from "@/components/SiteShell";
-import { BeehiivEmbed } from "@/components/BeehiivEmbed";
-import { FEEDS, getFeedBySlug } from "@/lib/feeds";
+import { getFeedBySlug } from "@/lib/feeds";
 import { fetchFeedItems } from "@/lib/rss";
+import { getSupabaseServer } from "@/lib/supabaseServer";
 
 export function generateStaticParams() {
   // Keep this lightweight for now. We can expand to generate recent issues later.
@@ -96,35 +96,87 @@ export default async function IssuePage({
     );
   }
 
-  const items = await fetchFeedItems(feed.rssUrl, 25);
-  const found = items.find((it) => issueSlugFromUrl(it.link) === resolved.issue);
+  const supabase = getSupabaseServer();
 
-  if (!found) {
-    return (
-      <SiteShell brandSlug={feed.slug}>
-        <div className="mx-auto w-full max-w-3xl px-5 py-14">
-          <h1 className="text-2xl font-semibold tracking-tight">Issue not found</h1>
-          <p className="mt-2 text-sm text-zinc-600">This issue may be too old for the current RSS fetch window.</p>
-          <div className="mt-6">
-            <Link href={`/${feed.slug}`} className="text-sm font-medium text-zinc-900 underline underline-offset-2">
-              back to {feed.name}
-            </Link>
-          </div>
-        </div>
-      </SiteShell>
-    );
+  // 1) Try DB first (supports full history)
+  let issue:
+    | {
+        newsletter_slug: string;
+        issue_slug: string;
+        title: string;
+        published_at: string | null;
+        beehiiv_url: string;
+        content_html: string | null;
+        excerpt: string | null;
+        image_url: string | null;
+      }
+    | null = null;
+
+  if (supabase) {
+    const { data } = await supabase
+      .from("issues")
+      .select("newsletter_slug,issue_slug,title,published_at,beehiiv_url,content_html,excerpt,image_url")
+      .eq("newsletter_slug", feed.slug)
+      .eq("issue_slug", resolved.issue)
+      .maybeSingle();
+    issue = (data as any) || null;
   }
 
-  const snippet = cleanSnippet(found.contentSnippet);
-  const contentHtml = sanitizeHtml(found.contentHtml);
+  // 2) Fallback: fetch RSS and backfill into DB if possible
+  if (!issue) {
+    const items = await fetchFeedItems(feed.rssUrl, 200);
+    const found = items.find((it) => issueSlugFromUrl(it.link) === resolved.issue);
+
+    if (!found) {
+      return (
+        <SiteShell brandSlug={feed.slug}>
+          <div className="mx-auto w-full max-w-3xl px-5 py-14">
+            <h1 className="text-2xl font-semibold tracking-tight">Issue not found</h1>
+            <p className="mt-2 text-sm text-zinc-600">This issue may be older than the current RSS window.</p>
+            <div className="mt-6">
+              <Link href={`/${feed.slug}`} className="text-sm font-medium text-zinc-900 underline underline-offset-2">
+                back to {feed.name}
+              </Link>
+            </div>
+          </div>
+        </SiteShell>
+      );
+    }
+
+    const excerpt = cleanSnippet(found.contentSnippet);
+    const content_html = sanitizeHtml(found.contentHtml);
+
+    issue = {
+      newsletter_slug: feed.slug,
+      issue_slug: resolved.issue,
+      title: found.title,
+      published_at: found.isoDate || null,
+      beehiiv_url: found.link,
+      content_html: content_html || null,
+      excerpt: excerpt || null,
+      image_url: found.imageUrl || null,
+    };
+
+    if (supabase) {
+      // Upsert so we can backfill history progressively.
+      await supabase.from("issues").upsert(issue as any, {
+        onConflict: "newsletter_slug,issue_slug",
+      });
+    }
+  }
+
+  const snippet = cleanSnippet(issue.excerpt || undefined);
+  const contentHtml = sanitizeHtml(issue.content_html || undefined);
 
   return (
     <SiteShell brandSlug={feed.slug}>
       <article className="mx-auto flex w-full max-w-3xl flex-col items-center px-5 py-16">
         <header className="mx-auto w-full max-w-2xl text-center">
           <div className="text-xs font-semibold uppercase tracking-wider text-zinc-600">{feed.name}</div>
-          <h1 className="mt-3 text-3xl font-semibold tracking-tight md:text-4xl">{found.title}</h1>
-          <div className="mt-3 text-sm text-zinc-500">{found.isoDate ? new Date(found.isoDate).toLocaleDateString() : ""}</div>
+          <h1 className="mt-3 text-3xl font-semibold tracking-tight md:text-4xl">{issue.title}</h1>
+          <div className="mt-3 text-sm text-zinc-500">
+            {issue.published_at ? new Date(issue.published_at).toLocaleDateString() : ""}
+          </div>
         </header>
 
         {contentHtml ? (
@@ -149,13 +201,6 @@ export default async function IssuePage({
           </div>
         ) : null}
 
-        <div className="mt-12 rounded-3xl border border-zinc-200 bg-white p-8" id="subscribe">
-          <div className="text-sm font-semibold text-zinc-900">Subscribe</div>
-          <p className="mt-2 text-sm text-zinc-600">Get {feed.name} in your inbox. Free.</p>
-          <div className="mt-6">
-            <BeehiivEmbed src={feed.subscribeEmbedUrl} height={feed.subscribeEmbedHeight} title={`${feed.name} subscribe`} />
-          </div>
-        </div>
 
         <div className="mt-10">
           <Link href={`/${feed.slug}`} className="text-sm font-medium text-zinc-900 underline underline-offset-2 hover:text-zinc-700">
@@ -172,8 +217,8 @@ export default async function IssuePage({
           __html: JSON.stringify({
             "@context": "https://schema.org",
             "@type": "Article",
-            headline: found.title,
-            datePublished: found.isoDate,
+            headline: issue.title,
+            datePublished: issue.published_at,
             publisher: { "@type": "Organization", name: "nichegolfHQ" },
             mainEntityOfPage: `https://www.nichegolfhq.com/${feed.slug}/issue/${resolved.issue}`,
           }),
