@@ -4,6 +4,7 @@ import { useEffect, useState } from "react";
 import Link from "next/link";
 import { SiteShell } from "@/components/SiteShell";
 import { getSupabase } from "@/lib/supabaseClient";
+import { isCommunityEnabled } from "@/lib/featureFlags";
 
 type Category = { id: string; slug: string; name: string };
 
@@ -21,6 +22,11 @@ export default function CommunityPage() {
   const [error, setError] = useState<string | null>(null);
 
   useEffect(() => {
+    if (!isCommunityEnabled()) {
+      window.location.href = "/";
+      return;
+    }
+
     (async () => {
       try {
         const supabase = getSupabase();
