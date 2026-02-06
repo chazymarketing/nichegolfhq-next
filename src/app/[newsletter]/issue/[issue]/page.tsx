@@ -117,37 +117,20 @@ export default async function IssuePage({
 
   return (
     <SiteShell brandSlug={feed.slug}>
-      <article className="mx-auto w-full max-w-3xl px-5 py-14">
+      <article className="mx-auto w-full max-w-3xl px-5 py-16">
         <div className="text-xs font-semibold uppercase tracking-wider text-zinc-600">{feed.name}</div>
         <h1 className="mt-3 text-3xl font-semibold tracking-tight md:text-4xl">{found.title}</h1>
         <div className="mt-3 text-sm text-zinc-500">{found.isoDate ? new Date(found.isoDate).toLocaleDateString() : ""}</div>
 
         {contentHtml ? (
           <div
-            className="prose prose-zinc mt-8 max-w-none prose-headings:tracking-tight prose-a:font-medium prose-a:text-zinc-950 prose-a:underline prose-a:underline-offset-4"
+            className="prose prose-zinc mx-auto mt-10 max-w-none leading-7 prose-headings:tracking-tight prose-p:leading-7 prose-p:my-4 prose-ul:my-4 prose-ol:my-4 prose-li:my-1 prose-a:font-medium prose-a:text-zinc-950 prose-a:underline prose-a:underline-offset-4"
             // eslint-disable-next-line react/no-danger
             dangerouslySetInnerHTML={{ __html: contentHtml }}
           />
         ) : snippet ? (
-          <p className="mt-6 text-base leading-7 text-zinc-700">{snippet}</p>
+          <p className="mt-8 text-base leading-7 text-zinc-700">{snippet}</p>
         ) : null}
-
-        <div className="mt-8 flex flex-col gap-3 sm:flex-row">
-          <a
-            href={found.link}
-            target="_blank"
-            rel="noreferrer"
-            className="inline-flex items-center justify-center rounded-full bg-zinc-950 px-5 py-2.5 text-sm font-medium text-white hover:bg-zinc-800"
-          >
-            read full issue (beehiiv)
-          </a>
-          <Link
-            href={`/${feed.slug}#subscribe`}
-            className="inline-flex items-center justify-center rounded-full border border-zinc-200 bg-white px-5 py-2.5 text-sm font-medium text-zinc-900 hover:bg-zinc-50"
-          >
-            get it in your inbox
-          </Link>
-        </div>
 
         <div className="mt-12 rounded-3xl border border-zinc-200 bg-white p-8" id="subscribe">
           <div className="text-sm font-semibold text-zinc-900">Subscribe</div>
