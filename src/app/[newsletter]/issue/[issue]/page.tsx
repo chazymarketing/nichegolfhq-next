@@ -36,17 +36,44 @@ function sanitizeHtml(input?: string) {
   // - remove scripts/styles/iframes
   // - strip on* handlers
   // - strip javascript: URLs
+  // - strip inline style/align/width attributes so our typography controls layout
   // This is not perfect, but is a good MVP safety baseline.
   let html = input;
+
+  // Remove dangerous/embedded tags entirely
   html = html.replace(/<\s*(script|style|iframe)[^>]*>[\s\S]*?<\s*\/\s*\1\s*>/gi, "");
+
+  // Strip event handlers
   html = html.replace(/\son\w+\s*=\s*"[^"]*"/gi, "");
   html = html.replace(/\son\w+\s*=\s*'[^']*'/gi, "");
   html = html.replace(/\son\w+\s*=\s*[^\s>]+/gi, "");
-  // Remove inline styles so Tailwind typography can control spacing.
+
+  // Remove inline styles + layout-ish attributes
   html = html.replace(/\sstyle\s*=\s*"[^"]*"/gi, "");
   html = html.replace(/\sstyle\s*=\s*'[^']*'/gi, "");
+  html = html.replace(/\salign\s*=\s*"[^"]*"/gi, "");
+  html = html.replace(/\salign\s*=\s*'[^']*'/gi, "");
+  html = html.replace(/\swidth\s*=\s*"[^"]*"/gi, "");
+  html = html.replace(/\swidth\s*=\s*'[^']*'/gi, "");
+  html = html.replace(/\sheight\s*=\s*"[^"]*"/gi, "");
+  html = html.replace(/\sheight\s*=\s*'[^']*'/gi, "");
+
+  // Strip javascript: URLs
   html = html.replace(/(href|src)\s*=\s*"\s*javascript:[^"]*"/gi, "$1=\"#\"");
   html = html.replace(/(href|src)\s*=\s*'\s*javascript:[^']*'/gi, "$1='#'");
+
+  // Normalize Beehiiv spacing: many posts use <br> runs instead of paragraphs.
+  // Convert 2+ <br> in a row to paragraph breaks.
+  html = html.replace(/(<br\s*\/?\s*>\s*){2,}/gi, "</p><p>");
+
+  // Remove empty paragraphs
+  html = html.replace(/<p>\s*(?:&nbsp;|\s)*\s*<\/p>/gi, "");
+
+  // If there are no <p> tags at all, wrap the whole thing
+  if (!/<\s*p\b/i.test(html)) {
+    html = `<p>${html}</p>`;
+  }
+
   return html;
 }
 
@@ -186,10 +213,12 @@ export default async function IssuePage({
                 prose-headings:tracking-tight prose-headings:scroll-mt-24
                 prose-h2:mt-10 prose-h2:mb-4 prose-h3:mt-8 prose-h3:mb-3
                 prose-p:my-6 prose-p:leading-7
+                prose-div:my-6
                 prose-ul:my-6 prose-ol:my-6 prose-li:my-2
                 prose-hr:my-10
                 prose-blockquote:my-8
                 prose-img:my-8 prose-img:mx-auto prose-img:rounded-2xl
+                prose-table:mx-auto prose-table:w-full
                 prose-a:font-medium prose-a:text-zinc-950 prose-a:underline prose-a:underline-offset-4"
               // eslint-disable-next-line react/no-danger
               dangerouslySetInnerHTML={{ __html: contentHtml }}
