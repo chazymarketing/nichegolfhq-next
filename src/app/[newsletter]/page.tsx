@@ -107,7 +107,7 @@ export default async function NewsletterPage({
 
         <div className="mt-10 grid grid-cols-1 gap-4 md:grid-cols-2">
           {items.length ? (
-            items.map((it) => <IssueCard key={it.link + it.title} item={it} />)
+            items.map((it) => <IssueCard key={it.link + it.title} item={it} newsletterSlug={feed.slug} />)
           ) : (
             <div className="rounded-2xl border border-zinc-200 bg-white p-6 text-sm text-zinc-600">
               No posts yet (or RSS URL not configured). Once we drop in the BeeHiiv RSS URL, this will populate automatically.

@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import type { RssItem } from "@/lib/rss";
 
 function cleanSnippet(input?: string) {
@@ -20,15 +21,25 @@ function cleanSnippet(input?: string) {
   return s;
 }
 
-export function IssueCard({ item }: { item: RssItem }) {
+function issueSlugFromUrl(urlStr: string): string {
+  try {
+    const u = new URL(urlStr);
+    const parts = u.pathname.split("/").filter(Boolean);
+    return parts[parts.length - 1] || "issue";
+  } catch {
+    return "issue";
+  }
+}
+
+export function IssueCard({ item, newsletterSlug }: { item: RssItem; newsletterSlug: string }) {
   const snippet = cleanSnippet(item.contentSnippet);
 
+  const issueSlug = issueSlugFromUrl(item.link);
+
   return (
-    <a
-      href={item.link}
-      target="_blank"
-      rel="noreferrer"
-      className="group overflow-hidden rounded-2xl border border-zinc-200 bg-white transition hover:border-zinc-300 hover:shadow-sm"
+    <Link
+      href={`/${newsletterSlug}/issue/${issueSlug}`}
+      className="group block overflow-hidden rounded-2xl border border-zinc-200 bg-white transition hover:border-zinc-300 hover:shadow-sm"
     >
       {item.imageUrl ? (
         <div className="relative aspect-[16/10] w-full overflow-hidden bg-zinc-100">
@@ -55,6 +66,6 @@ export function IssueCard({ item }: { item: RssItem }) {
           </p>
         ) : null}
       </div>
-    </a>
+    </Link>
   );
 }

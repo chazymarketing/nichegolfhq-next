@@ -89,7 +89,9 @@ export default async function Home() {
 
               <div className="mx-auto mt-5 grid w-full max-w-xl grid-cols-1 gap-4">
                 {items.length ? (
-                  items.map((it) => <IssueCard key={it.link + it.title} item={it} />)
+                  items.map((it) => (
+                    <IssueCard key={it.link + it.title} item={it} newsletterSlug={feed.slug} />
+                  ))
                 ) : (
                   <div className="rounded-2xl border border-zinc-200 bg-zinc-50 p-5 text-sm text-zinc-600">
                     No posts yet (or RSS URL not configured).
