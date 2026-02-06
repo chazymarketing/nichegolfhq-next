@@ -7,7 +7,7 @@ const sans = Inter({ subsets: ["latin"], variable: "--font-sans" });
 const serif = Source_Serif_4({ subsets: ["latin"], variable: "--font-serif" });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://nichegolfhq.com"),
+  metadataBase: new URL("https://www.nichegolfhq.com"),
   title: {
     default: "nichegolfHQ",
     template: "%s | nichegolfHQ",

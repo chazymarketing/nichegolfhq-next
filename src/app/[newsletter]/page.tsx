@@ -21,6 +21,9 @@ export async function generateMetadata({
   return {
     title: `${feed.name} — nichegolfHQ`,
     description: feed.tagline,
+    alternates: {
+      canonical: `/${feed.slug}`,
+    },
   };
 }
 
