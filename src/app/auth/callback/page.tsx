@@ -1,10 +1,10 @@
 import { Suspense } from "react";
-import { notFound } from "next/navigation";
+import { redirect } from "next/navigation";
 import { isCommunityEnabled } from "@/lib/featureFlags";
 import { CallbackClient } from "./CallbackClient";
 
 export default function AuthCallbackPage() {
-  if (!isCommunityEnabled()) notFound();
+  if (!isCommunityEnabled()) redirect("/");
 
   return (
     <Suspense fallback={null}>
