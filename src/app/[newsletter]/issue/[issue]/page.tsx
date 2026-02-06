@@ -30,6 +30,23 @@ function cleanSnippet(input?: string) {
     .trim();
 }
 
+function sanitizeHtml(input?: string) {
+  if (!input) return "";
+  // Minimal, pragmatic sanitizer (no deps):
+  // - remove scripts/styles/iframes
+  // - strip on* handlers
+  // - strip javascript: URLs
+  // This is not perfect, but is a good MVP safety baseline.
+  let html = input;
+  html = html.replace(/<\s*(script|style|iframe)[^>]*>[\s\S]*?<\s*\/\s*\1\s*>/gi, "");
+  html = html.replace(/\son\w+\s*=\s*"[^"]*"/gi, "");
+  html = html.replace(/\son\w+\s*=\s*'[^']*'/gi, "");
+  html = html.replace(/\son\w+\s*=\s*[^\s>]+/gi, "");
+  html = html.replace(/(href|src)\s*=\s*"\s*javascript:[^"]*"/gi, "$1=\"#\"");
+  html = html.replace(/(href|src)\s*=\s*'\s*javascript:[^']*'/gi, "$1='#'");
+  return html;
+}
+
 export async function generateMetadata({
   params,
 }: {
@@ -96,6 +113,7 @@ export default async function IssuePage({
   }
 
   const snippet = cleanSnippet(found.contentSnippet);
+  const contentHtml = sanitizeHtml(found.contentHtml);
 
   return (
     <SiteShell brandSlug={feed.slug}>
@@ -104,7 +122,15 @@ export default async function IssuePage({
         <h1 className="mt-3 text-3xl font-semibold tracking-tight md:text-4xl">{found.title}</h1>
         <div className="mt-3 text-sm text-zinc-500">{found.isoDate ? new Date(found.isoDate).toLocaleDateString() : ""}</div>
 
-        {snippet ? <p className="mt-6 text-base leading-7 text-zinc-700">{snippet}</p> : null}
+        {contentHtml ? (
+          <div
+            className="prose prose-zinc mt-8 max-w-none prose-headings:tracking-tight prose-a:font-medium prose-a:text-zinc-950 prose-a:underline prose-a:underline-offset-4"
+            // eslint-disable-next-line react/no-danger
+            dangerouslySetInnerHTML={{ __html: contentHtml }}
+          />
+        ) : snippet ? (
+          <p className="mt-6 text-base leading-7 text-zinc-700">{snippet}</p>
+        ) : null}
 
         <div className="mt-8 flex flex-col gap-3 sm:flex-row">
           <a
@@ -138,7 +164,7 @@ export default async function IssuePage({
         </div>
       </article>
 
-      {/* Lightweight structured data (snippet-only for now) */}
+      {/* Structured data */}
       <script
         type="application/ld+json"
         // eslint-disable-next-line react/no-danger

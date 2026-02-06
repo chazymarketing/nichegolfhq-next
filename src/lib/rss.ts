@@ -5,6 +5,7 @@ export type RssItem = {
   link: string;
   isoDate?: string;
   contentSnippet?: string;
+  contentHtml?: string;
   imageUrl?: string;
 };
 
@@ -65,11 +66,19 @@ export async function fetchFeedItems(rssUrl: string, limit = 8): Promise<RssItem
       // BeeHiiv sometimes puts a hero image in the HTML body too; if needed we can
       // parse contentEncoded and extract first <img>. Keeping it simple for now.
 
+      const contentHtml =
+        typeof anyIt?.contentEncoded === "string"
+          ? anyIt.contentEncoded
+          : typeof (it as any)?.content === "string"
+            ? (it as any).content
+            : undefined;
+
       return {
         title: it.title || "(untitled)",
         link: it.link || "#",
         isoDate: anyIt.isoDate,
         contentSnippet: anyIt.contentSnippet,
+        contentHtml,
         imageUrl,
       };
     });
