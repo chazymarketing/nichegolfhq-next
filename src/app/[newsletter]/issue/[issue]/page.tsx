@@ -3,6 +3,7 @@ import type { Metadata } from "next";
 import { SiteShell } from "@/components/SiteShell";
 import { getFeedBySlug } from "@/lib/feeds";
 import { fetchFeedItems } from "@/lib/rss";
+import { normalizeBeehiivHtml } from "@/lib/beehiiv";
 import { getSupabaseServer } from "@/lib/supabaseServer";
 
 export function generateStaticParams() {
@@ -31,60 +32,8 @@ function cleanSnippet(input?: string) {
 }
 
 function sanitizeHtml(input?: string) {
-  if (!input) return "";
-  // Minimal, pragmatic sanitizer (no deps):
-  // - remove scripts/styles/iframes
-  // - strip on* handlers
-  // - strip javascript: URLs
-  // - strip inline style/align/width attributes so our typography controls layout
-  // This is not perfect, but is a good MVP safety baseline.
-  let html = input;
-
-  // Remove dangerous/embedded tags entirely
-  html = html.replace(/<\s*(script|style|iframe)[^>]*>[\s\S]*?<\s*\/\s*\1\s*>/gi, "");
-
-  // Beehiiv wrapper normalization: keep only the body contents when present.
-  // Beehiiv RSS often wraps content like: <div class='beehiiv__body'>...</div>
-  const m = html.match(/<div[^>]+class=("|')[^"']*beehiiv__body[^"']*("|')[^>]*>/i);
-  if (m && m.index != null) {
-    html = html.slice(m.index + m[0].length);
-    // Drop trailing wrapper divs.
-    html = html.replace(/\s*<\/div>\s*<\/div>\s*$/i, "");
-    html = html.replace(/\s*<\/div>\s*$/i, "");
-  }
-
-  // Strip event handlers
-  html = html.replace(/\son\w+\s*=\s*"[^"]*"/gi, "");
-  html = html.replace(/\son\w+\s*=\s*'[^']*'/gi, "");
-  html = html.replace(/\son\w+\s*=\s*[^\s>]+/gi, "");
-
-  // Remove inline styles + layout-ish attributes
-  html = html.replace(/\sstyle\s*=\s*"[^"]*"/gi, "");
-  html = html.replace(/\sstyle\s*=\s*'[^']*'/gi, "");
-  html = html.replace(/\salign\s*=\s*"[^"]*"/gi, "");
-  html = html.replace(/\salign\s*=\s*'[^']*'/gi, "");
-  html = html.replace(/\swidth\s*=\s*"[^"]*"/gi, "");
-  html = html.replace(/\swidth\s*=\s*'[^']*'/gi, "");
-  html = html.replace(/\sheight\s*=\s*"[^"]*"/gi, "");
-  html = html.replace(/\sheight\s*=\s*'[^']*'/gi, "");
-
-  // Strip javascript: URLs
-  html = html.replace(/(href|src)\s*=\s*"\s*javascript:[^"]*"/gi, "$1=\"#\"");
-  html = html.replace(/(href|src)\s*=\s*'\s*javascript:[^']*'/gi, "$1='#'");
-
-  // Normalize Beehiiv spacing: many posts use <br> runs instead of paragraphs.
-  // Convert 2+ <br> in a row to paragraph breaks.
-  html = html.replace(/(<br\s*\/?\s*>\s*){2,}/gi, "</p><p>");
-
-  // Remove empty paragraphs
-  html = html.replace(/<p>\s*(?:&nbsp;|\s)*\s*<\/p>/gi, "");
-
-  // If there are no <p> tags at all, wrap the whole thing
-  if (!/<\s*p\b/i.test(html)) {
-    html = `<p>${html}</p>`;
-  }
-
-  return html;
+  // Delegate to cheerio-based Beehiiv normalizer for consistent, premium layout.
+  return normalizeBeehiivHtml(input);
 }
 
 export async function generateMetadata({
