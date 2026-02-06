@@ -168,17 +168,7 @@ export default async function IssuePage({
         {contentHtml ? (
           <div className="mx-auto mt-12 w-full max-w-2xl rounded-3xl border border-zinc-200 bg-white px-7 py-8 md:px-10 md:py-10">
             <div
-              className="prose prose-zinc prose-lg max-w-none leading-7
-                prose-headings:tracking-tight prose-headings:scroll-mt-24
-                prose-h2:mt-10 prose-h2:mb-4 prose-h3:mt-8 prose-h3:mb-3
-                prose-p:my-6 prose-p:leading-7
-                prose-div:my-6
-                prose-ul:my-6 prose-ol:my-6 prose-li:my-2
-                prose-hr:my-10
-                prose-blockquote:my-8
-                prose-img:my-8 prose-img:mx-auto prose-img:rounded-2xl
-                prose-table:mx-auto prose-table:w-full
-                prose-a:font-medium prose-a:text-zinc-950 prose-a:underline prose-a:underline-offset-4"
+              className="issue-content"
               // eslint-disable-next-line react/no-danger
               dangerouslySetInnerHTML={{ __html: contentHtml }}
             />

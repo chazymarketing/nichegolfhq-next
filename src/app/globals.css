@@ -33,3 +33,101 @@ h2,
 h3 {
   font-family: var(--font-serif);
 }
+
+/* Premium article typography (Tailwind Typography isn't installed) */
+.issue-content {
+  font-size: 1.125rem;
+  line-height: 1.85;
+  color: rgb(39 39 42); /* zinc-800 */
+}
+
+.issue-content > * {
+  margin-top: 1.25rem;
+  margin-bottom: 1.25rem;
+}
+
+.issue-content p {
+  margin-top: 1.25rem;
+  margin-bottom: 1.25rem;
+}
+
+.issue-content h1,
+.issue-content h2,
+.issue-content h3 {
+  margin-top: 2.5rem;
+  margin-bottom: 1rem;
+  letter-spacing: -0.01em;
+  line-height: 1.2;
+}
+
+.issue-content h1 {
+  font-size: 2rem;
+}
+.issue-content h2 {
+  font-size: 1.6rem;
+}
+.issue-content h3 {
+  font-size: 1.25rem;
+}
+
+.issue-content hr {
+  margin-top: 2.75rem;
+  margin-bottom: 2.75rem;
+  border: 0;
+  border-top: 1px solid rgb(228 228 231); /* zinc-200 */
+}
+
+.issue-content ul,
+.issue-content ol {
+  margin-top: 1.25rem;
+  margin-bottom: 1.25rem;
+  padding-left: 1.5rem;
+}
+
+.issue-content li {
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.issue-content a {
+  color: rgb(9 9 11);
+  text-decoration: underline;
+  text-underline-offset: 4px;
+  font-weight: 500;
+}
+
+.issue-content figure {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.issue-content img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 1rem;
+  max-width: 100%;
+  height: auto;
+}
+
+.issue-content blockquote {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  padding-left: 1rem;
+  border-left: 3px solid rgb(228 228 231);
+  color: rgb(63 63 70);
+}
+
+.issue-content table {
+  width: 100%;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  border-collapse: collapse;
+}
+
+.issue-content th,
+.issue-content td {
+  border: 1px solid rgb(228 228 231);
+  padding: 0.75rem;
+  vertical-align: top;
+}
