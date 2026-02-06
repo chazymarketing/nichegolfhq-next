@@ -43,6 +43,16 @@ function sanitizeHtml(input?: string) {
   // Remove dangerous/embedded tags entirely
   html = html.replace(/<\s*(script|style|iframe)[^>]*>[\s\S]*?<\s*\/\s*\1\s*>/gi, "");
 
+  // Beehiiv wrapper normalization: keep only the body contents when present.
+  // Beehiiv RSS often wraps content like: <div class='beehiiv__body'>...</div>
+  const m = html.match(/<div[^>]+class=("|')[^"']*beehiiv__body[^"']*("|')[^>]*>/i);
+  if (m && m.index != null) {
+    html = html.slice(m.index + m[0].length);
+    // Drop trailing wrapper divs.
+    html = html.replace(/\s*<\/div>\s*<\/div>\s*$/i, "");
+    html = html.replace(/\s*<\/div>\s*$/i, "");
+  }
+
   // Strip event handlers
   html = html.replace(/\son\w+\s*=\s*"[^"]*"/gi, "");
   html = html.replace(/\son\w+\s*=\s*'[^']*'/gi, "");
