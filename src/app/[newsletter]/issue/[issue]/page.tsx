@@ -156,8 +156,9 @@ export default async function IssuePage({
 
   return (
     <SiteShell brandSlug={feed.slug}>
-      <article className="mx-auto flex w-full max-w-3xl flex-col items-center px-5 py-16">
-        <header className="mx-auto w-full max-w-2xl text-center">
+      <article className="w-full px-5 py-16">
+        <div className="mx-auto w-full max-w-2xl">
+          <header className="text-center">
           <div className="text-xs font-semibold uppercase tracking-wider text-zinc-600">{feed.name}</div>
           <h1 className="mt-3 text-3xl font-semibold tracking-tight md:text-4xl">{issue.title}</h1>
           <div className="mt-3 text-sm text-zinc-500">
@@ -165,25 +166,28 @@ export default async function IssuePage({
           </div>
         </header>
 
-        {contentHtml ? (
-          <div className="mx-auto mt-12 w-full max-w-2xl rounded-3xl border border-zinc-200 bg-white px-7 py-8 md:px-10 md:py-10">
+          {contentHtml ? (
+            <div className="mt-12 w-full rounded-3xl border border-zinc-200 bg-white px-7 py-8 md:px-10 md:py-10">
             <div
               className="issue-content"
               // eslint-disable-next-line react/no-danger
               dangerouslySetInnerHTML={{ __html: contentHtml }}
             />
           </div>
-        ) : snippet ? (
-          <div className="mx-auto mt-12 w-full max-w-2xl rounded-3xl border border-zinc-200 bg-white px-7 py-8 md:px-10 md:py-10">
+          ) : snippet ? (
+            <div className="mt-12 w-full rounded-3xl border border-zinc-200 bg-white px-7 py-8 md:px-10 md:py-10">
             <p className="text-base leading-7 text-zinc-700">{snippet}</p>
           </div>
-        ) : null}
+          ) : null}
 
-
-        <div className="mt-10">
-          <Link href={`/${feed.slug}`} className="text-sm font-medium text-zinc-900 underline underline-offset-2 hover:text-zinc-700">
-            back to {feed.name}
-          </Link>
+          <div className="mt-10">
+            <Link
+              href={`/${feed.slug}`}
+              className="text-sm font-medium text-zinc-900 underline underline-offset-2 hover:text-zinc-700"
+            >
+              back to {feed.name}
+            </Link>
+          </div>
         </div>
       </article>
 
