@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { SiteShell } from "@/components/SiteShell";
 import { IssueCard } from "@/components/IssueCard";
 import { BeehiivEmbed } from "@/components/BeehiivEmbed";
@@ -209,9 +210,7 @@ export default async function NewsletterPage({
           <div className="flex flex-col gap-6 md:flex-row md:items-start md:justify-between">
             <div className="max-w-xl">
               <div className="text-sm font-semibold text-zinc-900">Subscribe</div>
-              <p className="mt-2 text-sm text-zinc-600">
-                Get {feed.name} in your inbox. Free.
-              </p>
+              <p className="mt-2 text-sm text-zinc-600">Get {feed.name} in your inbox. Free.</p>
               <p className="mt-2 text-xs text-zinc-500">No spam. Unsubscribe anytime.</p>
 
               {(feed.xProfileUrl || feed.instagramProfileUrl) && (
@@ -241,12 +240,25 @@ export default async function NewsletterPage({
             </div>
 
             <div className="w-full md:max-w-lg">
-              <BeehiivEmbed
-                src={feed.subscribeEmbedUrl}
-                height={feed.subscribeEmbedHeight}
-                title={`${feed.name} subscribe`}
-              />
+              <BeehiivEmbed src={feed.subscribeEmbedUrl} height={feed.subscribeEmbedHeight} title={`${feed.name} subscribe`} />
             </div>
+          </div>
+        </div>
+
+        <div className="mx-auto mt-10 max-w-3xl">
+          <div className="flex items-center justify-center">
+            <div className="text-xs font-semibold uppercase tracking-wider text-zinc-500">explore</div>
+          </div>
+          <div className="mt-3 flex flex-wrap items-center justify-center gap-2">
+            {FEEDS.filter((f) => f.slug !== feed.slug).map((f) => (
+              <Link
+                key={f.slug}
+                href={`/${f.slug}`}
+                className="inline-flex items-center justify-center rounded-full border border-zinc-200 bg-white px-4 py-2 text-sm font-medium text-zinc-900 hover:bg-zinc-50"
+              >
+                {f.name}
+              </Link>
+            ))}
           </div>
         </div>
       </div>
