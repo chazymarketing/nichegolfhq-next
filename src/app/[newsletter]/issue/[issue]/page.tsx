@@ -42,6 +42,9 @@ function sanitizeHtml(input?: string) {
   html = html.replace(/\son\w+\s*=\s*"[^"]*"/gi, "");
   html = html.replace(/\son\w+\s*=\s*'[^']*'/gi, "");
   html = html.replace(/\son\w+\s*=\s*[^\s>]+/gi, "");
+  // Remove inline styles so Tailwind typography can control spacing.
+  html = html.replace(/\sstyle\s*=\s*"[^"]*"/gi, "");
+  html = html.replace(/\sstyle\s*=\s*'[^']*'/gi, "");
   html = html.replace(/(href|src)\s*=\s*"\s*javascript:[^"]*"/gi, "$1=\"#\"");
   html = html.replace(/(href|src)\s*=\s*'\s*javascript:[^']*'/gi, "$1='#'");
   return html;
@@ -118,18 +121,34 @@ export default async function IssuePage({
   return (
     <SiteShell brandSlug={feed.slug}>
       <article className="mx-auto w-full max-w-3xl px-5 py-16">
-        <div className="text-xs font-semibold uppercase tracking-wider text-zinc-600">{feed.name}</div>
-        <h1 className="mt-3 text-3xl font-semibold tracking-tight md:text-4xl">{found.title}</h1>
-        <div className="mt-3 text-sm text-zinc-500">{found.isoDate ? new Date(found.isoDate).toLocaleDateString() : ""}</div>
+        <header className="mx-auto max-w-2xl text-center">
+          <div className="text-xs font-semibold uppercase tracking-wider text-zinc-600">{feed.name}</div>
+          <h1 className="mt-3 text-3xl font-semibold tracking-tight md:text-4xl">{found.title}</h1>
+          <div className="mt-3 text-sm text-zinc-500">{found.isoDate ? new Date(found.isoDate).toLocaleDateString() : ""}</div>
+        </header>
 
         {contentHtml ? (
           <div
-            className="prose prose-zinc mx-auto mt-10 max-w-none leading-7 prose-headings:tracking-tight prose-p:leading-7 prose-p:my-4 prose-ul:my-4 prose-ol:my-4 prose-li:my-1 prose-a:font-medium prose-a:text-zinc-950 prose-a:underline prose-a:underline-offset-4"
-            // eslint-disable-next-line react/no-danger
-            dangerouslySetInnerHTML={{ __html: contentHtml }}
-          />
+            className="mx-auto mt-12 max-w-2xl rounded-3xl border border-zinc-200 bg-white px-7 py-8 md:px-10 md:py-10"
+          >
+            <div
+              className="prose prose-zinc prose-lg max-w-none leading-7
+                prose-headings:tracking-tight prose-headings:scroll-mt-24
+                prose-h2:mt-10 prose-h2:mb-4 prose-h3:mt-8 prose-h3:mb-3
+                prose-p:my-6 prose-p:leading-7
+                prose-ul:my-6 prose-ol:my-6 prose-li:my-2
+                prose-hr:my-10
+                prose-blockquote:my-8
+                prose-img:my-8 prose-img:mx-auto prose-img:rounded-2xl
+                prose-a:font-medium prose-a:text-zinc-950 prose-a:underline prose-a:underline-offset-4"
+              // eslint-disable-next-line react/no-danger
+              dangerouslySetInnerHTML={{ __html: contentHtml }}
+            />
+          </div>
         ) : snippet ? (
-          <p className="mt-8 text-base leading-7 text-zinc-700">{snippet}</p>
+          <div className="mx-auto mt-12 max-w-2xl rounded-3xl border border-zinc-200 bg-white px-7 py-8 md:px-10 md:py-10">
+            <p className="text-base leading-7 text-zinc-700">{snippet}</p>
+          </div>
         ) : null}
 
         <div className="mt-12 rounded-3xl border border-zinc-200 bg-white p-8" id="subscribe">
