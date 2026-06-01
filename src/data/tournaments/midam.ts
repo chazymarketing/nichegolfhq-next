@@ -959,7 +959,21 @@ export const MIDAM_TOURNAMENTS: Tournament[] = [
       { label: "Invite only — submit application", href: "https://andersonmemorial.org/" },
     ],
     golfGeniusUrl: "https://andersonmemorial.org/",
-    news: [],
+    news: [
+      {
+        slug: "anderson-memorial-2026-field-preview",
+        title: "Anderson Memorial Preview: 89th Edition Brings Stacked Field to Winged Foot",
+        date: "2026-06-01",
+        author: "midamgolfHQ Staff",
+        summary:
+          "The 89th Anderson Memorial Four-Ball tees off Wednesday at Winged Foot with 56 championship teams competing for one of amateur golf's most coveted titles.",
+        content: [
+          "The 89th Anderson Memorial Four-Ball tees off Wednesday at Winged Foot Golf Club in Mamaroneck, New York, with 56 championship-division teams set to compete in one of amateur golf's most prestigious invitation-only events. Two days of stroke play on Winged Foot's West and East courses will seed the match play bracket, with quarterfinals, semifinals, and finals running through Sunday. Live scoring and full coverage will be available on the [midamgolfHQ tournament hub](/midamgolfhq/anderson-memorial-four-ball).",
+          "Defending champions Scott Strickland and Jimmy Chestnut of Oakland Hills return seeking a third straight title after winning in 2024 and 2025. They'll face a loaded field that includes 2023 champions Trevor Randolph and Chris DeJohn of Arcola, Trip Kuehne and Patrick Barley from Vaquero Club, Johnny Spellerberg and Andy Sajevic from Omaha Country Club, and Matthew Mattare and Anthony Cordaro from Saucon Valley. International flavor comes from teams representing Lima Golf Club in Peru and Club de Golf los Liones in Chile.",
+          "The field also features Haymes Snedeker and Brinson Holder from The Lakewood Club, Drew Evans teaming with Brad Mason from Royal Oaks, and three Winged Foot member teams playing on home turf. With match play always producing drama at this level, the road to a third consecutive Strickland/Chestnut title won't be easy. midamgolfHQ will be tracking the action all week from Mamaroneck.",
+        ],
+      },
+    ],
     pastResults: [
       { year: 2025, champion: "Scott Strickland / Jimmy Chestnut" },
       { year: 2024, champion: "Scott Strickland / Jimmy Chestnut" },
