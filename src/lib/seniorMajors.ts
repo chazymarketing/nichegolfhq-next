@@ -241,7 +241,7 @@ export const SENIOR_MAJOR_EVENTS_2026: SeniorMajorEvent[] = [
     slug: "anderson-memorial-four-ball-senior-division",
     name: "Anderson Memorial Four-Ball (Senior Division)",
     month: "June 2026",
-    liveStatus: "next",
+    liveStatus: "live",
     startDate: "2026-06-03",
     endDate: "2026-06-07",
     dates2026: "June 3-7, 2026",
@@ -252,6 +252,7 @@ export const SENIOR_MAJOR_EVENTS_2026: SeniorMajorEvent[] = [
     courseYardage: 7426,
     courseDesigner: "A.W. Tillinghast",
     overview: "The senior division of the Anderson Memorial Four-Ball gathers 55-and-over amateurs for two-man better-ball match play at Winged Foot Golf Club in Mamaroneck, New York. The 2026 event runs June 3-7.",
+    golfGeniusUrl: "https://www.golfgenius.com/pages/12365089316366476022",
     howToPlay: [{ label: "Invite only — submit application", href: "https://andersonmemorial.org/" }],
   },
   {

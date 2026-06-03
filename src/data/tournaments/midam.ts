@@ -938,7 +938,7 @@ export const MIDAM_TOURNAMENTS: Tournament[] = [
     slug: "anderson-memorial-four-ball",
     name: "Anderson Memorial Four-Ball",
     channel: "midam",
-    liveStatus: "next",
+    liveStatus: "live",
     logo: "/brand/Anderson Memorial.jpeg",
     month: 6,
     dates2026: "June 3-7, 2026",
@@ -958,7 +958,7 @@ export const MIDAM_TOURNAMENTS: Tournament[] = [
     howToPlay: [
       { label: "Invite only — submit application", href: "https://andersonmemorial.org/" },
     ],
-    golfGeniusUrl: "https://andersonmemorial.org/",
+    golfGeniusUrl: "https://www.golfgenius.com/pages/12365089316366476022",
     news: [
       {
         slug: "anderson-memorial-2026-field-preview",
