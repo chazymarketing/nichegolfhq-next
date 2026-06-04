@@ -961,6 +961,18 @@ export const MIDAM_TOURNAMENTS: Tournament[] = [
     golfGeniusUrl: "https://www.golfgenius.com/pages/12365089316366476022",
     news: [
       {
+        slug: "anderson-memorial-2026-round-1-recap",
+        title: "Anderson Memorial Round 1 Recap: Three Teams Share Lead at 4-Under at Winged Foot",
+        date: "2026-06-04",
+        author: "midamgolfHQ Staff",
+        summary:
+          "Three teams posted 4-under 66s on Winged Foot's West Course to share the first-round lead at the 89th Anderson Memorial Four-Ball.",
+        content: [
+          "Three teams share the first-round lead at the 89th Anderson Memorial Four-Ball after posting 4-under 66s on Winged Foot's West Course Thursday. Tyler and Trent Leon of Shady Oaks Country Club, Darin Goldstein and Michael Buttacavoli of La Gorce Country Club, and Brooks Colquitt and Sam Lape of Cherokee Town and Country Club all finished the day in a three-way tie at the top. One shot back at 3-under sit four teams, including Johnny Spellerberg and Andy Sajevic of Omaha Country Club and the Winged Foot home team of Timothy Hegarty and Ben Loomis. Live scoring and full coverage are available on the [midamgolfHQ tournament hub](/midamgolfhq/anderson-memorial-four-ball).",
+          "Two-time defending champions Scott Strickland and Jimmy Chestnut of Oakland Hills sit in a tie for eighth at 2-under 68, very much in the hunt heading into Friday's second round on the East Course. The top teams after 36 holes of stroke play will advance to the match play bracket, with quarterfinals, semifinals, and the championship final set for the weekend. midamgolfHQ will be tracking the action all week from Mamaroneck.",
+        ],
+      },
+      {
         slug: "anderson-memorial-2026-field-preview",
         title: "Anderson Memorial Preview: 89th Edition Brings Stacked Field to Winged Foot",
         date: "2026-06-01",
