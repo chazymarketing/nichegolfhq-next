@@ -961,6 +961,18 @@ export const MIDAM_TOURNAMENTS: Tournament[] = [
     golfGeniusUrl: "https://www.golfgenius.com/pages/12365089316366476022",
     news: [
       {
+        slug: "anderson-memorial-2026-round-2-recap",
+        title: "Anderson Memorial Round 2 Recap: Goldstein and Buttacavoli Grab Medalist Honors, Match Play Set for Saturday",
+        date: "2026-06-05",
+        author: "midamgolfHQ Staff",
+        summary:
+          "Darin Goldstein and Michael Buttacavoli of La Gorce Country Club claimed stroke play medalist honors at 8-under 132, with match play beginning Saturday at Winged Foot.",
+        content: [
+          "Darin Goldstein and Michael Buttacavoli of La Gorce Country Club fired a second straight 4-under 66, this time on Winged Foot's East Course, to claim stroke play medalist honors at 8-under 132 heading into match play at the 89th Anderson Memorial Four-Ball. Three teams sit one shot back at 7-under 133, including the Winged Foot home team of Timothy Hegarty and Ben Loomis, Hayes Brown and Bobby Wyatt of Capital City Club (who posted the round of the day at 6-under 64), and Max Buckley and Tobin Whitman of Westchester Country Club. Live scoring and full coverage are available on the [midamgolfHQ tournament hub](/midamgolfhq/anderson-memorial-four-ball).",
+          "Five teams are tied at 6-under 134, including first-round co-leaders Brooks Colquitt and Sam Lape of Cherokee Town and Country Club and the surging Jason Sigler and Nick Cassini of Atlanta Athletic Club, who also shot 64 on the East Course. A tiebreaker will determine the final match play berth, with first-round co-leaders Tyler and Trent Leon of Shady Oaks sitting T11 at 4-under 136 after an even-par second round. Match play begins Saturday morning on the East Course, with quarterfinals, semifinals, and the final running through Sunday.",
+        ],
+      },
+      {
         slug: "anderson-memorial-2026-round-1-recap",
         title: "Anderson Memorial Round 1 Recap: Three Teams Share Lead at 4-Under at Winged Foot",
         date: "2026-06-04",
