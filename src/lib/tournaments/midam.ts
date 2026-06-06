@@ -26,6 +26,16 @@ export function getLiveMidAmTournament(): Tournament | undefined {
   return MIDAM_TOURNAMENTS.find((t) => t.liveStatus === "live") || MIDAM_TOURNAMENTS.find((t) => t.liveStatus === "next");
 }
 
+// Returns every Mid-Am tournament currently flagged as live. When none are live,
+// falls back to the single "next" event so the home-page widget still shows an
+// "Up next" card. The home page renders one card per returned tournament.
+export function listLiveMidAmTournaments(): Tournament[] {
+  const live = MIDAM_TOURNAMENTS.filter((t) => t.liveStatus === "live");
+  if (live.length > 0) return live;
+  const next = MIDAM_TOURNAMENTS.find((t) => t.liveStatus === "next");
+  return next ? [next] : [];
+}
+
 // Returns {tournament, article} for a given tournament slug + article slug, or undefined.
 export function getMidAmTournamentArticle(
   tournamentSlug: string,

@@ -6,7 +6,7 @@ import { BeehiivEmbed } from "@/components/BeehiivEmbed";
 import { AmateurRankings } from "@/components/AmateurRankings";
 import { FEEDS, getFeedBySlug } from "@/lib/feeds";
 import { fetchFeedItems } from "@/lib/rss";
-import { listMidAmTournaments, listMidAmArticles, getLiveMidAmTournament } from "@/lib/tournaments/midam";
+import { listMidAmTournaments, listMidAmArticles, listLiveMidAmTournaments } from "@/lib/tournaments/midam";
 import { ActiveTournamentWidget } from "@/components/ActiveTournamentWidget";
 import { LatestNewsSection } from "@/components/tournaments/LatestNews";
 import { JUNIOR_MAJOR_EVENTS_2026 , getLiveJuniorTournament} from "@/lib/juniorMajors";
@@ -172,11 +172,13 @@ export default async function NewsletterPage({
   const heroImage = HERO_IMAGES[feed.slug] ?? null;
 
   // Active-tournament widget: shown on midamgolfhq, juniorgolfhq, and seniorgolfhq when a tournament is flagged live.
-  const liveTournament =
-      feed.slug === "midamgolfhq" ? getLiveMidAmTournament() as Tournament :
-      feed.slug === "juniorgolfhq" ? getLiveJuniorTournament() as unknown as Tournament :
-      feed.slug === "seniorgolfhq" ? getLiveSeniorTournament() as unknown as Tournament :
-      undefined;
+  // Mid-Am can have multiple live events at once (e.g. two championships running the same weekend),
+  // so we render a card for each. Junior/senior still surface a single event.
+  const liveTournaments: Tournament[] =
+      feed.slug === "midamgolfhq" ? listLiveMidAmTournaments() :
+      feed.slug === "juniorgolfhq" ? [getLiveJuniorTournament() as unknown as Tournament].filter(Boolean) :
+      feed.slug === "seniorgolfhq" ? [getLiveSeniorTournament() as unknown as Tournament].filter(Boolean) :
+      [];
   const liveTournamentChannelPrefix = `/${feed.slug}`;
 
   // Mid-Am Latest News aggregates the most-recent articles across every
@@ -215,7 +217,7 @@ export default async function NewsletterPage({
       )}
 
       {/* -- Hero content overlay -- */}
-      <section className={`relative z-10 flex ${liveTournament ? "min-h-[55vh]" : "min-h-[70vh]"} items-center justify-center px-5`}>
+      <section className={`relative z-10 flex ${liveTournaments.length > 0 ? "min-h-[55vh]" : "min-h-[70vh]"} items-center justify-center px-5`}>
         <div className="mx-auto w-full max-w-6xl pb-14 pt-24 text-center">
           <h1
             className="font-serif text-4xl font-semibold tracking-tight text-white md:text-5xl"
@@ -307,17 +309,21 @@ export default async function NewsletterPage({
 
       {/* -- All content scrolls over the fixed hero -- */}
       <div className="relative z-10">
-        {/* -- Active Tournament Widget (renders only when a tournament is live) -- */}
-        {liveTournament ? (
+        {/* -- Active Tournament Widget (one card per live tournament) -- */}
+        {liveTournaments.length > 0 ? (
           <section className="px-5 pt-2 pb-2">
-            <div className="mx-auto max-w-2xl">
-              <h2 className="mb-6 text-center text-[11px] font-semibold uppercase tracking-[0.2em] text-white/40 drop-shadow-sm">
-                {liveTournament.liveStatus === "next" ? "Up next" : "Now playing"}
-              </h2>
-              <ActiveTournamentWidget
-                tournament={liveTournament}
-                channelPrefix={liveTournamentChannelPrefix}
-              />
+            <div className="mx-auto max-w-2xl space-y-8">
+              {liveTournaments.map((t) => (
+                <div key={t.slug}>
+                  <h2 className="mb-6 text-center text-[11px] font-semibold uppercase tracking-[0.2em] text-white/40 drop-shadow-sm">
+                    {t.liveStatus === "next" ? "Up next" : "Now playing"}
+                  </h2>
+                  <ActiveTournamentWidget
+                    tournament={t}
+                    channelPrefix={liveTournamentChannelPrefix}
+                  />
+                </div>
+              ))}
             </div>
           </section>
         ) : null}
