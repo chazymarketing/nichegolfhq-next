@@ -871,6 +871,18 @@ export const MIDAM_TOURNAMENTS: Tournament[] = [
     golfGeniusUrl: "https://www.golfgenius.com/pages/12365089316366476022",
     news: [
       {
+        slug: "anderson-memorial-2026-match-play-recap",
+        title: "Anderson Memorial Match Play Recap: Four Teams Advance to Sunday Semifinals at Winged Foot",
+        date: "2026-06-06",
+        author: "midamgolfHQ Staff",
+        summary:
+          "Match play delivered upsets and drama at Winged Foot as four teams punched their tickets to Sunday's semifinals at the 89th Anderson Memorial Four-Ball.",
+        content: [
+          "The 89th Anderson Memorial Four-Ball moved to match play Saturday at Winged Foot Golf Club, and the championship bracket delivered a day of drama on the East Course. In the morning quarterfinals, 16-seed Cavaliere and Minerva Jr. of Hudson National pulled off the day's biggest upset, knocking off top-seeded medalists Goldstein and Buttacavoli of La Gorce 1 up. Albers and McGhee of Mission Hills also advanced with a 1-up win over Larkin Jr. and Whitehead of Belle Meade, while Hegarty and Loomis (the Winged Foot home team) dispatched the Leon brothers of Shady Oaks 2&1 and Sigler and Cassini of Atlanta Athletic Club edged Day and Huntley of Country Club of North Carolina 1 up. Live scoring and full coverage are available on the [midamgolfHQ tournament hub](/midamgolfhq/anderson-memorial-four-ball).",
+          "The afternoon quarterfinals produced more decisive results. Buckley and Whitman of Westchester cruised past Alzamora and Salem of Lima Golf Club 4&3, Costanza and Esteve of Isleworth handled Meinhart and Maxwell of Canyata 2&1, Brown and Wyatt of Capital City Club rolled past their clubmates Boardman and Robinson 5&3, and Colquitt and Lape of Cherokee Town and Country Club eliminated Edgerton and Harrell of Country Club of North Carolina 2&1. Sunday's semifinals are set: Cavaliere/Minerva Jr. face Sigler/Cassini at 8:00 AM, and Costanza/Esteve take on Brown/Wyatt at 8:15 AM, with the championship final to follow. midamgolfHQ will be tracking the action all day from Mamaroneck.",
+        ],
+      },
+      {
         slug: "anderson-memorial-2026-round-2-recap",
         title: "Anderson Memorial Round 2 Recap: Goldstein and Buttacavoli Grab Medalist Honors, Match Play Set for Saturday",
         date: "2026-06-05",
