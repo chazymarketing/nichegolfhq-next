@@ -1005,6 +1005,7 @@ export const MIDAM_TOURNAMENTS: Tournament[] = [
     slug: "european-mens-mid-amateur",
     name: "European Mid-Amateur Men’s Championship",
     channel: "midam",
+    liveStatus: "live",
     logo: "/brand/European Mid Amateur.png",
     month: 6,
     dates2026: "June 4-6, 2026",
