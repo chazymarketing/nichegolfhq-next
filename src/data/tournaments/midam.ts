@@ -1005,7 +1005,7 @@ export const MIDAM_TOURNAMENTS: Tournament[] = [
     slug: "european-mens-mid-amateur",
     name: "European Mid-Amateur Men’s Championship",
     channel: "midam",
-    liveStatus: "live",
+    liveStatus: "completed",
     logo: "/brand/European Mid Amateur.png",
     month: 6,
     dates2026: "June 4-6, 2026",
@@ -1018,7 +1018,20 @@ export const MIDAM_TOURNAMENTS: Tournament[] = [
       { label: "Open entry via national federation", href: "https://www.ega-golf.ch/content/european-mid-amateur-mens-championship-9" },
     ],
     note: "Europe",
-    news: [],
+    news: [
+      {
+        slug: "european-mid-amateur-2026-final-recap",
+        title: "European Mid-Amateur Championship Recap: Tillement Wins in Playoff at Quinta do Peru",
+        date: "2026-06-06",
+        author: "midamgolfHQ Staff",
+        summary: "Pierre Tillement of France defeated Keijo Jaakola in a two-hole playoff to win the 2026 European Mid-Amateur Men's Championship at Quinta do Peru Golf Club in Portugal.",
+        content: [
+          "Pierre Tillement of France captured the 2026 European Mid-Amateur Men's Championship after defeating Finland's Keijo Jaakola in a two-hole playoff at Quinta do Peru Golf Club in Portugal. Both players finished regulation at 4-under par through 54 holes on the par-72 layout. In the playoff, the pair halved the first hole (the par-5 1st) before Tillement sealed the title with a birdie 3 on the par-3 8th, edging Jaakola's bogey 4. Live scoring and full coverage are available on the [midamgolfHQ tournament hub](/midamgolfhq/european-mens-mid-amateur).",
+          "Austria's Markus Habeler finished alone in third at even par, four shots behind the leading pair. A group of four players tied for fourth at 1-over, including Sweden's Rickard Jönsson and Hampus Wijkström, Germany's Daniel Schmieding, and France's Christophe de Grancey.",
+          "In the women's division, Germany's Pauline Stein cruised to a dominant victory at even par, finishing six clear of runner-up Alena Oppenheimer (also of Germany) at 6-over. Scotland's Jessica Ross placed third at 8-over, with Americans Shannon Burke and Lauren Greenlief among the group tied further back. midamgolfHQ will continue tracking the European mid-amateur circuit throughout the summer.",
+        ],
+      },
+    ],
     pastResults: [
       { year: 2025, champion: "Christoph Kogl" },
       { year: 2024, champion: "Markus Habeler" },
