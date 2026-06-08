@@ -848,7 +848,7 @@ export const MIDAM_TOURNAMENTS: Tournament[] = [
     slug: "anderson-memorial-four-ball",
     name: "Anderson Memorial Four-Ball",
     channel: "midam",
-    liveStatus: "live",
+    liveStatus: "completed",
     logo: "/brand/Anderson Memorial.jpeg",
     month: 6,
     dates2026: "June 3-7, 2026",
@@ -870,6 +870,18 @@ export const MIDAM_TOURNAMENTS: Tournament[] = [
     ],
     golfGeniusUrl: "https://www.golfgenius.com/pages/12365089316366476022",
     news: [
+      {
+        slug: "anderson-memorial-2026-final-recap",
+        title: "Anderson Memorial Final Recap: Costanza and Esteve Win 89th Championship at Winged Foot",
+        date: "2026-06-07",
+        author: "midamgolfHQ Staff",
+        summary:
+          "Mark Costanza and Jeronimo Esteve of Isleworth Country Club defeated Cavaliere and Minerva Jr. 3&2 to win the 89th Anderson Memorial Four-Ball at Winged Foot.",
+        content: [
+          "Mark Costanza and Jeronimo Esteve of Isleworth Country Club captured the 89th Anderson Memorial Four-Ball, defeating Christian Cavaliere and Matt Minerva Jr. of Hudson National Golf Club 3&2 in the final at Winged Foot's East Course Sunday. Costanza and Esteve controlled the match and closed it out on the 16th hole to claim the title. Live scoring and full results are available on the [midamgolfHQ tournament hub](/midamgolfhq/anderson-memorial-four-ball).",
+          "Cavaliere and Minerva Jr. had a remarkable run as the 16-seed, upsetting top-seeded medalists Goldstein and Buttacavoli of La Gorce in the quarterfinals and beating Sigler and Cassini of Atlanta Athletic Club in the semifinals before falling in the final. midamgolfHQ will be back next week with coverage from the C.B. Macdonald Invitational.",
+        ],
+      },
       {
         slug: "anderson-memorial-2026-match-play-recap",
         title: "Anderson Memorial Match Play Recap: Four Teams Advance to Sunday Semifinals at Winged Foot",
@@ -921,6 +933,7 @@ export const MIDAM_TOURNAMENTS: Tournament[] = [
       },
     ],
     pastResults: [
+      { year: 2026, champion: "Mark Costanza / Jeronimo Esteve" },
       { year: 2025, champion: "Scott Strickland / Jimmy Chestnut" },
       { year: 2024, champion: "Scott Strickland / Jimmy Chestnut" },
       { year: 2023, champion: "Trevor Randolph / Chris DeJohn" },
@@ -1087,6 +1100,7 @@ export const MIDAM_TOURNAMENTS: Tournament[] = [
     slug: "cb-macdonald-invitational-tournament",
     name: "C.B Macdonald Invitational Tournament",
     channel: "midam",
+    liveStatus: "next",
     logo: "/brand/CB Macdonald.jpeg",
     month: 6,
     dates2026: "June 12-14, 2026",
