@@ -255,7 +255,7 @@ export const SENIOR_MAJOR_EVENTS_2026: SeniorMajorEvent[] = [
     golfGeniusUrl: "https://www.golfgenius.com/pages/12365089316366476022",
     howToPlay: [{ label: "Invite only — submit application", href: "https://andersonmemorial.org/" }],
     winners: [
-      { year: 2026, champion: "Michael McCoy / Robert Gerwin" },
+      { year: 2026, champion: "Eoghan O'Connell / Seth Sargent" },
     ],
   },
   {
