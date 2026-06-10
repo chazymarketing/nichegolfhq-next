@@ -72,7 +72,7 @@ export default function AboutPage() {
           </div>
 
           {/* Data and sources card */}
-          <div className="mt-8 rounded-2xl bg-black/50 p-8 backdrop-blur-md md:p-12">
+          <div className="mt-8 rounded-2xl bg-black/50 p-8 text-center backdrop-blur-md md:p-12">
             <h2 className="font-serif text-2xl font-bold tracking-tight text-white md:text-3xl">
               Our approach to data and sources
             </h2>
