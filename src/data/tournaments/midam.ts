@@ -1126,6 +1126,8 @@ export const MIDAM_TOURNAMENTS: Tournament[] = [
     courseDesigner: "Charles B. Macdonald",
     courseNotes: "Host of first Walker Cup (1922)",
     golfGeniusUrl: "https://www.golfgenius.com/pages/12773227477908630229",
+    tournamentWebsite: "https://www.golfgenius.com/pages/12773227477908630229",
+    tournamentWebsiteLabel: "Data Source",
 
     format: "Match play",
     howToPlay: [
