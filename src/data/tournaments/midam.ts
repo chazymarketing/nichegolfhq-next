@@ -1047,6 +1047,7 @@ export const MIDAM_TOURNAMENTS: Tournament[] = [
     endDate: "2026-06-06",
     format: "54 holes stroke play",
     courseWebsite: "https://www.ega-golf.ch/content/european-mid-amateur-mens-championship-9",
+    tournamentWebsite: "https://www.ega-golf.ch/content/european-mid-amateur-mens-championship-9",
     golfGeniusUrl: "https://www.ega-golf.ch/content/european-mid-amateur-mens-championship-9#/competition/5530426/leaderboard",
     howToPlay: [
       { label: "Open entry via national federation", href: "https://www.ega-golf.ch/content/european-mid-amateur-mens-championship-9" },
