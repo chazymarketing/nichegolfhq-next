@@ -78,6 +78,7 @@ export interface Tournament {
   // === LINKS ===
   golfGeniusUrl?: string;
   tournamentWebsite?: string;
+  tournamentWebsiteLabel?: string;
   courseWebsite?: string;
   amateurgolfUrl?: string;
   socialHashtag?: string;
