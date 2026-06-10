@@ -1121,7 +1121,20 @@ export const MIDAM_TOURNAMENTS: Tournament[] = [
     howToPlay: [
       { label: "Invite only — no application" },
     ],
-    news: [],
+    news: [
+      {
+        slug: "cb-macdonald-2026-field-preview",
+        title: "C.B. Macdonald Invitational Preview: Loaded Mid-Am Field Descends on National Golf Links",
+        date: "2026-06-09",
+        author: "midamgolfHQ Staff",
+        summary: "The C.B. Macdonald Invitational returns to the National Golf Links of America in Southampton, NY, June 12-14, with one of the strongest mid-amateur fields of the season.",
+        content: [
+          "The C.B. Macdonald Invitational returns to the National Golf Links of America in Southampton, New York, June 12-14, with one of the strongest mid-amateur fields of the season. The invite-only match-play event takes on the storied layout that Charles Blair Macdonald designed in 1911, with stroke play seeding the bracket before match play decides the champion. Live scoring and full coverage will be available on the [midamgolfHQ tournament hub](/midamgolfhq/cb-macdonald-invitational-tournament).",
+          "The mid-am division features a who's who of competitive amateur golf. Fresh off their 89th Anderson Memorial championship last weekend, Jeronimo Esteve is in the field alongside Anderson semifinalists Christian Cavaliere and Nick Cassini. Former U.S. Mid-Amateur champion Matt Parziale returns, as do TJ Shuart, Will Davenport, Sam Lape, and Jimmy Chestnut. The McBride family sends four players into the draw.",
+          "Additional contenders include Jonathan Keane, who won a flight at last year's event, Ryan Abbate, Patrick Christovich, Brad Richards, Park Ulrich, and Scott Turner. midamgolfHQ will be tracking the action all week from Southampton.",
+        ],
+      },
+    ],
     pastResults: [
       { year: 2025, champion: "Stewart Hagestad" },
       { year: 2024, champion: "Jimmy Chestnut" },
