@@ -789,6 +789,8 @@ export const MIDAM_TOURNAMENTS: Tournament[] = [
 
     format: "54 holes stroke play",
     golfGeniusUrl: "https://www.golfgenius.com/pages/12245787651055057396",
+    tournamentWebsite: "https://www.golfgenius.com/pages/12245787651055057396",
+    tournamentWebsiteLabel: "Data Source",
     howToPlay: [
       { label: "Invite only — no application" },
     ],
