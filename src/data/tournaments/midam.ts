@@ -155,6 +155,7 @@ export const MIDAM_TOURNAMENTS: Tournament[] = [
     name: "The Snedeker Memorial",
     channel: "midam",
     logo: "/brand/Snedeker.png",
+    tournamentWebsite: "https://thesnedeker.com/",
     month: 3,
     dates2026: "March 2026",
     startDate: "2026-03-13",
