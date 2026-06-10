@@ -45,7 +45,7 @@ export function TournamentHero({ tournament }: { tournament: Tournament }) {
             rel="noreferrer"
             className="inline-flex items-center gap-1.5 rounded-full border border-zinc-200 bg-zinc-50 px-3 py-1 text-xs font-medium text-zinc-400 transition hover:border-zinc-300 hover:text-zinc-600"
           >
-            <span>Data Source</span>
+            <span>Tournament Website / Data Source</span>
             <svg
               viewBox="0 0 24 24"
               fill="none"
