@@ -29,7 +29,7 @@ export default function AboutPage() {
       {/* Scrollable content over the image */}
       <div className="relative z-10">
         {/* Hero spacer with title */}
-        <section className="flex h-[60vh] min-h-[400px] items-center justify-center">
+        <section className="flex h-[40vh] min-h-[260px] items-center justify-center">
           <h1
             className="font-serif text-5xl font-bold tracking-tight text-white md:text-7xl"
             style={{
@@ -42,7 +42,7 @@ export default function AboutPage() {
         </section>
 
         {/* Content area — transparent bg, text over image */}
-        <div className="mx-auto w-full max-w-3xl px-5 pb-20 pt-12">
+        <div className="mx-auto w-full max-w-3xl px-5 pb-20 pt-2">
           <div className="rounded-2xl bg-black/50 p-8 text-center backdrop-blur-md md:p-12">
             <p className="mx-auto max-w-2xl text-lg leading-8 text-white/90">
               nichegolfHQ is the leading independent media and intelligence
