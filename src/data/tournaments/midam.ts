@@ -1244,6 +1244,7 @@ export const MIDAM_TOURNAMENTS: Tournament[] = [
     courseNotes: "GolfLink shows 73.9/138 from different tees",
 
     format: "4-ball",
+    tournamentWebsite: "https://picardcup.com/",
     howToPlay: [
       { label: "Apply for invite", href: "https://picardcup.com/apply/" },
     ],
@@ -1294,6 +1295,7 @@ export const MIDAM_TOURNAMENTS: Tournament[] = [
     course: "Brantford Golf & Country Club",
     location: "Brantford, ON",
     format: "72 holes stroke play",
+    tournamentWebsite: "https://www.golfcanada.ca/",
     courseWebsite: "https://www.golfcanada.ca/competition/2026-canadian-mens-mid-amateur-championship/",
     howToPlay: [
       { label: "Apply for entry", href: "https://www.golfgenius.com/register?league_id=12156388054461892844" },
