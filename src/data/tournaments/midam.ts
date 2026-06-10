@@ -1358,6 +1358,7 @@ export const MIDAM_TOURNAMENTS: Tournament[] = [
     courseTeeName: "Black",
     courseDesigner: "Ed Ault",
     courseNotes: "Sabot course also on property: 73.3/127",
+    tournamentWebsite: "https://thevalentineinvitational.com/",
 
     format: "54 holes stroke play",
     howToPlay: [
