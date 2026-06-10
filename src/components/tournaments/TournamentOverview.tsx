@@ -26,14 +26,14 @@ export function TournamentOverview({ tournament }: { tournament: Tournament }) {
 
         <div className="mt-5 grid gap-3 sm:grid-cols-2">
           {tournament.format ? (
-            <div className="rounded-2xl border border-zinc-200 bg-zinc-50 p-4">
+            <div className="rounded-2xl border border-zinc-200 bg-zinc-50 p-4 text-center">
               <div className="text-[11px] font-medium uppercase tracking-wide text-zinc-500">Format</div>
               <div className="mt-1 text-sm font-semibold text-zinc-950">{tournament.format}</div>
             </div>
           ) : null}
 
           {defending ? (
-            <div className="rounded-2xl border border-zinc-200 bg-zinc-50 p-4">
+            <div className="rounded-2xl border border-zinc-200 bg-zinc-50 p-4 text-center">
               <div className="text-[11px] font-medium uppercase tracking-wide text-zinc-500">Defending champion</div>
               <div className="mt-1 text-sm font-semibold text-zinc-950">{defending.champion}</div>
               <div className="mt-1 text-xs text-zinc-600">{defending.year}</div>
