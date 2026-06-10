@@ -875,6 +875,7 @@ export const MIDAM_TOURNAMENTS: Tournament[] = [
       { label: "Invite only — submit application", href: "https://andersonmemorial.org/" },
     ],
     golfGeniusUrl: "https://www.golfgenius.com/pages/12365089316366476022",
+    tournamentWebsite: "https://andersonmemorial.org/",
     news: [
       {
         slug: "anderson-memorial-2026-final-recap",
