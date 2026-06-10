@@ -21,7 +21,7 @@ export function TournamentOverview({ tournament }: { tournament: Tournament }) {
       <div className="lg:col-span-2 rounded-3xl border border-zinc-200 bg-white p-6 shadow-sm shadow-zinc-900/5">
         <h2 className="text-sm font-semibold tracking-tight text-zinc-950 text-center">Overview</h2>
         {overview && overview.length > 0 ? (
-          <p className="mt-3 whitespace-pre-line text-sm leading-relaxed text-zinc-700">{overview}</p>
+          <p className="mt-3 whitespace-pre-line text-sm leading-relaxed text-zinc-700 text-center">{overview}</p>
         ) : null}
 
         <div className="mt-5 grid gap-3 sm:grid-cols-2">
@@ -45,7 +45,7 @@ export function TournamentOverview({ tournament }: { tournament: Tournament }) {
       {hasCourseNotes ? (
         <aside className="rounded-3xl border border-zinc-200 bg-white p-6 shadow-sm shadow-zinc-900/5">
           <h2 className="text-sm font-semibold tracking-tight text-zinc-950 text-center">Course notes</h2>
-          <div className="mt-3 space-y-2 text-sm text-zinc-700">
+          <div className="mt-3 space-y-2 text-sm text-zinc-700 text-center">
             {tournament.courseDesigner ? (
               <div>
                 <span className="text-zinc-500">Designer:</span> {tournament.courseDesigner}

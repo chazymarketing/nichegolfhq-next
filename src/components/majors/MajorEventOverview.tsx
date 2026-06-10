@@ -37,8 +37,8 @@ export function MajorEventOverview({
     <div className="grid gap-4 lg:grid-cols-3">
       <div className="lg:col-span-2 rounded-3xl border border-zinc-200 bg-white p-6 shadow-sm shadow-zinc-900/5">
         <h2 className="text-sm font-semibold tracking-tight text-zinc-950 text-center">Overview</h2>
-        {overview ? <p className="mt-3 whitespace-pre-line text-sm leading-relaxed text-zinc-700">{overview}</p> : null}
-        {note ? <p className="mt-3 whitespace-pre-line text-sm leading-relaxed text-zinc-700">{note}</p> : null}
+        {overview ? <p className="mt-3 whitespace-pre-line text-sm leading-relaxed text-zinc-700 text-center">{overview}</p> : null}
+        {note ? <p className="mt-3 whitespace-pre-line text-sm leading-relaxed text-zinc-700 text-center">{note}</p> : null}
 
         {defending ? (
           <div className="mt-5 grid gap-3 sm:grid-cols-2">
@@ -74,7 +74,7 @@ export function MajorEventOverview({
 
       <aside className="rounded-3xl border border-zinc-200 bg-white p-6 shadow-sm shadow-zinc-900/5">
         <h2 className="text-sm font-semibold tracking-tight text-zinc-950 text-center">Quick facts</h2>
-        <div className="mt-3 space-y-2 text-sm text-zinc-700">
+        <div className="mt-3 space-y-2 text-sm text-zinc-700 text-center">
           <div>
             <span className="text-zinc-500">Brand:</span> {brand}
           </div>
