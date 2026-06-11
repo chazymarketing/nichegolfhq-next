@@ -1135,6 +1135,16 @@ export const MIDAM_TOURNAMENTS: Tournament[] = [
     ],
     news: [
       {
+        slug: "cb-macdonald-2026-field-update-hagestad",
+        title: "C.B. Macdonald Field Update: Defending Champion Stewart Hagestad Added to the Draw",
+        date: "2026-06-11",
+        author: "midamgolfHQ Staff",
+        summary: "Defending champion Stewart Hagestad has been added to the C.B. Macdonald Invitational field at National Golf Links, joining an already stacked mid-am draw.",
+        content: [
+          "Defending champion Stewart Hagestad has been added to the field for the C.B. Macdonald Invitational, which gets underway Friday at the National Golf Links of America in Southampton, New York. Hagestad joins an already loaded mid-am draw that includes Anderson Memorial champion Jeronimo Esteve, former U.S. Mid-Amateur champion Matt Parziale, and dozens of the country's top competitive amateurs. Live scoring and full coverage will be available on the [midamgolfHQ tournament hub](/midamgolfhq/cb-macdonald-invitational-tournament).",
+        ],
+      },
+      {
         slug: "cb-macdonald-2026-field-preview",
         title: "C.B. Macdonald Invitational Preview: Loaded Mid-Am Field Descends on National Golf Links",
         date: "2026-06-09",
