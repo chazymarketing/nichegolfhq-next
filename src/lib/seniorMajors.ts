@@ -262,7 +262,7 @@ export const SENIOR_MAJOR_EVENTS_2026: SeniorMajorEvent[] = [
     slug: "cb-macdonald-invitational-senior-division",
     name: "C.B. Macdonald Invitational (Senior Division)",
     month: "June 2026",
-    liveStatus: "next",
+    liveStatus: "live",
     startDate: "2026-06-12",
     endDate: "2026-06-14",
     dates2026: "June 12-14, 2026",
