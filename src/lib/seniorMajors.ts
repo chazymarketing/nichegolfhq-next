@@ -267,7 +267,7 @@ export const SENIOR_MAJOR_EVENTS_2026: SeniorMajorEvent[] = [
     endDate: "2026-06-14",
     dates2026: "June 12-14, 2026",
     format: "Match play",
-    golfGeniusUrl: "https://www.golfgenius.com/pages/12773227477908630229",
+    golfGeniusUrl: "https://www.golfgenius.com/pages/12787897523763194722",
     course: "National Golf Links of America",
     location: "Southampton, NY",
     coursePar: 73,
