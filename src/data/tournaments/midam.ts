@@ -1135,6 +1135,17 @@ export const MIDAM_TOURNAMENTS: Tournament[] = [
     ],
     news: [
       {
+        slug: "cb-macdonald-2026-qualifying-recap",
+        title: "C.B. Macdonald Qualifying Recap: Hagestad Fires 7-Under 65 to Lead at National Golf Links",
+        date: "2026-06-12",
+        author: "midamgolfHQ Staff",
+        summary: "Defending champion Stewart Hagestad shot a 7-under 65 to take a commanding three-shot lead after qualifying at the C.B. Macdonald Invitational.",
+        content: [
+          "Defending champion Stewart Hagestad made his late addition to the field count, firing a 7-under 65 to take a commanding three-shot lead after qualifying at the C.B. Macdonald Invitational at the National Golf Links of America in Southampton, New York. Jeronimo Esteve, fresh off his Anderson Memorial championship, and Bobby Leopold share second at 4-under 68. Will Davenport, Johnny DelPrete, Michael Cress, and John Hahn are tied for fourth at 3-under 69. Live scoring and full coverage are available on the [midamgolfHQ tournament hub](/midamgolfhq/cb-macdonald-invitational-tournament).",
+          "A deep group at 2-under 70 includes Nick Cassini, Scott Turner, Hal Dove, Ryan Abbate, and Sean Barrett, while former U.S. Mid-Amateur champion Matt Parziale and Anderson semifinalist Christian Cavaliere are among five players at 1-under 71. The match play brackets will be set later this evening, with play beginning Saturday morning. midamgolfHQ will be tracking the action all weekend from Southampton.",
+        ],
+      },
+      {
         slug: "cb-macdonald-2026-field-update-hagestad",
         title: "C.B. Macdonald Field Update: Defending Champion Stewart Hagestad Added to the Draw",
         date: "2026-06-11",
