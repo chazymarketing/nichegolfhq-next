@@ -1135,6 +1135,17 @@ export const MIDAM_TOURNAMENTS: Tournament[] = [
     ],
     news: [
       {
+        slug: "cb-macdonald-2026-match-play-recap",
+        title: "C.B. Macdonald Match Play Recap: Four Advance to Sunday Semifinals at National Golf Links",
+        date: "2026-06-13",
+        author: "midamgolfHQ Staff",
+        summary: "Four players advanced through two rounds of match play Saturday to set up Sunday's semifinals at the C.B. Macdonald Invitational.",
+        content: [
+          "The C.B. Macdonald Invitational moved to match play Saturday at the National Golf Links of America, with four players advancing through two rounds to set up Sunday's semifinals. Defending champion Stewart Hagestad cruised through his first-round match against Andy Schonbaum, then held off Nick Cassini 1 up in the quarterfinals. Sean Barrett upset Johnny DelPrete 1 up in the first round and Will Davenport 3&1 in the quarters to earn a semifinal date with Hagestad at 8:20 AM Sunday. Live scoring and full coverage are available on the [midamgolfHQ tournament hub](/midamgolfhq/cb-macdonald-invitational-tournament).",
+          "On the other side of the bracket, Anderson Memorial champion Jeronimo Esteve needed 19 holes to get past Matt Parziale in the quarterfinals before advancing, while Bobby Leopold posted dominant 6&5 wins over Brad Richards and Ryan Abbate to reach the semis. Esteve and Leopold meet at 8:28 AM Sunday, with the winners facing off in the championship final at 1:10 PM. In the consolation flights, Seiji Liu knocked off Park Ulrich in the second flight, while former Boston College teammates Matthew Naumec and Jack Cammisa drew each other in the third flight, with Naumec coming out on top. midamgolfHQ will be tracking the action all day from Southampton.",
+        ],
+      },
+      {
         slug: "cb-macdonald-2026-qualifying-recap",
         title: "C.B. Macdonald Qualifying Recap: Hagestad Fires 7-Under 65 to Lead at National Golf Links",
         date: "2026-06-12",
