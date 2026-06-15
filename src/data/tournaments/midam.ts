@@ -1233,6 +1233,7 @@ export const MIDAM_TOURNAMENTS: Tournament[] = [
     slug: "george-c-thomas-invitational",
     name: "George C Thomas Invitational",
     channel: "midam",
+    liveStatus: "next",
     month: 6,
     dates2026: "June 25-27, 2026",
     startDate: "2026-06-25",
