@@ -1110,7 +1110,7 @@ export const MIDAM_TOURNAMENTS: Tournament[] = [
     slug: "cb-macdonald-invitational-tournament",
     name: "C.B Macdonald Invitational Tournament",
     channel: "midam",
-    liveStatus: "live",
+    liveStatus: "completed",
     logo: "/brand/CB Macdonald.jpeg",
     month: 6,
     dates2026: "June 12-14, 2026",
@@ -1134,6 +1134,17 @@ export const MIDAM_TOURNAMENTS: Tournament[] = [
       { label: "Invite only — no application" },
     ],
     news: [
+      {
+        slug: "cb-macdonald-2026-final-recap",
+        title: "C.B. Macdonald Final Recap: Hagestad Goes Back-to-Back With Dominant Run at National Golf Links",
+        date: "2026-06-14",
+        author: "midamgolfHQ Staff",
+        summary: "Stewart Hagestad defeated Jeronimo Esteve 3&1 to win the C.B. Macdonald Invitational for the second straight year at National Golf Links.",
+        content: [
+          "Stewart Hagestad captured the C.B. Macdonald Invitational for the second straight year, defeating Jeronimo Esteve 3&1 in the championship final Sunday at the National Golf Links of America in Southampton, New York. Hagestad was dominant all week, medaling in qualifying with a 7-under 65, then rolling through match play without dropping a match. He dispatched Sean Barrett 4&3 in the semifinals before closing out Esteve on the 17th hole in the final. Live scoring and full results are available on the [midamgolfHQ tournament hub](/midamgolfhq/cb-macdonald-invitational-tournament).",
+          "Esteve reached the final with a 2&1 semifinal win over Bobby Leopold, adding to his strong summer that included winning the Anderson Memorial championship two weeks ago. Across the consolation flights, Jimmy Chestnut took the second flight, Matthew Naumec won the third, Xavier Dailly claimed the fourth, Patrick Christovich won the fifth, John Torell V took the sixth, Jonathan Keane won the seventh, and Jack McBride captured the eighth. midamgolfHQ will be back with coverage from the Sanger Invitational later this month.",
+        ],
+      },
       {
         slug: "cb-macdonald-2026-match-play-recap",
         title: "C.B. Macdonald Match Play Recap: Four Advance to Sunday Semifinals at National Golf Links",
@@ -1180,6 +1191,7 @@ export const MIDAM_TOURNAMENTS: Tournament[] = [
       },
     ],
     pastResults: [
+      { year: 2026, champion: "Stewart Hagestad" },
       { year: 2025, champion: "Stewart Hagestad" },
       { year: 2024, champion: "Jimmy Chestnut" },
       { year: 2023, champion: "Matthew Devito" },
