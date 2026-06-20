@@ -1248,6 +1248,7 @@ export const MIDAM_TOURNAMENTS: Tournament[] = [
     courseDesigner: "George C. Thomas Jr.",
     courseNotes: "U.S. Open setup: 76.9/148; site of 2023 U.S. Open",
 
+    golfGeniusUrl: "https://www.golfgenius.com/pages/5747293",
     format: "54 holes stroke play",
     howToPlay: [
       { label: "Invite only — no application" },
