@@ -1253,7 +1253,20 @@ export const MIDAM_TOURNAMENTS: Tournament[] = [
     howToPlay: [
       { label: "Invite only — no application" },
     ],
-    news: [],
+    news: [
+      {
+        slug: "2026-george-c-thomas-invitational-field-preview",
+        title: "George C. Thomas Invitational Field Preview: Elite Mid-Am Field Heads to Los Angeles Country Club",
+        date: "2026-06-20",
+        author: "midamgolfHQ Staff",
+        summary: "The George C. Thomas Invitational returns to Los Angeles Country Club June 25-27 with 38 of the country's top mid-amateurs competing for 54 holes of stroke play.",
+        content: [
+          "The [George C. Thomas Invitational](/midamgolfhq/george-c-thomas-invitational) returns to Los Angeles Country Club June 25-27, bringing 38 of the country's top mid-amateurs to one of golf's most iconic venues for 54 holes of stroke play. Defending champion Drew Kittleson is not in this year's field, opening the door for a new name on the trophy. Live scoring will be available on the [tournament hub](/midamgolfhq/george-c-thomas-invitational) throughout the week.",
+          "The field is headlined by Trip Kuehne, the 2007 U.S. Mid-Amateur champion and three-time Walker Cup team member who remains one of the most decorated amateurs in the history of the game. Stephen Behr, a 2024 U.S. Mid-Amateur semifinalist, brings elite-level consistency to a field that also includes Mark Costanza, runner-up to Stewart Hagestad at the 2021 U.S. Mid-Amateur at Sankaty Head. Nico Bollini, who plays out of the newly restored Santa Ana Country Club, adds another layer of talent to an already stacked lineup.",
+          "Names like Christian Cavaliere, Patrick Christovich, Jordan Nasser, and Taylor Wood round out a deep field where any number of players could contend over three rounds at LACC. midamgolfHQ will be tracking the action all week from Los Angeles.",
+        ],
+      },
+    ],
     pastResults: [
       { year: 2025, champion: "Drew Kittleson" },
       { year: 2024, champion: "Evan Beck" },
