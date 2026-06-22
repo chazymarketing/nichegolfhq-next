@@ -1234,6 +1234,7 @@ export const MIDAM_TOURNAMENTS: Tournament[] = [
     name: "George C Thomas Invitational",
     channel: "midam",
     liveStatus: "next",
+    logo: "/brand/LACC.jpeg",
     month: 6,
     dates2026: "June 25-27, 2026",
     startDate: "2026-06-25",
