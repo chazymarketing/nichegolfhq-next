@@ -107,7 +107,7 @@ export default async function BriefPage({
     );
   }
 
-  const displayDate = brief.title.replace(/^Daily Brief\s+—\s+/i, "");
+  const displayDate = brief.title.replace(/^Daily Brief\s+[-—–]\s+/i, "");
 
   // Minimal structured data for LLM / crawler friendliness (no visual impact)
   const jsonLd = {
