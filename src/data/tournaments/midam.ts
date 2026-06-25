@@ -1256,6 +1256,17 @@ export const MIDAM_TOURNAMENTS: Tournament[] = [
     ],
     news: [
       {
+        slug: "2026-george-c-thomas-invitational-round-1-recap",
+        title: "George C. Thomas Invitational Round 1 Recap: Hale Fires 2-Under 68 to Lead at LACC",
+        date: "2026-06-25",
+        author: "midamgolfHQ Staff",
+        summary: "Stephen Hale posted the only under-par round of the day to take a three-shot lead after Round 1 at Los Angeles Country Club.",
+        content: [
+          "Stephen Hale of Bakersfield Country Club posted the only under-par round of the day, carding a 2-under 68 to take a three-shot lead after Round 1 of the [George C. Thomas Invitational at Los Angeles Country Club](/midamgolfhq/george-c-thomas-invitational). Hale, a former Cal Berkeley golfer and SCGA Mid-Amateur champion, was the only player to break par on a demanding day at LACC. Patrick Christovich of New Orleans Country Club and Jack Barber of La Jolla Country Club are tied for second at 1-over 71.",
+          "Will Davenport, the 2024 playoff runner-up looking to finish the job this year, sits in a tie for fourth at 2-over alongside Nick Geyer and Charlie Holland. Trip Kuehne and Christian Cavaliere are among a group of seven players at 3- and 4-over with two rounds to play. midamgolfHQ will be tracking the action all week from Los Angeles.",
+        ],
+      },
+      {
         slug: "2026-george-c-thomas-invitational-field-preview",
         title: "George C. Thomas Invitational Field Preview: Elite Mid-Am Field Heads to Los Angeles Country Club",
         date: "2026-06-20",
