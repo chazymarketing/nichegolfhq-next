@@ -1256,6 +1256,17 @@ export const MIDAM_TOURNAMENTS: Tournament[] = [
     ],
     news: [
       {
+        slug: "2026-george-c-thomas-invitational-round-2-recap",
+        title: "George C. Thomas Invitational Round 2 Recap: Price and Barber Share Lead Heading Into Final Round",
+        date: "2026-06-26",
+        author: "midamgolfHQ Staff",
+        summary: "Andrew Price fired the round of the day to join Jack Barber atop the leaderboard at 4-over through 36 holes at Los Angeles Country Club.",
+        content: [
+          "Andrew Price of Conway Farms, the 2024 Crump Cup champion, fired an even-par 71 to surge into a share of the lead at the [George C. Thomas Invitational at Los Angeles Country Club](/midamgolfhq/george-c-thomas-invitational), where he and first-round contender Jack Barber sit tied at 4-over through 36 holes. LACC played as a par 71 on Friday with the 7th set up as a par 4 from 310 yards, and with tucked pins and firm, windy conditions, even par was the round of the day. Christian Cavaliere, Will Davenport, and Nick Geyer are one back at 5-over in a tie for third.",
+          "Round 1 leader Stephen Hale and Patrick Christovich were still on the course with two holes to play when scoring was posted, sitting at 6-over in a tie for sixth alongside John Sawin. Miguel Ordonez matched Price's even-par 71 to climb from T26 to T9. With 18 holes to go, seven players are within three shots of the lead on a course that showed its teeth all day. midamgolfHQ will be tracking the final round from Los Angeles.",
+        ],
+      },
+      {
         slug: "2026-george-c-thomas-invitational-round-1-recap",
         title: "George C. Thomas Invitational Round 1 Recap: Hale Fires 2-Under 68 to Lead at LACC",
         date: "2026-06-25",
