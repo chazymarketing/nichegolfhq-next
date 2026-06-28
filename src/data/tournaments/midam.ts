@@ -2122,6 +2122,29 @@ export const MIDAM_TOURNAMENTS: Tournament[] = [
   },
 
   {
+    slug: "east-vs-west-matches",
+    name: "East vs West Matches",
+    channel: "midam",
+    month: 11,
+    dates2026: "November 6-8, 2026",
+    startDate: "2026-11-06",
+    endDate: "2026-11-08",
+    course: "Maridoe Golf Club",
+    location: "Carrollton, TX",
+    coursePar: 72,
+    courseYardage: 7854,
+    courseRating: 79.6,
+    courseSlope: 155,
+    courseTeeName: "Back",
+    format: "Team match play",
+    howToPlay: [
+      { label: "Invite only" },
+    ],
+    news: [],
+    pastResults: [],
+  },
+
+  {
     slug: "national-invitational-tournament",
     name: "National Invitational Tournament",
     channel: "midam",
