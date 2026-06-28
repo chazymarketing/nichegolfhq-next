@@ -1324,6 +1324,7 @@ export const MIDAM_TOURNAMENTS: Tournament[] = [
     name: "The Picard Cup",
     channel: "midam",
     liveStatus: "next",
+    logo: "/brand/Picard.jpeg",
     month: 8,
     dates2026: "August 13-14, 2026",
     startDate: "2026-08-13",
