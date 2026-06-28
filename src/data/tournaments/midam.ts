@@ -1383,6 +1383,7 @@ export const MIDAM_TOURNAMENTS: Tournament[] = [
     slug: "canadian-mens-mid-amateur",
     name: "Canadian Men’s Mid-Amateur Championship",
     channel: "midam",
+    logo: "/brand/GolfCanada.jpeg",
     month: 8,
     dates2026: "Aug 18–21, 2026",
     startDate: "2026-08-18",
