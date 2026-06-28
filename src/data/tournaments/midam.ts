@@ -1233,7 +1233,7 @@ export const MIDAM_TOURNAMENTS: Tournament[] = [
     slug: "george-c-thomas-invitational",
     name: "George C Thomas Invitational",
     channel: "midam",
-    liveStatus: "live",
+    liveStatus: "completed",
     logo: "/brand/LACC.jpeg",
     month: 6,
     dates2026: "June 25-27, 2026",
@@ -1255,6 +1255,17 @@ export const MIDAM_TOURNAMENTS: Tournament[] = [
       { label: "Invite only — no application" },
     ],
     news: [
+      {
+        slug: "2026-george-c-thomas-invitational-final-recap",
+        title: "George C. Thomas Invitational Final Recap: Andrew Price Pulls Away for Victory at LACC",
+        date: "2026-06-27",
+        author: "midamgolfHQ Staff",
+        summary: "Andrew Price closed with a 1-under 69 to win the George C. Thomas Invitational at Los Angeles Country Club, finishing at 3-over 214.",
+        content: [
+          "Andrew Price of Conway Farms closed with a 1-under 69 to win the [George C. Thomas Invitational at Los Angeles Country Club](/midamgolfhq/george-c-thomas-invitational), finishing at 3-over 214 for the week. The 2024 Crump Cup champion surged from a share of the 36-hole lead to pull away for a one-shot victory over Christian Cavaliere of Hudson National, who also fired a final-round 69 to finish solo second at 4-over. Cavaliere, who runs the popular golf brand Tremont, has been one of the most consistent mid-am competitors on the circuit this season. Charlie Holland of Lakewood Country Club matched them with a 69 of his own to claim third at 6-over.",
+          "Co-leader Jack Barber faded with a 75 to drop into a five-way tie for fifth at 9-over alongside Will Davenport, Mark Costanza, Michael Buttacavoli, and LACC member Jon Shaw. Round 1 leader Stephen Hale struggled to a final-round 73 after an 81 on Friday, finishing T12. Nick Geyer held onto solo fourth at 8-over. The mid-am calendar slows down in July with no major events on the schedule, but midamgolfHQ will be back in August with coverage from the Picard Cup."
+        ],
+      },
       {
         slug: "2026-george-c-thomas-invitational-round-2-recap",
         title: "George C. Thomas Invitational Round 2 Recap: Price and Barber Share Lead Heading Into Final Round",
@@ -1291,6 +1302,7 @@ export const MIDAM_TOURNAMENTS: Tournament[] = [
       },
     ],
     pastResults: [
+      { year: 2026, champion: "Andrew Price" },
       { year: 2025, champion: "Drew Kittleson" },
       { year: 2024, champion: "Evan Beck" },
       { year: 2022, champion: "Evan Beck" },
