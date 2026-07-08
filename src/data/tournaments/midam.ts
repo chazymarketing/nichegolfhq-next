@@ -5,29 +5,6 @@ import type { Tournament, HowToPlayEntry } from "@/lib/tournaments/types";
 
 export const MIDAM_TOURNAMENTS: Tournament[] = [
   {
-    slug: "tree-farm-invitational",
-    name: "The Tree Farm Invitational",
-    channel: "midam",
-    logo: "/brand/Tree Farm 2.jpeg",
-    month: 1,
-    dates2026: "Rescheduled – TBD",
-    course: "The Tree Farm Golf Club",
-    location: "Batesburg, SC",
-    coursePar: 71,
-    courseYardage: 7293,
-    courseRating: 75.1,
-    courseSlope: 138,
-    courseTeeName: "Tree Monster",
-    courseDesigner: "Tom Doak",
-    courseNotes: "Back tees (6,980 yds) rated 73.7/136",
-
-    format: "Stableford",
-    note: "Rescheduled (TBD)",
-    howToPlay: [
-      { label: "Invite only — no application" },
-    ],
-  },
-  {
     slug: "gasparilla-invitational",
     name: "Gasparilla Invitational",
     channel: "midam",
@@ -2074,6 +2051,30 @@ export const MIDAM_TOURNAMENTS: Tournament[] = [
       { year: 2022, champion: "John Hunter" },
       { year: 2021, champion: "Keith Guest" },
       { year: 2020, champion: "Ryan Trocchio" },
+    ],
+  },
+  {
+    slug: "tree-farm-invitational",
+    name: "The Tree Farm Invitational",
+    channel: "midam",
+    logo: "/brand/Tree Farm 2.jpeg",
+    month: 10,
+    dates2026: "October 25-26, 2026",
+    startDate: "2026-10-25",
+    endDate: "2026-10-26",
+    course: "The Tree Farm Golf Club",
+    location: "Batesburg, SC",
+    coursePar: 71,
+    courseYardage: 7293,
+    courseRating: 75.1,
+    courseSlope: 138,
+    courseTeeName: "Tree Monster",
+    courseDesigner: "Tom Doak",
+    courseNotes: "Back tees (6,980 yds) rated 73.7/136",
+
+    format: "Stableford",
+    howToPlay: [
+      { label: "Invite only — no application" },
     ],
   },
   {
