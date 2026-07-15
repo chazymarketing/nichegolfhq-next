@@ -283,7 +283,7 @@ export const SENIOR_MAJOR_EVENTS_2026: SeniorMajorEvent[] = [
     startDate: "2026-07-07",
     endDate: "2026-07-10",
     dates2026: "July 7\u201310, 2026",
-    liveStatus: "next",
+    liveStatus: "completed",
     format: "stroke play + match play",
     course: "Frilford Heath Golf Club",
     location: "Abingdon, Oxfordshire, England",
