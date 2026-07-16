@@ -20,49 +20,49 @@ export function SponsorStrip({
   discountCode,
   discountNote,
 }: SponsorStripProps) {
-  return (
-    <div className="overflow-hidden rounded-3xl bg-zinc-950 p-5 text-center shadow-sm shadow-zinc-900/5">
-      {/* Large clickable logo */}
-      <Link href={sponsorUrl} target="_blank" rel="noreferrer noopener" className="inline-block">
-        <Image
-          src={logoSrc}
-          alt={logoAlt}
-          width={400}
-          height={200}
-          className="mx-auto h-auto w-full max-w-[260px]"
-          priority
-        />
-      </Link>
+  const displayUrl = sponsorUrl.replace(/^https?:\/\//, "").replace(/\/$/, "");
 
-      {/* Attribution line */}
-      <p className="mt-2 text-xs text-zinc-500">
-        midamgolfHQ coverage supported by {sponsorName}
+  return (
+    <Link
+      href={sponsorUrl}
+      target="_blank"
+      rel="noreferrer noopener"
+      className="group block rounded-2xl border border-zinc-200 bg-white p-5 text-center shadow-sm transition hover:border-zinc-300"
+    >
+      {/* Attribution */}
+      <p className="text-[10px] uppercase tracking-widest text-zinc-400">
+        midamgolfHQ coverage supported by
       </p>
 
-      {/* CTA + code */}
-      <div className="mt-3 flex flex-col items-center gap-3">
-        <Link
-          href={sponsorUrl}
-          target="_blank"
-          rel="noreferrer noopener"
-          className="inline-flex items-center gap-2 rounded-full bg-white px-6 py-2.5 text-sm font-medium text-zinc-900 transition hover:bg-zinc-200"
-        >
-          {ctaText}
-        </Link>
-        {discountCode && (
-          <span className="rounded-full bg-emerald-950/50 px-4 py-1.5 text-xs font-medium text-emerald-400">
-            Code: {discountCode}
-          </span>
-        )}
-      </div>
+      {/* Logo — the hero of the box */}
+      <Image
+        src={logoSrc}
+        alt={logoAlt}
+        width={400}
+        height={200}
+        className="mx-auto mt-3 h-auto w-full"
+        priority
+      />
+
+      {/* Code pill */}
+      {discountCode && (
+        <span className="mt-3 inline-block rounded-full bg-emerald-50 px-3 py-1 text-[10px] font-medium text-emerald-700">
+          Code: {discountCode}
+        </span>
+      )}
+
+      {/* Text link */}
+      <p className="mt-3 text-xs text-zinc-500 group-hover:underline">
+        {displayUrl}
+      </p>
 
       {/* Fine print */}
       {discountNote && (
-        <p className="mt-5 text-[10px] leading-relaxed text-zinc-600">
+        <p className="mt-4 text-[9px] leading-relaxed text-zinc-400">
           *{discountNote}
         </p>
       )}
-    </div>
+    </Link>
   );
 }
 
