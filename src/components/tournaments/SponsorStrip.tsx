@@ -21,27 +21,27 @@ export function SponsorStrip({
   discountNote,
 }: SponsorStripProps) {
   return (
-    <div className="mx-auto w-full max-w-5xl px-5 py-6">
-      <div className="overflow-hidden rounded-2xl bg-zinc-950 px-6 py-8 text-center sm:px-10 sm:py-10">
+    <div className="mx-auto w-full max-w-5xl px-5 py-4">
+      <div className="overflow-hidden rounded-2xl bg-zinc-950 px-5 py-5 text-center sm:px-8 sm:py-6">
         {/* Large clickable logo */}
         <Link href={sponsorUrl} target="_blank" rel="noreferrer noopener" className="inline-block">
           <Image
             src={logoSrc}
             alt={logoAlt}
-            width={400}
-            height={200}
-            className="mx-auto h-auto w-full max-w-[320px]"
+            width={240}
+            height={120}
+            className="mx-auto h-auto w-full max-w-[180px]"
             priority
           />
         </Link>
 
         {/* Attribution line */}
-        <p className="mt-4 text-xs text-zinc-500">
+        <p className="mt-2 text-xs text-zinc-500">
           midamgolfHQ coverage supported by {sponsorName}
         </p>
 
         {/* CTA + code */}
-        <div className="mt-5 flex flex-col items-center gap-3">
+        <div className="mt-3 flex flex-col items-center gap-3">
           <Link
             href={sponsorUrl}
             target="_blank"
