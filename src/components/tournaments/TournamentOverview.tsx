@@ -1,4 +1,5 @@
 import type { Tournament } from "@/lib/tournaments/types";
+import { SponsorStrip } from "@/components/tournaments/SponsorStrip";
 
 export function TournamentOverview({ tournament }: { tournament: Tournament }) {
   const overview = tournament.overview?.trim();
@@ -42,6 +43,7 @@ export function TournamentOverview({ tournament }: { tournament: Tournament }) {
         </div>
       </div>
 
+      <div className="flex flex-col gap-4">
       {hasCourseNotes ? (
         <aside className="rounded-3xl border border-zinc-200 bg-white p-6 shadow-sm shadow-zinc-900/5">
           <h2 className="text-sm font-semibold tracking-tight text-zinc-950 text-center">Course notes</h2>
@@ -101,6 +103,19 @@ export function TournamentOverview({ tournament }: { tournament: Tournament }) {
           </div>
         </aside>
       ) : null}
+
+      {tournament.slug === "the-crump-cup" && (
+        <SponsorStrip
+          logoSrc="/brand/IBT_Logo.png"
+          logoAlt="IBT Golf Travel"
+          sponsorName="IBT Golf Travel"
+          sponsorUrl="https://ibt-golf.com"
+          ctaText="Plan Your Golf Trip"
+          discountCode="IBTNicheGolfHQ"
+          discountNote="NicheGolfHQ subscribers receive preferential rates with code IBTNicheGolfHQ. Subject to availability and Terms and Conditions."
+        />
+      )}
+      </div>
     </div>
   );
 }
