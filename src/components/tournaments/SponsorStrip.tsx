@@ -27,9 +27,9 @@ export function SponsorStrip({
         <Image
           src={logoSrc}
           alt={logoAlt}
-          width={180}
-          height={90}
-          className="mx-auto h-auto w-full max-w-[140px]"
+          width={400}
+          height={200}
+          className="mx-auto h-auto w-full max-w-[260px]"
           priority
         />
       </Link>
