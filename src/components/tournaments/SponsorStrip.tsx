@@ -21,42 +21,51 @@ export function SponsorStrip({
   discountNote,
 }: SponsorStripProps) {
   return (
-    <>
-      {/* Sponsor strip */}
-      <div className="border-y border-zinc-200 bg-zinc-50">
-        <div className="mx-auto flex w-full max-w-5xl flex-col items-center gap-4 px-5 py-4 sm:flex-row sm:justify-between">
-          <div className="flex items-center gap-3 text-sm text-zinc-500">
-            <span>midamgolfHQ coverage supported by</span>
-            <Link href={sponsorUrl} target="_blank" rel="noreferrer noopener">
-              <Image
-                src={logoSrc}
-                alt={logoAlt}
-                width={80}
-                height={32}
-                className="h-8 w-auto"
-              />
-            </Link>
-          </div>
-          <div className="flex items-center gap-3">
-            {discountCode && (
-              <span className="rounded-full border border-emerald-200 bg-emerald-50 px-3 py-1 text-xs font-medium text-emerald-700">
-                Code: {discountCode}
-              </span>
-            )}
-            <Link
-              href={sponsorUrl}
-              target="_blank"
-              rel="noreferrer noopener"
-              className="inline-flex items-center gap-2 rounded-full bg-zinc-900 px-4 py-2 text-sm font-medium text-white transition hover:bg-zinc-700"
-            >
-              {ctaText}
-              <span aria-hidden>→</span>
-            </Link>
-            {discountNote && <span className="text-[10px] text-zinc-400">*</span>}
-          </div>
+    <div className="mx-auto w-full max-w-5xl px-5 py-6">
+      <div className="overflow-hidden rounded-2xl bg-zinc-950 px-6 py-8 text-center sm:px-10 sm:py-10">
+        {/* Large clickable logo */}
+        <Link href={sponsorUrl} target="_blank" rel="noreferrer noopener" className="inline-block">
+          <Image
+            src={logoSrc}
+            alt={logoAlt}
+            width={400}
+            height={200}
+            className="mx-auto h-auto w-full max-w-[320px]"
+            priority
+          />
+        </Link>
+
+        {/* Attribution line */}
+        <p className="mt-4 text-xs text-zinc-500">
+          midamgolfHQ coverage supported by {sponsorName}
+        </p>
+
+        {/* CTA + code */}
+        <div className="mt-5 flex flex-col items-center gap-3">
+          <Link
+            href={sponsorUrl}
+            target="_blank"
+            rel="noreferrer noopener"
+            className="inline-flex items-center gap-2 rounded-full bg-white px-6 py-2.5 text-sm font-medium text-zinc-900 transition hover:bg-zinc-200"
+          >
+            {ctaText}
+            <span aria-hidden>→</span>
+          </Link>
+          {discountCode && (
+            <span className="rounded-full bg-emerald-950/50 px-4 py-1.5 text-xs font-medium text-emerald-400">
+              Code: {discountCode}
+            </span>
+          )}
         </div>
+
+        {/* Fine print */}
+        {discountNote && (
+          <p className="mt-5 text-[10px] leading-relaxed text-zinc-600">
+            *{discountNote}
+          </p>
+        )}
       </div>
-    </>
+    </div>
   );
 }
 

@@ -14,7 +14,7 @@ import { TournamentTabs } from "@/components/tournaments/TournamentTabs";
 import { TournamentHowToPlay } from "@/components/tournaments/TournamentHowToPlay";
 import { TournamentNews } from "@/components/tournaments/TournamentNews";
 import { RelatedEvents } from "@/components/tournaments/RelatedEvents";
-import { SponsorStrip, SponsorDisclaimer } from "@/components/tournaments/SponsorStrip";
+import { SponsorStrip } from "@/components/tournaments/SponsorStrip";
 
 export const dynamicParams = false;
 
@@ -233,22 +233,21 @@ export default async function MidAmTournamentPage({
         </div>
       </section>
 
-      {tournament.slug === "the-crump-cup" && (
-        <SponsorStrip
-          logoSrc="/brand/IBT_Logo.png"
-          logoAlt="IBT Golf Travel"
-          sponsorName="IBT Golf Travel"
-          sponsorUrl="https://ibt-golf.com"
-          ctaText="Plan Your Golf Trip"
-          discountCode="IBTNicheGolfHQ"
-          discountNote="NicheGolfHQ subscribers receive preferential rates with code IBTNicheGolfHQ. Subject to availability and Terms and Conditions."
-        />
-      )}
-
       {/* -- White Content -- */}
       <div className="bg-white">
         <div className="mx-auto w-full max-w-5xl px-5 py-10">
           <TournamentQuickFacts tournament={tournament} />
+          {tournament.slug === "the-crump-cup" && (
+            <SponsorStrip
+              logoSrc="/brand/IBT_Logo.png"
+              logoAlt="IBT Golf Travel"
+              sponsorName="IBT Golf Travel"
+              sponsorUrl="https://ibt-golf.com"
+              ctaText="Plan Your Golf Trip"
+              discountCode="IBTNicheGolfHQ"
+              discountNote="NicheGolfHQ subscribers receive preferential rates with code IBTNicheGolfHQ. Subject to availability and Terms and Conditions."
+            />
+          )}
           <TournamentTabs tournament={tournament} />
           <TournamentHowToPlay howToPlay={tournament.howToPlay} />
           <TournamentNews news={tournament.news} articleHrefPrefix={`/midamgolfhq/${tournament.slug}`} />
@@ -259,10 +258,6 @@ export default async function MidAmTournamentPage({
           />
         </div>
       </div>
-
-      {tournament.slug === "the-crump-cup" && (
-        <SponsorDisclaimer note="NicheGolfHQ subscribers receive preferential rates when applying the code IBTNicheGolfHQ. Subject to availability and Terms and Conditions." />
-      )}
     </SiteShell>
   );
 }
