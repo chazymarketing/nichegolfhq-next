@@ -21,8 +21,8 @@ export function SponsorStrip({
   discountNote,
 }: SponsorStripProps) {
   return (
-    <div className="mx-auto w-full max-w-5xl px-5 py-4">
-      <div className="overflow-hidden rounded-2xl bg-zinc-950 px-5 py-5 text-center sm:px-8 sm:py-6">
+    <div className="mx-auto w-full max-w-sm px-5 py-4">
+      <div className="overflow-hidden rounded-3xl bg-zinc-950 p-6 text-center shadow-sm shadow-zinc-900/5">
         {/* Large clickable logo */}
         <Link href={sponsorUrl} target="_blank" rel="noreferrer noopener" className="inline-block">
           <Image
