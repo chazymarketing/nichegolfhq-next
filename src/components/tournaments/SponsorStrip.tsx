@@ -21,16 +21,16 @@ export function SponsorStrip({
   discountNote,
 }: SponsorStripProps) {
   return (
-    <div className="mx-auto w-full max-w-sm px-5 py-4">
-      <div className="overflow-hidden rounded-3xl bg-zinc-950 p-6 text-center shadow-sm shadow-zinc-900/5">
+    <div className="mx-auto w-full max-w-xs px-5 py-4">
+      <div className="overflow-hidden rounded-3xl bg-zinc-950 p-5 text-center shadow-sm shadow-zinc-900/5">
         {/* Large clickable logo */}
         <Link href={sponsorUrl} target="_blank" rel="noreferrer noopener" className="inline-block">
           <Image
             src={logoSrc}
             alt={logoAlt}
-            width={240}
-            height={120}
-            className="mx-auto h-auto w-full max-w-[180px]"
+            width={180}
+            height={90}
+            className="mx-auto h-auto w-full max-w-[140px]"
             priority
           />
         </Link>
@@ -49,7 +49,6 @@ export function SponsorStrip({
             className="inline-flex items-center gap-2 rounded-full bg-white px-6 py-2.5 text-sm font-medium text-zinc-900 transition hover:bg-zinc-200"
           >
             {ctaText}
-            <span aria-hidden>→</span>
           </Link>
           {discountCode && (
             <span className="rounded-full bg-emerald-950/50 px-4 py-1.5 text-xs font-medium text-emerald-400">
