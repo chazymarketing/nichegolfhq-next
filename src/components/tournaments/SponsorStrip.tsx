@@ -44,6 +44,14 @@ export function SponsorStrip({
         priority
       />
 
+      {/* Tagline — real HTML text for readability */}
+      <p className="mt-1 text-sm font-semibold tracking-wide text-zinc-800 text-center">
+        IBT Golf Travel
+      </p>
+      <p className="text-[11px] text-zinc-500">
+        World class experiences in the world&rsquo;s best golfing destinations
+      </p>
+
       {/* Code pill */}
       {discountCode && (
         <span className="mt-3 inline-block rounded-full bg-emerald-50 px-3 py-1 text-[10px] font-medium text-emerald-700">
