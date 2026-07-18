@@ -1,6 +1,39 @@
 {
   "briefs": [
     {
+      "date": "2026-07-18",
+      "title": "Daily Brief - July 18, 2026",
+      "items": [
+        {
+          "title": "Medalist Clairey Lin Reaches 36-Hole Final at U.S. Girls' Junior",
+          "url": "https://www.nichegolfhq.com/juniorgolfhq/us-girls-junior",
+          "source": "nichegolfHQ",
+          "why": "Canada's Clairey Lin, the stroke-play medalist at 13-under 131, edged Athena Singh 1UP in Friday's semifinals and plays today's 36-hole championship final at Old Chatham Golf Club in Durham, N.C.",
+          "tags": [
+            "juniors"
+          ]
+        },
+        {
+          "title": "120th Southern Amateur Final Round Today at Atlanta Athletic Club",
+          "url": "https://www.southerngolf.org/page/name/2026-southern-amateur-championship",
+          "source": "Southern Golf Association",
+          "why": "The 120th Southern Amateur wraps up today at Atlanta Athletic Club, with Stewart Hagestad and Nate Smith leading a deep mid-am contingent chasing the title after strong opening rounds.",
+          "tags": [
+            "mid-am"
+          ]
+        },
+        {
+          "title": "Sunnehanna Senior Amateur Returns to Johnstown Aug 10-12 as Tony Wise Defends",
+          "url": "https://www.nichegolfhq.com/seniorgolfhq/sunnehanna-senior-amateur",
+          "source": "nichegolfHQ",
+          "why": "The invite-only Sunnehanna Senior Amateur brings elite 55+ amateurs back to Sunnehanna Country Club in Johnstown, Pa., with defending champion Tony Wise returning.",
+          "tags": [
+            "senior"
+          ]
+        }
+      ]
+    },
+    {
       "date": "2026-07-17",
       "title": "Daily Brief - July 17, 2026",
       "items": [
