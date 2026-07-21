@@ -13,6 +13,7 @@ export type JuniorMajorEvent = {
     liveStatus?: "live" | "next" | "completed" | "upcoming";
     endsOn?: string; // ISO date "YYYY-MM-DD" — widget auto-hides after this date
   officialUrl?: string;
+  golfGeniusUrl?: string; // live scoring link
   winners?: { year: number; champion: string }[];
   howToPlay?: HowToPlayEntry[];
   // Venue
@@ -442,6 +443,8 @@ export const JUNIOR_MAJOR_EVENTS_2026: JuniorMajorEvent[] = [
   {
     slug: "us-junior-amateur",
     name: "U.S. Junior Amateur",
+    liveStatus: "live",
+    golfGeniusUrl: "https://championships.usga.org/usjunioramateur/2026/scoring.html",
     month: "July 2026",
     startDate: "2026-07-20",
     endDate: "2026-07-25",
