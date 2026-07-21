@@ -1,6 +1,72 @@
 {
   "briefs": [
     {
+      "date": "2026-07-21",
+      "title": "Daily Brief - July 21, 2026",
+      "items": [
+        {
+          "title": "U.S. Junior Amateur Stroke Play Day 2 at Saucon Valley — Cut to 64 Looms",
+          "url": "https://www.nichegolfhq.com/juniorgolfhq/majors/us-junior-amateur/2026",
+          "source": "nichegolfHQ",
+          "why": "Round 2 of stroke play at the 78th U.S. Junior Amateur at Saucon Valley CC today, with the field of 264 being cut to 64 for match play. Defending champion Hamilton Coleman looks to advance.",
+          "tags": [
+            "juniors"
+          ]
+        },
+        {
+          "title": "U.S. Mid-Amateur Qualifying Season Heats Up Ahead of September Championship",
+          "url": "https://championships.usga.org/usmidamateur/2026/qualifying.html",
+          "source": "USGA",
+          "why": "Local and sectional qualifying for the U.S. Mid-Amateur is underway across the country, with the championship set for September at a site to be determined. Top mid-amateurs are sharpening their games through state and regional events.",
+          "tags": [
+            "mid-am"
+          ]
+        },
+        {
+          "title": "VSGA Super Senior Stroke Play Wraps Up at Lake Chesdin",
+          "url": "https://vsga.org/vsga-2026-championship-schedule",
+          "source": "VSGA",
+          "why": "The final round of the 41st VSGA Super Senior Stroke Play Championship at Lake Chesdin Golf Club concludes today.",
+          "tags": [
+            "senior"
+          ]
+        }
+      ]
+    },
+    {
+      "date": "2026-07-20",
+      "title": "Daily Brief - July 20, 2026",
+      "items": [
+        {
+          "title": "U.S. Junior Amateur Opens Today at Saucon Valley — Stroke Play Begins on Old and Grace Courses",
+          "url": "https://www.nichegolfhq.com/juniorgolfhq/majors/us-junior-amateur/2026",
+          "source": "nichegolfHQ",
+          "why": "The 78th U.S. Junior Amateur begins today (July 20) at Saucon Valley CC in Bethlehem, Pa., with 264 players opening 36 holes of stroke play before the cut to a 64-man match-play bracket. Defending champion Hamilton Coleman is chasing the first repeat since Jordan Spieth.",
+          "tags": [
+            "juniors"
+          ]
+        },
+        {
+          "title": "17th NYS Women's Mid-Amateur Begins Today at Pinehaven Country Club",
+          "url": "https://nysga.org/96th-nys-womens-amateur-17th-mid-amateur-championship-central",
+          "source": "NYSGA",
+          "why": "The 36-hole NYS Women's Mid-Amateur (25+) tees off today in Guilderland, N.Y., run alongside the 96th NYS Women's Amateur with 60 of the state's top players. Natalie Grainger of Apawamis Club defends her title.",
+          "tags": [
+            "mid-am"
+          ]
+        },
+        {
+          "title": "41st VSGA Super Senior Stroke Play Championship Tees Off Today at Lake Chesdin",
+          "url": "https://vsga.org/vsga-2026-championship-schedule",
+          "source": "VSGA",
+          "why": "Virginia's top 65-and-over amateurs compete July 20-21 at Lake Chesdin Golf Club in the 41st VSGA Super Senior Stroke Play Championship.",
+          "tags": [
+            "senior"
+          ]
+        }
+      ]
+    },
+    {
       "date": "2026-07-19",
       "title": "Daily Brief - July 19, 2026",
       "items": [
