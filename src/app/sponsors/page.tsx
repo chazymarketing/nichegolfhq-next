@@ -60,18 +60,21 @@ export default function SponsorsPage() {
 
           <div className="mt-8 grid grid-cols-2 gap-4 sm:grid-cols-3 lg:grid-cols-5">
             {[
-              "Holderness & Bourne",
-              "Forme Science",
-              "IBT Golf Travel",
-              "PuttView Books",
-              "TourIQ Golf",
+              { name: "Holderness & Bourne", url: "https://holdernessandbourne.com/" },
+              { name: "Forme Science", url: "https://forme.science/" },
+              { name: "IBT Golf Travel", url: "https://ibt-golf.com" },
+              { name: "PuttView Books", url: "https://puttviewbooks.com/" },
+              { name: "TourIQ Golf", url: "https://www.tour-iq.com/" },
             ].map((brand) => (
-              <div
-                key={brand}
-                className="flex min-h-24 items-center justify-center rounded-2xl border border-zinc-200 bg-white px-5 py-6 text-center text-sm font-semibold text-zinc-800"
+              <a
+                key={brand.name}
+                href={brand.url}
+                target="_blank"
+                rel="noreferrer noopener"
+                className="flex min-h-24 items-center justify-center rounded-2xl border border-zinc-200 bg-white px-5 py-6 text-center text-sm font-semibold text-zinc-800 transition hover:border-zinc-300 hover:shadow-md"
               >
-                {brand}
-              </div>
+                {brand.name}
+              </a>
             ))}
           </div>
         </div>
