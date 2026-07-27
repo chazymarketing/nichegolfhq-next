@@ -51,6 +51,30 @@ export default function SponsorsPage() {
             </Link>
           </div>
         </div>
+
+        <div className="mt-14">
+          <h2 className="text-lg font-semibold">Current and Former Supporters</h2>
+          <p className="mx-auto mt-2 max-w-2xl text-sm text-zinc-600">
+            We are grateful to the brands that have backed nichegolfHQ.
+          </p>
+
+          <div className="mt-8 grid grid-cols-2 gap-4 sm:grid-cols-3 lg:grid-cols-5">
+            {[
+              "Holderness & Bourne",
+              "Forme Science",
+              "IBT Golf Travel",
+              "PuttView Books",
+              "TourIQ Golf",
+            ].map((brand) => (
+              <div
+                key={brand}
+                className="flex min-h-24 items-center justify-center rounded-2xl border border-zinc-200 bg-white px-5 py-6 text-center text-sm font-semibold text-zinc-800"
+              >
+                {brand}
+              </div>
+            ))}
+          </div>
+        </div>
       </div>
     </SiteShell>
   );
