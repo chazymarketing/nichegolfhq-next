@@ -1,6 +1,138 @@
 {
   "briefs": [
     {
+      "date": "2026-07-27",
+      "title": "Daily Brief - July 27, 2026",
+      "items": [
+        {
+          "title": "Noah Maclauchlan Stuns Miles Russell 6&5 to Win 78th U.S. Junior Amateur at Saucon Valley",
+          "url": "https://www.nichegolfhq.com/juniorgolfhq/majors/us-junior-amateur/2026",
+          "source": "nichegolfHQ",
+          "why": "Maclauchlan of Moseley, Va., ranked No. 2,047 in the WAGR, upset top-ranked junior Miles Russell 6 and 5 in Saturday's 36-hole final on Saucon Valley's Old Course to claim the Tiger Woods Trophy.",
+          "tags": [
+            "juniors"
+          ]
+        },
+        {
+          "title": "40th Maryland Mid-Amateur Tees Off Today at Maryland Golf & Country Club",
+          "url": "https://msga.org/2026-msga-championship-preview/",
+          "source": "MSGA",
+          "why": "The MSGA's 40th Maryland Mid-Amateur runs July 27-28 at Maryland Golf & Country Club in Bel Air, part of a late-summer stretch that also has U.S. Mid-Am qualifiers rolling toward Sand Valley.",
+          "tags": [
+            "mid-am"
+          ]
+        },
+        {
+          "title": "Sunnehanna Senior Amateur Returns to Johnstown Classic Aug 10-12",
+          "url": "https://www.nichegolfhq.com/seniorgolfhq/sunnehanna-senior-amateur",
+          "source": "nichegolfHQ",
+          "why": "Tony Wise defends at the invite-only Sunnehanna Senior Amateur, Aug 10-12 at Sunnehanna Country Club, the 1923 design that has hosted amateur golf's best for a century.",
+          "tags": [
+            "senior"
+          ]
+        }
+      ]
+    },
+    {
+      "date": "2026-07-24",
+      "title": "Daily Brief - July 24, 2026",
+      "items": [
+        {
+          "title": "Quarterfinal Friday at U.S. Junior Amateur; Top-Ranked Miles Russell Among Final Eight",
+          "url": "https://www.nichegolfhq.com/juniorgolfhq/majors/us-junior-amateur/2026",
+          "source": "nichegolfHQ",
+          "why": "On 2026-07-24: Quarterfinals go this morning and semifinals this afternoon at the 78th U.S. Junior Amateur at Saucon Valley CC. Top-ranked junior Miles Russell, who drove the 324-yard 18th to close out a 2-up win over Reed Arnaldo, faces Dylan Boenning, while Tyler Mawhinney meets co-medalist Sohan Patel in the same half of the bracket.",
+          "tags": [
+            "juniors"
+          ]
+        },
+        {
+          "title": "Matt Lowe in the Hunt as Monroe Invitational Reaches Moving Day at Monroe Golf Club",
+          "url": "https://leaderboard.monroeinvitational.com/",
+          "source": "Monroe Invitational",
+          "why": "On 2026-07-24: Round 3 goes today at the 85th Monroe Invitational at Monroe Golf Club in Pittsford, N.Y., with the field cut to the low 45 and ties ahead of Saturday morning's final round. Mid-am Matt Lowe, the reigning Ike MGA Stroke Play champion, is in the hunt in a field that also includes two-time Ohio Amateur champion Andrew Bailey.",
+          "tags": [
+            "mid-am"
+          ]
+        },
+        {
+          "title": "U.S. Senior Amateur Qualifying Enters Its Final Week on the Road to Baltimore",
+          "url": "https://championships.usga.org/ussenioramateur/2026/qualifying.html",
+          "source": "USGA",
+          "why": "On 2026-07-24: Qualifying for the U.S. Senior Amateur wraps up Thursday, July 30, with the last spots on the line at remaining sites nationwide. The championship field heads to the East Course at Baltimore Country Club in Lutherville, Md., Aug. 29-Sept. 3.",
+          "tags": [
+            "senior"
+          ]
+        }
+      ]
+    },
+    {
+      "date": "2026-07-23",
+      "title": "Daily Brief - July 23, 2026",
+      "items": [
+        {
+          "title": "U.S. Junior Amateur Cuts to 16 Today at Saucon Valley After Woods Falls in Playoff",
+          "url": "https://www.nichegolfhq.com/juniorgolfhq/majors/us-junior-amateur/2026",
+          "source": "nichegolfHQ",
+          "why": "On 2026-07-23: Match play continues Thursday at the 78th U.S. Junior Amateur with the rounds of 32 and 16 at Saucon Valley CC, ahead of Saturday's 36-hole final. Charlie Woods' week ended Wednesday with a bogey on the first hole of the 14-for-2 playoff for the last match-play spots, which sent Eli Wessel and Hudson Kutchma into the bracket.",
+          "tags": [
+            "juniors"
+          ]
+        },
+        {
+          "title": "Mid-Ams Including Two-Time Ohio Amateur Champ Andrew Bailey Tee It Up at 85th Monroe Invitational",
+          "url": "https://monroeinvitational.com/dates-schedule/",
+          "source": "Monroe Invitational",
+          "why": "On 2026-07-23: The 85th Monroe Invitational continues with round 2 today at Monroe Golf Club in Pittsford, N.Y., a 72-hole test running through Saturday with a cut to the low 45 and ties after round 3. Mid-amateurs in the field include two-time Ohio Amateur champion Andrew Bailey.",
+          "tags": [
+            "mid-am"
+          ]
+        },
+        {
+          "title": "U.S. Senior Women's Amateur Qualifying Opens July 30 on the Road to Portland Golf Club",
+          "url": "https://championships.usga.org/usseniorwomensamateur/2026/qualifying.html",
+          "source": "USGA",
+          "why": "On 2026-07-23: Qualifying for the 64th U.S. Senior Women's Amateur begins July 30 and runs through Sept. 2, with the championship set for Portland Golf Club in Portland, Ore., Sept. 26-Oct. 1.",
+          "tags": [
+            "senior"
+          ]
+        }
+      ]
+    },
+    {
+      "date": "2026-07-22",
+      "title": "Daily Brief - July 22, 2026",
+      "items": [
+        {
+          "title": "Match Play Begins at U.S. Junior Amateur; Coleman Out, Woods in Playoff for Final Spots",
+          "url": "https://www.nichegolfhq.com/juniorgolfhq/majors/us-junior-amateur/2026",
+          "source": "nichegolfHQ",
+          "why": "On 2026-07-22: The round of 64 begins today at the 78th U.S. Junior Amateur at Saucon Valley CC after Miles Russell, Sohan Patel and Brayden Jones shared medalist honors at 6-under. Charlie Woods was among 14 players in a Wednesday morning playoff for the final two match-play spots, while defending champion Hamilton Coleman missed the cut at 8-over.",
+          "tags": [
+            "juniors"
+          ]
+        },
+        {
+          "title": "Lauren Cupp Wins 17th NYS Women's Mid-Amateur by Eight Shots at Pinehaven",
+          "url": "https://www.romesentinel.com/sports/cupp-golf-title/article_0d550712-41cd-415c-8c96-e03bc02984c6.html",
+          "source": "Rome Sentinel",
+          "why": "On 2026-07-22: Lauren Cupp of Yahnundasis Golf Club posted rounds of 74-80 for a 154 total at Pinehaven Country Club in Guilderland, N.Y., winning the 17th NYS Women's Mid-Amateur by eight over Samantha Schuffenecker and Kim Kaul. The Hamilton College golf coach adds a second title in the event to her 2017 win.",
+          "tags": [
+            "mid-am"
+          ]
+        },
+        {
+          "title": "U.S. Senior Amateur Qualifying Runs Through July 30 Ahead of Baltimore CC Championship",
+          "url": "https://championships.usga.org/ussenioramateur/2026/qualifying.html",
+          "source": "USGA",
+          "why": "On 2026-07-22: Qualifying for the U.S. Senior Amateur continues at sites across the country through July 30, with the championship set for the East Course at Baltimore Country Club in Lutherville, Md., Aug. 29-Sept. 3.",
+          "tags": [
+            "senior"
+          ]
+        }
+      ]
+    },
+    {
       "date": "2026-07-21",
       "title": "Daily Brief - July 21, 2026",
       "items": [
@@ -4062,6 +4194,39 @@
           "url": "https://www.amateurgolf.com/golf-tournament-news/34003/Joe-Alfieri-Cruises-to-Senior-Azalea-Title-at-Palatka",
           "source": "AmateurGolf.com",
           "why": "On 2026-03-20: Joe Alfieri went 67-66-67 to finish 10-under 200, winning the Senior Azalea by 10 shots at Palatka Golf Club.",
+          "tags": [
+            "senior"
+          ]
+        }
+      ]
+    },
+    {
+      "date": "2026-03-19",
+      "title": "Daily Brief — Mar 19, 2026",
+      "items": [
+        {
+          "title": "K.J. Choi Foundation Texas Junior Championship enters final round Friday",
+          "url": "https://www.ajga.org/tournaments/2026013",
+          "source": "AJGA",
+          "why": "On 2026-03-19: The K.J. Choi Foundation Texas Junior Championship (Mar 17–20) plays its penultimate round today, with the AJGA field set for Friday's finale.",
+          "tags": [
+            "juniors"
+          ]
+        },
+        {
+          "title": "South Mid-Amateur tees off tomorrow at Forest Creek GC, Mar 20–22",
+          "url": "https://txga.org/2026-south-mid-amateur/",
+          "source": "Texas Golf Association",
+          "why": "On 2026-03-19: Texas mid-am players arrive at Forest Creek Golf Club ahead of the South Mid-Amateur, which opens tomorrow and runs through Mar 22.",
+          "tags": [
+            "mid-am"
+          ]
+        },
+        {
+          "title": "U.S. Senior Amateur entries close Mar 25 as qualifying schedule firms up",
+          "url": "https://championships.usga.org/ussenioramateur/2026/qualifying.html",
+          "source": "USGA",
+          "why": "On 2026-03-19: The USGA's U.S. Senior Amateur qualifying schedule is posted, with entries due by 5:00 p.m. EDT on 2026-03-25 for players 55 and over.",
           "tags": [
             "senior"
           ]
