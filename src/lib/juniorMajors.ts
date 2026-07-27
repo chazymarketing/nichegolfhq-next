@@ -443,7 +443,7 @@ export const JUNIOR_MAJOR_EVENTS_2026: JuniorMajorEvent[] = [
   {
     slug: "us-junior-amateur",
     name: "U.S. Junior Amateur",
-    liveStatus: "live",
+    liveStatus: "completed",
     golfGeniusUrl: "https://championships.usga.org/usjunioramateur/2026/scoring.html",
     month: "July 2026",
     startDate: "2026-07-20",
