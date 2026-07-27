@@ -28,8 +28,8 @@ export function SponsorStrip({
       className="group block rounded-2xl border border-zinc-200 bg-white p-5 text-center shadow-sm transition hover:border-zinc-300"
     >
       {/* Attribution */}
-      <p className="text-xs font-semibold tracking-widest text-zinc-400 text-center">
-        midamgolfHQ coverage supported by IBT
+      <p className="text-xs font-semibold tracking-widest text-zinc-700 text-center">
+        midamgolfHQ coverage supported by IBT Golf Travel
       </p>
 
       {/* Logo — the hero of the box */}
