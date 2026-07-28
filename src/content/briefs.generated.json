@@ -1,6 +1,39 @@
 {
   "briefs": [
     {
+      "date": "2026-07-28",
+      "title": "Daily Brief - July 28, 2026",
+      "items": [
+        {
+          "title": "50th Junior PGA Championships Tee Off Today at Fields Ranch at PGA Frisco",
+          "url": "https://www.pga.com/story/50th-junior-pga-championships-begin-tuesday-at-fields-ranch-at-pga-frisco",
+          "source": "PGA of America",
+          "why": "156 boys and 156 girls open 72 holes of stroke play July 28-31 on Fields Ranch East & West, with Charlie Woods and four top-20 juniors in the field. New for 2026, the final two rounds stream live on the PGA of America's YouTube channel.",
+          "tags": [
+            "juniors"
+          ]
+        },
+        {
+          "title": "Entries Close Today for PNGA Men's Mid-Amateur at Royal Oaks",
+          "url": "https://thepnga.org/championships/mens-mid-amateur/",
+          "source": "PNGA",
+          "why": "The entry deadline is today at noon for the Aug 18-20 championship at Royal Oaks Country Club in Vancouver, Wash., where Wyatt Brook defends in a 66-player field decided by handicap index.",
+          "tags": [
+            "mid-am"
+          ]
+        },
+        {
+          "title": "U.S. Senior Amateur Qualifying Enters Final Days on Road to Baltimore Country Club",
+          "url": "https://championships.usga.org/ussenioramateur/2026/qualifying.html",
+          "source": "USGA",
+          "why": "Qualifying at 50 sites wraps up July 30, finalizing the field for the 71st U.S. Senior Amateur, Aug 29-Sep 3 at Baltimore Country Club's East Course in Lutherville, Md.",
+          "tags": [
+            "senior"
+          ]
+        }
+      ]
+    },
+    {
       "date": "2026-07-27",
       "title": "Daily Brief - July 27, 2026",
       "items": [
