@@ -4,6 +4,11 @@ import { getFeedBySlug } from "@/lib/feeds";
 
 const ORDER = ["juniorgolfhq", "midamgolfhq", "seniorgolfhq"] as const;
 
+// Shared height so all three subscribe boxes render at the same size on this
+// page. Uses the tallest embed so no form is clipped. Per-channel heights still
+// apply on individual channel home pages.
+const SUBSCRIBE_EMBED_HEIGHT = 760;
+
 export const metadata = {
   title: "Subscribe",
   description:
@@ -31,7 +36,7 @@ export default function SubscribePage() {
               <div className="mx-auto w-full">
                 <BeehiivEmbed
                   src={feed.subscribeEmbedUrl}
-                  height={feed.subscribeEmbedHeight}
+                  height={SUBSCRIBE_EMBED_HEIGHT}
                   title={`${feed.name} subscribe`}
                 />
               </div>
