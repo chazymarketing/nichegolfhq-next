@@ -165,6 +165,13 @@ export default async function NewsletterPage({
     acc[t.month].push(t);
     return acc;
   }, {});
+  for (const month of Object.keys(tournamentsByMonth)) {
+    tournamentsByMonth[Number(month)].sort((a, b) => {
+      if (!a.startDate) return b.startDate ? 1 : 0;
+      if (!b.startDate) return -1;
+      return a.startDate.localeCompare(b.startDate);
+    });
+  }
   const scheduleMonths = Object.keys(tournamentsByMonth)
     .map((m) => Number(m))
     .sort((a, b) => a - b);
