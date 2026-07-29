@@ -11,6 +11,7 @@ export type SeniorMajorEvent = {
   format?: string; // short label used on schedule + hubs (match Mid-Am style)
   note?: string;
   liveStatus?: "live" | "next" | "completed" | "upcoming";
+  logo?: string;
   officialUrl?: string;
   golfGeniusUrl?: string;
   winners?: { year: number; champion: string }[];
@@ -359,6 +360,7 @@ export const SENIOR_MAJOR_EVENTS_2026: SeniorMajorEvent[] = [
   {
     slug: "usga-mens-senior-amateur",
     name: "USGA Men's Senior Amateur",
+    logo: "/brand/usga-mens-senior-amateur.png",
     month: "August/September 2026",
     startDate: "2026-08-29",
     endDate: "2026-09-03",

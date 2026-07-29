@@ -32,6 +32,7 @@ function toTournament(
     slug: event.slug,
     name: event.name,
     channel: "senior",
+    logo: event.logo,
     month: 1, // placeholder
     dates2026: event.dates2026 ?? event.month, // e.g. "February 2026"
     startDate: event.startDate,
