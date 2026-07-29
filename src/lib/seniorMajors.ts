@@ -102,7 +102,7 @@ export const SENIOR_MAJOR_EVENTS_2026: SeniorMajorEvent[] = [
       { year: 2021, champion: "Jack Hall" },
       { year: 2020, champion: "Jimmy Jones" },
     ],
-    howToPlay: [{ label: "Invite only \u2014 no application" }],
+    howToPlay: [{ label: "Apply for invite here", href: "https://gasparillainvitational.com/" }],
   },
   {
     slug: "jones-cup-senior-invitational",
