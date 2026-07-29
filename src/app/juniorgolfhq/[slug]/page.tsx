@@ -23,6 +23,35 @@ export function generateStaticParams() {
 }
 
 /* ------------------------------------------------------------------ */
+/* Helper: build a readable date range like "July 20-25, 2026" from    */
+/* ISO startDate/endDate. Falls back gracefully across month/year.     */
+/* ------------------------------------------------------------------ */
+const MONTH_NAMES = [
+  "January", "February", "March", "April", "May", "June",
+  "July", "August", "September", "October", "November", "December",
+];
+
+function formatDateRange(startDate?: string, endDate?: string): string | null {
+  if (!startDate) return null;
+  const s = startDate.split("-").map(Number); // [y, m, d]
+  if (s.length !== 3 || s.some(Number.isNaN)) return null;
+  const [sy, sm, sd] = s;
+  const startMonth = MONTH_NAMES[sm - 1];
+  if (!startMonth) return null;
+
+  if (!endDate) return `${startMonth} ${sd}, ${sy}`;
+  const e = endDate.split("-").map(Number);
+  if (e.length !== 3 || e.some(Number.isNaN)) return `${startMonth} ${sd}, ${sy}`;
+  const [ey, em, ed] = e;
+  const endMonth = MONTH_NAMES[em - 1];
+  if (!endMonth) return `${startMonth} ${sd}, ${sy}`;
+
+  if (sy === ey && sm === em) return `${startMonth} ${sd}-${ed}, ${sy}`;
+  if (sy === ey) return `${startMonth} ${sd} - ${endMonth} ${ed}, ${sy}`;
+  return `${startMonth} ${sd}, ${sy} - ${endMonth} ${ed}, ${ey}`;
+}
+
+/* ------------------------------------------------------------------ */
 /* Helper: convert JuniorMajorEvent → Tournament for shared components */
 /* ------------------------------------------------------------------ */
 function toTournament(
@@ -33,7 +62,12 @@ function toTournament(
     name: event.name,
     channel: "junior",
     month: 1, // placeholder — hero uses dates2026/typicalDates which we set below
-    dates2026: event.dates2026 ?? event.month, // e.g. "February 2026"
+    // Prefer an explicit dates2026, then synthesize from startDate/endDate,
+    // then fall back to the coarse month string (e.g. "February 2026").
+    dates2026:
+      event.dates2026 ??
+      formatDateRange(event.startDate, event.endDate) ??
+      event.month,
     startDate: event.startDate,
     endDate: event.endDate,
     course: event.course,

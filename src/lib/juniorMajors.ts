@@ -417,9 +417,11 @@ export const JUNIOR_MAJOR_EVENTS_2026: JuniorMajorEvent[] = [
     slug: "us-girls-junior",
     name: "U.S. Girls' Junior Amateur",
     month: "July 2026",
+    liveStatus: "completed",
     startDate: "2026-07-13",
     endDate: "2026-07-18",
     dates2026: "July 13\u201318, 2026",
+    winners2026: { girls: "Clairey Lin" },
     officialUrl: "https://www.usga.org/championships/u-s-girls-junior-amateur.html",
     // Host course rotates annually. Listed course reflects the 2025 host.
     course: "Old Chatham Golf Club",
@@ -433,6 +435,7 @@ export const JUNIOR_MAJOR_EVENTS_2026: JuniorMajorEvent[] = [
     overview: "Conducted by the USGA since 1949, the U.S. Girls\u2019 Junior Amateur is the premier national championship for female junior golfers in the United States. The field qualifies through local and sectional qualifying events across the country, then the top 64 stroke play qualifiers advance to match play. The event has launched the careers of Annika Sorenstam, Michelle Wie, and Rose Zhang.",
     note: "Host course rotates annually. 2026 host: Old Chatham Golf Club, Durham, NC.",
     pastResults: [
+      { year: 2026, champion: "Clairey Lin", runnerUp: "Amelie Zalsman (5 & 4)" },
       { year: 2025, champion: "Aphrodite Deng", runnerUp: "Xingtong Chen (2 & 1)" },
       { year: 2024, champion: "Rianne Malixi", runnerUp: "Asterisk Talley (8 & 7)" },
       { year: 2023, champion: "Kiara Romero", runnerUp: "Rianne Malixi (1-up)" },
@@ -449,6 +452,7 @@ export const JUNIOR_MAJOR_EVENTS_2026: JuniorMajorEvent[] = [
     startDate: "2026-07-20",
     endDate: "2026-07-25",
     dates2026: "July 20–25, 2026",
+    winners2026: { boys: "Noah Maclauchlan" },
     officialUrl: "https://www.usga.org/championships/u-s-junior-amateur.html",
     // Host course rotates annually. Listed course reflects the 2025 host.
     course: "Saucon Valley Country Club",
@@ -462,6 +466,7 @@ export const JUNIOR_MAJOR_EVENTS_2026: JuniorMajorEvent[] = [
     overview: "Conducted by the USGA since 1948, the U.S. Junior Amateur is the most prestigious national championship for male junior golfers and a launchpad for legends including Tiger Woods (3-time champion, 1991\u201393), Jordan Spieth, and Nick Dunlap. The 256-player stroke play field is among the deepest in amateur golf, and the match play bracket tests champions across seven rounds in seven days.",
     note: "Host course rotates annually. 2026 host: Saucon Valley Country Club, Bethlehem, PA.",
     pastResults: [
+      { year: 2026, champion: "Noah Maclauchlan", runnerUp: "Miles Russell (6 & 5)" },
       { year: 2025, champion: "Hamilton Coleman", runnerUp: "Minh Nguyen (2 & 1)" },
       { year: 2024, champion: "Trevor Gutschewski", runnerUp: "Tyler Watts (4 & 3)" },
       { year: 2023, champion: "Bryan Kim", runnerUp: "Joshua Bai (2-up)" },
@@ -472,6 +477,7 @@ export const JUNIOR_MAJOR_EVENTS_2026: JuniorMajorEvent[] = [
   {
     slug: "boys-junior-pga",
     name: "Boys Junior PGA Championship",
+    liveStatus: "live",
     month: "July 2026",
     startDate: "2026-07-28",
     endDate: "2026-07-31",
