@@ -325,6 +325,7 @@ export const SENIOR_MAJOR_EVENTS_2026: SeniorMajorEvent[] = [
   {
     slug: "sunnehanna-senior-amateur",
     name: "Sunnehanna Senior Amateur Championship",
+    logo: "/brand/sunnehanna-senior-amateur.svg",
     month: "August 2026",
     startDate: "2026-08-10",
     endDate: "2026-08-12",
