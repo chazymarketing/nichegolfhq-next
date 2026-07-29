@@ -652,8 +652,13 @@ export function listSeniorMajorsByMonth(): Array<{
   for (const m of order) {
     const events = groups.get(m);
     if (!events || !events.length) continue;
+    const sorted = [...events].sort((a, b) => {
+      if (!a.startDate) return b.startDate ? 1 : 0;
+      if (!b.startDate) return -1;
+      return a.startDate.localeCompare(b.startDate);
+    });
     const monthKey = m.split(" ")[0].slice(0, 3).toLowerCase();
-    out.push({ month: m, monthKey, events });
+    out.push({ month: m, monthKey, events: sorted });
   }
   return out;
 }
