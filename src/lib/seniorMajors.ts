@@ -37,6 +37,7 @@ export const SENIOR_MAJOR_EVENTS_2026: SeniorMajorEvent[] = [
   {
     slug: "society-of-seniors-spring-classic",
     name: "Society of Seniors: Spring Classic",
+    logo: "/brand/society-of-seniors.jpg",
     month: "February 2026",
     startDate: "2026-02-09",
     endDate: "2026-02-11",
@@ -119,6 +120,7 @@ export const SENIOR_MAJOR_EVENTS_2026: SeniorMajorEvent[] = [
   {
     slug: "society-of-seniors-ed-tutwiler-four-ball",
     name: "Society of Seniors: Ed Tutwiler Four-Ball",
+    logo: "/brand/society-of-seniors.jpg",
     month: "March 2026",
     startDate: "2026-03-15",
     endDate: "2026-03-18",
@@ -163,6 +165,7 @@ export const SENIOR_MAJOR_EVENTS_2026: SeniorMajorEvent[] = [
   {
     slug: "society-of-seniors-senior-masters",
     name: "Society of Seniors: Senior Masters",
+    logo: "/brand/society-of-seniors.jpg",
     month: "April 2026",
     startDate: "2026-04-20",
     endDate: "2026-04-22",
@@ -516,6 +519,7 @@ export const SENIOR_MAJOR_EVENTS_2026: SeniorMajorEvent[] = [
   {
     slug: "society-of-seniors-ralph-bogart",
     name: "Society of Seniors: Ralph Bogart",
+    logo: "/brand/society-of-seniors.jpg",
     month: "November 2026",
     startDate: "2026-11-09",
     endDate: "2026-11-11",
