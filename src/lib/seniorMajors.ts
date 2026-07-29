@@ -393,7 +393,7 @@ export const SENIOR_MAJOR_EVENTS_2026: SeniorMajorEvent[] = [
       { year: 2014, champion: "Patrick Tallent" },
       { year: 2013, champion: "Doug Hanzel" },
     ],
-    howToPlay: [{ label: "Invite only \u2014 no application" }],
+    howToPlay: [{ label: "Open qualifying + exemptions", href: "https://champ-admin.usga.org/player" }],
   },
   {
     slug: "senior-porter-cup",
