@@ -577,14 +577,20 @@ export const SENIOR_MAJOR_EVENTS_2026: SeniorMajorEvent[] = [
   {
     slug: "national-senior-hall-of-fame",
     name: "National Senior Hall of Fame",
-    month: "Date TBD",
-    note: "Date, venue, and format to be confirmed.",
+    month: "June 2026",
+    startDate: "2026-06-10",
+    endDate: "2026-06-12",
+    course: "High Point Country Club (Willow Creek Course)",
+    winners: [{ year: 2026, champion: "Vance Welch" }],
   },
   {
     slug: "golfweek-senior-national-championship",
     name: "Golfweek Senior National Championship",
-    month: "Date TBD",
-    note: "Date, venue, and format to be confirmed.",
+    month: "June 2026",
+    startDate: "2026-06-15",
+    endDate: "2026-06-17",
+    course: "Benvenue Golf & Country Club",
+    winners: [{ year: 2026, champion: "Bryan Hoops" }],
   },
 ];
 
