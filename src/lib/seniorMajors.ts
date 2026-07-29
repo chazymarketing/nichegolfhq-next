@@ -879,8 +879,33 @@ export function listSeniorMajorsByMonth(): Array<{
 }
 
 
-// Returns the first senior tournament currently flagged as live or next.
-// Used by the active-tournament widget on the seniorgolfHQ home page.
-export function getLiveSeniorTournament(): SeniorMajorEvent | undefined {
-    return SENIOR_MAJOR_EVENTS_2026.find((t) => t.liveStatus === "live") || SENIOR_MAJOR_EVENTS_2026.find((t) => t.liveStatus === "next");
+// Returns the senior tournament(s) to show in the "Now playing" / "Up next"
+// widget on the seniorgolfHQ home page. Prefers an explicit liveStatus flag
+// (manually set), then falls back to today's date against startDate/endDate
+// so the widget stays current without anyone having to flip a flag. If two+
+// events share the same next startDate (e.g. a shared opening weekend), all
+// of them are returned so a card renders for each.
+export function listLiveSeniorTournaments(): SeniorMajorEvent[] {
+  const explicitLive = SENIOR_MAJOR_EVENTS_2026.filter((t) => t.liveStatus === "live");
+  if (explicitLive.length > 0) return explicitLive;
+
+  const today = new Date().toISOString().slice(0, 10);
+
+  const dateLive = SENIOR_MAJOR_EVENTS_2026.filter(
+    (t) => t.startDate && t.endDate && t.startDate <= today && today <= t.endDate
+  );
+  if (dateLive.length > 0) return dateLive.map((t) => ({ ...t, liveStatus: "live" as const }));
+
+  const explicitNext = SENIOR_MAJOR_EVENTS_2026.filter((t) => t.liveStatus === "next");
+  if (explicitNext.length > 0) return explicitNext;
+
+  const upcoming = SENIOR_MAJOR_EVENTS_2026
+    .filter((t) => t.startDate && t.startDate > today && t.liveStatus !== "completed")
+    .sort((a, b) => a.startDate!.localeCompare(b.startDate!));
+  if (upcoming.length === 0) return [];
+
+  const earliestStart = upcoming[0].startDate;
+  return upcoming
+    .filter((t) => t.startDate === earliestStart)
+    .map((t) => ({ ...t, liveStatus: "next" as const }));
 }
