@@ -822,7 +822,6 @@ export const SENIOR_MAJOR_EVENTS_2026: SeniorMajorEvent[] = [
       { year: 2010, champion: "Gary Shimmin", score: "221" },
       { year: 2009, champion: "Gary Cloutier", score: "215" },
       { year: 2008, champion: "Rich Anderson", score: "214" },
-      { year: 1979, champion: "Ed Tutwiler" },
     ],
     howToPlay: [{ label: "Invite only \u2014 no application" }],
   },
