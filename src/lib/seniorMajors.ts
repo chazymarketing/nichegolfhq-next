@@ -116,6 +116,9 @@ export const SENIOR_MAJOR_EVENTS_2026: SeniorMajorEvent[] = [
     coursePar: 70,
     courseYardage: 6945,
     courseDesigner: "Harry Colt & Charles Alison (1929); Tom Fazio renovation (1999)",
+    tournamentWebsite: "https://www.jonescupinvitational.com/senior-invitational/",
+    golfGeniusUrl: "https://2026jonescupseniorinvitational.golfgenius.com/pages/12184924252813678440",
+    golfGeniusUrlLabel: "2026 Results",
     overview: "The Jones Cup Senior Invitational is played on the iconic Seaside Course at Sea Island Golf Club \u2014 a storied coastal Georgia layout that melds original Colt-Alison architecture with a Fazio renovation. Part of the prestigious Jones Cup family, the senior event attracts elite 55+ amateurs to one of America\u2019s most celebrated golf destinations each February.",
     winners: [
       { year: 2026, champion: "Mike McCoy" },
