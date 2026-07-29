@@ -536,7 +536,7 @@ export const SENIOR_MAJOR_EVENTS_2026: SeniorMajorEvent[] = [
     howToPlay: [
       {
         label: "Open entry via randa.org",
-        href: "https://www.randa.org/championships/the-senior-amateur-championship",
+        href: "https://www.randa.org/championship-entries",
         note: "Age 55+, Handicap Index of 2.4 or better; exempt categories (past champions, Amateur/Mid-Am/Senior Open players, Walker Cup alumni, etc.) fill first, remaining spots by lowest handicap",
       },
     ],
