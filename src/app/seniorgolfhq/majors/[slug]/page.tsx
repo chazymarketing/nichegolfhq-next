@@ -51,13 +51,18 @@ export default async function SeniorMajorHubPage({
             <div className="rounded-3xl border border-zinc-200 bg-white p-6">
               <h2 className="text-sm font-semibold tracking-tight text-zinc-950">2026</h2>
 
-              {event.winners?.length ? (
-                <p className="mt-3 text-sm leading-relaxed text-zinc-700">
-                  Winner: <span className="font-semibold text-zinc-950">{event.winners[0].champion}</span>
-                </p>
-              ) : (
-                <p className="mt-3 text-sm leading-relaxed text-zinc-700">Winner data TBD.</p>
-              )}
+              {(() => {
+                const latest = event.winners?.length
+                  ? event.winners[0]
+                  : [...(event.pastResults ?? [])].sort((a, b) => b.year - a.year)[0];
+                return latest ? (
+                  <p className="mt-3 text-sm leading-relaxed text-zinc-700">
+                    Winner: <span className="font-semibold text-zinc-950">{latest.champion}</span>
+                  </p>
+                ) : (
+                  <p className="mt-3 text-sm leading-relaxed text-zinc-700">Winner data TBD.</p>
+                );
+              })()}
 
               <Link
                 href={`/seniorgolfhq/majors/${event.slug}/2026`}

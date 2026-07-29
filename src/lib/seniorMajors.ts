@@ -14,6 +14,7 @@ export type SeniorMajorEvent = {
   logo?: string;
   officialUrl?: string;
   golfGeniusUrl?: string;
+  golfGeniusUrlLabel?: string;
   winners?: { year: number; champion: string }[];
   howToPlay?: HowToPlayEntry[];
   // Venue
@@ -28,7 +29,7 @@ export type SeniorMajorEvent = {
   // Editorial
   overview?: string;
   // History (richer than winners[])
-  pastResults?: { year: number; champion: string; score?: string; runnerUp?: string }[];
+  pastResults?: { year: number; champion: string; score?: string; runnerUp?: string; venue?: string }[];
   // News
   news?: NewsArticle[];
 };
@@ -48,15 +49,28 @@ export const SENIOR_MAJOR_EVENTS_2026: SeniorMajorEvent[] = [
     courseYardage: 7235,
     courseDesigner: "Ron Garl (orig. 1976); redesigned Kipp Schulties (2023)",
     note: "Rotating venue; 2026 host: Aileron Golf Club, Lake Suzy, FL",
+    golfGeniusUrl: "https://www.golfgenius.com/pages/5666031",
+    golfGeniusUrlLabel: "2026 Results",
     overview: "The Society of Seniors Spring Classic opens the SOS annual schedule and draws elite 55+ amateurs to rotating Florida venues each February. Founded in 1983, the Society of Seniors stages ten events annually across the country, and the Spring Classic has served as a premier season-opener for four-plus decades. The 2026 edition (18th) was hosted at the recently redesigned Aileron Golf Club in Lake Suzy.",
-    winners: [
-      { year: 2026, champion: "William Mallon" },
-      { year: 2025, champion: "Doug Hanzel" },
-      { year: 2024, champion: "Paul Simson" },
-      { year: 2023, champion: "Chip Lutz" },
-      { year: 2022, champion: "Bob Royak" },
-      { year: 2021, champion: "Doug Hanzel" },
-      { year: 2020, champion: "Gene Elliott" },
+    pastResults: [
+      { year: 2026, champion: "William Mallon", venue: "Aileron Golf Club" },
+      { year: 2025, champion: "Doug Hanzel", venue: "World Golf Village (Slammer & Squire)" },
+      { year: 2024, champion: "Rick Stimmel", venue: "Orange County National" },
+      { year: 2023, champion: "Doug Clapp", venue: "Abacoa Golf Club" },
+      { year: 2022, champion: "Bob Bailey", venue: "Hammock Beach Resort" },
+      { year: 2021, champion: "Rusty Strawn", venue: "Orange County National" },
+      { year: 2020, champion: "Ken Kinkopf", venue: "Abacoa Golf Club" },
+      { year: 2019, champion: "Jim Lehman", venue: "Hammock Beach Golf Resort" },
+      { year: 2018, champion: "Lewis Stephenson", venue: "Abacoa Golf Club" },
+      { year: 2017, champion: "Keith Decker", venue: "Abacoa Golf Club" },
+      { year: 2016, champion: "Keith Decker", venue: "Santa Lucia River Club" },
+      { year: 2015, champion: "Michael Occi", venue: "Verandah Club" },
+      { year: 2014, champion: "Stephen Sharpe", venue: "Bonita Bay Club East" },
+      { year: 2013, champion: "Jim Lehman", venue: "Ironhorse GC" },
+      { year: 2012, champion: "Mike Bodney", venue: "Twin Eagles GC" },
+      { year: 2011, champion: "Duke Delcher", venue: "PGA Village" },
+      { year: 2010, champion: "Chip Lutz", venue: "Santa Lucia River Club" },
+      { year: 2009, champion: "Ron Carter", venue: "Pensacola CC" },
     ],
     howToPlay: [{ label: "Apply for invite", href: "https://www.societyofseniors.com/membership/" }],
   },

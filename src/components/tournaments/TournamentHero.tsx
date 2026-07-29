@@ -80,7 +80,7 @@ export function TournamentHero({ tournament }: { tournament: Tournament }) {
             rel="noreferrer"
             className="inline-flex items-center gap-2 rounded-full bg-emerald-600 px-7 py-3.5 text-sm font-bold text-zinc-900 shadow-sm transition hover:-translate-y-0.5 hover:bg-emerald-500 hover:shadow-lg"
           >
-            <span>Live Scoring</span>
+            <span>{tournament.golfGeniusUrlLabel ?? "Live Scoring"}</span>
           </a>
         </div>
       ) : null}

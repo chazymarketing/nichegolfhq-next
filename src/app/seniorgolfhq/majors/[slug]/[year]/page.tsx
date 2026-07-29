@@ -54,28 +54,34 @@ export default async function SeniorMajorYearPage({
         <div className="space-y-4">
           <div className="rounded-3xl border border-zinc-200 bg-white p-6">
             <h2 className="text-sm font-semibold tracking-tight text-zinc-950">Winners</h2>
-            {event.winners?.length ? (
-              <div className="mt-4 overflow-x-auto">
-                <table className="w-full border-separate border-spacing-0">
-                  <thead>
-                    <tr className="text-left text-[11px] font-medium uppercase tracking-wide text-zinc-500">
-                      <th className="px-3 py-2">Year</th>
-                      <th className="px-3 py-2">Champion</th>
-                    </tr>
-                  </thead>
-                  <tbody className="text-sm text-zinc-800">
-                    {[...event.winners].sort((a, b) => b.year - a.year).map((r, idx) => (
-                      <tr key={r.year + r.champion} className={idx % 2 === 0 ? "bg-zinc-50" : "bg-white"}>
-                        <td className="px-3 py-3 font-medium text-zinc-900">{r.year}</td>
-                        <td className="px-3 py-3 font-semibold text-zinc-950">{r.champion}</td>
+            {(() => {
+              const rows = event.winners?.length ? event.winners : (event.pastResults ?? []);
+              const hasVenue = rows.some((r: any) => r.venue);
+              return rows.length ? (
+                <div className="mt-4 overflow-x-auto">
+                  <table className="w-full border-separate border-spacing-0">
+                    <thead>
+                      <tr className="text-left text-[11px] font-medium uppercase tracking-wide text-zinc-500">
+                        <th className="px-3 py-2">Year</th>
+                        <th className="px-3 py-2">Champion</th>
+                        {hasVenue ? <th className="px-3 py-2">Venue</th> : null}
                       </tr>
-                    ))}
-                  </tbody>
-                </table>
-              </div>
-            ) : (
-              <p className="mt-3 text-sm text-zinc-700">Winner data TBD.</p>
-            )}
+                    </thead>
+                    <tbody className="text-sm text-zinc-800">
+                      {[...rows].sort((a, b) => b.year - a.year).map((r: any, idx) => (
+                        <tr key={r.year + r.champion} className={idx % 2 === 0 ? "bg-zinc-50" : "bg-white"}>
+                          <td className="px-3 py-3 font-medium text-zinc-900">{r.year}</td>
+                          <td className="px-3 py-3 font-semibold text-zinc-950">{r.champion}</td>
+                          {hasVenue ? <td className="px-3 py-3 text-zinc-700">{r.venue ?? ""}</td> : null}
+                        </tr>
+                      ))}
+                    </tbody>
+                  </table>
+                </div>
+              ) : (
+                <p className="mt-3 text-sm text-zinc-700">Winner data TBD.</p>
+              );
+            })()}
           </div>
 
           <div className="rounded-3xl border border-zinc-200 bg-white p-6">

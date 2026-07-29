@@ -51,6 +51,7 @@ function toTournament(
       champion: r.champion,
       score: r.score,
       runnerUp: r.runnerUp,
+      venue: r.venue,
     })) ?? (event.winners ?? []).map((w) => ({
       year: w.year,
       champion: w.champion,
@@ -58,6 +59,7 @@ function toTournament(
     howToPlay: event.howToPlay,
     news: event.news,
     golfGeniusUrl: event.golfGeniusUrl,
+    golfGeniusUrlLabel: event.golfGeniusUrlLabel,
     liveStatus: event.liveStatus,
   } as Tournament;
 }

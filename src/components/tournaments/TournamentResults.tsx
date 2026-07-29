@@ -2,6 +2,7 @@ import type { Tournament } from "@/lib/tournaments/types";
 
 export function TournamentResults({ tournament }: { tournament: Tournament }) {
   const rows = [...(tournament.pastResults ?? [])].sort((a, b) => b.year - a.year);
+  const hasVenue = rows.some((r) => r.venue);
 
   return (
     <div className="rounded-3xl border border-zinc-200 bg-white p-6 shadow-sm shadow-zinc-900/5">
@@ -25,12 +26,13 @@ export function TournamentResults({ tournament }: { tournament: Tournament }) {
             <tr className="text-left text-[11px] font-medium uppercase tracking-wide text-zinc-500">
               <th className="px-3 py-2">Year</th>
               <th className="px-3 py-2">Champion</th>
+              {hasVenue ? <th className="px-3 py-2">Venue</th> : null}
             </tr>
           </thead>
           <tbody className="text-sm text-zinc-800">
             {rows.length === 0 ? (
               <tr>
-                <td className="px-3 py-3 text-zinc-600" colSpan={2}>
+                <td className="px-3 py-3 text-zinc-600" colSpan={hasVenue ? 3 : 2}>
                   No results added yet.
                 </td>
               </tr>
@@ -39,6 +41,7 @@ export function TournamentResults({ tournament }: { tournament: Tournament }) {
                 <tr key={r.year} className={idx % 2 === 0 ? "bg-zinc-50" : "bg-white"}>
                   <td className="px-3 py-3 font-medium text-zinc-900">{r.year}</td>
                   <td className="px-3 py-3 font-semibold text-zinc-950">{r.champion}</td>
+                  {hasVenue ? <td className="px-3 py-3 text-zinc-700">{r.venue ?? ""}</td> : null}
                 </tr>
               ))
             )}

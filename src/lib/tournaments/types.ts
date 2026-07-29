@@ -6,6 +6,7 @@ export interface PastResult {
   score?: string;
   runnerUp?: string;
   notes?: string;
+  venue?: string;
 }
 
 export interface HowToPlayEntry {
@@ -77,6 +78,7 @@ export interface Tournament {
 
   // === LINKS ===
   golfGeniusUrl?: string;
+  golfGeniusUrlLabel?: string;
   tournamentWebsite?: string;
   tournamentWebsiteLabel?: string;
   courseWebsite?: string;
