@@ -89,6 +89,9 @@ export const SENIOR_MAJOR_EVENTS_2026: SeniorMajorEvent[] = [
     coursePar: 70,
     courseYardage: 6211,
     courseDesigner: "Donald Ross (redesign 1923)",
+    tournamentWebsite: "https://gasparillainvitational.com/",
+    golfGeniusUrl: "https://pcgc-71stgasparillainvitational.golfgenius.com/pages/11889495109525324281",
+    golfGeniusUrlLabel: "2026 Results",
     overview: "The Gasparilla Invitational has been played at historic Palma Ceia Golf & Country Club in Tampa since the 1930s, making it one of Florida's oldest and most storied amateur events. Donald Ross's compact par-70 demands precision over power, with tight tree-lined fairways and small undulating greens. The senior division attracts the country's finest 55+ amateurs each February.",
     winners: [
       { year: 2026, champion: "Jeff Frazier" },
