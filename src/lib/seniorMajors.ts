@@ -15,6 +15,7 @@ export type SeniorMajorEvent = {
   officialUrl?: string;
   golfGeniusUrl?: string;
   golfGeniusUrlLabel?: string;
+  tournamentWebsite?: string;
   winners?: { year: number; champion: string }[];
   howToPlay?: HowToPlayEntry[];
   // Venue
@@ -38,6 +39,7 @@ export const SENIOR_MAJOR_EVENTS_2026: SeniorMajorEvent[] = [
   {
     slug: "society-of-seniors-spring-classic",
     name: "Society of Seniors: Spring Classic",
+    tournamentWebsite: "https://www.societyofseniors.com/",
     logo: "/brand/society-of-seniors.jpg",
     month: "February 2026",
     startDate: "2026-02-09",
@@ -134,6 +136,7 @@ export const SENIOR_MAJOR_EVENTS_2026: SeniorMajorEvent[] = [
   {
     slug: "society-of-seniors-ed-tutwiler-four-ball",
     name: "Society of Seniors: Ed Tutwiler Four-Ball",
+    tournamentWebsite: "https://www.societyofseniors.com/",
     logo: "/brand/society-of-seniors.jpg",
     month: "March 2026",
     startDate: "2026-03-15",
@@ -179,6 +182,7 @@ export const SENIOR_MAJOR_EVENTS_2026: SeniorMajorEvent[] = [
   {
     slug: "society-of-seniors-senior-masters",
     name: "Society of Seniors: Senior Masters",
+    tournamentWebsite: "https://www.societyofseniors.com/",
     logo: "/brand/society-of-seniors.jpg",
     month: "April 2026",
     startDate: "2026-04-20",
@@ -688,6 +692,7 @@ export const SENIOR_MAJOR_EVENTS_2026: SeniorMajorEvent[] = [
   {
     slug: "society-of-seniors-ralph-bogart",
     name: "Society of Seniors: Ralph Bogart",
+    tournamentWebsite: "https://www.societyofseniors.com/",
     logo: "/brand/society-of-seniors.jpg",
     month: "November 2026",
     startDate: "2026-11-09",
