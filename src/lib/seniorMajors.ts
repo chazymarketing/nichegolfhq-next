@@ -390,7 +390,7 @@ export const SENIOR_MAJOR_EVENTS_2026: SeniorMajorEvent[] = [
     golfGeniusUrlLabel: "2026 Results",
     howToPlay: [{ label: "Invite only — submit application", href: "https://andersonmemorial.org/" }],
     pastResults: [
-      { year: 2026, champion: "Eoghan O'Connell / Seth Sargent" },
+      { year: 2026, champion: "Eoghan O'Connell / Seth Sargent", venue: "Pine Valley Golf Club" },
       { year: 2025, champion: "Mike Peck / Bart Goodwin", venue: "Golf Clubs of the Tribute" },
       { year: 2024, champion: "Dave Staudinger / Matthew Meyer", venue: "Winged Foot GC" },
       { year: 2023, champion: "Jack Larkin / Mike Brown", venue: "Peachtree Golf Club, GA" },

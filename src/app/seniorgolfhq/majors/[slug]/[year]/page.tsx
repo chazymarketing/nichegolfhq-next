@@ -64,7 +64,7 @@ export default async function SeniorMajorYearPage({
                       <tr className="text-left text-[11px] font-medium uppercase tracking-wide text-zinc-500">
                         <th className="px-3 py-2">Year</th>
                         <th className="px-3 py-2">Champion</th>
-                        {hasVenue ? <th className="px-3 py-2">Venue</th> : null}
+                        {hasVenue ? <th className="px-3 py-2">Club</th> : null}
                       </tr>
                     </thead>
                     <tbody className="text-sm text-zinc-800">
