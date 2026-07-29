@@ -62,6 +62,7 @@ export const SENIOR_MAJOR_EVENTS_2026: SeniorMajorEvent[] = [
   {
     slug: "gasparilla-invitational-senior-division",
     name: "Gasparilla Invitational (Senior Division)",
+    logo: "/brand/gasparilla.png",
     month: "February 2026",
     startDate: "2026-02-19",
     endDate: "2026-02-21",
@@ -191,6 +192,7 @@ export const SENIOR_MAJOR_EVENTS_2026: SeniorMajorEvent[] = [
   {
     slug: "john-t-lupton-memorial-senior-division",
     name: "John T. Lupton Memorial (Senior Division)",
+    logo: "/brand/Lupton.jpeg",
     month: "May 2026",
     startDate: "2026-05-11",
     endDate: "2026-05-13",
@@ -220,6 +222,7 @@ export const SENIOR_MAJOR_EVENTS_2026: SeniorMajorEvent[] = [
   {
     slug: "huddleston-cup-senior-division",
     name: "The Huddleston Cup",
+    logo: "/brand/Huddleston.png",
     month: "May 2026",
     liveStatus: "completed",
     startDate: "2026-05-26",
@@ -241,6 +244,7 @@ export const SENIOR_MAJOR_EVENTS_2026: SeniorMajorEvent[] = [
   {
     slug: "anderson-memorial-four-ball-senior-division",
     name: "Anderson Memorial Four-Ball (Senior Division)",
+    logo: "/brand/Anderson Memorial.jpeg",
     month: "June 2026",
     liveStatus: "completed",
     startDate: "2026-06-03",
@@ -262,6 +266,7 @@ export const SENIOR_MAJOR_EVENTS_2026: SeniorMajorEvent[] = [
   {
     slug: "cb-macdonald-invitational-senior-division",
     name: "C.B. Macdonald Invitational (Senior Division)",
+    logo: "/brand/CB Macdonald.jpeg",
     month: "June 2026",
     liveStatus: "completed",
     startDate: "2026-06-12",
@@ -341,6 +346,7 @@ export const SENIOR_MAJOR_EVENTS_2026: SeniorMajorEvent[] = [
   {
     slug: "valentine-invitational",
     name: "Valentine Invitational",
+    logo: "/brand/Valentine.jpeg",
     month: "August 2026",
     startDate: "2026-08-25",
     endDate: "2026-08-27",
