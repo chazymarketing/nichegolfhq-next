@@ -594,6 +594,23 @@ export const SENIOR_MAJOR_EVENTS_2026: SeniorMajorEvent[] = [
     location: "Rocky Mount, NC",
     winners: [{ year: 2026, champion: "Bryan Hoops" }],
   },
+  {
+    slug: "george-c-thomas-invitational-senior-division",
+    name: "George C. Thomas Invitational (Senior Division)",
+    logo: "/brand/LACC.jpeg",
+    month: "June 2026",
+    startDate: "2026-06-25",
+    endDate: "2026-06-27",
+    format: "54-hole stroke play",
+    course: "Los Angeles Country Club",
+    location: "Los Angeles, CA",
+    coursePar: 71,
+    courseYardage: 7530,
+    courseDesigner: "George C. Thomas Jr.",
+    golfGeniusUrl: "https://www.golfgenius.com/pages/5747293",
+    overview: "The George C. Thomas Invitational runs a senior division alongside its mid-amateur field at Los Angeles Country Club, site of the 2023 U.S. Open. The stroke-play event is one of the most sought-after invitations in West Coast amateur golf.",
+    howToPlay: [{ label: "Invite only — no application" }],
+  },
 ];
 
 export function getSeniorMajorBySlug(slug: string): SeniorMajorEvent | null {
