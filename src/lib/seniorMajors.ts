@@ -949,7 +949,6 @@ export const SENIOR_MAJOR_EVENTS_2026: SeniorMajorEvent[] = [
       { year: 2000, champion: "Woody Greene" },
       { year: 1999, champion: "Bob Hullender" },
       { year: 1998, champion: "Tom Hadley" },
-      { year: 1998, champion: "O.Gordon Brewer" },
       { year: 1997, champion: "O.Gordon Brewer" },
       { year: 1996, champion: "Ted Gaston" },
       { year: 1995, champion: "Richard Tatum" },
