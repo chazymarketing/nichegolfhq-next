@@ -482,6 +482,7 @@ export const JUNIOR_MAJOR_EVENTS_2026: JuniorMajorEvent[] = [
     startDate: "2026-07-28",
     endDate: "2026-07-31",
     officialUrl: "https://www.juniorpgachampionship.com/",
+    golfGeniusUrl: "https://www.pga.com/events/junior-pga-championships/embed",
     // Host course rotates annually. Listed course reflects the 2025 host.
     course: "Fields Ranch East & West",
     location: "Frisco, TX",
