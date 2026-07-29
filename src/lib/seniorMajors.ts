@@ -581,6 +581,7 @@ export const SENIOR_MAJOR_EVENTS_2026: SeniorMajorEvent[] = [
     startDate: "2026-06-10",
     endDate: "2026-06-12",
     course: "High Point Country Club (Willow Creek Course)",
+    location: "High Point, NC",
     winners: [{ year: 2026, champion: "Vance Welch" }],
   },
   {
@@ -590,6 +591,7 @@ export const SENIOR_MAJOR_EVENTS_2026: SeniorMajorEvent[] = [
     startDate: "2026-06-15",
     endDate: "2026-06-17",
     course: "Benvenue Golf & Country Club",
+    location: "Rocky Mount, NC",
     winners: [{ year: 2026, champion: "Bryan Hoops" }],
   },
 ];
