@@ -98,7 +98,7 @@ export const SENIOR_MAJOR_EVENTS_2026: SeniorMajorEvent[] = [
     courseDesigner: "Harry Colt & Charles Alison (1929); Tom Fazio renovation (1999)",
     overview: "The Jones Cup Senior Invitational is played on the iconic Seaside Course at Sea Island Golf Club \u2014 a storied coastal Georgia layout that melds original Colt-Alison architecture with a Fazio renovation. Part of the prestigious Jones Cup family, the senior event attracts elite 55+ amateurs to one of America\u2019s most celebrated golf destinations each February.",
     winners: [
-      { year: 2026, champion: "Michael McCoy" },
+      { year: 2026, champion: "Mike McCoy" },
       { year: 2025, champion: "Jeff Knox" },
       { year: 2024, champion: "Jack Larkin" },
       { year: 2023, champion: "Bob Royak" },
@@ -117,6 +117,17 @@ export const SENIOR_MAJOR_EVENTS_2026: SeniorMajorEvent[] = [
     howToPlay: [{ label: "Invite only \u2014 no application" }],
   },
   {
+    slug: "society-of-seniors-ed-tutwiler-four-ball",
+    name: "Society of Seniors: Ed Tutwiler Four-Ball",
+    month: "March 2026",
+    startDate: "2026-03-15",
+    endDate: "2026-03-18",
+    course: "The Reserve Golf Club",
+    location: "Pawleys Island, SC",
+    winners: [{ year: 2026, champion: "Fox & Channell" }],
+    howToPlay: [{ label: "Apply for invite", href: "https://www.societyofseniors.com/membership/" }],
+  },
+  {
     slug: "golfweek-senior-amateur-championship",
     name: "Golfweek Senior Amateur Championship",
     month: "March/April 2026",
@@ -125,6 +136,7 @@ export const SENIOR_MAJOR_EVENTS_2026: SeniorMajorEvent[] = [
     format: "72-hole stroke play",
     note: "Rotating venue; held March/April at top-ranked private courses",
     overview: "The Golfweek Senior Amateur Championship is an elite invitation-only stroke-play event on the national senior amateur calendar. Its rare 72-hole format \u2014 one of few senior events contested over four rounds \u2014 demands sustained consistency at a world-class private venue and sets it apart from most senior invitationals.",
+    winners: [{ year: 2026, champion: "Todd Doss" }],
     howToPlay: [{ label: "Invite only \u2014 no application" }],
   },
   {
@@ -162,6 +174,7 @@ export const SENIOR_MAJOR_EVENTS_2026: SeniorMajorEvent[] = [
     courseDesigner: "John Fought (2007)",
     overview: "The Society of Seniors Senior Masters is held each April at the prestigious Indian Wells Golf Resort in California\u2019s Coachella Valley. Competitors play on both the Fought-designed Players Course and the Clark-designed Celebrity Course across four age divisions \u2014 Senior, Super Senior, Legend, and Super Legend \u2014 all contested in 54-hole stroke play.",
     winners: [
+      { year: 2026, champion: "Bryan Hoops" },
       { year: 2025, champion: "Bryan Hoops" },
       { year: 2024, champion: "Bryan Hoops" },
       { year: 2023, champion: "George Walker" },
@@ -180,6 +193,7 @@ export const SENIOR_MAJOR_EVENTS_2026: SeniorMajorEvent[] = [
     note: "Rotating venue; 2026 host: Mission Hills Country Club, Rancho Mirage, CA",
     overview: "The Trans-Mississippi Senior Championship, organized by the Trans-Mississippi Golf Association since 2000, is one of America\u2019s most prestigious regional senior titles. The event rotates annually among distinguished courses west of the Mississippi River, drawing elite 55+ amateurs for 54 holes of stroke play each May.",
     winners: [
+      { year: 2026, champion: "Jason Pridmore" },
       { year: 2025, champion: "Bryan Hoops" },
       { year: 2023, champion: "Jon Lindstrom" },
       { year: 2021, champion: "Steve Maddalena" },
@@ -221,7 +235,7 @@ export const SENIOR_MAJOR_EVENTS_2026: SeniorMajorEvent[] = [
   },
   {
     slug: "huddleston-cup-senior-division",
-    name: "The Huddleston Cup",
+    name: "The Huddleston Cup (Senior Division)",
     logo: "/brand/Huddleston.png",
     month: "May 2026",
     liveStatus: "completed",
@@ -280,6 +294,7 @@ export const SENIOR_MAJOR_EVENTS_2026: SeniorMajorEvent[] = [
     courseYardage: 6779,
     courseDesigner: "Charles B. Macdonald",
     overview: "The C.B. Macdonald Invitational Senior Division is contested over the storied National Golf Links of America in Southampton, New York, host of the first Walker Cup in 1922. Played at the same venue and on the same June dates as the mid-amateur championship, the senior division gathers elite 55-and-over amateurs for match play across one of the most revered courses in American golf. Its par-73 routing along Peconic Bay rewards imagination and shotmaking over raw power.",
+    winners: [{ year: 2026, champion: "Dan Keogh" }],
     howToPlay: [{ label: "Invite only — no application" }],
   },
   {
@@ -296,6 +311,7 @@ export const SENIOR_MAJOR_EVENTS_2026: SeniorMajorEvent[] = [
     note: "Rotating venue; 2026 host: Frilford Heath Golf Club, Abingdon, Oxfordshire",
     overview: "The R&A Senior Amateur Championship is the world\u2019s premier international senior amateur title, staged annually at rotating links and heathland courses across Great Britain and Ireland. Players 55 and over compete in qualifying stroke play followed by match play elimination, and the champion is widely regarded as the top senior amateur in the world.",
     winners: [
+      { year: 2026, champion: "Bryan Hoops" },
       { year: 2025, champion: "John Kennedy" },
       { year: 2024, champion: "Todd White" },
       { year: 2023, champion: "Brent Paterson" },
@@ -540,6 +556,7 @@ export const SENIOR_MAJOR_EVENTS_2026: SeniorMajorEvent[] = [
     courseYardage: 7373,
     courseDesigner: "Lester George",
     overview: "The Giles Invitational runs a senior division alongside its mid-amateur field at Kinloch Golf Club, honoring amateur legend Vinny Giles on the course he co-designed with Lester George. The event has quickly built a reputation as one of the more competitive new stops on the calendar since its 2025 debut.",
+    winners: [{ year: 2026, champion: "Rick Stimmel" }],
     howToPlay: [{ label: "Invite only \u2014 no application" }],
   },
   {
@@ -556,6 +573,7 @@ export const SENIOR_MAJOR_EVENTS_2026: SeniorMajorEvent[] = [
     courseYardage: 6500,
     courseDesigner: "Gil Hanse & Jim Wagner (2021 redesign of Arthur Hills original)",
     overview: "The Jupiter Invitational pairs its mid-amateur field with a senior division on the Gil Hanse-redesigned Match Course at Jonathan\u2019s Landing. The curated, invitation-only event debuted in 2026 and quickly drew a competitive South Florida field across both divisions.",
+    winners: [{ year: 2026, champion: "Mike McCoy" }],
     howToPlay: [{ label: "Apply for invite", href: "https://www.golfgenius.com/register?league_id=11637199223413295215" }],
   },
   {
@@ -572,11 +590,12 @@ export const SENIOR_MAJOR_EVENTS_2026: SeniorMajorEvent[] = [
     courseYardage: 6926,
     courseDesigner: "Devereux Emmet",
     overview: "The Walter J. Travis Invitational runs the Eisenhower Cup as its senior match-play flight alongside the Championship Flight at historic Garden City Golf Club. Named for Walter J. Travis, the British Amateur and three-time U.S. Amateur champion who called Garden City home, the event is one of the most storied match-play invitations on the calendar.",
+    winners: [{ year: 2026, champion: "Dave Scialabba" }],
     howToPlay: [{ label: "Invite only \u2014 no application" }],
   },
   {
     slug: "national-senior-hall-of-fame",
-    name: "National Senior Hall of Fame",
+    name: "National Senior Amateur Hall of Fame",
     month: "June 2026",
     startDate: "2026-06-10",
     endDate: "2026-06-12",
@@ -609,6 +628,7 @@ export const SENIOR_MAJOR_EVENTS_2026: SeniorMajorEvent[] = [
     courseDesigner: "George C. Thomas Jr.",
     golfGeniusUrl: "https://www.golfgenius.com/pages/5747293",
     overview: "The George C. Thomas Invitational runs a senior division alongside its mid-amateur field at Los Angeles Country Club, site of the 2023 U.S. Open. The stroke-play event is one of the most sought-after invitations in West Coast amateur golf.",
+    winners: [{ year: 2026, champion: "Bryan Hoops" }],
     howToPlay: [{ label: "Invite only — no application" }],
   },
 ];
