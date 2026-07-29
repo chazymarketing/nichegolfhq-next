@@ -16,6 +16,7 @@ export type SeniorMajorEvent = {
   golfGeniusUrl?: string;
   golfGeniusUrlLabel?: string;
   tournamentWebsite?: string;
+  tournamentWebsiteLabel?: string;
   winners?: { year: number; champion: string }[];
   howToPlay?: HowToPlayEntry[];
   // Venue
@@ -799,8 +800,15 @@ export const SENIOR_MAJOR_EVENTS_2026: SeniorMajorEvent[] = [
     coursePar: 72,
     courseYardage: 7373,
     courseDesigner: "Lester George",
+    tournamentWebsite: "https://www.amateurgolfinfo.com/events/mens/the-giles-invitational---senior-694/1092",
+    tournamentWebsiteLabel: "Data Source",
+    golfGeniusUrl: "https://www.golfgenius.com/pages/11897323631677564724",
+    golfGeniusUrlLabel: "2026 Results",
     overview: "The Giles Invitational runs a senior division alongside its mid-amateur field at Kinloch Golf Club, honoring amateur legend Vinny Giles on the course he co-designed with Lester George. The event has quickly built a reputation as one of the more competitive new stops on the calendar since its 2025 debut.",
-    winners: [{ year: 2026, champion: "Rick Stimmel" }],
+    winners: [
+      { year: 2026, champion: "Rick Stimmel" },
+      { year: 2025, champion: "Matt Sughrue" },
+    ],
     howToPlay: [{ label: "Invite only \u2014 no application" }],
   },
   {

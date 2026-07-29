@@ -61,6 +61,7 @@ function toTournament(
     golfGeniusUrl: event.golfGeniusUrl,
     golfGeniusUrlLabel: event.golfGeniusUrlLabel,
     tournamentWebsite: event.tournamentWebsite,
+    tournamentWebsiteLabel: event.tournamentWebsiteLabel,
     liveStatus: event.liveStatus,
   } as Tournament;
 }
