@@ -32,6 +32,7 @@ export type SeniorMajorEvent = {
   overview?: string;
   // History (richer than winners[])
   pastResults?: { year: number; champion: string; score?: string; runnerUp?: string; venue?: string }[];
+  pastResultsVenueLabel?: string; // defaults to "Venue"; e.g. "Club" for four-ball/club-based events
   // News
   news?: NewsArticle[];
 };
@@ -388,6 +389,7 @@ export const SENIOR_MAJOR_EVENTS_2026: SeniorMajorEvent[] = [
     tournamentWebsite: "https://andersonmemorial.org/",
     golfGeniusUrl: "https://www.golfgenius.com/pages/12365089316366476022",
     golfGeniusUrlLabel: "2026 Results",
+    pastResultsVenueLabel: "Club",
     howToPlay: [{ label: "Invite only — submit application", href: "https://andersonmemorial.org/" }],
     pastResults: [
       { year: 2026, champion: "Eoghan O'Connell / Seth Sargent", venue: "Pine Valley Golf Club" },

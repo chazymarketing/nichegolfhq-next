@@ -56,6 +56,7 @@ function toTournament(
       year: w.year,
       champion: w.champion,
     })),
+    pastResultsVenueLabel: event.pastResultsVenueLabel,
     howToPlay: event.howToPlay,
     news: event.news,
     golfGeniusUrl: event.golfGeniusUrl,

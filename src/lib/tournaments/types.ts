@@ -75,6 +75,7 @@ export interface Tournament {
 
   // === RESULTS ===
   pastResults?: PastResult[];
+  pastResultsVenueLabel?: string; // defaults to "Venue"; e.g. "Club" for four-ball/club-based events
 
   // === LINKS ===
   golfGeniusUrl?: string;

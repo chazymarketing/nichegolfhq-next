@@ -3,6 +3,7 @@ import type { Tournament } from "@/lib/tournaments/types";
 export function TournamentResults({ tournament }: { tournament: Tournament }) {
   const rows = [...(tournament.pastResults ?? [])].sort((a, b) => b.year - a.year);
   const hasVenue = rows.some((r) => r.venue);
+  const venueLabel = tournament.pastResultsVenueLabel ?? "Venue";
 
   return (
     <div className="rounded-3xl border border-zinc-200 bg-white p-6 shadow-sm shadow-zinc-900/5">
@@ -26,7 +27,7 @@ export function TournamentResults({ tournament }: { tournament: Tournament }) {
             <tr className="text-left text-[11px] font-medium uppercase tracking-wide text-zinc-500">
               <th className="px-3 py-2">Year</th>
               <th className="px-3 py-2">Champion</th>
-              {hasVenue ? <th className="px-3 py-2">Club</th> : null}
+              {hasVenue ? <th className="px-3 py-2">{venueLabel}</th> : null}
             </tr>
           </thead>
           <tbody className="text-sm text-zinc-800">
