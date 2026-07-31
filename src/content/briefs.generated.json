@@ -1,6 +1,39 @@
 {
   "briefs": [
     {
+      "date": "2026-07-31",
+      "title": "Daily Brief - July 31, 2026",
+      "items": [
+        {
+          "title": "Four Girls Tied, Jaden Soong Leads Boys as 50th Junior PGA Championships Reach Final Round at PGA Frisco",
+          "url": "https://www.pga.com/story/four-girls-tied-for-top-spot-jaden-soong-leads-boys-heading-into-final-round-of-the-50th-junior-pga-championships",
+          "source": "PGA of America",
+          "why": "Gia Ahlowalia, Alexandra Phung, Ava Zhang and Alexa Takai share the girls lead at 5-under while Soong leads the boys by two at 8-under heading into today's finale on Fields Ranch East, streamed live on the PGA of America's YouTube channel.",
+          "tags": [
+            "juniors"
+          ]
+        },
+        {
+          "title": "PNGA Men's Mid-Amateur Field Set for Royal Oaks as Wyatt Brook Defends Aug 18-20",
+          "url": "https://thepnga.org/championships/mens-mid-amateur/",
+          "source": "PNGA",
+          "why": "Entries closed this week for the 54-hole championship in Vancouver, Wash., where 2025 champion Wyatt Brook defends against a 66-player field; the PNGA Women's Mid-Am runs concurrently.",
+          "tags": [
+            "mid-am"
+          ]
+        },
+        {
+          "title": "U.S. Senior Amateur Qualifying Concludes - Field Takes Shape for Baltimore Country Club",
+          "url": "https://championships.usga.org/ussenioramateur/2026/qualifying.html",
+          "source": "USGA",
+          "why": "The June 24-July 30 qualifying window across 50 sites has closed, setting the field for the championship Aug 29-Sep 3 on Baltimore Country Club's East Course.",
+          "tags": [
+            "senior"
+          ]
+        }
+      ]
+    },
+    {
       "date": "2026-07-30",
       "title": "Daily Brief - July 30, 2026",
       "items": [
