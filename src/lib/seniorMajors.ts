@@ -676,7 +676,13 @@ export const SENIOR_MAJOR_EVENTS_2026: SeniorMajorEvent[] = [
       { year: 1953, champion: "O. V. Russell" },
       { year: 1952, champion: "Judd L. Brumley" },
     ],
-    howToPlay: [{ label: "Invite only \u2014 no application" }],
+    howToPlay: [
+      {
+        label: "Exemptions & applications",
+        href: "https://www.pinehurst.com/golf/tournaments/north-south-senior-amateur/",
+        note: "Exempt players are guaranteed entry, up to 90 per division, prioritized by exemption level. Non-exempt players may apply with a playing resume; remaining spots are filled at the Championship Committee's discretion, with excess applicants placed on an alternate list.",
+      },
+    ],
   },
   {
     slug: "valentine-invitational",
