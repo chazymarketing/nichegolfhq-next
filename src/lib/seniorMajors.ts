@@ -600,6 +600,8 @@ export const SENIOR_MAJOR_EVENTS_2026: SeniorMajorEvent[] = [
     location: "Pinehurst, NC",
     courseDesigner: "Various",
     tournamentWebsite: "https://www.pinehurst.com/golf/tournaments/north-south-senior-amateur/",
+    golfGeniusUrl: "https://www.amateurgolfinfo.com/events/mens/north--south-senior-mens-championship-559/429",
+    golfGeniusUrlLabel: "2025 Results",
     overview: "The North & South Senior Men's Amateur Championship is contested over 54 holes of stroke play at Pinehurst Resort, with one round apiece on Nos. 4, 5, and 8. Split into Open and Super-Senior divisions, it is one of the oldest and most celebrated senior amateur championships in the country, drawing a national field of elite amateurs to the Sandhills of North Carolina each August.",
     winners: [
       { year: 2025, champion: "Howard Clendenin" },
