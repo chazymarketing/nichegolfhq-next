@@ -691,6 +691,9 @@ export const SENIOR_MAJOR_EVENTS_2026: SeniorMajorEvent[] = [
     coursePar: 72,
     courseYardage: 6947,
     courseDesigner: "Ed Ault (1973); Arthur Hills renovation (2000)",
+    tournamentWebsite: "https://thevalentineinvitational.com/",
+    golfGeniusUrl: "https://www.golfgenius.com/pages/11857358597493109080",
+    golfGeniusUrlLabel: "2025 Results",
     overview: "The Valentine Invitational is a premier Virginia senior and mid-amateur event held annually at Hermitage Country Club\u2019s Sabot Course in the rolling Goochland County countryside outside Richmond. The 54-hole stroke-play competition draws a national senior field each August, making it one of the Mid-Atlantic\u2019s most respected invitationals.",
     winners: [
       { year: 2025, champion: "Brian Quackenbush" },
