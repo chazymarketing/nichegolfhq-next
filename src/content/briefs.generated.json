@@ -1,6 +1,39 @@
 {
   "briefs": [
     {
+      "date": "2026-08-01",
+      "title": "Daily Brief - August 1, 2026",
+      "items": [
+        {
+          "title": "Jaden Soong and Aubrey Hilgers Capture 50th Junior PGA Championship Titles at PGA Frisco",
+          "url": "https://www.juniorpgachampionship.com/",
+          "source": "PGA of America",
+          "why": "Soong rallied on the back nine at Fields Ranch, taking the Boys title with a birdie at 17 as co-leaders Stone and Stanford made double. Hilgers matched Yujie Liu at 6-under 282 and won the Girls title in sudden death.",
+          "tags": [
+            "juniors"
+          ]
+        },
+        {
+          "title": "MGA Mid-Amateur Championship Semifinals Today",
+          "url": "https://www.mgagolf.org/",
+          "source": "MGA",
+          "why": "The MGA Mid-Amateur Championship reaches the semifinal round today, with the top mid-amateurs in the Metropolitan Golf Association region battling for a spot in the final.",
+          "tags": [
+            "mid-am"
+          ]
+        },
+        {
+          "title": "Sunnehanna Senior Amateur Returns Aug 10-12 at Sunnehanna Country Club",
+          "url": "https://www.nichegolfhq.com/seniorgolfhq/sunnehanna-senior-amateur",
+          "source": "nichegolfHQ",
+          "why": "Tony Wise defends at the invite-only stroke-play championship at Sunnehanna Country Club in Johnstown, Pa. The event brings together elite 55-and-over amateurs for 54 holes.",
+          "tags": [
+            "senior"
+          ]
+        }
+      ]
+    },
+    {
       "date": "2026-07-31",
       "title": "Daily Brief - July 31, 2026",
       "items": [
