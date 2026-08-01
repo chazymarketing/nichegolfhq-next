@@ -688,7 +688,7 @@ export const SENIOR_MAJOR_EVENTS_2026: SeniorMajorEvent[] = [
     endDate: "2026-08-23",
     format: "54-hole stroke play",
     course: "Hermitage Country Club (Sabot & Manakin Courses)",
-    location: "Manakin-Sabot, VA",
+    location: "Richmond, VA",
     courseDesigner: "Ed Ault (1973); Arthur Hills renovation (2000)",
     tournamentWebsite: "https://thevalentineinvitational.com/",
     golfGeniusUrl: "https://www.golfgenius.com/pages/11857358597493109080",
