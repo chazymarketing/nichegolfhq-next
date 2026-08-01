@@ -682,16 +682,12 @@ export const SENIOR_MAJOR_EVENTS_2026: SeniorMajorEvent[] = [
     howToPlay: [
       {
         label: "Exempt players: invitation",
-        href: "https://www.pinehurst.com/golf/tournaments/north-south-senior-amateur/",
         note: "Players meeting exemption criteria are invited and accepted upon official application, guaranteed a spot unless more than 90 exempt players accept in a division. In that case, entry is prioritized by exemption level (S1 before S2, and so on).",
       },
       {
-        label: "Non-exempt players: application",
+        label: "Apply to Play",
+        href: "https://www.pinehurst.com/golf/tournaments/north-south-senior-amateur/",
         note: "Players outside the exemption categories may formally apply, ideally with a playing resume; resumes and rankings are used to fill the remaining spots at the Championship Committee's discretion, and all decisions are final.",
-      },
-      {
-        label: "Field is set at close of entries",
-        note: "Each 90-player division field combines exempt players with the best non-exempt applicants. If applications exceed the maximum field size, remaining players are placed on an alternate list.",
       },
     ],
   },
