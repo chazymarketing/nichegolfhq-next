@@ -1,6 +1,39 @@
 {
   "briefs": [
     {
+      "date": "2026-08-02",
+      "title": "Daily Brief - August 2, 2026",
+      "items": [
+        {
+          "title": "Jaden Soong, Aubrey Hilgers Capture Titles at 50th Junior PGA Championships at PGA Frisco",
+          "url": "https://athlonsports.com/golf/jaden-soong-aubrey-hilgers-2026-junior-pga-titles",
+          "source": "Athlon Sports",
+          "why": "Soong survived a shaky start and a three-shot swing at the 17th to win the Boys Division, while Hilgers birdied 17 to force a playoff and beat Yujie Liu with a bunker save in sudden death for the Girls title.",
+          "tags": [
+            "juniors"
+          ]
+        },
+        {
+          "title": "Christian Cavaliere Reaches Met Amateur Final",
+          "url": "https://www.mgagolf.org/",
+          "source": "MGA",
+          "why": "Christian Cavaliere, who runs popular brand Tremont, has reached the final of the Met Amateur Championship. Cavaliere, a competitive mid-amateur who played the U.S. Open at LACC, looks to add one of the region's most prestigious titles to his resume.",
+          "tags": [
+            "mid-am"
+          ]
+        },
+        {
+          "title": "North & South Senior Amateur Tees Off Aug 10-12 at Pinehurst",
+          "url": "https://www.pinehurst.com/golf/tournaments/north-south-senior-amateur/",
+          "source": "Pinehurst",
+          "why": "Registration opens Aug 9 ahead of the three-day championship at Pinehurst Resort, one of the marquee senior amateur events of the summer.",
+          "tags": [
+            "senior"
+          ]
+        }
+      ]
+    },
+    {
       "date": "2026-08-01",
       "title": "Daily Brief - August 1, 2026",
       "items": [
