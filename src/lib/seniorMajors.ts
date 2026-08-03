@@ -1004,6 +1004,8 @@ export const SENIOR_MAJOR_EVENTS_2026: SeniorMajorEvent[] = [
     name: "Society of Seniors: Ralph Bogart",
     tournamentWebsite: "https://www.societyofseniors.com/",
     logo: "/brand/society-of-seniors.jpg",
+    golfGeniusUrl: "https://www.golfgenius.com/pages/5211625",
+    golfGeniusUrlLabel: "2025 Results",
     month: "November 2026",
     startDate: "2026-11-09",
     endDate: "2026-11-11",
