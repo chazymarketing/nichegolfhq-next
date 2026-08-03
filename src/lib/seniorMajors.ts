@@ -955,7 +955,9 @@ export const SENIOR_MAJOR_EVENTS_2026: SeniorMajorEvent[] = [
     endDate: "2026-11-11",
     course: "Serrano Country Club",
     location: "El Dorado Hills, CA",
-    format: "stroke play + match play",
+    format: "54-hole stroke play",
+    golfGeniusUrl: "https://calam-2025californiasenioramateurchampio.golfgenius.com/pages/11191140202976400081",
+    golfGeniusUrlLabel: "2025 Results",
     note: "Rotating venue: northern CA courses in even years, southern CA courses in odd years",
     overview: "The California Senior Amateur Championship is the state\u2019s premier senior title, co-conducted by the SCGA and NCGA and rotating between northern and southern California venues. Past hosts include Poppy Hills Golf Course, Ojai Valley Inn, and The Valley Club at Montecito, with northern courses hosting in even years and southern in odd years.",
     winners: [
