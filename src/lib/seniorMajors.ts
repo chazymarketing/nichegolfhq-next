@@ -1204,7 +1204,16 @@ export const SENIOR_MAJOR_EVENTS_2026: SeniorMajorEvent[] = [
     endDate: "2026-10-28",
     course: "The Club at Carlton Woods",
     location: "The Woodlands, TX",
-    howToPlay: [{ label: "Invite only — no application" }],
+    tournamentWebsite: "https://carltonwoodsinvitational.com/",
+    golfGeniusUrl: "https://carltonwoodsinvitational.com/results/",
+    golfGeniusUrlLabel: "2025 Results",
+    winners: [
+      { year: 2024, champion: "Mark Strickland" },
+      { year: 2022, champion: "Robert Funk" },
+      { year: 2021, champion: "David Ortega" },
+      { year: 2019, champion: "Lewis Stephenson" },
+    ],
+    howToPlay: [{ label: "Register here", href: "https://www.golfgenius.com/register?league_id=12399398994642508996" }],
   },
   {
     slug: "dixie-senior-amateur",

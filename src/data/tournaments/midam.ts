@@ -2095,8 +2095,11 @@ export const MIDAM_TOURNAMENTS: Tournament[] = [
     courseDesigner: "Jack Nicklaus",
 
     format: "54 holes stroke play",
+    tournamentWebsite: "https://carltonwoodsinvitational.com/",
+    golfGeniusUrl: "https://carltonwoodsinvitational.com/results/",
+    golfGeniusUrlLabel: "2025 Results",
     howToPlay: [
-      { label: "Apply for invite", href: "https://carltonwoodsinvitational.us12.list-manage.com/subscribe?u=9ccde6d7ac1ab1ea7760b7d65&id=d6e6fdffe5" },
+      { label: "Register here", href: "https://www.golfgenius.com/register?league_id=12399398994642508996" },
     ],
     news: [],
     pastResults: [
