@@ -894,6 +894,7 @@ export const SENIOR_MAJOR_EVENTS_2026: SeniorMajorEvent[] = [
   {
     slug: "ojai-senior-cup",
     name: "Ojai Senior Cup",
+    logo: "/brand/ojailogo.png",
     month: "October 2026",
     dates2026: "October 16-18, 2026",
     startDate: "2026-10-16",
