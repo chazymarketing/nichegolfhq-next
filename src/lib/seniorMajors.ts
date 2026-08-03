@@ -911,6 +911,10 @@ export const SENIOR_MAJOR_EVENTS_2026: SeniorMajorEvent[] = [
     winners: [
       { year: 2025, champion: "Tim Hogarth" },
       { year: 2024, champion: "Tim Hogarth" },
+      { year: 2023, champion: "Gregory Sato" },
+      { year: 2022, champion: "Craig Steinberg" },
+      { year: 2021, champion: "Steven McPherson" },
+      { year: 2020, champion: "Daniel Sullivan" },
       { year: 2019, champion: "Tim Hogarth" },
     ],
     howToPlay: [
