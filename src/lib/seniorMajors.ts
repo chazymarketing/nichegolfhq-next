@@ -1182,6 +1182,8 @@ export const SENIOR_MAJOR_EVENTS_2026: SeniorMajorEvent[] = [
     name: "Society of Seniors: Dale Morey Championship",
     logo: "/brand/society-of-seniors.jpg",
     tournamentWebsite: "https://www.societyofseniors.com/",
+    golfGeniusUrl: "https://www.golfgenius.com/pages/5200469",
+    golfGeniusUrlLabel: "2025 Results",
     month: "September 2026",
     startDate: "2026-09-28",
     endDate: "2026-09-30",
