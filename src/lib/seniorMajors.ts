@@ -913,7 +913,17 @@ export const SENIOR_MAJOR_EVENTS_2026: SeniorMajorEvent[] = [
       { year: 2024, champion: "Tim Hogarth" },
       { year: 2019, champion: "Tim Hogarth" },
     ],
-    howToPlay: [{ label: "Invite only \u2014 no application" }],
+    howToPlay: [
+      {
+        label: "Eligibility",
+        note: "Senior Division: 55+ by October 16, 2026, max 6.5 Handicap Index. Super Senior Division: 65+ by October 16, 2026, max 8.5 Handicap Index.",
+      },
+      {
+        label: "Register here",
+        href: "https://www.golfgenius.com/pages/5929750",
+        note: "Registration opens April 1, 2026 and stays open through September 30 for remaining spots or the waitlist. Past champions, top-15 (Senior) and top-5 (Super Senior) finishers from 2025, top-ranked WAGR/SCGA/NCGA seniors, and 2024-2026 U.S. Senior Amateur/Open qualifiers are guaranteed entry; other pending registrations are reviewed by June 30.",
+      },
+    ],
   },
   {
     slug: "reynolds-senior-invitational",
