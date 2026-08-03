@@ -940,6 +940,8 @@ export const SENIOR_MAJOR_EVENTS_2026: SeniorMajorEvent[] = [
     course: "Great Waters Course at Reynolds Lake Oconee",
     location: "Greensboro, GA",
     courseDesigner: "Jack Nicklaus (1992)",
+    golfGeniusUrl: "https://www.societyofseniors.com/wp-content/uploads/2025/10/reynolds_2025_results.pdf",
+    golfGeniusUrlLabel: "2025 Results",
     overview: "The Reynolds Senior Invitational is an elite invitation-only event held at Reynolds Lake Oconee in the Georgia countryside. The Jack Nicklaus-designed Great Waters course provides a championship-caliber setting for the 54-hole stroke-play competition, which features senior, super senior, legend, and grand master age divisions.",
     winners: [
       { year: 2024, champion: "Jack Larkin" },
