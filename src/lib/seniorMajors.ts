@@ -898,7 +898,7 @@ export const SENIOR_MAJOR_EVENTS_2026: SeniorMajorEvent[] = [
     dates2026: "October 16-18, 2026",
     startDate: "2026-10-16",
     endDate: "2026-10-18",
-    format: "match play",
+    format: "54-hole stroke play",
     course: "Soule Park Golf Course",
     location: "Ojai, CA",
     coursePar: 72,
