@@ -949,16 +949,19 @@ export const SENIOR_MAJOR_EVENTS_2026: SeniorMajorEvent[] = [
   {
     slug: "california-senior-amateur",
     name: "California Senior Amateur Championship",
+    logo: "/brand/calamlogo.png",
     month: "November 2026",
     startDate: "2026-11-09",
-    endDate: "2026-11-12",
+    endDate: "2026-11-11",
+    course: "Serrano Country Club",
+    location: "El Dorado Hills, CA",
     format: "stroke play + match play",
     note: "Rotating venue: northern CA courses in even years, southern CA courses in odd years",
     overview: "The California Senior Amateur Championship is the state\u2019s premier senior title, co-conducted by the SCGA and NCGA and rotating between northern and southern California venues. Past hosts include Poppy Hills Golf Course, Ojai Valley Inn, and The Valley Club at Montecito, with northern courses hosting in even years and southern in odd years.",
     winners: [
       { year: 2025, champion: "Bob Niger" },
     ],
-    howToPlay: [{ label: "Invite only \u2014 no application" }],
+    howToPlay: [{ label: "Register here", href: "https://calam-2026californiasenioramateur.golfgenius.com/pages/12206054641741353670" }],
   },
   {
     slug: "society-of-seniors-ralph-bogart",
