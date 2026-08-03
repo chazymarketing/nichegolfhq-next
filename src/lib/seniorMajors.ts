@@ -1249,7 +1249,7 @@ export const SENIOR_MAJOR_EVENTS_2026: SeniorMajorEvent[] = [
     course: "Boulder Creek Golf Club",
     location: "Las Vegas, NV",
     winners: [{ year: 2025, champion: "Jerry Gunthorpe" }],
-    howToPlay: [{ label: "Open signup — no application" }],
+    howToPlay: [{ label: "Apply to Play", href: "https://www.golfgenius.com/pages/12693592928455496898" }],
   },
   {
     slug: "carlton-woods-senior-invitational",
