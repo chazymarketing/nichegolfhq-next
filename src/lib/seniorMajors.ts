@@ -550,7 +550,7 @@ export const SENIOR_MAJOR_EVENTS_2026: SeniorMajorEvent[] = [
     dates2026: "August 17-19, 2026",
     startDate: "2026-08-17",
     endDate: "2026-08-19",
-    format: "stroke play",
+    format: "54-hole stroke play",
     course: "Sunnehanna Country Club",
     location: "Johnstown, PA",
     coursePar: 70,
