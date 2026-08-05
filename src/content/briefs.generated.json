@@ -1,6 +1,39 @@
 {
   "briefs": [
     {
+      "date": "2026-08-05",
+      "title": "Daily Brief - August 5, 2026",
+      "items": [
+        {
+          "title": "Justin Thomas Junior Championship Underway at JT's Home Course, Harmony Landing",
+          "url": "https://www.ajga.org/tournaments/2026114",
+          "source": "AJGA",
+          "why": "The AJGA Open Series event is live this week in Goshen, Ky., with a 78-player field competing over 54 holes at Justin Thomas' home club. Elin Wang and Graham Christopher are the defending champions.",
+          "tags": [
+            "juniors"
+          ]
+        },
+        {
+          "title": "U.S. Women's Amateur Match Play Begins at The Honors Course With Ina Kim-Schaad in the Field",
+          "url": "https://championships.usga.org/uswomensamateur/2026/scoring.html",
+          "source": "USGA",
+          "why": "Match play gets underway at The Honors Course in Ooltewah, Tenn., after two days of stroke-play qualifying. Two-time U.S. Women's Mid-Amateur champion Ina Kim-Schaad is among the mid-am competitors in the 64-player bracket.",
+          "tags": [
+            "mid-am"
+          ]
+        },
+        {
+          "title": "North & South Senior Men's Amateur Tees Off Monday at Pinehurst",
+          "url": "https://www.nichegolfhq.com/seniorgolfhq/north-south-senior-mens-amateur",
+          "source": "nichegolfHQ",
+          "why": "One of the country's oldest senior amateur championships runs Aug 10-12 over Pinehurst Nos. 4, 5 and 8, with Howard Clendenin defending in a national field split into Open and Super-Senior divisions.",
+          "tags": [
+            "senior"
+          ]
+        }
+      ]
+    },
+    {
       "date": "2026-08-04",
       "title": "Daily Brief - August 4, 2026",
       "items": [
