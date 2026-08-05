@@ -1321,7 +1321,22 @@ export const MIDAM_TOURNAMENTS: Tournament[] = [
     howToPlay: [
       { label: "Apply for invite", href: "https://picardcup.com/apply/" },
     ],
-    news: [],
+    news: [
+      {
+        slug: "2026-picard-cup-field-preview",
+        title:
+          "32nd Picard Cup Field Preview: Defending Champions Fiore and Joseph Return to Canterbury",
+        date: "2026-08-05",
+        author: "midamgolfHQ Staff",
+        summary:
+          "The 32nd Picard Cup brings 36 mid-amateur teams to Canterbury Golf Club for three rounds of best ball and alternate shot August 13-14.",
+        content: [
+          "The 32nd Picard Cup tees off August 13-14 at Canterbury Golf Club in Beachwood, Ohio, bringing together 36 mid-amateur teams for three rounds across two days. The format mixes best ball and alternate shot, with best ball in rounds one and three and alternate shot in round two. Live scoring and full tournament coverage can be found on the [Picard Cup tournament hub here](/midamgolfhq/the-picard-cup).",
+          "Defending champions Nick Fiore and Brian Joseph are back after posting an 11-under total at Canterbury last year, highlighted by a closing 67. They'll face a deep field headlined by Bobby Wyatt, the 2025 Crump Cup champion at Pine Valley, paired with Vince Cave. Scott Turner, a three-time PBC Mid-Am Match Play winner and 2025 Gasparilla champion, teams with Will Davenport, who lost the George C. Thomas Invitational in a playoff and finished T5 at this year's edition. Andy Latowski, a two-time FSGA Mid-Amateur champion, partners with John Brennan, while Blanton Farmer, a Dennis Ewing Cup winner and U.S. Amateur Four-Ball qualifier, plays alongside Brandon Ramsuer.",
+          "The alternate shot round will separate the field, as team chemistry and course management become critical. Keep an eye on Jackson Beindorf, an Auburn alum who made match play at the U.S. Amateur, teaming with Lowery Thomas, and Steven Paramore paired with Gabe Reynolds. midamgolfHQ will be tracking the action all week from Canterbury.",
+        ],
+      },
+    ],
     pastResults: [
       { year: 2025, champion: "Nicholas Fiore & Brian Joseph" },
       { year: 2024, champion: "Kevin O'Brien & Matt Vogt" },
