@@ -504,7 +504,6 @@ export const JUNIOR_MAJOR_EVENTS_2026: JuniorMajorEvent[] = [
   {
     slug: "us-womens-amateur",
     name: "U.S. Women's Amateur",
-    liveStatus: "live",
     month: "August 2026",
     startDate: "2026-08-04",
     endDate: "2026-08-09",
@@ -561,6 +560,7 @@ export const JUNIOR_MAJOR_EVENTS_2026: JuniorMajorEvent[] = [
   {
     slug: "junior-solheim-cup",
     name: "Junior Solheim Cup",
+    liveStatus: "next",
     month: "September 2026",
     startDate: "2026-09-07",
     endDate: "2026-09-08",
