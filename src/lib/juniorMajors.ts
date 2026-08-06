@@ -477,7 +477,7 @@ export const JUNIOR_MAJOR_EVENTS_2026: JuniorMajorEvent[] = [
   {
     slug: "boys-junior-pga",
     name: "Boys Junior PGA Championship",
-    liveStatus: "live",
+    liveStatus: "completed",
     month: "July 2026",
     startDate: "2026-07-28",
     endDate: "2026-07-31",
@@ -504,6 +504,7 @@ export const JUNIOR_MAJOR_EVENTS_2026: JuniorMajorEvent[] = [
   {
     slug: "us-womens-amateur",
     name: "U.S. Women's Amateur",
+    liveStatus: "live",
     month: "August 2026",
     startDate: "2026-08-04",
     endDate: "2026-08-09",
