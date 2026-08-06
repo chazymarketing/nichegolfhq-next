@@ -504,11 +504,13 @@ export const JUNIOR_MAJOR_EVENTS_2026: JuniorMajorEvent[] = [
   {
     slug: "us-womens-amateur",
     name: "U.S. Women's Amateur",
+    liveStatus: "live",
     month: "August 2026",
     startDate: "2026-08-04",
     endDate: "2026-08-09",
     dates2026: "Aug 4–9, 2026",
     officialUrl: "https://www.usga.org/championships/u-s-women-s-amateur.html",
+    golfGeniusUrl: "https://championships.usga.org/uswomensamateur/2026/scoring.html",
     // Host course rotates annually. Listed course reflects the 2025 host.
     course: "The Honors Course",
     location: "Ooltewah, TN",
