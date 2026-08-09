@@ -504,7 +504,7 @@ export const JUNIOR_MAJOR_EVENTS_2026: JuniorMajorEvent[] = [
   {
     slug: "us-womens-amateur",
     name: "U.S. Women's Amateur",
-    liveStatus: "live",
+    liveStatus: "completed",
     month: "August 2026",
     startDate: "2026-08-04",
     endDate: "2026-08-09",
