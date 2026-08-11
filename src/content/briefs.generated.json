@@ -1,6 +1,39 @@
 {
   "briefs": [
     {
+      "date": "2026-08-11",
+      "title": "Daily Brief - August 11, 2026",
+      "items": [
+        {
+          "title": "Roper Honda AJGA Junior Championship Tees Off at Twin Hills in Joplin",
+          "url": "https://www.ajga.org/tournaments/2026119",
+          "source": "AJGA",
+          "why": "The AJGA's national event at Twin Hills Golf and Country Club in Joplin, Mo. is underway this week, with Monday's qualifier complete, Tuesday's Junior-Am, and championship rounds to follow for the field of boys and girls ages 12-19.",
+          "tags": [
+            "juniors"
+          ]
+        },
+        {
+          "title": "U.S. Amateur Stroke Play Continues at Merion With Mid-Am Names Behr, Lowe in the Mix",
+          "url": "https://championships.usga.org/usamateur/2026/scoring.html",
+          "source": "USGA",
+          "why": "The 126th U.S. Amateur at Merion Golf Club and Philadelphia Cricket Club enters its second day of stroke play, with mid-amateurs Tyler Behr and Matt Lowe among those chasing the 64 match-play spots. The cut comes after today's second round.",
+          "tags": [
+            "mid-am"
+          ]
+        },
+        {
+          "title": "North & South Senior Men's Amateur Match Play in Full Swing at Pinehurst No. 4",
+          "url": "https://www.nichegolfhq.com/seniorgolfhq/north-south-senior-mens-amateur",
+          "source": "nichegolfHQ",
+          "why": "The championship runs Aug 10-12 at Pinehurst No. 4, with match play deciding one of senior amateur golf's crown jewels.",
+          "tags": [
+            "senior"
+          ]
+        }
+      ]
+    },
+    {
       "date": "2026-08-10",
       "title": "Daily Brief - August 10, 2026",
       "items": [
