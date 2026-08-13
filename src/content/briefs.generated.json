@@ -1,6 +1,72 @@
 {
   "briefs": [
     {
+      "date": "2026-08-13",
+      "title": "Daily Brief - August 13, 2026",
+      "items": [
+        {
+          "title": "Randy Wise Junior Open Reaches Fog-Delayed Final Round at Spring Meadows",
+          "url": "https://www.ajga.org/tournaments/2026120",
+          "source": "AJGA",
+          "why": "The 20th Randy Wise Junior Open presented by Genesee County wraps up today at Spring Meadows CC in Linden, Mich., with final-round tee times pushed back an hour by fog. Eight past AJGA champions are in the field of boys and girls ages 12-19.",
+          "tags": [
+            "juniors"
+          ]
+        },
+        {
+          "title": "Hagestad and Cavaliere Still Alive at U.S. Amateur as Picard Cup Opens at Canterbury",
+          "url": "https://championships.usga.org/usamateur/2026/scoring.html",
+          "source": "USGA",
+          "why": "Stewart Hagestad and Christian Cavaliere remain in the U.S. Amateur bracket as match play continues at Merion. Meanwhile, the 32nd Picard Cup kicks off today at Canterbury Golf Club in Beachwood, Ohio, with 36 mid-amateur teams competing in three rounds of best ball and alternate shot. Full Picard Cup coverage on the [tournament hub here](/midamgolfhq/the-picard-cup).",
+          "tags": [
+            "mid-am"
+          ]
+        },
+        {
+          "title": "Rick Stewart Wins North & South Senior Amateur at Pinehurst; Cloninger Takes Super Senior",
+          "url": "https://www.nichegolfhq.com/seniorgolfhq/north-south-senior-mens-amateur",
+          "source": "nichegolfHQ",
+          "why": "Rick Stewart of Park Ridge, Ill., closed 70-72-71 for 3-under 213 and a one-shot win in the championship that ended Wednesday on Pinehurst No. 4. Rick Cloninger finished with back-to-back rounds in the 60s to take the Super Senior division.",
+          "tags": [
+            "senior"
+          ]
+        }
+      ]
+    },
+    {
+      "date": "2026-08-12",
+      "title": "Daily Brief - August 12, 2026",
+      "items": [
+        {
+          "title": "Miles Russell Leads Junior Contingent Into U.S. Amateur Match Play at Merion",
+          "url": "https://www.golfchannel.com/usga/news/world-no-1-to-miss-match-play-at-u-s-amateur-while-kid-wonders-shine",
+          "source": "Golf Channel",
+          "why": "The 17-year-old finished stroke play at 3-under to make the Round of 64, which begins today at Merion, while World No. 1 Preston Stout missed the match-play cut.",
+          "tags": [
+            "juniors"
+          ]
+        },
+        {
+          "title": "32nd Picard Cup Tees Off Tomorrow at Canterbury as Fiore and Joseph Defend",
+          "url": "https://www.nichegolfhq.com/midamgolfhq/the-picard-cup",
+          "source": "nichegolfHQ",
+          "why": "36 mid-amateur teams play three rounds of best ball and alternate shot Aug 13-14 at Canterbury Golf Club in Beachwood, Ohio, with a field headlined by 2025 Crump Cup champ Bobby Wyatt.",
+          "tags": [
+            "mid-am"
+          ]
+        },
+        {
+          "title": "North & South Senior Men's Amateur Crowns a Champion Today at Pinehurst",
+          "url": "https://www.nichegolfhq.com/seniorgolfhq/north-south-senior-mens-amateur",
+          "source": "nichegolfHQ",
+          "why": "The 54-hole championship wraps its final round today across Pinehurst Nos. 4, 5 and 8, with Howard Clendenin defending his 2025 title.",
+          "tags": [
+            "senior"
+          ]
+        }
+      ]
+    },
+    {
       "date": "2026-08-11",
       "title": "Daily Brief - August 11, 2026",
       "items": [
