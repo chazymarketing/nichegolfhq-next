@@ -55,6 +55,12 @@ export function TournamentOverview({ tournament }: { tournament: Tournament }) {
           discountNote="NicheGolfHQ subscribers receive preferential rates with code IBTNicheGolfHQ. Subject to availability and Terms and Conditions."
         />
       )}
+      {tournament.slug === "the-picard-cup" && (
+        <SponsorStrip
+          sponsorName="PuttView Books"
+          sponsorUrl="https://puttviewbooks.com/"
+        />
+      )}
       {hasCourseNotes ? (
         <aside className="rounded-3xl border border-zinc-200 bg-white p-6 shadow-sm shadow-zinc-900/5">
           <h2 className="text-sm font-semibold tracking-tight text-zinc-950 text-center">Course notes</h2>

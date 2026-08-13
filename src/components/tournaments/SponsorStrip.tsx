@@ -2,11 +2,11 @@ import Image from "next/image";
 import Link from "next/link";
 
 interface SponsorStripProps {
-  logoSrc: string;
-  logoAlt: string;
+  logoSrc?: string;
+  logoAlt?: string;
   sponsorName: string;
   sponsorUrl: string;
-  ctaText: string;
+  ctaText?: string;
   discountCode?: string;
   discountNote?: string;
 }
@@ -29,18 +29,24 @@ export function SponsorStrip({
     >
       {/* Attribution */}
       <p className="text-xs font-semibold tracking-widest text-zinc-700 text-center">
-        midamgolfHQ coverage supported by IBT Golf Travel
+        midamgolfHQ coverage supported by {sponsorName}
       </p>
 
-      {/* Logo — the hero of the box */}
-      <Image
-        src={logoSrc}
-        alt={logoAlt}
-        width={400}
-        height={200}
-        className="mx-auto mt-3 h-auto w-full"
-        priority
-      />
+      {/* Logo — the hero of the box. Falls back to the sponsor name when there is no logo. */}
+      {logoSrc ? (
+        <Image
+          src={logoSrc}
+          alt={logoAlt ?? sponsorName}
+          width={400}
+          height={200}
+          className="mx-auto mt-3 h-auto w-full"
+          priority
+        />
+      ) : (
+        <p className="mt-3 text-lg font-semibold tracking-tight text-zinc-950">
+          {sponsorName}
+        </p>
+      )}
 
       {/* Code pill */}
       {discountCode && (
