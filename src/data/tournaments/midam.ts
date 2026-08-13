@@ -1324,6 +1324,19 @@ export const MIDAM_TOURNAMENTS: Tournament[] = [
     ],
     news: [
       {
+        slug: "2026-picard-cup-day-1-recap",
+        title:
+          "Picard Cup Day 1: Bailey and Ebert Lead at 10-Under After Best Ball and Alternate Shot at Canterbury",
+        date: "2026-08-13",
+        author: "midamgolfHQ Staff",
+        summary:
+          "Canterbury member Andrew Bailey and John Ebert hold the 36-hole lead at 10-under 134 heading into the final round of best ball.",
+        content: [
+          "Canterbury member Andrew Bailey and partner John Ebert hold the 36-hole lead at 10-under 134 after the first two rounds of the 32nd Picard Cup. The duo opened with a 5-under 65 in best ball before backing it up with a 3-under 69 in the alternate shot round, one of just a handful of teams to go under par in the format that rewards precision and chemistry. Live scoring and full tournament coverage can be found on the [Picard Cup tournament hub here](/midamgolfhq/the-picard-cup).",
+          "Four teams sit two back at 8-under 136: Nick Jallos and Chester Vandenberg, 2025 Crump Cup champion Bobby Wyatt with Vince Cave, Nick Robillard with Paul Vardaman, and Jimmy Delp with Justin Young. Friend of midamgolfHQ Blanton Farmer and Brandon Ramsuer fired the low best ball round of the day at 8-under 62 but gave shots back in alternate shot to sit T6. The final round of best ball goes tomorrow, with plenty of teams within striking distance. midamgolfHQ will be tracking the action all day from Canterbury.",
+        ],
+      },
+      {
         slug: "2026-picard-cup-field-preview",
         title:
           "32nd Picard Cup Field Preview: Defending Champions Fiore and Joseph Return to Canterbury",
