@@ -1,6 +1,8 @@
 import type { Tournament } from "@/lib/tournaments/types";
 import { SponsorStrip } from "@/components/tournaments/SponsorStrip";
 
+const PUTTVIEW_SPONSORED_SLUGS = ["the-picard-cup", "usga-mens-mid-am", "the-farrell"];
+
 export function TournamentOverview({ tournament }: { tournament: Tournament }) {
   const overview = tournament.overview?.trim();
   const hasCourseNotes =
@@ -55,7 +57,7 @@ export function TournamentOverview({ tournament }: { tournament: Tournament }) {
           discountNote="NicheGolfHQ subscribers receive preferential rates with code IBTNicheGolfHQ. Subject to availability and Terms and Conditions."
         />
       )}
-      {tournament.slug === "the-picard-cup" && (
+      {PUTTVIEW_SPONSORED_SLUGS.includes(tournament.slug) && (
         <SponsorStrip
           sponsorName="PuttView Books"
           sponsorUrl="https://puttviewbooks.com/"
