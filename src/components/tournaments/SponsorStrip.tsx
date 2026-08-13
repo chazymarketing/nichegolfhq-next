@@ -32,8 +32,9 @@ export function SponsorStrip({
         midamgolfHQ coverage supported by {sponsorName}
       </p>
 
-      {/* Logo — the hero of the box. Falls back to the sponsor name when there is no logo. */}
-      {logoSrc ? (
+      {/* Logo — the hero of the box. Omitted entirely when there is no logo,
+          since the attribution line above already names the sponsor. */}
+      {logoSrc && (
         <Image
           src={logoSrc}
           alt={logoAlt ?? sponsorName}
@@ -42,10 +43,6 @@ export function SponsorStrip({
           className="mx-auto mt-3 h-auto w-full"
           priority
         />
-      ) : (
-        <p className="mt-3 text-lg font-semibold tracking-tight text-zinc-950">
-          {sponsorName}
-        </p>
       )}
 
       {/* Code pill */}
