@@ -6,6 +6,7 @@ interface SponsorStripProps {
   logoAlt?: string;
   sponsorName: string;
   sponsorUrl: string;
+  attribution?: string;
   ctaText?: string;
   discountCode?: string;
   discountNote?: string;
@@ -16,6 +17,7 @@ export function SponsorStrip({
   logoAlt,
   sponsorName,
   sponsorUrl,
+  attribution,
   ctaText,
   discountCode,
   discountNote,
@@ -27,14 +29,15 @@ export function SponsorStrip({
       rel="noreferrer noopener"
       className="group block rounded-2xl border border-zinc-200 bg-white p-5 text-center shadow-sm transition hover:border-zinc-300"
     >
-      {/* Attribution */}
+      {/* Attribution. Callers passing a short line like "Supported by" get the
+          sponsor named below instead; the default already names them here. */}
       <p className="text-xs font-semibold tracking-widest text-zinc-700 text-center">
-        midamgolfHQ coverage supported by {sponsorName}
+        {attribution ?? `midamgolfHQ coverage supported by ${sponsorName}`}
       </p>
 
-      {/* Logo — the hero of the box. Omitted entirely when there is no logo,
-          since the attribution line above already names the sponsor. */}
-      {logoSrc && (
+      {/* Sponsor identity — the hero of the box: the logo when we have one,
+          otherwise the sponsor name in large type. */}
+      {logoSrc ? (
         <Image
           src={logoSrc}
           alt={logoAlt ?? sponsorName}
@@ -43,6 +46,10 @@ export function SponsorStrip({
           className="mx-auto mt-3 h-auto w-full"
           priority
         />
+      ) : (
+        <p className="mt-2 text-xl font-bold tracking-tight text-zinc-950">
+          {sponsorName}
+        </p>
       )}
 
       {/* Code pill */}

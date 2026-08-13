@@ -61,6 +61,7 @@ export function TournamentOverview({ tournament }: { tournament: Tournament }) {
         <SponsorStrip
           sponsorName="PuttView Books"
           sponsorUrl="https://puttviewbooks.com/"
+          attribution="Supported by"
         />
       )}
       {hasCourseNotes ? (
