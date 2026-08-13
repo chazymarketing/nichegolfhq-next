@@ -48,13 +48,10 @@ export function TournamentOverview({ tournament }: { tournament: Tournament }) {
       <div className="flex flex-col gap-4">
       {tournament.slug === "the-crump-cup" && (
         <SponsorStrip
-          logoSrc="/brand/IBT_Logo.png"
-          logoAlt="IBT Golf Travel"
           sponsorName="IBT Golf Travel"
           sponsorUrl="https://ibt-golf.com"
-          ctaText="Plan Your Golf Trip"
+          attribution="Supported by"
           discountCode="IBTNicheGolfHQ"
-          discountNote="NicheGolfHQ subscribers receive preferential rates with code IBTNicheGolfHQ. Subject to availability and Terms and Conditions."
         />
       )}
       {PUTTVIEW_SPONSORED_SLUGS.includes(tournament.slug) && (
