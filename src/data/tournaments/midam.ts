@@ -1300,7 +1300,7 @@ export const MIDAM_TOURNAMENTS: Tournament[] = [
     slug: "the-picard-cup",
     name: "The Picard Cup",
     channel: "midam",
-    liveStatus: "next",
+    liveStatus: "live",
     logo: "/brand/Picard.jpeg",
     month: 8,
     dates2026: "August 13-14, 2026",
@@ -1317,6 +1317,7 @@ export const MIDAM_TOURNAMENTS: Tournament[] = [
     courseNotes: "GolfLink shows 73.9/138 from different tees",
 
     format: "4-ball",
+    golfGeniusUrl: "https://picardcup.com/portal/",
     tournamentWebsite: "https://picardcup.com/",
     howToPlay: [
       { label: "Apply for invite", href: "https://picardcup.com/apply/" },
