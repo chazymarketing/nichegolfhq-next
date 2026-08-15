@@ -1464,6 +1464,7 @@ export const MIDAM_TOURNAMENTS: Tournament[] = [
     slug: "the-valentine-invitational",
     name: "The Valentine Invitational",
     channel: "midam",
+    liveStatus: "next",
     logo: "/brand/Valentine.jpeg",
     month: 8,
     dates2026: "August 21-23, 2026",
