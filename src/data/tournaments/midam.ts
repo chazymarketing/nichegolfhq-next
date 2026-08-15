@@ -1300,7 +1300,7 @@ export const MIDAM_TOURNAMENTS: Tournament[] = [
     slug: "the-picard-cup",
     name: "The Picard Cup",
     channel: "midam",
-    liveStatus: "live",
+    liveStatus: "completed",
     logo: "/brand/Picard.jpeg",
     month: 8,
     dates2026: "August 13-14, 2026",
@@ -1323,6 +1323,19 @@ export const MIDAM_TOURNAMENTS: Tournament[] = [
       { label: "Apply for invite", href: "https://picardcup.com/apply/" },
     ],
     news: [
+      {
+        slug: "2026-picard-cup-final-recap",
+        title:
+          "Wyatt and Cave Win 32nd Picard Cup in Playoff Over Robillard and Vardaman at Canterbury",
+        date: "2026-08-14",
+        author: "midamgolfHQ Staff",
+        summary:
+          "Bobby Wyatt and Vince Cave won the 32nd Picard Cup in a playoff after both teams finished at 16-under 200 at Canterbury Golf Club.",
+        content: [
+          "Bobby Wyatt and Vince Cave won the 32nd Picard Cup in a playoff over Nick Robillard and Paul Vardaman after both teams finished regulation at 16-under 200 at Canterbury Golf Club. Both duos closed with 8-under 64 in the final round of best ball to surge past overnight leaders Andrew Bailey and John Ebert, who settled for solo third at 15-under after a closing 67. Live scoring and full tournament coverage can be found on the [Picard Cup tournament hub here](/midamgolfhq/the-picard-cup).",
+          "The final round fireworks were highlighted by Scott Turner and Will Davenport, who posted a 13-under 59 in best ball to climb from outside the top 10 into a tie for sixth at 13-under. Friend of midamgolfHQ Blanton Farmer and Brandon Ramsuer closed with a 65 to finish T4 at 14-under alongside Jimmy Delp and Justin Young. Defending champions Brian Joseph and Nick Fiore struggled to a 34th-place finish at 3-over. midamgolfHQ will be back next week with coverage from the Valentine Invitational.",
+        ],
+      },
       {
         slug: "2026-picard-cup-day-1-recap",
         title:
@@ -1352,6 +1365,7 @@ export const MIDAM_TOURNAMENTS: Tournament[] = [
       },
     ],
     pastResults: [
+      { year: 2026, champion: "Bobby Wyatt / Vince Cave" },
       { year: 2025, champion: "Nicholas Fiore & Brian Joseph" },
       { year: 2024, champion: "Kevin O'Brien & Matt Vogt" },
       { year: 2023, champion: "Sam Jackson & Zachary Herold" },
