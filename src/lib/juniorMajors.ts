@@ -273,23 +273,42 @@ export const JUNIOR_MAJOR_EVENTS_2026: JuniorMajorEvent[] = [
     startDate: "2026-05-21",
     endDate: "2026-05-24",
     officialUrl: "https://www.ajga.org/tournaments/team-taylormade-invitational",
+    golfGeniusUrl: "https://www.ajga.org/tournaments/2026041/leaderboard",
     // Host course rotates annually. Listed course reflects the 2026 host.
     course: "Pelican Golf Club",
     location: "Belleair, FL",
     courseDesigner: "Donald Ross (1925); redesigned by Beau Welling (2018)",
     format: "54-hole stroke play",
     fieldSize: "72 players",
-    eligibility: "AJGA Invitational – boys ages 12–19; invitation based on Rolex AJGA Rankings; top ∶65 ranked boys receive invitations; AJGA membership required",
+    eligibility: "AJGA Invitational – boys ages 12–19; invitation based on Rolex AJGA Rankings; top 65 ranked boys receive invitations; AJGA membership required",
     overview: "Launched in 2021 as a premier all-boys AJGA invitational in partnership with TaylorMade, this event rotates annually among elite private courses and resort tracks. The event draws the 72 highest-ranked junior boys in the country and serves as a major college recruiting showcase. Luke Ringkamp won the 2026 edition at Pelican Golf Club after a final-round 64.",
     note: "Host course rotates annually. Listed course reflects the 2026 host (Pelican Golf Club, Belleair, FL).",
+    howToPlay: [
+      { label: "AJGA Invitational field", note: "72 boys, ages 12–19, selected primarily from the Rolex AJGA Rankings; AJGA membership required." },
+      { label: "Full entry criteria", href: "https://www.ajga.org/tournaments/2026041", note: "See the official tournament page for Performance-Based Entry requirements and how to gain entry into AJGA Invitational events." },
+    ],
     winners2026: { boys: "Luke Ringkamp" },
     pastResults: [
-      { year: 2026, champion: "Luke Ringkamp" },
+      { year: 2026, champion: "Luke Ringkamp", score: "-13 (197)", runnerUp: "Bodie Brumlow (-10, 200)" },
       { year: 2025, champion: "Charlie Woods", score: "-15 (201)" },
       { year: 2024, champion: "Carson Bertagnole" },
       { year: 2023, champion: "Cayden Pope", score: "-16 (200)" },
       { year: 2022, champion: "Benjamin James" },
       { year: 2021, champion: "Benjamin James", score: "-14 (202)" },
+    ],
+    news: [
+      {
+        slug: "2026-team-taylormade-invitational-recap",
+        title: "Luke Ringkamp Erases Five-Shot Deficit to Win Team TaylorMade Invitational by Three",
+        date: "2026-05-24",
+        author: "juniorgolfHQ",
+        summary: "Luke Ringkamp closed with a 6-under 64 to erase a five-shot final-round deficit and win his second AJGA Invitational title at Pelican Golf Club's debut as tournament host.",
+        content: [
+          "Luke Ringkamp closed the 2026 AJGA Team TaylorMade Invitational with a 6-under 64, the low round of the week among contenders, to finish at 13-under 197 and win by three shots at Pelican Golf Club, hosting the event for the first time. Ringkamp opened with rounds of 65 and 68 before trailing by five shots entering the final round and running down the field with six birdies on the closing 18.",
+          "Bodie Brumlow, who opened with a 9-under 61 — the lowest single-round score in AJGA Invitational history — led after 36 holes but could not sustain the pace, closing with a 2-over 72 to finish runner-up at 10-under 200. Giuseppe Puebla finished third at 8-under 202, with Landon Ashcraft and Miles Russell tied for fourth at 7-under 203.",
+          "The win was Ringkamp's second AJGA Invitational title. Ranked No. 4 in the Rolex AJGA Rankings and a Pepperdine commit, Ringkamp credited the AJGA for shaping his development as a player. Launched in 2021 in partnership with TaylorMade, the Team TaylorMade Invitational draws the 72 highest-ranked junior boys in the country and rotates annually among elite private courses and resort tracks.",
+        ],
+      },
     ],
   },
   {
@@ -299,6 +318,7 @@ export const JUNIOR_MAJOR_EVENTS_2026: JuniorMajorEvent[] = [
     startDate: "2026-05-24",
     endDate: "2026-05-26",
     officialUrl: "https://www.ajga.org/tournaments/the-nelly-invitational-presented-by-chevron",
+    golfGeniusUrl: "https://www.ajga.org/tournaments/2026040/leaderboard",
     course: "The Concession Golf Club",
     location: "Bradenton, FL",
     coursePar: 72,
@@ -307,9 +327,29 @@ export const JUNIOR_MAJOR_EVENTS_2026: JuniorMajorEvent[] = [
     fieldSize: "66 players",
     eligibility: "AJGA Invitational – girls ages 12–19; invitation based on Rolex AJGA Rankings; AJGA membership required; champion receives a sponsor exemption into the Chevron Championship (LPGA major)",
     overview: "The Nelly Invitational debuted in 2024 as an AJGA all-girls invitational hosted by LPGA star Nelly Korda at The Concession Golf Club in Bradenton, Florida — a course named for Jack Nicklaus’s legendary ‘concession’ putt to Tony Jacklin at the 1969 Ryder Cup. Chevron joined as presenting sponsor in 2025, adding a sponsor exemption into the Chevron Championship for the champion. The event has quickly established itself as one of the most prestigious stops on the junior girls calendar.",
+    howToPlay: [
+      { label: "AJGA Invitational field", note: "66 girls, ages 12–19, selected primarily from the Rolex AJGA Rankings; AJGA membership required." },
+      { label: "Full entry criteria", href: "https://www.ajga.org/tournaments/2026040", note: "See the official tournament page for entry criteria and how to gain entry into AJGA Invitational events." },
+    ],
+    winners2026: { girls: "Vidhi Lakhawala" },
     pastResults: [
+      { year: 2026, champion: "Vidhi Lakhawala", score: "-1 (215)", runnerUp: "Zoe Cusack / Grace Carter (T2, E, 216)" },
       { year: 2025, champion: "Shauna Liu", score: "-1 (215)", runnerUp: "Clara Ding (sudden-death playoff)" },
       { year: 2024, champion: "Aphrodite Deng", score: "-2 (214)" },
+    ],
+    news: [
+      {
+        slug: "2026-nelly-invitational-recap",
+        title: "Vidhi Lakhawala Wins Third Nelly Invitational by One Shot at The Concession",
+        date: "2026-05-26",
+        author: "juniorgolfHQ",
+        summary: "Vidhi Lakhawala closed at 1-under 215 to win the third edition of the Nelly Invitational by one shot over a tie for second at The Concession Golf Club.",
+        content: [
+          "Vidhi Lakhawala closed the 2026 Nelly Invitational presented by Chevron with rounds of 69-75-71 for a 1-under 215 total, winning by one shot at The Concession Golf Club in Bradenton, Florida. Zoe Cusack and Grace Carter tied for second at even-par 216, with Shauna Liu — the 2025 champion — and Amelie Zalsman tied for fourth at 1-over 217.",
+          "Six players shared sixth place at 2-over 218, including Nobelle Park, Ann-Sophie Bourgault, Jude Lee, and Raegan Denton, with Iris Lee rounding out the top 10 at 3-over 219. The 66-player field saw three withdrawals over the course of the week.",
+          "Now in its third year, the Nelly Invitational was launched by LPGA star Nelly Korda at The Concession Golf Club, a Jack Nicklaus and Tony Jacklin design named for Nicklaus's famous 'concession' putt to Jacklin at the 1969 Ryder Cup. Chevron joined as presenting sponsor in 2025, and the champion earns a sponsor exemption into the Chevron Championship, an LPGA major.",
+        ],
+      },
     ],
   },
   {
