@@ -89,6 +89,7 @@ export const JUNIOR_MAJOR_EVENTS_2026: JuniorMajorEvent[] = [
     startDate: "2026-02-13",
     endDate: "2026-02-16",
     officialUrl: "https://www.ajga.org/tournaments/ajga-simplify-boys-championship-at-carlton-woods",
+    golfGeniusUrl: "https://www.ajga.org/tournaments/2026004/leaderboard",
     course: "The Club at Carlton Woods \u2013 Fazio Championship Course",
     location: "The Woodlands, TX",
     coursePar: 72,
@@ -97,11 +98,30 @@ export const JUNIOR_MAJOR_EVENTS_2026: JuniorMajorEvent[] = [
     fieldSize: "72 players",
     eligibility: "AJGA Invitational \u2013 boys ages 12\u201319",
     overview: "One of the premier AJGA Invitational events, the Simplify Boys Championship is held annually at the exclusive Club at Carlton Woods in The Woodlands, Texas. The Tom Fazio-designed Championship Course provides an elite test for the nation\u2019s top junior golfers across three rounds of stroke play. The 2025 edition featured future stars including Miles Russell, who ran away with the title at 11 under par.",
+    howToPlay: [
+      { label: "AJGA Invitational field", note: "72 boys, ages 12\u201319, selected via Performance-Based Entry: top 15 in the Rolex AJGA Rankings are fully exempt, top 25 need 12 performance stars, and top 50 or players who make the 36-hole cut need 8 performance stars." },
+      { label: "Full entry criteria", href: "https://www.ajga.org/tournaments/ajga-simplify-boys-championship-at-carlton-woods", note: "See the official tournament page for Performance-Based Entry requirements and how to gain entry into AJGA Invitational events." },
+    ],
     pastResults: [
-      { year: 2026, champion: "Grayson Baucom", score: "-12 (70-67-67\u2014204)" },
+      { year: 2026, champion: "Grayson Baucom", score: "-12 (70-67-67\u2014204)", runnerUp: "T2: Jackson Ormond / Cameron Kuchar / Miles Russell (-9, 207)" },
       { year: 2025, champion: "Miles Russell", score: "-11 (64-70-71\u2014205)", runnerUp: "T2: Michael Riebe / Giuseppe Puebla (-8)" },
     ],
     winners2026: { boys: "Grayson Baucom" },
+    news: [
+      {
+        slug: "2026-simplify-boys-championship-recap",
+        title: "Grayson Baucom Rallies From Four Back to Win First AJGA Invitational at Simplify Boys Championship",
+        date: "2026-02-16",
+        author: "juniorgolfHQ",
+        summary: "Grayson Baucom closed with a bogey-free 67, capped by a hole-out eagle at the 13th, to win by three shots at The Club at Carlton Woods.",
+        content: [
+          "Grayson Baucom of Hickory, North Carolina, closed the AJGA Simplify Boys Championship at Carlton Woods with a bogey-free, 5-birdie 67 to finish at 12-under 204, good for a three-shot victory and the first AJGA Invitational title of his career. Baucom opened the week with a 70 and followed with a 67 in the second round, then trailed by four shots entering the final 18 holes at The Club at Carlton Woods\u2019 Fazio Championship Course.",
+          "The turning point came at the par-5 13th, where Baucom holed out for eagle to take a two-shot lead he would not relinquish, playing his final five holes in 1-under to close out the win. He finished three shots clear of a three-way tie for second at 9-under 207 that included Jackson Ormond, Cameron Kuchar, and defending champion Miles Russell, who shot a final-round 69.",
+          "Ronin Banerjee and Giuseppe Puebla shared fifth at 8-under, with Chase Bauer seventh at 7-under. A 2028 graduate ranked No. 32 in the Rolex AJGA Rankings and a 2025 Rolex Junior All-American, Baucom called the win surreal given the tournament\u2019s ties to the military and armed forces community.",
+          "Now in its 17th year at Carlton Woods, the Simplify Boys Championship remains one of the AJGA\u2019s premier winter invitationals, drawing 17 of the top 25 players in the Rolex AJGA Rankings to the 2026 field.",
+        ],
+      },
+    ],
   },
   {
     slug: "fortinet-stanford-invitational",
@@ -109,7 +129,8 @@ export const JUNIOR_MAJOR_EVENTS_2026: JuniorMajorEvent[] = [
     month: "February 2026",
     startDate: "2026-02-16",
     endDate: "2026-02-18",
-    officialUrl: "https://www.ajga.org/tournaments/the-fortinet-stanford-invitational-hosted-by-rose-zhang",
+    officialUrl: "https://www.ajga.org/tournaments/2026005",
+    golfGeniusUrl: "https://www.ajga.org/tournaments/2026005/leaderboard",
     course: "Stanford Golf Course",
     location: "Stanford, CA",
     coursePar: 71,
@@ -119,6 +140,10 @@ export const JUNIOR_MAJOR_EVENTS_2026: JuniorMajorEvent[] = [
     fieldSize: "72 players",
     eligibility: "AJGA Invitational \u2013 girls ages 12\u201319; invitation based on Rolex AJGA Rankings; top 15-ranked girls are fully exempt; AJGA membership required",
     overview: "Originally the Mariah Stackhouse Girls Invitational at its 2021 debut, the tournament became the Fortinet Stanford Invitational hosted by Rose Zhang in 2024 when the LPGA star and Stanford alumna took on the hosting role. Played on the historic George C. Thomas\u2013designed Stanford Golf Course, the event is one of the AJGA\u2019s premier all-girls invitationals. Starting in 2025, the champion receives a sponsor exemption into the Chevron Championship (LPGA major).",
+    howToPlay: [
+      { label: "AJGA Invitational field", note: "72 girls, ages 12\u201319, selected via Performance-Based Entry: top 15 in the Rolex AJGA Rankings are fully exempt, top 25 need 12 performance stars, and top 50 or players who make the 36-hole cut need 8 performance stars." },
+      { label: "Full entry criteria", href: "https://www.ajga.org/tournaments/2026005", note: "See the official tournament page for Performance-Based Entry requirements and how to gain entry into AJGA Invitational events." },
+    ],
     pastResults: [
       { year: 2026, champion: "Asterisk Talley", score: "-9 (204)", runnerUp: "Rina Kawasaki / Juliet Oh (T2, -4)" },
       { year: 2025, champion: "Asterisk Talley" },
@@ -128,6 +153,20 @@ export const JUNIOR_MAJOR_EVENTS_2026: JuniorMajorEvent[] = [
       { year: 2021, champion: "Michelle Liu" },
     ],
     winners2026: { girls: "Asterisk Talley" },
+    news: [
+      {
+        slug: "2026-fortinet-stanford-invitational-recap",
+        title: "Asterisk Talley Goes Wire-to-Wire to Defend Fortinet Stanford Invitational Title",
+        date: "2026-02-18",
+        author: "juniorgolfHQ",
+        summary: "Talley opened with a bogey-free 64 and closed with a 1-under 70 in the rain to win by five shots, becoming a five-time AJGA Invitational champion.",
+        content: [
+          "Asterisk Talley of Chowchilla, California, successfully defended her Fortinet Stanford Invitational title, closing with a 1-under 70 in rainy conditions to finish at 9-under 204 and win by five shots on the historic Stanford Golf Course. Talley set the tone in round one with a bogey-free 7-under 64, then added a 1-under 70 in round two to take a commanding lead into the final round.",
+          "In the final round, Talley made birdies on the par-3 third hole and twice more on the back nine to close out the wire-to-wire victory. Runners-up Rina Kawasaki and Juliet Oh both carded 11 birdies for the week to tie for second at 4-under 209, matching career-best AJGA Invitational finishes. Honorine Ferry finished fourth at 3-under, with Kuree Little fifth at 2-under.",
+          "The win was Talley\u2019s fifth AJGA Invitational title and her second straight at Stanford, played in front of the Stanford coaching staff and fellow Cardinal commits since Talley will join the program. Originally launched in 2021 as the Mariah Stackhouse Girls Invitational, the event has been hosted by LPGA star and Stanford alumna Rose Zhang since 2024, with the champion earning a sponsor exemption into the Chevron Championship.",
+        ],
+      },
+    ],
   },
   {
     slug: "dustin-johnson-world-junior",
