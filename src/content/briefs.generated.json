@@ -1,6 +1,39 @@
 {
   "briefs": [
     {
+      "date": "2026-08-17",
+      "title": "Daily Brief - August 17, 2026",
+      "items": [
+        {
+          "title": "Weather Pushes Play Chesterfield Junior Championship First Round Back Two Hours at Meadowbrook",
+          "url": "https://www.ajga.org/tournaments/2026870/leaderboard",
+          "source": "AJGA",
+          "why": "AJGA delayed opening-round tee times two hours to 9:30 a.m. ET Monday at Meadowbrook Country Club in Richmond, Va. The 78-player Open Series field for boys and girls 12-19 now chases 54 holes through Aug 19.",
+          "tags": [
+            "juniors"
+          ]
+        },
+        {
+          "title": "34th Illinois State Mid-Amateur Opens Today at Edgewood Valley With 36-Hole Monday Grind",
+          "url": "https://www.cdga.org/golf-competitions/golf-info.asp?id=1093",
+          "source": "CDGA",
+          "why": "The CDGA-run championship for Illinois amateurs 25 and over runs Aug 17-18 at Edgewood Valley Country Club in Burr Ridge, with the full field playing 36 holes Monday before a cut to the low 35 and ties. Lake Forest's Max Scodro won last summer.",
+          "tags": [
+            "mid-am"
+          ]
+        },
+        {
+          "title": "Full 156-Player Field Set for U.S. Senior Amateur at Baltimore Country Club",
+          "url": "https://championships.usga.org/ussenioramateur/2026/articles/full-field-list-2026-us-senior-amateur-baltimore-cc.html",
+          "source": "USGA",
+          "why": "The USGA released the field for the Aug 29-Sept 3 championship on Baltimore Country Club's East Course, with 11 past champions including defender Mike McCoy among 37 exempt players. A record-adjacent 2,779 entries were pared through 50 qualifying sites.",
+          "tags": [
+            "senior"
+          ]
+        }
+      ]
+    },
+    {
       "date": "2026-08-16",
       "title": "Daily Brief - August 16, 2026",
       "items": [
