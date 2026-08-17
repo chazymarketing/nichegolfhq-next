@@ -184,8 +184,12 @@ export const JUNIOR_MAJOR_EVENTS_2026: JuniorMajorEvent[] = [
     fieldSize: "Approximately 90 players total (co-ed)",
     eligibility: "Junior amateurs ages 13\u201318 as of the first round; qualifiers through Rolex AJGA Rankings, TUGR standings, and sponsor exemptions; qualifier events held at Myrtle Beach area courses",
     overview: "Founded in 2016 by two-time major champion and South Carolina native Dustin Johnson, this tournament has quickly grown into one of the top junior events in the country. Held at the Tom Fazio-designed TPC Myrtle Beach, the co-ed field features separate boys\u2019 and girls\u2019 divisions competing simultaneously. Alumni include PGA Tour winners Akshay Bhatia and Nick Dunlap.",
+    howToPlay: [
+      { label: "Field entry", note: "Approximately 90 players (co-ed), ages 13\u201318, selected through the Rolex AJGA Rankings, TUGR standings, sponsor exemptions, and qualifying events held at Myrtle Beach\u2013area courses." },
+      { label: "Tournament info", href: "https://worldjuniorgolfchampionship.com/2026-field/", note: "See the official site for the full field, qualifying details, and results archive." },
+    ],
     pastResults: [
-      { year: 2026, champion: "Boys: William Lisle / Girls: Fay Jia" },
+      { year: 2026, champion: "Boys: William Lisle / Girls: Fay Jia", score: "Boys: -4 (212) / Girls: E (216)" },
       { year: 2025, champion: "Boys: Aarav Shah / Girls: Kayla Bryant" },
       { year: 2024, champion: "Boys: Ethan Paschal / Girls: Vanessa Borovilos" },
       { year: 2023, champion: "Boys: Jackson Koivun / Girls: Ryleigh Knaub" },
@@ -193,6 +197,20 @@ export const JUNIOR_MAJOR_EVENTS_2026: JuniorMajorEvent[] = [
       { year: 2021, champion: "Boys: Nick Dunlap / Girls: Jacqueline Putrino" },
     ],
     winners2026: { boys: "William Lisle", girls: "Fay Jia" },
+    news: [
+      {
+        slug: "2026-dustin-johnson-world-junior-recap",
+        title: "William Lisle Holds Off Chase Bauer as Fay Jia Rallies to Sweep 2026 Dustin Johnson World Junior",
+        date: "2026-03-08",
+        author: "juniorgolfHQ",
+        summary: "William Lisle closed with a 71 to win by one shot on the boys side, while Fay Jia carded an even-par 216 to win the girls title by four.",
+        content: [
+          "William Lisle closed the 2026 Dustin Johnson World Junior Golf Championship with a final-round 71 for a 54-hole total of 4-under 212, holding off Chase Bauer by one shot at TPC Myrtle Beach. Lisle held the 36-hole lead into the final round and steadied himself after a shaky start, making eagle on the par-5 15th and a key putt at the 16th to close out the win. Bauer, who shot the low round of the day among the leaders at 69, finished second at 3-under 213, with Theodore Snyder third at 1-under 215.",
+          "On the girls\u2019 side, Fay Jia won by four shots despite trailing entering the final round, carding rounds of 71-74-71 for an even-par 216 total without watching the leaderboard down the stretch. Eileen Park, Macie Rasmussen, and Michelle Xing tied for second at 4-over 220.",
+          "Founded in 2016 by two-time major champion and South Carolina native Dustin Johnson, the tournament has grown into one of the top co-ed junior events in the country, drawing roughly 90 players to the Tom Fazio\u2013designed TPC Myrtle Beach. Alumni include PGA Tour winners Akshay Bhatia and Nick Dunlap.",
+        ],
+      },
+    ],
   },
   {
     slug: "junior-invitational-sage-valley",
@@ -202,10 +220,22 @@ export const JUNIOR_MAJOR_EVENTS_2026: JuniorMajorEvent[] = [
     endDate: "2026-03-14",
     course: "Sage Valley Golf Club",
     location: "Graniteville, SC",
+    coursePar: 72,
+    courseYardage: 7437,
+    courseDesigner: "Tom Fazio",
+    format: "72-hole stroke play",
+    fieldSize: "36 boys, 24 girls",
+    eligibility: "Invitation only; field selected by the Junior Invitational committee based on national junior rankings and competitive r\u00e9sum\u00e9",
     winners2026: { boys: "Miles Russell", girls: "Asterisk Talley" },
     officialUrl: "https://juniorinvitational.com/",
+    golfGeniusUrl: "https://svji-2026juniorinvitational.golfgenius.com",
     note: "72-hole stroke play • Sage Valley Golf Club, Graniteville, SC • Designed by Tom Fazio • Par 72, 7,437 yards • Field: 36 boys, 24 girls",
-    winners: [
+    howToPlay: [
+      { label: "Invitation only", note: "Field of 36 boys and 24 girls; invitations extended by the Junior Invitational committee based on national rankings and competitive r\u00e9sum\u00e9." },
+      { label: "Tournament info", href: "https://juniorinvitational.com/about/", note: "See the official site for field selection background and tournament history." },
+    ],
+    pastResults: [
+      { year: 2026, champion: "Boys: Miles Russell / Girls: Asterisk Talley", score: "Boys: -15 / Girls: -8" },
       { year: 2025, champion: "Boys: Miles Russell / Girls: Aphrodite Deng" },
       { year: 2024, champion: "Boys: Giovanni Daniele Binaghi / Girls: Asterisk Talley" },
       { year: 2023, champion: "Boys: Aldrich Potgieter / Girls: Anna Davis" },
@@ -220,6 +250,20 @@ export const JUNIOR_MAJOR_EVENTS_2026: JuniorMajorEvent[] = [
       { year: 2013, champion: "Carson Young" },
       { year: 2012, champion: "Zachary Olsen" },
       { year: 2011, champion: "Nicholas Reach" },
+    ],
+    news: [
+      {
+        slug: "2026-sage-valley-junior-invitational-recap",
+        title: "Miles Russell and Asterisk Talley Become First Repeat Champions at Junior Invitational at Sage Valley",
+        date: "2026-03-14",
+        author: "juniorgolfHQ",
+        summary: "Miles Russell and Asterisk Talley each closed with a final-round 67 to win by three shots, becoming the first players in tournament history to win the Junior Invitational more than once.",
+        content: [
+          "Miles Russell closed the 2026 Junior Invitational at Sage Valley with a 5-under 67 that included two eagles, finishing at 15-under to win by three shots and successfully defend the title he won in 2025. The victory made Russell the first two-time boys champion in the event's history. Russell trailed by three shots entering the final round and steadily worked his way up the leaderboard, crediting a shot-by-shot, even-keeled mindset for the comeback.",
+          "Asterisk Talley matched Russell's final-round 67, her low round of the week, to finish at 8-under and win by three shots for her second Sage Valley title after also winning in 2024. A birdie at the par-3 16th proved decisive down the stretch as Talley closed out the win without needing to watch the rest of the leaderboard.",
+          "The Junior Invitational at Sage Valley remains one of the most selective events on the junior calendar, with an invitation-only field of 36 boys and 24 girls competing over 72 holes at the Tom Fazio–designed Sage Valley Golf Club in Graniteville, South Carolina. Past champions on the boys side include Scottie Scheffler, Joaquin Niemann, and Akshay Bhatia.",
+        ],
+      },
     ],
   },
   {
