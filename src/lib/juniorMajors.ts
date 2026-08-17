@@ -43,6 +43,7 @@ export const JUNIOR_MAJOR_EVENTS_2026: JuniorMajorEvent[] = [
     endDate: "2026-01-06",
     winners2026: { boys: "Tomas Restrepo", girls: "Charlotte Naughton" },
     officialUrl: "https://juniororangebowl.org/golf",
+    golfGeniusUrl: "https://www.golfgenius.com/pages/11918494156369997059",
     course: "Biltmore Golf Course",
     location: "Coral Gables, FL",
     coursePar: 71,
@@ -52,13 +53,33 @@ export const JUNIOR_MAJOR_EVENTS_2026: JuniorMajorEvent[] = [
     fieldSize: "Up to 72 boys, 42 girls",
     eligibility: "Invitation only; junior amateurs under age 19 who have not enrolled in college golf; includes top 25 U.S.-ranked players plus national champions from over 100 countries",
     overview: "The Junior Orange Bowl International Golf Championship is one of the world's oldest and most prestigious junior invitationals, held at the historic Donald Ross–designed Biltmore Golf Course in Coral Gables since 1964. The 72-hole, no-cut format draws players from over 100 countries and has served as an early launchpad for Tiger Woods, Sergio Garcia, Inbee Park, and Lexi Thompson. Separate boys' and girls' divisions compete simultaneously, with all players guaranteed all four rounds.",
+    howToPlay: [
+      { label: "Invitation only", note: "Field is built from the top 25 U.S.-ranked players, national champions from Europe, Asia, South America, and Africa, and players who advance through the tournament's automatic qualifying process." },
+      { label: "Contact the Golf Committee", href: "mailto:golf@jrorangebowl.org", note: "Steven Gonzalez, Golf Committee Chair • J.R. Steinbauer, Tournament Director • (786) 266-4261" },
+    ],
     pastResults: [
+      { year: 2026, champion: "Boys: Tomas Restrepo / Girls: Charlotte Naughton", score: "Boys: -14 (270) / Girls: -10 (274)" },
       { year: 2025, champion: "Boys: Lorenzo Rodriguez / Girls: Shauna Liu", score: "Boys: -7 (277) / Girls: -8 (276)" },
       { year: 2024, champion: "Boys: Darren Zhou / Girls: Kayla Bryant" },
       { year: 2023, champion: "Boys: Jay Brooks / Girls: Anna Davis" },
       { year: 2022, champion: "Boys: Nicholas Prieto / Girls: Maria Jose Marin" },
       { year: 2021, champion: "Boys: Sebastian Moss / Girls: Emily Zhu" },
       { year: 2020, champion: "Boys: Andrey Borges / Girls: Mizuki Hashimoto" },
+    ],
+    news: [
+      {
+        slug: "2026-junior-orange-bowl-recap",
+        title: "Restrepo Closes With 69 to Win 62nd Junior Orange Bowl as Naughton Sets Girls' Scoring Record",
+        date: "2026-01-06",
+        author: "juniorgolfHQ",
+        summary: "Tomas Restrepo holds off Frederick Egnatios by three shots for his first Junior Orange Bowl title, while Charlotte Naughton becomes the first girl in tournament history to finish four rounds in double digits under par.",
+        content: [
+          "The 62nd Junior Orange Bowl International Golf Championship at the Donald Ross–designed Biltmore Golf Course delivered two decisive champions to open the 2026 junior golf calendar. Tomas Restrepo of Colombia closed with a 3-under 69 to finish at 14-under 270, holding off Frederick Egnatios of Scottsdale, Arizona by three shots to become just the third Colombian boy to win the tournament, joining Camilo Benedetti and PGA Tour winner Camilo Villegas on that short list.",
+          "Restrepo took a four-shot lead into the final round but opened shakily, making three bogeys in his first eight holes as Egnatios began chipping away at the margin. He steadied himself over the closing stretch and never let his cushion shrink below two shots down the stretch. Warren Stiglitz finished third at 10-under, while Charlie Woods tied for 19th at 4-over in a field that also drew Cameron Kuchar, who finished tied for 15th at 1-under.",
+          "On the girls' side, England's Charlotte Naughton put together the most dominant week in tournament history. Her closing 69 pushed her to 10-under 274, seven shots clear of runner-up Nina Choe, and made her the first girl ever to finish the 72-hole championship in double digits under par. Naughton played bogey-free over her final two rounds and made just one bogey across her last 47 holes, closing the week with a chip-in birdie at the par-5 18th.",
+          "Founded in 1964, the Junior Orange Bowl remains one of junior golf's most international invitationals, with a field built from the top 25 U.S.-ranked players, national champions from Europe, Asia, South America, and Africa, and a handful of players who earn their way in through the tournament's automatic qualifying process. Past champions at Biltmore include Tiger Woods, Sergio Garcia, Inbee Park, and Lexi Thompson, and both Restrepo and Naughton now join that list as they head into the rest of the junior season.",
+        ],
+      },
     ],
   },
   {
@@ -68,17 +89,17 @@ export const JUNIOR_MAJOR_EVENTS_2026: JuniorMajorEvent[] = [
     startDate: "2026-02-13",
     endDate: "2026-02-16",
     officialUrl: "https://www.ajga.org/tournaments/ajga-simplify-boys-championship-at-carlton-woods",
-    course: "The Club at Carlton Woods – Fazio Championship Course",
+    course: "The Club at Carlton Woods \u2013 Fazio Championship Course",
     location: "The Woodlands, TX",
     coursePar: 72,
     courseDesigner: "Tom Fazio",
     format: "54-hole stroke play",
     fieldSize: "72 players",
-    eligibility: "AJGA Invitational – boys ages 12–19",
-    overview: "One of the premier AJGA Invitational events, the Simplify Boys Championship is held annually at the exclusive Club at Carlton Woods in The Woodlands, Texas. The Tom Fazio-designed Championship Course provides an elite test for the nation’s top junior golfers across three rounds of stroke play. The 2025 edition featured future stars including Miles Russell, who ran away with the title at 11 under par.",
+    eligibility: "AJGA Invitational \u2013 boys ages 12\u201319",
+    overview: "One of the premier AJGA Invitational events, the Simplify Boys Championship is held annually at the exclusive Club at Carlton Woods in The Woodlands, Texas. The Tom Fazio-designed Championship Course provides an elite test for the nation\u2019s top junior golfers across three rounds of stroke play. The 2025 edition featured future stars including Miles Russell, who ran away with the title at 11 under par.",
     pastResults: [
-      { year: 2026, champion: "Grayson Baucom", score: "-12 (70-67-67—204)" },
-      { year: 2025, champion: "Miles Russell", score: "-11 (64-70-71—205)", runnerUp: "T2: Michael Riebe / Giuseppe Puebla (-8)" },
+      { year: 2026, champion: "Grayson Baucom", score: "-12 (70-67-67\u2014204)" },
+      { year: 2025, champion: "Miles Russell", score: "-11 (64-70-71\u2014205)", runnerUp: "T2: Michael Riebe / Giuseppe Puebla (-8)" },
     ],
     winners2026: { boys: "Grayson Baucom" },
   },
@@ -96,8 +117,8 @@ export const JUNIOR_MAJOR_EVENTS_2026: JuniorMajorEvent[] = [
     courseDesigner: "George C. Thomas Jr. and William P. Bell (1930)",
     format: "54-hole stroke play",
     fieldSize: "72 players",
-    eligibility: "AJGA Invitational – girls ages 12–19; invitation based on Rolex AJGA Rankings; top 15-ranked girls are fully exempt; AJGA membership required",
-    overview: "Originally the Mariah Stackhouse Girls Invitational at its 2021 debut, the tournament became the Fortinet Stanford Invitational hosted by Rose Zhang in 2024 when the LPGA star and Stanford alumna took on the hosting role. Played on the historic George C. Thomas–designed Stanford Golf Course, the event is one of the AJGA’s premier all-girls invitationals. Starting in 2025, the champion receives a sponsor exemption into the Chevron Championship (LPGA major).",
+    eligibility: "AJGA Invitational \u2013 girls ages 12\u201319; invitation based on Rolex AJGA Rankings; top 15-ranked girls are fully exempt; AJGA membership required",
+    overview: "Originally the Mariah Stackhouse Girls Invitational at its 2021 debut, the tournament became the Fortinet Stanford Invitational hosted by Rose Zhang in 2024 when the LPGA star and Stanford alumna took on the hosting role. Played on the historic George C. Thomas\u2013designed Stanford Golf Course, the event is one of the AJGA\u2019s premier all-girls invitationals. Starting in 2025, the champion receives a sponsor exemption into the Chevron Championship (LPGA major).",
     pastResults: [
       { year: 2026, champion: "Asterisk Talley", score: "-9 (204)", runnerUp: "Rina Kawasaki / Juliet Oh (T2, -4)" },
       { year: 2025, champion: "Asterisk Talley" },
@@ -122,8 +143,8 @@ export const JUNIOR_MAJOR_EVENTS_2026: JuniorMajorEvent[] = [
     courseDesigner: "Tom Fazio (1999)",
     format: "54-hole stroke play with cut after Round 2 (top 36 boys and ties, top 18 girls and ties advance)",
     fieldSize: "Approximately 90 players total (co-ed)",
-    eligibility: "Junior amateurs ages 13–18 as of the first round; qualifiers through Rolex AJGA Rankings, TUGR standings, and sponsor exemptions; qualifier events held at Myrtle Beach area courses",
-    overview: "Founded in 2016 by two-time major champion and South Carolina native Dustin Johnson, this tournament has quickly grown into one of the top junior events in the country. Held at the Tom Fazio-designed TPC Myrtle Beach, the co-ed field features separate boys’ and girls’ divisions competing simultaneously. Alumni include PGA Tour winners Akshay Bhatia and Nick Dunlap.",
+    eligibility: "Junior amateurs ages 13\u201318 as of the first round; qualifiers through Rolex AJGA Rankings, TUGR standings, and sponsor exemptions; qualifier events held at Myrtle Beach area courses",
+    overview: "Founded in 2016 by two-time major champion and South Carolina native Dustin Johnson, this tournament has quickly grown into one of the top junior events in the country. Held at the Tom Fazio-designed TPC Myrtle Beach, the co-ed field features separate boys\u2019 and girls\u2019 divisions competing simultaneously. Alumni include PGA Tour winners Akshay Bhatia and Nick Dunlap.",
     pastResults: [
       { year: 2026, champion: "Boys: William Lisle / Girls: Fay Jia" },
       { year: 2025, champion: "Boys: Aarav Shah / Girls: Kayla Bryant" },
@@ -828,3 +849,4 @@ export function getLiveJuniorTournament(): JuniorMajorEvent | undefined {
     return JUNIOR_MAJOR_EVENTS_2026.find((t) => t.liveStatus === "live" && active(t)) ||
           JUNIOR_MAJOR_EVENTS_2026.find((t) => t.liveStatus === "next" && active(t));
 }
+
