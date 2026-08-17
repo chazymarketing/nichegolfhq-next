@@ -1419,7 +1419,20 @@ export const MIDAM_TOURNAMENTS: Tournament[] = [
     howToPlay: [
       { label: "Apply for entry", href: "https://www.golfgenius.com/register?league_id=12156388054461892844" },
     ],
-    news: [],
+    news: [
+      {
+        slug: "2026-canadian-mens-mid-amateur-preview",
+        title: "Canadian Men's Mid-Amateur Tees Off at Brantford With Rank, Couture, and International Contingent",
+        date: "2026-08-17",
+        author: "midamgolfHQ Staff",
+        summary: "155 players from across Canada and 11 Americans chase the national title over 72 holes at Brantford Golf & Country Club.",
+        content: [
+          "The Canadian Men's Mid-Amateur opens Monday at Brantford Golf & Country Club in Ontario, with 155 players chasing the national title over 72 holes through August 21. Three-time champion Charles Fitzsimmons (2021, 2022, 2025) does not appear in the field, leaving the door open for a new winner. Live scoring and full tournament coverage can be found on the [Canadian Men's Mid-Amateur tournament hub here](/midamgolfhq/canadian-mens-mid-amateur).",
+          "Three-time champion Garrett Rank (2014-16), the NHL referee from Waterloo, Ont., headlines the field as the most decorated mid-amateur in the draw. Former champion Rob Couture of Celina, Texas, who won the 2011 Canadian Men's Mid-Am, adds international pedigree, as does Ryan Terry of Brentwood, Tenn., who finished sixth at the 2025 Canadian Mid-Am and was named 2025 Tennessee Mid-Am Player of the Year. Derek Meinhart of Mattoon, Ill., who co-led after 54 holes and finished third at the 2023 Canadian Men's Mid-Am, returns looking to go one better.",
+          "Three Brantford locals, Ben Turnbull, Nate Lockey, and Traynor Turkiewicz, will have the home-course advantage. The field spans all 10 Canadian provinces and one territory, with Matt Krawiec making the trip from Whitehorse, Yukon, and 11 Americans rounding out a deep international contingent. midamgolfHQ will be tracking the action all week from Brantford.",
+        ],
+      },
+    ],
     pastResults: [
       { year: 2025, champion: "Charles Fitzsimmons" },
       { year: 2024, champion: "Cam Burke" },
