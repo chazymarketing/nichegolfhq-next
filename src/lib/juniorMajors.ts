@@ -225,13 +225,13 @@ export const JUNIOR_MAJOR_EVENTS_2026: JuniorMajorEvent[] = [
     courseDesigner: "Tom Fazio",
     format: "72-hole stroke play",
     fieldSize: "36 boys, 24 girls",
-    eligibility: "Invitation only; field selected by the Junior Invitational committee based on national junior rankings and competitive r\u00e9sum\u00e9",
+    eligibility: "Invitation only; field selected by the Junior Invitational committee based on national junior rankings and competitive résumé",
     winners2026: { boys: "Miles Russell", girls: "Asterisk Talley" },
     officialUrl: "https://juniorinvitational.com/",
     golfGeniusUrl: "https://svji-2026juniorinvitational.golfgenius.com",
     note: "72-hole stroke play • Sage Valley Golf Club, Graniteville, SC • Designed by Tom Fazio • Par 72, 7,437 yards • Field: 36 boys, 24 girls",
     howToPlay: [
-      { label: "Invitation only", note: "Field of 36 boys and 24 girls; invitations extended by the Junior Invitational committee based on national rankings and competitive r\u00e9sum\u00e9." },
+      { label: "Invitation only", note: "Field of 36 boys and 24 girls; invitations extended by the Junior Invitational committee based on national rankings and competitive résumé." },
       { label: "Tournament info", href: "https://juniorinvitational.com/about/", note: "See the official site for field selection background and tournament history." },
     ],
     pastResults: [
@@ -326,7 +326,7 @@ export const JUNIOR_MAJOR_EVENTS_2026: JuniorMajorEvent[] = [
     format: "54-hole stroke play",
     fieldSize: "66 players",
     eligibility: "AJGA Invitational – girls ages 12–19; invitation based on Rolex AJGA Rankings; AJGA membership required; champion receives a sponsor exemption into the Chevron Championship (LPGA major)",
-    overview: "The Nelly Invitational debuted in 2024 as an AJGA all-girls invitational hosted by LPGA star Nelly Korda at The Concession Golf Club in Bradenton, Florida — a course named for Jack Nicklaus’s legendary ‘concession’ putt to Tony Jacklin at the 1969 Ryder Cup. Chevron joined as presenting sponsor in 2025, adding a sponsor exemption into the Chevron Championship for the champion. The event has quickly established itself as one of the most prestigious stops on the junior girls calendar.",
+    overview: "The Nelly Invitational debuted in 2024 as an AJGA all-girls invitational hosted by LPGA star Nelly Korda at The Concession Golf Club in Bradenton, Florida — a course named for Jack Nicklaus's legendary 'concession' putt to Tony Jacklin at the 1969 Ryder Cup. Chevron joined as presenting sponsor in 2025, adding a sponsor exemption into the Chevron Championship for the champion. The event has quickly established itself as one of the most prestigious stops on the junior girls calendar.",
     howToPlay: [
       { label: "AJGA Invitational field", note: "66 girls, ages 12–19, selected primarily from the Rolex AJGA Rankings; AJGA membership required." },
       { label: "Full entry criteria", href: "https://www.ajga.org/tournaments/2026040", note: "See the official tournament page for entry criteria and how to gain entry into AJGA Invitational events." },
@@ -366,14 +366,46 @@ export const JUNIOR_MAJOR_EVENTS_2026: JuniorMajorEvent[] = [
     format: "36-hole stroke play qualifying; top 16 advance to match play; four rounds of 18-hole matches to determine champion",
     fieldSize: "78 players",
     eligibility: "Girls 18 years of age or younger (not yet 19 by the final round); WHS Index not exceeding 5.4; not enrolled in college",
-    overview: "First held in 1920, the Women’s Western Junior is one of the oldest junior golf tournaments in the United States, conducted by the Women’s Western Golf Association. Alumni have combined for over 200 LPGA Tour wins; past champions include Nancy Lopez (1972–74), Cristie Kerr (1994), and Grace Park (1993). The event rotates host courses annually.",
+    overview: "First held in 1920, the Women's Western Junior is one of the oldest junior golf tournaments in the United States, conducted by the Women's Western Golf Association. Alumni have combined for over 200 LPGA Tour wins; past champions include Nancy Lopez (1972–74), Cristie Kerr (1994), and Grace Park (1993). The event rotates host courses annually.",
     note: "Host course rotates annually. 2026 host: Meridian Hills Country Club, Indianapolis, IN.",
+    howToPlay: [
+      {
+        label: "Field entry",
+        note: "78 girls qualify by WHS Index (5.4 or lower) and competitive résumé; the field plays 36 holes of stroke play, with the low 16 scorers advancing to a single-elimination match play bracket.",
+      },
+      {
+        label: "Official entry information",
+        href: "https://womenswesternjunior.com/application-information",
+        note: "See the Women's Western Golf Association's official site for eligibility and application details.",
+      },
+    ],
     pastResults: [
+      {
+        year: 2026,
+        champion: "Iris Lee",
+        runnerUp: "Athena Singh (1-up in final)",
+      },
       { year: 2025, champion: "Vidhi Lakhawala", runnerUp: "Kara An (1-up in final)" },
       { year: 2024, champion: "Samantha Brown", runnerUp: "Isabel Emanuels (4&3)" },
       { year: 2023, champion: "Suzie Tran", runnerUp: "Lisa Herman (1-up)" },
       { year: 2022, champion: "Jessica Mason" },
       { year: 2021, champion: "Mara Janess" },
+    ],
+    news: [
+      {
+        slug: "2026-womens-western-junior-recap",
+        title: "13-Year-Old Iris Lee Becomes Youngest Champion in Women's Western Junior History",
+        date: "2026-06-12",
+        author: "juniorgolfHQ",
+        summary:
+          "Lee rallied from behind in the championship match to win the 99th Women's Western Junior at Meridian Hills Country Club.",
+        content: [
+          "Iris Lee, a 13-year-old from the Lake Nona area of Orlando, Florida, won the 99th Women's Western Junior Championship at Meridian Hills Country Club in Indianapolis, becoming the youngest champion in the tournament's history.",
+          "Lee was among the top qualifiers after 36 holes of stroke play, building an early cushion before the field was cut to the top 16 for match play. She advanced through four rounds of 18-hole matches to reach the final against Athena Singh.",
+          "In the championship match, Lee trailed through the first 15 holes before rallying to win the 16th and 17th holes, then closed out the victory with a par on the 18th for a 1-up win.",
+          "The Women's Western Junior, first contested in 1920, is among the oldest junior golf championships in the country; its alumni have combined for more than 200 LPGA Tour victories.",
+        ],
+      },
     ],
   },
   {
@@ -382,7 +414,8 @@ export const JUNIOR_MAJOR_EVENTS_2026: JuniorMajorEvent[] = [
     month: "June 2026",
     startDate: "2026-06-08",
     endDate: "2026-06-11",
-    officialUrl: "https://www.ajga.org/tournaments/wyndham-invitational-presented-by-odyssey",
+    officialUrl: "https://www.ajga.org/tournaments/2026055",
+    golfGeniusUrl: "https://www.ajga.org/tournaments/2026055/leaderboard",
     course: "Sedgefield Country Club",
     location: "Greensboro, NC",
     coursePar: 70,
@@ -392,7 +425,24 @@ export const JUNIOR_MAJOR_EVENTS_2026: JuniorMajorEvent[] = [
     fieldSize: "72 players",
     eligibility: "AJGA Invitational – boys ages 12–19; AJGA membership required; Performance-Based Entry or exemptions",
     overview: "One of the most prestigious events on the AJGA calendar, the Wyndham Invitational has been held at historic Sedgefield Country Club for over 17 consecutive years — the only Donald Ross design in regular PGA TOUR rotation. The 2021 event made AJGA history when Maxwell Ford won, making brothers David (2020) and Maxwell Ford the first male siblings to win the same AJGA event in consecutive years.",
+    howToPlay: [
+      {
+        label: "AJGA Invitational field",
+        note: "72 boys, ages 12–19, selected via Performance-Based Entry: top 15 in the Rolex AJGA Rankings are fully exempt, top 25 need 12 performance stars, and top 50 or players who make the 36-hole cut need 8 performance stars.",
+      },
+      {
+        label: "Full entry criteria",
+        href: "https://www.ajga.org/tournaments/wyndham-invitational-presented-by-odyssey",
+        note: "See the official tournament page for Performance-Based Entry requirements and how to gain entry into AJGA Invitational events.",
+      },
+    ],
     pastResults: [
+      {
+        year: 2026,
+        champion: "Jessy Huebner",
+        score: "-12 (65-65-68—198)",
+        runnerUp: "T2: Jackson Ormond / Mingbo Jiang (-11, 199)",
+      },
       { year: 2025, champion: "Willie Gordon", score: "-10 (200)" },
       { year: 2024, champion: "Asher Vargas", score: "-6 (204)" },
       { year: 2023, champion: "Blades Brown", score: "-2 (278)", runnerUp: "Henry Guan / Joshua Kim (playoff)" },
@@ -400,576 +450,14 @@ export const JUNIOR_MAJOR_EVENTS_2026: JuniorMajorEvent[] = [
       { year: 2021, champion: "Maxwell Ford", score: "-7 (273)" },
       { year: 2020, champion: "David Ford", score: "-8 (272)" },
     ],
-  },
-  {
-    slug: "rolex-girls-junior",
-    name: "Rolex Girls Junior Championship",
-    month: "June 2026",
-    startDate: "2026-06-15",
-    endDate: "2026-06-18",
-    officialUrl: "https://www.ajga.org/tournaments/rolex-girls-junior-championship",
-    // Host course rotates annually. Listed course reflects the 2025 host.
-    course: "Sycamore Hills Golf Club",
-    location: "Fort Wayne, IN",
-    coursePar: 72,
-    courseYardage: 6303,
-    courseDesigner: "Robert Trent Jones Jr. (1982; renovated 2014)",
-    format: "54-hole stroke play",
-    fieldSize: "72 players",
-    eligibility: "AJGA Invitational – girls ages 12–19; invitation based on Rolex AJGA Rankings; AJGA membership required",
-    overview: "Co-presented by the AJGA and Rolex since 1992, the Rolex Girls Junior Championship annually convenes 72 of the top-ranked junior girls at a marquee host course. The event is a 54-hole stroke play invitational with no cut, giving every player the full competitive experience. The event rotates host courses annually and draws heavy attention from college coaches nationwide.",
-    note: "Host course rotates annually. 2026 host: Sycamore Hills Golf Club, Fort Wayne, IN.",
-    pastResults: [
-      { year: 2025, champion: "Amelie Zalsman" },
-      { year: 2024, champion: "Elizabeth Rudisill" },
-      { year: 2023, champion: "Asterisk Talley" },
-      { year: 2022, champion: "Kaitlyn Schroeder" },
-      { year: 2021, champion: "Amanda Sambach" },
-      { year: 2020, champion: "Rose Zhang" },
-    ],
-  },
-  {
-    slug: "western-junior",
-    name: "Western Junior Championship",
-    month: "June 2026",
-    startDate: "2026-06-15",
-    endDate: "2026-06-18",
-    officialUrl: "https://thewesternjunior.com/",
-    // Host course rotates annually. Listed course reflects the 2025 host.
-    course: "The Harvester Club",
-    location: "Rhodes, IA",
-    coursePar: 72,
-    courseYardage: 7275,
-    courseDesigner: "Keith Foster (2000; renovated 2019)",
-    format: "72-hole stroke play; 36-hole qualifying, top 44 and ties advance to final 36 holes",
-    fieldSize: "Up to 156 players",
-    eligibility: "Male amateurs ages 12–18 (not yet 19 by the final round); WHS Index of 3.0 or lower; not a college golf team member; USGA amateur status required",
-    overview: "Founded in 1914 by the Western Golf Association, the Western Junior is the oldest national junior golf championship in the United States. Past competitors include Tiger Woods, Phil Mickelson, Scottie Scheffler, Collin Morikawa, Rickie Fowler, and Jim Furyk. Top three finishers earn exemptions into the Western Amateur.",
-    note: "Host course rotates annually. Listed course reflects the 2025 host (The Harvester Club, Rhodes, IA).",
-    pastResults: [
-      { year: 2025, champion: "Trevor Gutschewski" },
-      { year: 2024, champion: "Parker Sands" },
-      { year: 2023, champion: "Hans Risvaer" },
-      { year: 2022, champion: "Eduardo Derbez-Torres" },
-      { year: 2021, champion: "Caleb Surratt" },
-    ],
-  },
-  {
-    slug: "southern-junior-championship",
-    name: "Southern Junior Championship",
-    month: "June 2026",
-    liveStatus: "completed",
-    dates2026: "June 17–19, 2026",
-    startDate: "2026-06-17",
-    endDate: "2026-06-19",
-    endsOn: "2026-06-19",
-    winners2026: { boys: "Neil Jolly" },
-    officialUrl: "https://www.southerngolf.org",
-    // Host course rotates annually. Listed course reflects the 2026 host.
-    course: "University of Georgia Golf Course",
-    location: "Athens, GA",
-    coursePar: 71,
-    courseYardage: 7240,
-    courseDesigner: "Robert Trent Jones Sr.; renovated by Love Golf Design (2006)",
-    format: "54-hole stroke play; cut to low 50 and ties after 36 holes",
-    fieldSize: "156 players",
-    eligibility: "Male amateurs ages 14–18 (must have reached 14th birthday before the first round, not yet 19); WHS Handicap Index not exceeding 4.4; not a college golf team member",
-    overview: "The Southern Junior Championship, conducted by the Southern Golf Association since 1973, is one of the premier regional junior championships in the United States, drawing top-ranked junior golfers from across the Southeast and beyond. The 53rd edition was held at Dataw Island Club in 2025; the 2026 edition moved to the University of Georgia Golf Course in Athens. Charles Howell III holds the record with three consecutive titles (1994–1996).",
-    note: "Host course rotates annually. 2026 host: University of Georgia Golf Course, Athens, GA (moved from Dataw Island Club).",
-    pastResults: [
-      { year: 2026, champion: "Neil Jolly" },
-      { year: 2025, champion: "Bailey Sutter" },
-      { year: 2024, champion: "Tyler Sanford" },
-      { year: 2023, champion: "Tyler Watts" },
-      { year: 2022, champion: "Wyatt Plattner" },
-      { year: 2021, champion: "Jack Roberts" },
-      { year: 2020, champion: "Tommy Morrison" },
-    ],
-  },
-  {
-    slug: "rlx-ralph-lauren-junior-classic",
-    name: "RLX Ralph Lauren Junior Classic",
-    month: "June 2026",
-    startDate: "2026-06-22",
-    endDate: "2026-06-26",
-    officialUrl: "https://www.ajga.org/tournaments/rlx-ralph-lauren-junior-classic",
-    course: "Bethpage State Park – Black Course",
-    location: "Farmingdale, NY",
-    coursePar: 71,
-    courseYardage: 7468,
-    courseDesigner: "A.W. Tillinghast (1936)",
-    format: "Match play (round-robin pool play + single elimination)",
-    fieldSize: "64 players (32 boys, 32 girls)",
-    eligibility: "AJGA Invitational – ages 12–19; invitation based on Rolex AJGA Rankings; AJGA membership required",
-    overview: "Now in its 47th year, the RLX Ralph Lauren Junior Classic is the premier junior match play event on the AJGA calendar, contested at one of the most storied public golf courses in America. Boys and girls compete in separate brackets through round-robin pool play before advancing to single-elimination match play. The event has been held at Bethpage Black since 2022.",
-    pastResults: [
-      { year: 2025, champion: "Boys: Tyler Long / Girls: Yujie Liu" },
-      { year: 2024, champion: "Boys: Pennson Badgett / Girls: Clara Ding" },
-      { year: 2023, champion: "Boys: Jay Leng Jr. / Girls: Katie Li" },
-      { year: 2022, champion: "Boys: Byungho Lee / Girls: Vanessa Borovilos" },
-      { year: 2021, champion: "Boys: Nicholas Dunlap / Girls: Kiara Romero" },
-    ],
-  },
-  {
-    slug: "north-south-junior",
-    name: "North & South Junior Golf Championship",
-    month: "June 2026",
-    startDate: "2026-06-21",
-    endDate: "2026-06-24",
-    officialUrl: "https://www.pinehurst.com/golf/tournaments/north-south-junior-championship/",
-    course: "Pinehurst Resort – Nos. 2, 5 & 6",
-    location: "Pinehurst, NC",
-    courseDesigner: "No. 2: Donald Ross (1907); No. 5: Ellis Maples (1962); No. 6: Tom Fazio (1979)",
-    format: "54-hole stroke play; separate boys and girls divisions; three rounds across multiple Pinehurst courses",
-    fieldSize: "Up to 180 total (90 boys, 90 girls)",
-    eligibility: "Male and female amateurs, age 18 and under as of June 30 of the tournament year; must not have started college",
-    overview: "Hosted at the iconic Pinehurst Resort in the Sandhills of North Carolina, the North & South Junior Championship is one of the most prestigious junior events in the U.S., played across the resort’s famous courses. Part of the broader North & South tournament family — one of amateur golf’s oldest championship series — the event features separate boys’ and girls’ 54-hole stroke play competitions.",
-    pastResults: [
-      { year: 2025, champion: "Boys: Davis Wotnosky / Girls: Makayla Grubb", score: "Boys: -10 (204)" },
-      { year: 2024, champion: "Boys: Trey Marrion / Girls: Hallie Wilson" },
-      { year: 2023, champion: "Boys: Coltrane Mittag / Girls: Macy Pate" },
-      { year: 2022, champion: "Boys: Colin Salema / Girls: Ting-Hsuan Huang" },
-      { year: 2021, champion: "Boys: Jackson Bode / Girls: Brooke Rivers" },
-      { year: 2020, champion: "Boys: Jonathan Griz / Girls: Amanda Sambach" },
-    ],
-  },
-  {
-    slug: "wyndham-cup",
-    name: "Wyndham Cup",
-    month: "July 2026",
-    startDate: "2026-07-06",
-    endDate: "2026-07-09",
-    officialUrl: "https://www.ajga.org/tournaments/wyndham-cup",
-    // Host course rotates annually. Listed course reflects the 2025 host.
-    course: "Old Sandwich Golf Club",
-    location: "Plymouth, MA",
-    coursePar: 71,
-    courseYardage: 7001,
-    courseDesigner: "Tom Weiskopf and Jay Morrish (1986)",
-    format: "Team match play – East vs. West; four-ball, foursomes, mixed foursomes, and singles; 50 total points available",
-    fieldSize: "40 players total (10 boys East, 10 boys West, 10 girls East, 10 girls West)",
-    eligibility: "Top 10 boys and top 10 girls from each geographic region (East/West) selected via Rolex AJGA Rankings",
-    overview: "The Wyndham Cup is the AJGA’s premier team competition, pitting the best junior golfers from the East against the West in a Ryder Cup-style format. The event rotates host courses annually and features four-ball, foursomes, mixed foursomes, and singles matches across three days of competition. Team selection is based purely on the Rolex AJGA Rankings, making it a benchmark honor for elite junior players.",
-    note: "Host course rotates annually. 2026 host: Old Sandwich Golf Club, Plymouth, MA.",
-    pastResults: [
-      { year: 2025, champion: "East", score: "28–22" },
-      { year: 2024, champion: "East", score: "25.5–24.5" },
-      { year: 2023, champion: "West (retained Cup)", score: "25–25 tie" },
-      { year: 2022, champion: "West", score: "31–19" },
-      { year: 2021, champion: "East", score: "29.5–20.5" },
-    ],
-  },
-  {
-    slug: "us-girls-junior",
-    name: "U.S. Girls' Junior Amateur",
-    month: "July 2026",
-    liveStatus: "completed",
-    startDate: "2026-07-13",
-    endDate: "2026-07-18",
-    dates2026: "July 13–18, 2026",
-    winners2026: { girls: "Clairey Lin" },
-    officialUrl: "https://www.usga.org/championships/u-s-girls-junior-amateur.html",
-    // Host course rotates annually. Listed course reflects the 2025 host.
-    course: "Old Chatham Golf Club",
-    location: "Durham, NC",
-    coursePar: 72,
-    courseYardage: 6958,
-    courseDesigner: "Robert Trent Jones Sr. (1960s); redesigned by Rees Jones (2003); remodeled by Tripp Davis (2022)",
-    format: "36 holes stroke play (156 players), top 64 advance to single-elimination match play",
-    fieldSize: "156 stroke play qualifiers; ≈1,500 national entries through local/sectional qualifying",
-    eligibility: "Female amateurs who have not reached their 19th birthday by the final day; USGA Handicap Index not exceeding 5.4; must qualify through USGA local/sectional qualifying",
-    overview: "Conducted by the USGA since 1949, the U.S. Girls’ Junior Amateur is the premier national championship for female junior golfers in the United States. The field qualifies through local and sectional qualifying events across the country, then the top 64 stroke play qualifiers advance to match play. The event has launched the careers of Annika Sorenstam, Michelle Wie, and Rose Zhang.",
-    note: "Host course rotates annually. 2026 host: Old Chatham Golf Club, Durham, NC.",
-    pastResults: [
-      { year: 2026, champion: "Clairey Lin", runnerUp: "Amelie Zalsman (5 & 4)" },
-      { year: 2025, champion: "Aphrodite Deng", runnerUp: "Xingtong Chen (2 & 1)" },
-      { year: 2024, champion: "Rianne Malixi", runnerUp: "Asterisk Talley (8 & 7)" },
-      { year: 2023, champion: "Kiara Romero", runnerUp: "Rianne Malixi (1-up)" },
-      { year: 2022, champion: "Yana Wilson", runnerUp: "Gianna Clemente (3 & 2)" },
-      { year: 2021, champion: "Rose Zhang", runnerUp: "Bailey Davis (6 & 4)" },
-    ],
-  },
-  {
-    slug: "us-junior-amateur",
-    name: "U.S. Junior Amateur",
-    liveStatus: "completed",
-    golfGeniusUrl: "https://championships.usga.org/usjunioramateur/2026/scoring.html",
-    month: "July 2026",
-    startDate: "2026-07-20",
-    endDate: "2026-07-25",
-    dates2026: "July 20–25, 2026",
-    winners2026: { boys: "Noah Maclauchlan" },
-    officialUrl: "https://www.usga.org/championships/u-s-junior-amateur.html",
-    // Host course rotates annually. Listed course reflects the 2025 host.
-    course: "Saucon Valley Country Club",
-    location: "Bethlehem, PA",
-    coursePar: 71,
-    courseYardage: 7344,
-    courseDesigner: "Bill Coore and Ben Crenshaw (2016)",
-    format: "36 holes stroke play (256 players across two courses), top 64 advance to single-elimination match play",
-    fieldSize: "256 stroke play qualifiers; ≈3,500 national entries through local/sectional qualifying",
-    eligibility: "Male amateurs who have not reached their 19th birthday by the final day; USGA Handicap Index not exceeding 4.4; must qualify through USGA local/sectional qualifying",
-    overview: "Conducted by the USGA since 1948, the U.S. Junior Amateur is the most prestigious national championship for male junior golfers and a launchpad for legends including Tiger Woods (3-time champion, 1991–93), Jordan Spieth, and Nick Dunlap. The 256-player stroke play field is among the deepest in amateur golf, and the match play bracket tests champions across seven rounds in seven days.",
-    note: "Host course rotates annually. 2026 host: Saucon Valley Country Club, Bethlehem, PA.",
-    pastResults: [
-      { year: 2026, champion: "Noah Maclauchlan", runnerUp: "Miles Russell (6 & 5)" },
-      { year: 2025, champion: "Hamilton Coleman", runnerUp: "Minh Nguyen (2 & 1)" },
-      { year: 2024, champion: "Trevor Gutschewski", runnerUp: "Tyler Watts (4 & 3)" },
-      { year: 2023, champion: "Bryan Kim", runnerUp: "Joshua Bai (2-up)" },
-      { year: 2022, champion: "Wenyi Ding", runnerUp: "Caleb Surratt (3 & 2)" },
-      { year: 2021, champion: "Nick Dunlap", runnerUp: "Cohen Trolio (3 & 2)" },
-    ],
-  },
-  {
-    slug: "boys-junior-pga",
-    name: "Boys Junior PGA Championship",
-    liveStatus: "completed",
-    month: "July 2026",
-    startDate: "2026-07-28",
-    endDate: "2026-07-31",
-    officialUrl: "https://www.juniorpgachampionship.com/",
-    golfGeniusUrl: "https://www.pga.com/events/junior-pga-championships/embed",
-    // Host course rotates annually. Listed course reflects the 2025 host.
-    course: "Fields Ranch East & West",
-    location: "Frisco, TX",
-    coursePar: 72,
-    courseDesigner: "Pete Dye",
-    format: "72-hole stroke play; cut to top 60 and ties after 36 holes; second cut to top 30 and ties after 54 holes",
-    fieldSize: "156 boys",
-    eligibility: "Amateurs age 18 or younger on the final day; may not be a full-time college student; must qualify through a PGA Section Championship or receive an exemption",
-    overview: "The Boys Junior PGA Championship is the flagship junior event of the PGA of America, contested since 1976. One of the most prestigious junior majors in the U.S., the event has launched the careers of Tiger Woods, Jordan Spieth, Phil Mickelson, Scottie Scheffler, and Justin Thomas. The venue rotates annually among top-tier courses.",
-    note: "Host course rotates annually. 2026 host: Fields Ranch East & West, Frisco, TX.",
-    pastResults: [
-      { year: 2025, champion: "Lunden Esterline" },
-      { year: 2024, champion: "Baylor Larrabee" },
-      { year: 2023, champion: "Miles Russell" },
-      { year: 2022, champion: "Max Herendeen" },
-      { year: 2021, champion: "Caleb Surratt" },
-    ],
-  },
-  {
-    slug: "us-womens-amateur",
-    name: "U.S. Women's Amateur",
-    liveStatus: "completed",
-    month: "August 2026",
-    startDate: "2026-08-04",
-    endDate: "2026-08-09",
-    dates2026: "Aug 4–9, 2026",
-    officialUrl: "https://www.usga.org/championships/u-s-women-s-amateur.html",
-    golfGeniusUrl: "https://championships.usga.org/uswomensamateur/2026/scoring.html",
-    // Host course rotates annually. Listed course reflects the 2025 host.
-    course: "The Honors Course",
-    location: "Ooltewah, TN",
-    coursePar: 72,
-    courseYardage: 6347,
-    courseDesigner: "David McLay Kidd (1999)",
-    format: "36 holes stroke play (156 players), top 64 advance to match play; final is 36 holes",
-    fieldSize: "156 players",
-    eligibility: "Female amateurs of any age, any nation; USGA Handicap Index of 5.4 or lower; must meet USGA amateur status rules",
-    overview: "The U.S. Women’s Amateur, first held in 1895, is the USGA’s premier women’s amateur championship and one of the oldest golf tournaments in the United States. The combined stroke/match play format rewards both consistency and head-to-head competitive ability, and many past champions have gone on to outstanding LPGA careers. Bandon Dunes hosted the 125th edition in 2025.",
-    note: "Host course rotates annually. 2026 host: The Honors Course, Ooltewah, TN.",
-    pastResults: [
-      { year: 2025, champion: "Megha Ganne", runnerUp: "Brooke Biermann (4 & 3)" },
-      { year: 2024, champion: "Rianne Malixi", runnerUp: "Asterisk Talley (3 & 2)" },
-      { year: 2023, champion: "Megan Schofill", runnerUp: "Latanna Stone (4 & 3)" },
-      { year: 2022, champion: "Saki Baba", runnerUp: "Monet Chun (11 & 9)" },
-      { year: 2021, champion: "Jensen Castle", runnerUp: "Vivian Hou (2 & 1)" },
-      { year: 2020, champion: "Rose Zhang", runnerUp: "Gabriela Ruffels (38 holes)" },
-    ],
-  },
-  {
-    slug: "us-amateur",
-    name: "U.S. Amateur",
-    month: "August 2026",
-    startDate: "2026-08-10",
-    endDate: "2026-08-16",
-    dates2026: "Aug 10–16, 2026",
-    officialUrl: "https://www.usga.org/championships/u-s-amateur.html",
-    // Host course rotates annually. Listed course reflects the 2025 host.
-    course: "Merion Golf Club",
-    location: "Ardmore, PA",
-    coursePar: 70,
-    courseYardage: 7214,
-    courseDesigner: "Willie Watson and Sam Whiting (1924); renovated by Gil Hanse (2022)",
-    format: "36 holes stroke play (312 players across two courses), top 64 advance to match play; final is 36 holes",
-    fieldSize: "312 players",
-    eligibility: "Male amateurs of any age, any nation; USGA Handicap Index of 0.4 or lower; must meet USGA amateur status rules",
-    overview: "The U.S. Amateur, held annually since 1895, is the oldest and most prestigious amateur golf championship in the United States. Its alumni list includes Tiger Woods (3 titles), Jack Nicklaus, Bobby Jones, and Arnold Palmer. The 312-player stroke play field is one of the deepest in amateur golf, and the match play bracket tests champions across seven rounds in seven days.",
-    note: "Host course rotates annually. 2026 host: Merion Golf Club, Ardmore, PA.",
-    pastResults: [
-      { year: 2025, champion: "Mason Howell", runnerUp: "Jackson Herrington (7 & 6)" },
-      { year: 2024, champion: "Jose Luis Ballester", runnerUp: "Noah Kent (2-up)" },
-      { year: 2023, champion: "Nick Dunlap", runnerUp: "Neal Shipley (4 & 3)" },
-      { year: 2022, champion: "Sam Bennett", runnerUp: "Ben Carr (1-up)" },
-      { year: 2021, champion: "James Piot" },
-      { year: 2020, champion: "Tyler Strafaci", runnerUp: "Charles Osborne (1-up, 38 holes)" },
-    ],
-  },
-  {
-    slug: "junior-solheim-cup",
-    name: "Junior Solheim Cup",
-    liveStatus: "next",
-    month: "September 2026",
-    startDate: "2026-09-07",
-    endDate: "2026-09-08",
-    officialUrl: "https://www.solheimcup2026.golf/ping-junior-solheim-cup",
-    course: "Bernardus Golf",
-    location: "Cromvoirt, Netherlands",
-    format: "Two-day team match play (Day 1: six fourball + six foursomes; Day 2: twelve singles; 24 total points)",
-    fieldSize: "24 players (12 Team USA, 12 Team Europe)",
-    eligibility: "Female amateurs ages 12–18; must not have turned 19 before January 1 of the event year; not enrolled in a collegiate golf program; U.S. team selected from AJGA-ranked events; European team selected by national federations",
-    overview: "Established in 2002 by PING Chairman John Solheim, the Junior Solheim Cup is the biennial junior counterpart to the senior Solheim Cup, pitting 12 elite U.S. junior girls against 12 European junior girls in team match play. The 2026 edition at Bernardus Golf in the Netherlands marks the first time the Junior and senior Solheim Cups share a venue. The U.S. leads the all-time series heading into 2026.",
-    note: "Biennial event (held in even years alongside the senior Solheim Cup).",
-    pastResults: [
-      { year: 2024, champion: "USA", score: "18.5 – 5.5" },
-      { year: 2023, champion: "Europe", score: "15 – 9" },
-      { year: 2021, champion: "Europe", score: "13 – 11" },
-      { year: 2019, champion: "USA", score: "13 – 11" },
-    ],
-  },
-  {
-    slug: "junior-players-championship",
-    name: "Junior Players Championship",
-    month: "September 2026",
-    startDate: "2026-09-03",
-    endDate: "2026-09-06",
-    officialUrl: "https://www.ajga.org/tournaments/the-junior-players-championship-presented-by-rolex",
-    course: "TPC Sawgrass – Stadium Course",
-    location: "Ponte Vedra Beach, FL",
-    coursePar: 72,
-    courseYardage: 7215,
-    courseDesigner: "Pete Dye (1980)",
-    format: "54-hole stroke play",
-    fieldSize: "78 players",
-    eligibility: "AJGA Invitational – boys ages 12–19; top 58 boys from the Rolex AJGA Rankings plus international invitees; invitation only",
-    overview: "The Junior PLAYERS Championship, conducted annually since 2007 by the AJGA in partnership with PGA TOUR, is widely considered the most prestigious individual junior stroke play event in the U.S. The event uses the identical course setup as THE PLAYERS Championship, including the famous island-green par-3 17th hole. Miles Russell made history in 2025 as the first two-time champion, having also won in 2023 as the youngest champion in event history at age 14.",
-    pastResults: [
-      { year: 2025, champion: "Miles Russell", score: "-9 (207)" },
-      { year: 2024, champion: "Hamilton Coleman", score: "-6 (210)" },
-      { year: 2023, champion: "Miles Russell", score: "-9 (207)" },
-      { year: 2022, champion: "Jeffrey Guan", score: "-16 (200)" },
-      { year: 2021, champion: "Benjamin James", score: "-8 (208)" },
-      { year: 2020, champion: "David Ford", score: "-5 (211)" },
-    ],
-  },
-  {
-    slug: "junior-presidents-cup",
-    name: "Junior Presidents Cup",
-    month: "September 2026",
-    startDate: "2026-09-20",
-    endDate: "2026-09-21",
-    officialUrl: "https://www.presidentscup.com/",
-    course: "Medinah Country Club – Courses #1 & #2",
-    location: "Medinah, IL",
-    format: "Two-day team match play; four-ball and foursomes on Day 1, singles on Day 2",
-    fieldSize: "24 players (12 United States, 12 International — non-European)",
-    eligibility: "Male amateurs; at least 12 years old as of January 1 of the event year; not yet 19 and not yet graduated high school; not enrolled in or competing for a college golf program",
-    overview: "The Junior Presidents Cup is a biennial two-day team match-play competition run jointly by the PGA Tour and AJGA, pitting 12 elite American junior boys against 12 elite International (non-European) junior boys. Created to mirror the Presidents Cup experience, it is held shortly before the senior event at or near the Presidents Cup host site. The United States has won every edition since the inaugural 2017 contest.",
-    note: "Biennial event. 2026 host: Medinah Country Club, Medinah, IL.",
-    pastResults: [
-      { year: 2024, champion: "United States", score: "15 – 9" },
-      { year: 2022, champion: "United States", score: "13 – 11" },
-      { year: 2019, champion: "United States", score: "13 – 11" },
-      { year: 2017, champion: "United States", score: "14 – 10" },
-    ],
-  },
-  {
-    slug: "annika-invitational",
-    name: "ANNIKA Invitational",
-    month: "October 2026",
-    startDate: "2026-10-08",
-    endDate: "2026-10-11",
-    officialUrl: "https://annikafoundation.com/annika-invitational/",
-    course: "The Golf Club of Georgia – Lakeside",
-    location: "Alpharetta, GA",
-    note: "2026 host: The Golf Club of Georgia – Lakeside, Alpharetta, GA.",
-    coursePar: 73,
-    courseYardage: 7198,
-    courseDesigner: "Ron Garl and Howard Swan",
-    format: "54-hole stroke play",
-    fieldSize: "72 players",
-    eligibility: "Girls ages 14–18; invitation only; selection based on AJGA Rankings and achievement criteria; champion receives exemptions into the LPGA’s Hilton Grand Vacations Tournament of Champions and an Epson Tour event",
-    overview: "Founded by Annika Sorenstam through the ANNIKA Foundation and sanctioned by the AJGA, the ANNIKA Invitational is one of junior golf’s premier all-girls invitationals, now in its 17th year. The tournament draws the top 72 junior girls from around the world to The Golf Club of Georgia in Alpharetta for 54 holes of stroke play. The champion receives direct exemptions into LPGA and Epson Tour events, providing a clear pathway to professional golf.",
-    pastResults: [
-      { year: 2025, champion: "Asterisk Talley" },
-      { year: 2024, champion: "Natalie Yen" },
-      { year: 2023, champion: "Ashleen Kaur", score: "-15 (204)" },
-      { year: 2022, champion: "Yana Wilson", score: "-12 (207)" },
-      { year: 2021, champion: "Avery Zweig", score: "-7 (209)" },
-      { year: 2020, champion: "Benedetta Moresco", score: "-4 (212)" },
-    ],
-  },
-  {
-    slug: "ajga-ping-invitational",
-    name: "The PING Invitational",
-    month: "October 2026",
-    startDate: "2026-10-19",
-    endDate: "2026-10-21",
-    officialUrl: "https://www.ajga.org/tournaments/ping-invitational",
-    course: "Seminole Legacy Golf Club",
-    location: "Tallahassee, FL",
-    coursePar: 72,
-    courseYardage: 6883,
-    courseDesigner: "William F. Bell and Robert Muir Graves (1964)",
-    format: "54-hole stroke play",
-    fieldSize: "72 players (36 boys, 36 girls)",
-    eligibility: "AJGA Invitational – invitation only; top boys and girls on the Rolex AJGA Rankings; ages 12–19; AJGA membership required",
-    overview: "The PING Invitational is one of the AJGA’s most prestigious invitationals, drawing the top-ranked junior boys and girls in equal numbers to compete across 54 holes. First held in 2006, it has featured alumni including Jordan Spieth (two-time boys champion) and Rose Zhang (two-time girls champion). Recent editions were held at The Saticoy Club in Ventura County before the event moved to Seminole Legacy Golf Club in Tallahassee for 2026.",
-    note: "Host course may rotate. 2026 host: Seminole Legacy Golf Club, Tallahassee, FL.",
-    pastResults: [
-      { year: 2025, champion: "Boys: Preston Hage / Girls: Honorine Nobuta Ferry" },
-      { year: 2024, champion: "Boys: Jackson Byrd / Girls: Asterisk Talley" },
-      { year: 2023, champion: "Boys: Wheaton Ennis / Girls: Jasmine Koo" },
-      { year: 2022, champion: "Boys: Jay Leng Jr. / Girls: Gianna Clemente" },
-      { year: 2021, champion: "Boys: Benjamin James / Girls: Gianna Clemente" },
-      { year: 2020, champion: "Boys: Kelly Chinn / Girls: Rose Zhang" },
-    ],
-  },
-  {
-    slug: "elite-invitational",
-    name: "The Elite Invitational",
-    month: "November 2026",
-    startDate: "2026-11-04",
-    endDate: "2026-11-07",
-    officialUrl: "https://theeliteinvitational.org/",
-    course: "Ponte Vedra Inn & Club – Ocean Course",
-    location: "Ponte Vedra Beach, FL",
-    coursePar: 71,
-    courseYardage: 6827,
-    courseDesigner: "Herbert Strong; renovated by Bobby Weed",
-    format: "54-hole stroke play",
-    eligibility: "Invitation only; field organized by graduating year (not age); invitations finalized after USGA Junior and Amateur championships; exemptions granted to champions of select qualifying events",
-    overview: "The Elite Invitational is an independent, invitation-only 54-hole stroke play championship held at the iconic Ponte Vedra Inn & Club Ocean Course in Ponte Vedra Beach, Florida. Unlike most junior events, the tournament organizes its field by graduating year, mirroring college and professional golf roster structures. The event draws separate boys and girls fields and has produced multiple future college All-Americans and LPGA/PGA Tour players.",
-    pastResults: [
-      { year: 2025, champion: "Boys: Grant DeLorenzo / Girls: Asterisk Talley" },
-      { year: 2024, champion: "Boys: Miles Russell / Girls: Clara Ding", score: "Boys: 203" },
-      { year: 2023, champion: "Boys: Blades Brown / Girls: Bridget Wilkie", score: "Boys: 200" },
-      { year: 2022, champion: "Boys: Jackson Mitchell / Girls: Mia Gray" },
-      { year: 2021, champion: "Boys: Jackson Mitchell / Girls: Morgan Ketchum" },
-      { year: 2020, champion: "Boys: Will Morlan / Girls: Emerson Blair", score: "Boys: 205" },
-    ],
-  },
-  {
-    slug: "rolex-tournament-of-champions",
-    name: "Rolex Tournament of Champions",
-    month: "November 2026",
-    startDate: "2026-11-21",
-    endDate: "2026-11-25",
-    officialUrl: "https://www.ajga.org/tournaments/rolex-tournament-of-champions",
-    course: "TPC San Antonio – Canyons Course",
-    location: "San Antonio, TX",
-    coursePar: 72,
-    courseYardage: 7106,
-    courseDesigner: "Pete Dye (2010)",
-    format: "72-hole stroke play (boys and girls divisions played simultaneously)",
-    fieldSize: "Top boys and girls on AJGA Rankings plus AJGA Junior All-Americans and award recipients",
-    eligibility: "Boys and girls under age 19; invitation only based on AJGA Rankings, AJGA Junior All-Americans, and award winners; amateur status required",
-    overview: "Established in 1978, the Rolex Tournament of Champions is the AJGA’s flagship season-ending event and one of the longest-running junior golf championships in the world. Held during Thanksgiving week at TPC San Antonio’s Pete Dye-designed Canyons Course, the 72-hole stroke play competition crowns the AJGA boy and girl champions of the year. The event has been held at TPC San Antonio since 2022.",
-    pastResults: [
-      { year: 2025, champion: "Boys: Luke Ringkamp / Girls: Nikki Oh", score: "Boys: -15 (273) / Girls: -8 (280)" },
-      { year: 2024, champion: "Boys: Miles Russell / Girls: Amelie Zalsman", score: "Boys: -13 (275)" },
-      { year: 2023, champion: "Boys: Tyler Mawhinney / Girls: Aphrodite Deng" },
-      { year: 2022, champion: "Boys: Jackson Koivun / Girls: Meja Ortengren" },
-      { year: 2021, champion: "Boys: Eric Lee / Girls: Meja Ortengren" },
-      { year: 2020, champion: "Boys: David Ford / Girls: Rose Zhang" },
-    ],
-  },
-  {
-    slug: "junior-jones-cup",
-    name: "Junior Jones Cup",
-    month: "December 2026",
-    startDate: "2026-12-18",
-    endDate: "2026-12-21",
-    dates2026: "Dec 18–21, 2026",
-    officialUrl: "https://jonescupinvitational.com/",
-    course: "Sea Island Golf Club – Seaside Course",
-    location: "Sea Island, GA",
-    coursePar: 70,
-    courseYardage: 6883,
-    courseDesigner: "Harry S. Colt & Charles Alison (1929); redesigned by Tom Fazio (incorporating Joe Lee’s 1974 Marshside nine)",
-    format: "54-hole stroke play (may be reduced to 36 holes due to weather)",
-    eligibility: "Boys only, ages 15–18; invitation only at the discretion of the Jones Cup Committee based on sustained excellence in junior and amateur golf; selections informed by USGA events, AJGA invitationals, Junior PGA results, and rankings",
-    overview: "The Jones Cup Junior Invitational is one of the most prestigious boys-only junior invitationals in the American Southeast, held annually during the week of December 18–21 at Sea Island Resort’s world-class Seaside Course in coastal Georgia. Named in the spirit of golf legend Bobby Jones, the event draws the nation’s elite junior boys to a links-style oceanside course. The tournament is strictly invite-only and historically serves as a preview of the nation’s top incoming college recruits.",
-    pastResults: [
-      { year: 2025, champion: "Ayden Fynaut", score: "-10 (won by 4 shots)" },
-      { year: 2024, champion: "JD Culbreth", score: "-8 (66-67-69)" },
-      { year: 2023, champion: "Tyler Watts", score: "36-hole total (event shortened by weather)" },
-      { year: 2022, champion: "Rex Hargrove" },
-      { year: 2021, champion: "Andrew McLauchlan" },
-      { year: 2020, champion: "Shawn Lalmoni" },
-    ],
-  },
-];
-
-export function getJuniorMajorBySlug(slug: string): JuniorMajorEvent | null {
-  return JUNIOR_MAJOR_EVENTS_2026.find((e) => e.slug === slug) ?? null;
-}
-
-export function listJuniorMajorSlugs(): string[] {
-  return JUNIOR_MAJOR_EVENTS_2026.map((e) => e.slug);
-}
-
-export function listJuniorMajorsByMonth(): Array<{
-  month: string;
-  monthKey: string;
-  events: JuniorMajorEvent[];
-}> {
-  const order = [
-    "January 2026", "February 2026", "March 2026", "April 2026",
-    "May 2026", "June 2026", "July 2026", "August 2026",
-    "September 2026", "October 2026", "November 2026", "December 2026",
-  ];
-  const groups = new Map<string, JuniorMajorEvent[]>();
-  for (const e of JUNIOR_MAJOR_EVENTS_2026) {
-    const arr = groups.get(e.month) || [];
-    arr.push(e);
-    groups.set(e.month, arr);
-  }
-  const out: Array<{ month: string; monthKey: string; events: JuniorMajorEvent[] }> = [];
-  for (const m of order) {
-    const events = groups.get(m);
-    if (!events || !events.length) continue;
-    const monthKey = m.split(" ")[0].slice(0, 3).toLowerCase();
-    out.push({ month: m, monthKey, events });
-  }
-  return out;
-}
-// Returns {tournament, article} for a given tournament slug + article slug, or undefined.
-export function getJuniorMajorArticle(
-  tournamentSlug: string,
-  articleSlug: string
-) {
-  const tournament = getJuniorMajorBySlug(tournamentSlug);
-  if (!tournament || !tournament.news) return undefined;
-  const article = tournament.news.find((a) => a.slug === articleSlug);
-  if (!article) return undefined;
-  return { tournament, article };
-}
-
-// Returns all (tournamentSlug, articleSlug) pairs for static generation + sitemap.
-export function listJuniorMajorArticleParams(): {
-  slug: string;
-  article: string;
-}[] {
-  const out: { slug: string; article: string }[] = [];
-  for (const t of JUNIOR_MAJOR_EVENTS_2026) {
-    if (!t.news) continue;
-    for (const a of t.news) {
-      out.push({ slug: t.slug, article: a.slug });
-    }
-  }
-  return out;
-}
-
-
-// Returns the first junior tournament currently flagged as live or next.
-// Used by the active-tournament widget on the juniorgolfHQ home page.
-export function getLiveJuniorTournament(): JuniorMajorEvent | undefined {
-      const today = new Date().toISOString().slice(0, 10);
-    const active = (t: JuniorMajorEvent) =>
-          (t.liveStatus === "live" || t.liveStatus === "next") &&
-          (!t.endsOn || t.endsOn >= today);
-    return JUNIOR_MAJOR_EVENTS_2026.find((t) => t.liveStatus === "live" && active(t)) ||
-          JUNIOR_MAJOR_EVENTS_2026.find((t) => t.liveStatus === "next" && active(t));
-}
-
+    news: [
+      {
+        slug: "2026-wyndham-invitational-recap",
+        title: "Jessy Huebner Fires 65-65-68 to Win 2026 Wyndham Invitational",
+        date: "2026-06-11",
+        author: "juniorgolfHQ",
+        summary:
+          "Huebner opened with back-to-back 65s and held on for a one-shot win over Jackson Ormond and Mingbo Jiang at Sedgefield.",
+        content: [
+          "Jessy Huebner won the 2026 Wyndham Invitational presented by Odyssey at Sedgefield Country Club, closing with a 68 for a 54-hole total of 198 (-12) and a one-shot victory.",
+          "Huebner set the pace with opening rounds of 65-65 to build a comfortable cushion, then played the final round steady enough to hold off a hard-charging field on Sedgefield's Donald Ross layout.",
