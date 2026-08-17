@@ -1404,7 +1404,7 @@ export const MIDAM_TOURNAMENTS: Tournament[] = [
     slug: "canadian-mens-mid-amateur",
     name: "Canadian Men’s Mid-Amateur Championship",
     channel: "midam",
-    liveStatus: "next",
+    liveStatus: "live",
     logo: "/brand/GolfCanada.jpeg",
     month: 8,
     dates2026: "Aug 18–21, 2026",
@@ -1413,6 +1413,7 @@ export const MIDAM_TOURNAMENTS: Tournament[] = [
     course: "Brantford Golf & Country Club",
     location: "Brantford, ON",
     format: "72 holes stroke play",
+    golfGeniusUrl: "https://www.golfgenius.com/pages/12156388270317554134",
     tournamentWebsite: "https://www.golfcanada.ca/",
     courseWebsite: "https://www.golfcanada.ca/competition/2026-canadian-mens-mid-amateur-championship/",
     howToPlay: [
