@@ -550,6 +550,7 @@ export const SENIOR_MAJOR_EVENTS_2026: SeniorMajorEvent[] = [
     dates2026: "August 16-19, 2026",
     startDate: "2026-08-16",
     endDate: "2026-08-19",
+    liveStatus: "live",
     format: "54-hole stroke play",
     course: "Sunnehanna Country Club",
     location: "Johnstown, PA",
@@ -558,7 +559,7 @@ export const SENIOR_MAJOR_EVENTS_2026: SeniorMajorEvent[] = [
     courseDesigner: "A.W. Tillinghast (1923)",
     tournamentWebsite: "https://www.sunnehanna.org/senior/tournament-info",
     golfGeniusUrl: "https://www.sunnehanna.org/senior/results",
-    golfGeniusUrlLabel: "2025 Results",
+    golfGeniusUrlLabel: "Live Scoring",
     overview: "The Sunnehanna Senior Amateur Championship is played at historic Sunnehanna Country Club in Johnstown, Pennsylvania \u2014 an A.W. Tillinghast design that also hosts the renowned Sunnehanna Amateur. The course has attracted amateur golf legends since 1923, and the senior championship gives elite 55+ amateurs the chance to compete on one of Pennsylvania\u2019s finest classic layouts.",
     winners: [
       { year: 2025, champion: "Tony Wise" },
