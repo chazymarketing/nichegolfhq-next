@@ -1421,6 +1421,16 @@ export const MIDAM_TOURNAMENTS: Tournament[] = [
     ],
     news: [
       {
+        slug: "2026-canadian-mens-mid-amateur-r1-recap",
+        title: "Canadian Men's Mid-Amateur R1: Rank, Nachtigall, and vonKalckreuth Share Lead at 8-Under at Brantford",
+        date: "2026-08-18",
+        author: "midamgolfHQ Staff",
+        summary: "Three players fire opening-round 64s to share the first-round lead at 8-under at Brantford Golf & Country Club.",
+        content: [
+          "Three players fired opening-round 64s to share the first-round lead at the Canadian Men's Mid-Amateur at Brantford Golf & Country Club. Three-time champion Garrett Rank (2014-16) of Waterloo, Ont. is joined at 8-under by Evan Nachtigall of Brandon, Man. and Nolan vonKalckreuth of Fort Erie, Ont. Alex Large of Dead Mans Flats, Alta., Thad Hudgens of Longwood, Fla., and Mike Kray of Oakville, Ont. sit two back at 6-under 66, while Curtis Hall of Charlottetown, P.E.I. and Haymes Snedeker of Point Clear, Ala. are T7 at 5-under. Live scoring and full tournament coverage can be found on the [Canadian Men's Mid-Amateur tournament hub here](/midamgolfhq/canadian-mens-mid-amateur).",
+        ],
+      },
+      {
         slug: "2026-canadian-mens-mid-amateur-preview",
         title: "Canadian Men's Mid-Amateur Tees Off at Brantford With Rank, Couture, and International Contingent",
         date: "2026-08-17",
