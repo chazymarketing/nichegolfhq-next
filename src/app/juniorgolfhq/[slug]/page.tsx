@@ -79,6 +79,7 @@ function toTournament(
     fieldSize: event.fieldSize,
     eligibility: event.eligibility,
     overview: event.overview,
+    tournamentWebsite: event.officialUrl,
     golfGeniusUrl: event.golfGeniusUrl,
     pastResults:
       event.pastResults?.map((r) => ({
