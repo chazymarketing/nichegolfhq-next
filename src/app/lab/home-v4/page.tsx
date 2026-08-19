@@ -76,7 +76,7 @@ const CHANNELS = {
     ],
     schedule: [
       { event: "U.S. Junior Amateur", dates: "July 13–18", location: "TBD" },
-      { event: "Junior Invitational at Sage Valley", dates: "April 2–4", location: "Sage Valley GC" },
+      { event: "Junior Invitational at Sage Valley", dates: "March 11–14, 2026", location: "Sage Valley Golf Club, Graniteville, SC" },
       { event: "Junior PLAYERS Championship", dates: "TBD", location: "TPC Sawgrass" },
     ],
   },
