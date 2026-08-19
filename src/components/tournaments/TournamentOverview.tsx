@@ -1,7 +1,7 @@
 import type { Tournament } from "@/lib/tournaments/types";
 import { SponsorStrip } from "@/components/tournaments/SponsorStrip";
 
-const PUTTVIEW_SPONSORED_SLUGS = ["the-picard-cup", "usga-mens-mid-am", "the-farrell"];
+const PUTTVIEW_SPONSORED_SLUGS = ["usga-mens-mid-am", "the-farrell"];
 
 export function TournamentOverview({ tournament }: { tournament: Tournament }) {
   const overview = tournament.overview?.trim();
