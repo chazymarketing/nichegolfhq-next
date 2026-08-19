@@ -1,6 +1,39 @@
 {
   "briefs": [
     {
+      "date": "2026-08-19",
+      "title": "Daily Brief - August 19, 2026",
+      "items": [
+        {
+          "title": "Marigliano, Feng and Cui Headline KJ Choi Foundation Junior Championship at Fiddler's Elbow",
+          "url": "https://www.ajga.org/tournaments/2026127/the-kjchoijr-returns-to-fiddlers-elbow-country-club-for-the-12th-year",
+          "source": "AJGA",
+          "why": "The K.J. Choi Foundation Junior Championship by One Alliance runs Aug 17-20 on the River Course at Fiddler's Elbow, with 96 boys and girls ages 12-19 playing 54 holes and a 36-hole cut. The field includes 32 New Jersey natives, 13 past AJGA champions and five players inside the Rolex AJGA top 150.",
+          "tags": [
+            "juniors"
+          ]
+        },
+        {
+          "title": "Canadian Men's Mid-Amateur Continues at Brantford With Rank, Nachtigall, vonKalckreuth Sharing R1 Lead",
+          "url": "https://www.nichegolfhq.com/midamgolfhq/canadian-mens-mid-amateur/2026-canadian-mens-mid-amateur-r1-recap",
+          "source": "nichegolfHQ",
+          "why": "Three-time champion Garrett Rank (2014-16), Evan Nachtigall, and Nolan vonKalckreuth share the lead at 8-under 64 after the opening round at Brantford Golf & Country Club. Round 2 continues today with the field chasing the 72-hole national title through August 21.",
+          "tags": [
+            "mid-am"
+          ]
+        },
+        {
+          "title": "Sunnehanna Senior Amateur Final Round Today at Sunnehanna Country Club",
+          "url": "https://www.nichegolfhq.com/seniorgolfhq/sunnehanna-senior-amateur",
+          "source": "nichegolfHQ",
+          "why": "The invitation-only championship for elite 55-and-over amateurs closes today at par-70 Sunnehanna Country Club in Johnstown, Pa. Tony Wise is the 2025 defending champion.",
+          "tags": [
+            "senior"
+          ]
+        }
+      ]
+    },
+    {
       "date": "2026-08-18",
       "title": "Daily Brief - August 18, 2026",
       "items": [
