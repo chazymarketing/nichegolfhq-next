@@ -1421,6 +1421,17 @@ export const MIDAM_TOURNAMENTS: Tournament[] = [
     ],
     news: [
       {
+        slug: "2026-canadian-mens-mid-amateur-r2-recap",
+        title: "Canadian Men's Mid-Amateur R2: Nachtigall Pulls Away at Brantford",
+        date: "2026-08-19",
+        author: "midamgolfHQ Staff",
+        summary: "Evan Nachtigall fires a second-round 67 to take the solo lead at 13-under, one clear of three-time champion Garrett Rank heading into the weekend at Brantford Golf & Country Club.",
+        content: [
+          "Evan Nachtigall put together another masterclass at Brantford Golf & Country Club, backing up his opening 64 with a 5-under 67 to seize the solo lead at 13-under 131 through 36 holes of the Canadian Men's Mid-Amateur Championship. Three-time champion Garrett Rank (2014-16) stayed within striking distance at 12-under after a steady 4-under 68, while Haymes Snedeker climbed four spots into a tie for third at 9-under with a second-round 68 of his own. Vincent Mucci delivered the round of the day, a scorching 7-under 65 that launched him 26 spots up the leaderboard into a tie for fifth at 8-under. First-round co-leader Nolan vonKalckreuth cooled off with an even-par 72 but remains in the hunt at 8-under. Live scoring and full tournament coverage can be found on the [Canadian Men's Mid-Amateur tournament hub here](/midamgolfhq/canadian-mens-mid-amateur).",
+          "Nachtigall carries a one-shot cushion over Rank into the third round, with Snedeker and Alex Large lurking four back at 9-under. The low scoring at Brantford continued through Day 2, with five players posting 67 or better and Derek Meinhart and Russell Bowie each matching Mucci's 65 to surge into a tie for 13th at 6-under. Two rounds remain in the 72-hole championship, and with the leaders bunched and the course clearly giving up birdies, the weekend rounds could produce fireworks. midamgolfHQ will be tracking the action from Brantford through the final round on Thursday.",
+        ],
+      },
+      {
         slug: "2026-canadian-mens-mid-amateur-r1-recap",
         title: "Canadian Men's Mid-Amateur R1: Rank, Nachtigall, and vonKalckreuth Share Lead at 8-Under at Brantford",
         date: "2026-08-18",
