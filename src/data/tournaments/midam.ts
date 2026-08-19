@@ -1506,6 +1506,7 @@ export const MIDAM_TOURNAMENTS: Tournament[] = [
     tournamentWebsite: "https://thevalentineinvitational.com/",
 
     format: "54 holes stroke play",
+    golfGeniusUrl: "https://www.golfgenius.com/pages/12338736295793668275",
     howToPlay: [
       { label: "Apply for invite", href: "https://www.golfgenius.com/pages/12338736308309471417" },
     ],
