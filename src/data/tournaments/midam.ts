@@ -1510,7 +1510,21 @@ export const MIDAM_TOURNAMENTS: Tournament[] = [
     howToPlay: [
       { label: "Apply for invite", href: "https://www.golfgenius.com/pages/12338736308309471417" },
     ],
-    news: [],
+    news: [
+      {
+        slug: "2026-valentine-invitational-field-preview",
+        title: "84th Valentine Invitational Preview: Hunter Returns to Defend Title at Hermitage",
+        date: "2026-08-19",
+        author: "midamgolfHQ Staff",
+        summary:
+          "Defending champion John Hunter, 2007 U.S. Mid-Amateur champion Trip Kuehne, and 2023 Valentine winner Sam Beach headline an 82-player mid-am field at Hermitage Country Club.",
+        content: [
+          "The 84th Valentine Invitational tees off Friday at Hermitage Country Club in Manakin-Sabot, Virginia, with 82 mid-amateurs set to compete for one of the Mid-Atlantic's most coveted titles. The 54-hole medal play championship, which dates to 1931, has attracted a deep and talented field for three days of competition on the Hermitage Course. Live scoring and full tournament coverage can be found on the [Valentine Invitational tournament hub here](/midamgolfhq/the-valentine-invitational).",
+          "Defending champion John Hunter returns from The Club at Carlton Woods in Spring, Texas, looking to go back-to-back after winning the 83rd Valentine in 2025 at 12-under 204, one shot ahead of Kyle Downey. Trip Kuehne, the 2007 U.S. Mid-Amateur champion and three-time Walker Cup team member (1995, 2003, 2007), makes the trip from Vaquero Club in Southlake, Texas, and brings one of the most decorated resumes in the field. Sam Beach, the 2023 Valentine champion from Hermitage Country Club, will look to reclaim the trophy he won three years ago with the advantage of local knowledge.",
+          "The field features strong out-of-state entries in Andy Butler from Huntingdon Valley Country Club in Philadelphia, Carter Thompson from The Creek in New York, and Walt Todd Jr. from Musgrove Mill Golf Club in Laurens, South Carolina, whose father Walter Sr. is a South Carolina Golf Hall of Famer and 2007 Carolinas Mid-Amateur champion. Richmond-area players are well represented with more than 20 Hermitage members in the mid-am division, along with local contenders like Brandon Ramsuer of Lakeside Park Club. midamgolfHQ will be tracking the action all week from Manakin-Sabot.",
+        ],
+      },
+    ],
     pastResults: [
       { year: 2025, champion: "John Hunter" },
       { year: 2024, champion: "Christian Brand" },
