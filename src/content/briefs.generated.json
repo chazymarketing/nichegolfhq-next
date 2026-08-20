@@ -1,6 +1,39 @@
 {
   "briefs": [
     {
+      "date": "2026-08-20",
+      "title": "Daily Brief - August 20, 2026",
+      "items": [
+        {
+          "title": "Junior PLAYERS Championship Field Set for TPC Sawgrass With Soong, Jolly, Huebner Among 73 Invitees",
+          "url": "https://www.ajga.org/tournaments/2026135/field",
+          "source": "AJGA",
+          "why": "The AJGA's flagship boys invitational returns to the PLAYERS Stadium Course Sept. 8-10 for 54 holes on the identical setup used for THE PLAYERS, island green included. The confirmed field spans 15 countries and includes Junior PGA champion Jaden Soong, Southern Junior winner Neil Jolly and Wyndham Invitational champion Jessy Huebner, with two-time defending champion Miles Russell absent from the list.",
+          "tags": [
+            "juniors"
+          ]
+        },
+        {
+          "title": "Nachtigall Leads Canadian Men's Mid-Amateur by One Over Rank Heading Into R3 at Brantford",
+          "url": "https://www.nichegolfhq.com/midamgolfhq/canadian-mens-mid-amateur/2026-canadian-mens-mid-amateur-r2-recap",
+          "source": "nichegolfHQ",
+          "why": "Evan Nachtigall followed his opening 64 with a 5-under 67 to take the solo lead at 13-under 131 through 36 holes at Brantford Golf & Country Club. Three-time champion Garrett Rank (2014-16) is one back at 12-under, with Haymes Snedeker and Alex Large tied for third at 9-under. Two rounds remain in the 72-hole championship through August 21.",
+          "tags": [
+            "mid-am"
+          ]
+        },
+        {
+          "title": "Valentine Invitational Tees Off Friday at Hermitage With Quackenbush Defending",
+          "url": "https://www.nichegolfhq.com/seniorgolfhq/the-valentine-invitational",
+          "source": "nichegolfHQ",
+          "why": "The Mid-Atlantic's marquee senior invitational plays 54 holes across Hermitage Country Club's Sabot and Manakin courses outside Richmond, Aug. 21-23. Brian Quackenbush returns as the 2025 champion in a national field that fills the gap between Sunnehanna and the U.S. Senior Amateur at Baltimore CC.",
+          "tags": [
+            "senior"
+          ]
+        }
+      ]
+    },
+    {
       "date": "2026-08-19",
       "title": "Daily Brief - August 19, 2026",
       "items": [
