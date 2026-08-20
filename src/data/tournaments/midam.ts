@@ -1428,7 +1428,7 @@ export const MIDAM_TOURNAMENTS: Tournament[] = [
         summary: "Evan Nachtigall cards a third-round 68 to lead by two at 17-under heading into the final round at Brantford Golf & Country Club, with three-time champion Garrett Rank lurking at 15-under.",
         content: [
           "Evan Nachtigall continued his wire-to-wire run at Brantford Golf & Country Club, carding a 4-under 68 in the third round to stretch his lead to two shots at 17-under 199 heading into the final round of the Canadian Men's Mid-Amateur Championship. Three-time champion Garrett Rank (2014-16) kept pace with a 3-under 69 to sit alone in second at 15-under, while Cam Burke surged into solo third at 13-under after a second consecutive 67. Simon McInnis fired the low round among the contenders with a 66 to climb into a tie for fourth at 10-under alongside Jaret Chipman and Noah Firestone. Live scoring and full tournament coverage can be found on the [Canadian Men's Mid-Amateur tournament hub here](/midamgolfhq/canadian-mens-mid-amateur).",
-          "Nachtigall has been the model of consistency through 54 holes, posting rounds of 64-67-68 without a single round over 68. The final round tee times are set for tomorrow with the leaders going off at 10:30 AM. Rank will need to apply early pressure to close the gap, but seven shots separate third from the lead, making the championship increasingly a two-horse race. First-round co-leader Nolan vonKalckreuth and Haymes Snedeker have fallen off the pace, while Alex Large dropped from a tie for third to a tie for seventh at 9-under after a third-round 72. midamgolfHQ will be tracking the action from Brantford through the final round tomorrow.",
+          "Nachtigall has been the model of consistency through 54 holes, posting rounds of 64-67-68 without a single round over 68. The final round tee times are set for tomorrow with the leaders going off at 10:30 AM. Rank will need to apply early pressure to close the gap, but four shots separate third from the lead, making the championship increasingly a two-horse race. First-round co-leader Nolan vonKalckreuth and Haymes Snedeker have fallen off the pace, while Alex Large dropped from a tie for third to a tie for seventh at 9-under after a third-round 72. midamgolfHQ will be tracking the action from Brantford through the final round tomorrow.",
         ],
       },
       {
@@ -1511,6 +1511,7 @@ export const MIDAM_TOURNAMENTS: Tournament[] = [
     slug: "the-valentine-invitational",
     name: "The Valentine Invitational",
     channel: "midam",
+    liveStatus: "live",
     logo: "/brand/Valentine.jpeg",
     month: 8,
     dates2026: "August 21-23, 2026",
