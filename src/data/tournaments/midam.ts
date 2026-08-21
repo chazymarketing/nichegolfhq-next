@@ -1404,7 +1404,7 @@ export const MIDAM_TOURNAMENTS: Tournament[] = [
     slug: "canadian-mens-mid-amateur",
     name: "Canadian Men’s Mid-Amateur Championship",
     channel: "midam",
-    liveStatus: "live",
+    liveStatus: "completed",
     logo: "/brand/GolfCanada.jpeg",
     month: 8,
     dates2026: "Aug 18–21, 2026",
@@ -1420,6 +1420,18 @@ export const MIDAM_TOURNAMENTS: Tournament[] = [
       { label: "Apply for entry", href: "https://www.golfgenius.com/register?league_id=12156388054461892844" },
     ],
     news: [
+      {
+        slug: "2026-canadian-mens-mid-amateur-final-recap",
+        title: "Canadian Men's Mid-Amateur Final: Rank Rallies Past Nachtigall for Historic Fourth Title at Brantford",
+        date: "2026-08-21",
+        author: "midamgolfHQ Staff",
+        summary:
+          "Garrett Rank closes with a 69 to overtake 54-hole leader Evan Nachtigall and win his fourth Canadian Men's Mid-Amateur Championship at 18-under 270, joining Stu Hamilton and Graham Cooke as the only four-time winners.",
+        content: [
+          "Garrett Rank completed a final-round comeback at Brantford Golf & Country Club, closing with a 3-under 69 to overtake 54-hole leader Evan Nachtigall and claim his fourth Canadian Men's Mid-Amateur Championship at 18-under 270. Rank, who won three straight from 2014 to 2016, joins Stu Hamilton and Graham Cooke as the only four-time winners in the championship's history. Nachtigall, who held the lead wire-to-wire through 54 holes, stumbled to a 72 in the final round to finish one back at 17-under 271. Cam Burke held steady in solo third at 15-under 273 after a closing 70, while Eric Flockhart fired the low round of the day at 65 to vault ten spots into fourth at 12-under 276. Live scoring and full tournament coverage can be found on the [Canadian Men's Mid-Amateur tournament hub here](/midamgolfhq/canadian-mens-mid-amateur).",
+          "Rank's victory earns him an exemption into the U.S. Mid-Amateur at Sand Valley later this fall. The three-time Walker Cup referee and NHL official added yet another chapter to one of the most remarkable resumes in Canadian amateur golf. Nachtigall will look back on a tournament where he posted three rounds in the 60s before the final-round 72 let Rank slip past. Jaret Chipman finished fifth at 11-under, with Rob Couture and Noah Firestone tied for sixth at 10-under. midamgolfHQ will be back with coverage from the Valentine Invitational, which teed off today at Hermitage Country Club.",
+        ],
+      },
       {
         slug: "2026-canadian-mens-mid-amateur-r3-recap",
         title: "Canadian Men's Mid-Amateur R3: Nachtigall Extends Lead to Two Over Rank Entering Final Round",
@@ -1466,6 +1478,7 @@ export const MIDAM_TOURNAMENTS: Tournament[] = [
       },
     ],
     pastResults: [
+      { year: 2026, champion: "Garrett Rank" },
       { year: 2025, champion: "Charles Fitzsimmons" },
       { year: 2024, champion: "Cam Burke" },
       { year: 2023, champion: "Joe Deraney" },
