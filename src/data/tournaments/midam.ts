@@ -1548,6 +1548,18 @@ export const MIDAM_TOURNAMENTS: Tournament[] = [
     ],
     news: [
       {
+        slug: "2026-valentine-invitational-r1-recap",
+        title: "84th Valentine Invitational R1: Collins Fires 65 to Lead by Four at Hermitage",
+        date: "2026-08-21",
+        author: "midamgolfHQ Staff",
+        summary:
+          "Will Collins posts a 7-under 65 on the Sabot Course to grab a four-shot lead at the 84th Valentine Invitational, with Nicolas Brown, Blanton Farmer, and Winburne Hughes sharing second at 3-under.",
+        content: [
+          "Will Collins of Keswick Golf Club in Charlottesville set the pace on Day 1 of the 84th Valentine Invitational, posting a 7-under 65 on the Sabot Course at Hermitage Country Club to take a four-shot lead over the mid-am field. Nicolas Brown of Greenville, N.C., Richmond's Blanton Farmer, and Winburne Hughes of Memphis share second at 3-under 69, while 2023 Valentine champion Sam Beach, Joey Jordan, and Andy DeKeuster are tied for fifth at 2-under 70. Six players sit one shot further back at 1-under 71, including Hermitage members Kevin Miller and Connor Hill. Live scoring and full tournament coverage can be found on the [Valentine Invitational tournament hub here](/midamgolfhq/the-valentine-invitational).",
+          "Collins will carry the outright lead into Round 2 on the Manakin Course tomorrow, with a packed chaser group looking to close the gap. Defending champion John Hunter and 2007 U.S. Mid-Amateur champion Trip Kuehne were unable to break par on the Sabot Course and will need to make a move over the final 36 holes. The 54-hole championship wraps up Sunday. midamgolfHQ will be tracking the action all weekend from Manakin-Sabot.",
+        ],
+      },
+      {
         slug: "2026-valentine-invitational-field-preview",
         title: "84th Valentine Invitational Preview: Hunter Returns to Defend Title at Hermitage",
         date: "2026-08-19",
