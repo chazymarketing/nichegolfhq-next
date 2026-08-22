@@ -1,6 +1,39 @@
 {
   "briefs": [
     {
+      "date": "2026-08-22",
+      "title": "Daily Brief - August 22, 2026",
+      "items": [
+        {
+          "title": "Van Dam Names 12-Player European Team for PING Junior Solheim Cup at Bernardus",
+          "url": "https://ladieseuropeantour.com/blog/van-dam-announces-european-team-for-2026-ping-junior-solheim-cup/",
+          "source": "Ladies European Tour",
+          "why": "Captain Anne van Dam completed her European side with six automatic qualifiers off the PJSC ranking and six picks headlined by R&A Girls' Amateur champion Marta Munoz. The Sept. 7-8 matches at Bernardus Golf mark the first time the junior event is played on the same course as the Solheim Cup, with Morgan Pressel's U.S. team already set.",
+          "tags": [
+            "juniors"
+          ]
+        },
+        {
+          "title": "Rank Wins Fourth Canadian Mid-Amateur Title; Collins Fires Opening 65 to Lead Valentine Invitational",
+          "url": "https://www.nichegolfhq.com/midamgolfhq/canadian-mens-mid-amateur/2026-canadian-mens-mid-amateur-final-recap",
+          "source": "nichegolfHQ",
+          "why": "Garrett Rank closed with a 3-under 69 to erase Evan Nachtigall's two-shot lead and win at 18-under 270, joining Stu Hamilton as a four-time champion and trailing only seven-time winner Graham Cooke. The victory earns Rank an exemption into the U.S. Mid-Amateur at Sand Valley. Meanwhile at Hermitage Country Club, Will Collins of Charlottesville fired a 7-under 65 on the Sabot Course to grab a four-shot lead after Round 1 of the 84th Valentine Invitational, with Nicolas Brown, Blanton Farmer, and Winburne Hughes sharing second at 3-under 69. [Follow Valentine live scoring here](https://www.golfgenius.com/pages/12338736295793668275).",
+          "tags": [
+            "mid-am"
+          ]
+        },
+        {
+          "title": "U.S. Senior Amateur Field of 156 Heads to Baltimore CC With McCoy Defending, Aug. 29-Sept. 3",
+          "url": "https://championships.usga.org/ussenioramateur/2026/articles/fast-facts-2026-us-senior-amateur.html",
+          "source": "USGA",
+          "why": "The 71st U.S. Senior Amateur opens Aug. 29 on Baltimore Country Club's par-70 East Course, with two stroke-play rounds cutting to a 64-man match-play bracket and the final on Sept. 3. Mike McCoy returns as defending champion a year after becoming the first player in USGA history to win both the U.S. Mid-Amateur and U.S. Senior Amateur.",
+          "tags": [
+            "senior"
+          ]
+        }
+      ]
+    },
+    {
       "date": "2026-08-21",
       "title": "Daily Brief - August 21, 2026",
       "items": [
