@@ -1,6 +1,39 @@
 {
   "briefs": [
     {
+      "date": "2026-08-23",
+      "title": "Daily Brief - August 23, 2026",
+      "items": [
+        {
+          "title": "PacificLinks Korea Junior Championship Opens Monday at Monster Golf Club With AJGA Qualifier",
+          "url": "https://www.ajga.org/tournaments/2026133/schedule-of-events",
+          "source": "AJGA",
+          "why": "The AJGA's International Pathway Series heads to South Korea, with Monday's qualifier shotgun at 8 a.m. and a practice round that afternoon at Monster Golf Club. First round goes off in two waves Tuesday, with the boys and girls fields cut to at least 50% after Wednesday's second round ahead of Thursday's finale.",
+          "tags": [
+            "juniors"
+          ]
+        },
+        {
+          "title": "Collins Takes One-Shot Lead Into Valentine Invitational Final Round as Hughes Charges at Hermitage",
+          "url": "https://www.nichegolfhq.com/midamgolfhq/the-valentine-invitational/2026-valentine-invitational-r2-recap",
+          "source": "nichegolfHQ",
+          "why": "Will Collins carded a 4-under 68 on the Manakin Course to reach 11-under 133 through 36 holes, one clear of Memphis's Winburne Hughes, who posted the day's low round at 7-under 65. Blanton Farmer sits third at 8-under with Sunday's final round on the Sabot Course deciding the 84th Valentine. [Follow live scoring here](https://www.golfgenius.com/pages/12338736295793668275).",
+          "tags": [
+            "mid-am"
+          ]
+        },
+        {
+          "title": "33rd Utah Senior State Amateur Tees Off Monday at Mountain Dell With USGA Exemption on the Line",
+          "url": "https://www.uga.org/uga-championships/",
+          "source": "Utah Golf Association",
+          "why": "The UGA's senior championship runs Aug. 24-27 on the Lake Course at Mountain Dell Golf Club, one of only two official USGA exemption events on the association's calendar. The four-day championship arrives the same week the U.S. Senior Amateur field convenes at Baltimore Country Club.",
+          "tags": [
+            "senior"
+          ]
+        }
+      ]
+    },
+    {
       "date": "2026-08-22",
       "title": "Daily Brief - August 22, 2026",
       "items": [
