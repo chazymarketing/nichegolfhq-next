@@ -1548,6 +1548,18 @@ export const MIDAM_TOURNAMENTS: Tournament[] = [
     ],
     news: [
       {
+        slug: "2026-valentine-invitational-r2-recap",
+        title: "84th Valentine Invitational R2: Collins Maintains Lead as Hughes Surges Into Second at Hermitage",
+        date: "2026-08-22",
+        author: "midamgolfHQ Staff",
+        summary:
+          "Will Collins cards a 4-under 68 on the Manakin Course to lead at 11-under through 36 holes, with Winburne Hughes one back after firing the low round of the day at 65.",
+        content: [
+          "Will Collins kept his grip on the 84th Valentine Invitational, carding a 4-under 68 on the Manakin Course to reach 11-under 133 through 36 holes at Hermitage Country Club. Winburne Hughes of Memphis posted the low round of the day with a 7-under 65 to vault from a tie for second into solo second at 10-under 134, one shot back. Richmond's Blanton Farmer stayed in the hunt with a 5-under 67 to sit alone in third at 8-under 136, while Connor Hill climbed from a tie for eighth into fourth at 6-under after matching Farmer's 67. Four players share fifth at 5-under 139, including 2023 Valentine champion Sam Beach, Joey Jordan, Tucker Jenkins, and Zachary Sterling, who fired one of the day's best rounds at 67. Live scoring and full tournament coverage can be found on the [Valentine Invitational tournament hub here](/midamgolfhq/the-valentine-invitational).",
+          "Collins has been in control from the start, posting rounds of 65-68 without a bogey-free card but keeping the mistakes to a minimum across both courses. Hughes will play in the final group tomorrow looking to erase a one-shot deficit on the Sabot Course in Sunday's final round. First-round co-leaders Nicolas Brown slipped to a 72 and dropped to a tie for ninth at 3-under, while Andy DeKeuster fell out of the top 15. Trip Kuehne sits at 1-under through two rounds. midamgolfHQ will be tracking the action through the final round tomorrow from Manakin-Sabot.",
+        ],
+      },
+      {
         slug: "2026-valentine-invitational-r1-recap",
         title: "84th Valentine Invitational R1: Collins Fires 65 to Lead by Four at Hermitage",
         date: "2026-08-21",
