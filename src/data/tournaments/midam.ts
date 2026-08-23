@@ -1524,7 +1524,7 @@ export const MIDAM_TOURNAMENTS: Tournament[] = [
     slug: "the-valentine-invitational",
     name: "The Valentine Invitational",
     channel: "midam",
-    liveStatus: "live",
+    liveStatus: "completed",
     logo: "/brand/Valentine.jpeg",
     month: 8,
     dates2026: "August 21-23, 2026",
@@ -1547,6 +1547,18 @@ export const MIDAM_TOURNAMENTS: Tournament[] = [
       { label: "Apply for invite", href: "https://www.golfgenius.com/pages/12338736308309471417" },
     ],
     news: [
+      {
+        slug: "2026-valentine-invitational-final-recap",
+        title: "84th Valentine Invitational Final: Collins Caps Wire-to-Wire Victory at Hermitage",
+        date: "2026-08-23",
+        author: "midamgolfHQ Staff",
+        summary:
+          "Will Collins closes with an even-par 72 to complete a wire-to-wire victory at 13-under 203, winning the 84th Valentine Invitational by three shots over Winburne Hughes at Hermitage Country Club.",
+        content: [
+          "Will Collins of Keswick Golf Club in Charlottesville completed a wire-to-wire victory at the 84th Valentine Invitational, closing with an even-par 72 on the Sabot Course to finish at 13-under 203 and win by three shots at Hermitage Country Club. Collins led from start to finish across all three rounds, posting 65-68-70 over the Sabot, Manakin, and Sabot courses to pull away from the field. Winburne Hughes of Memphis, who made a charge after his second-round 65, settled for solo second at 10-under 206 after a final-round 72. Richmond's Blanton Farmer rounded out the top three at 7-under 209. Live scoring and full tournament coverage can be found on the [Valentine Invitational tournament hub here](/midamgolfhq/the-valentine-invitational).",
+          "Keith Guest of Athens, Ga. climbed into fourth at 5-under 211 with a pair of 70s on the weekend, while 2023 Valentine champion Sam Beach and Connor Hill tied for fifth at 3-under 213. Defending champion John Hunter missed the cut at 8-over after rounds of 76-76, and 2007 U.S. Mid-Amateur champion Trip Kuehne finished at 3-over 219. Jordan Utley posted the best final-round score among the top 10 with a 68 to finish tied for eighth at 1-under. midamgolfHQ will be back next week with coverage from the U.S. Senior Amateur at Baltimore Country Club.",
+        ],
+      },
       {
         slug: "2026-valentine-invitational-r2-recap",
         title: "84th Valentine Invitational R2: Collins Maintains Lead as Hughes Surges Into Second at Hermitage",
@@ -1586,6 +1598,7 @@ export const MIDAM_TOURNAMENTS: Tournament[] = [
       },
     ],
     pastResults: [
+      { year: 2026, champion: "Will Collins" },
       { year: 2025, champion: "John Hunter" },
       { year: 2024, champion: "Christian Brand" },
       { year: 2023, champion: "Sam Beach" },
