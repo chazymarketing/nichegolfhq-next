@@ -1718,6 +1718,7 @@ export const MIDAM_TOURNAMENTS: Tournament[] = [
     howToPlay: [
       { label: "Open qualifying + exemptions", href: "https://champ-admin.usga.org/player" },
     ],
+    golfGeniusUrl: "https://championships.usga.org/uswomensmidamateur.html",
 
     format: "Match play",
     news: [],
