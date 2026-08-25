@@ -1703,6 +1703,7 @@ export const MIDAM_TOURNAMENTS: Tournament[] = [
     slug: "usga-womens-mid-am",
     name: "USGA Women’s Mid-Am",
     channel: "midam",
+    liveStatus: "next",
     logo: "/brand/USGA 2.jpeg",
     month: 9,
     dates2026: "August/September 2026",
