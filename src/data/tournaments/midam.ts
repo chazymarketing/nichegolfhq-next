@@ -1723,7 +1723,21 @@ export const MIDAM_TOURNAMENTS: Tournament[] = [
     golfGeniusUrl: "https://championships.usga.org/uswomensmidamateur.html",
 
     format: "Match play",
-    news: [],
+    news: [
+      {
+        slug: "2026-us-womens-mid-amateur-preview",
+        title: "39th U.S. Women's Mid-Amateur Preview: Kim-Schaad Defends Title at Historic Montclair Golf Club",
+        date: "2026-08-25",
+        author: "midamgolfHQ Staff",
+        summary:
+          "Two-time champion Ina Kim-Schaad headlines a 132-player field at Montclair Golf Club as the 39th U.S. Women's Mid-Amateur Championship opens Saturday in West Orange, N.J.",
+        content: [
+          "The 39th U.S. Women's Mid-Amateur Championship arrives at Montclair Golf Club in West Orange, N.J. this Saturday, with 132 players set to compete for one of the most prestigious titles in women's amateur golf. The championship runs Aug. 29 through Sept. 3, opening with two rounds of stroke play on the club's No. 2 and No. 3 nines before the low 64 advance to match play. The winner earns an exemption into the 2027 U.S. Women's Open at Inverness Club. Live scoring and full tournament coverage can be found on the [U.S. Women's Mid-Amateur tournament hub here](/midamgolfhq/usga-womens-mid-am).",
+          "Two-time champion Ina Kim-Schaad of Jupiter, Fla. returns to defend the title she won in dramatic fashion at Monterey Peninsula Country Club last year, outlasting Hanley Long of Clarksville, Tenn. in 23 holes in the longest championship match in tournament history. Kim-Schaad, who also won in 2019, brings an impressive 19-5 match-play record in the championship across 20 USGA championship appearances. Long will look to avenge last year's heartbreak after reaching the final in her first Women's Mid-Am appearance, while former champion Kimberly Dinh, an MIT-educated chemical engineer and the championship's only left-handed winner, is eligible to return. 2017 champion Kelsey Chugg, a two-time runner-up as well, is another name to watch if she returns to the field.",
+          "Montclair Golf Club brings a rich USGA pedigree to the championship, having previously hosted the 1973 U.S. Women's Amateur won by Hall of Famer Carol Semple Thompson and the 1985 U.S. Amateur won by Sam Randolph. The club, a founding member of the Metropolitan Golf Association in 1897, returns to the national stage for the first time in over a decade. This marks only the second U.S. Women's Mid-Amateur held in New Jersey, following Carol Semple Thompson's victory at Atlantic City Country Club in 1997. midamgolfHQ will be tracking the action all week from West Orange.",
+        ],
+      },
+    ],
     pastResults: [
       { year: 2025, champion: "Ina Kim-Schaad" },
       { year: 2024, champion: "Hana Ryskova" },
