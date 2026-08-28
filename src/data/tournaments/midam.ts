@@ -1703,7 +1703,7 @@ export const MIDAM_TOURNAMENTS: Tournament[] = [
     slug: "usga-womens-mid-am",
     name: "USGA Women’s Mid-Am",
     channel: "midam",
-    liveStatus: "next",
+    liveStatus: "live",
     logo: "/brand/USGA 2.jpeg",
     month: 9,
     dates2026: "August/September 2026",
@@ -1721,7 +1721,7 @@ export const MIDAM_TOURNAMENTS: Tournament[] = [
     howToPlay: [
       { label: "Open qualifying + exemptions", href: "https://champ-admin.usga.org/player" },
     ],
-    golfGeniusUrl: "https://championships.usga.org/uswomensmidamateur.html",
+    golfGeniusUrl: "https://championships.usga.org/uswomensmidamateur/2026/scoring.html",
 
     format: "Match play",
     news: [
