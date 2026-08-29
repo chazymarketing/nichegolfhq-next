@@ -1722,6 +1722,8 @@ export const MIDAM_TOURNAMENTS: Tournament[] = [
       { label: "Open qualifying + exemptions", href: "https://champ-admin.usga.org/player" },
     ],
     golfGeniusUrl: "https://championships.usga.org/uswomensmidamateur/2026/scoring.html",
+    tournamentWebsite: "https://championships.usga.org/uswomensmidamateur.html",
+    tournamentWebsiteLabel: "Data Source",
 
     format: "Match play",
     news: [
