@@ -1728,6 +1728,19 @@ export const MIDAM_TOURNAMENTS: Tournament[] = [
     format: "Match play",
     news: [
       {
+        slug: "2026-us-womens-mid-amateur-r1-recap",
+        title:
+          "U.S. Women's Mid-Amateur R1: Johnson and Shepherd Share Lead at 1-Under as Montclair Tests the Field",
+        date: "2026-08-29",
+        author: "midamgolfHQ Staff",
+        summary:
+          "Shannon Johnson and Ivy Shepherd are the only players to break par on a demanding opening day at Montclair Golf Club, sharing the lead at 1-under 69 as defending champion Kim-Schaad sits T14 at 3-over.",
+        content: [
+          "Shannon Johnson and Ivy Shepherd emerged as the only players to break par on a demanding opening day at Montclair Golf Club, each posting 1-under 69 to share the lead after the first round of stroke play at the 39th U.S. Women's Mid-Amateur Championship. Talia Campbell and Amanda Jacobs sit two back at even par in a tie for third, with the field bunched tightly heading into Sunday's second round. Defending champion Ina Kim-Schaad opened with a 3-over 73 to sit in a tie for 14th, still well inside the projected cut line as the low 64 advance to match play. Live scoring and full tournament coverage can be found on the [U.S. Women's Mid-Amateur tournament hub here](/midamgolfhq/usga-womens-mid-am).",
+          "Montclair's No. 2 and No. 3 nines proved a stern test, with only two players finishing under par and the cut line likely to fall around 5-over based on first-round scoring. Former champion Kimberly Dinh sits at 4-over in a tie for 19th, while international players from Australia, France, Thailand, and the Czech Republic are sprinkled through the top 28. The second and final round of stroke play goes tomorrow, with the match-play bracket set to begin Monday. midamgolfHQ will be tracking the action all week from West Orange.",
+        ],
+      },
+      {
         slug: "2026-us-womens-mid-amateur-preview",
         title: "39th U.S. Women's Mid-Amateur Preview: Kim-Schaad Defends Title at Historic Montclair Golf Club",
         date: "2026-08-25",
