@@ -1728,6 +1728,19 @@ export const MIDAM_TOURNAMENTS: Tournament[] = [
     format: "Match play",
     news: [
       {
+        slug: "2026-us-womens-mid-amateur-stroke-play-recap",
+        title:
+          "U.S. Women's Mid-Amateur Stroke Play: Shepherd, Doran, and Jamieson Share Lead at 1-Over Heading Into Match Play",
+        date: "2026-08-30",
+        author: "midamgolfHQ Staff",
+        summary:
+          "Ivy Shepherd, Emilia Doran, and England's Lucy Jamieson share the 36-hole stroke-play lead at 1-over as defending champion Kim-Schaad advances in a tie for fourth at Montclair Golf Club.",
+        content: [
+          "Ivy Shepherd held onto a share of the lead after 36 holes of stroke play at Montclair Golf Club, joined at the top at 1-over by Emilia Doran, who fired the low round of the day at 3-under 67, and England's Lucy Jamieson, who posted a 2-under 68. First-round co-leader Shannon Johnson collapsed with a second-round 78 to drop to a tie for 16th at 7-over, while defending champion Ina Kim-Schaad steadied with an even-par 70 to climb into a tie for fourth at 3-over alongside Catherine McEvoy, Talia Campbell, and France's Justine Fournand. Sixty players earned automatic spots in the match-play bracket, with eight players tied at 14-over heading to a playoff tomorrow at 6:30 a.m. for the final four spots. Live scoring and full tournament coverage can be found on the [U.S. Women's Mid-Amateur tournament hub here](/midamgolfhq/usga-womens-mid-am).",
+          "The playoff features former champions Kimberly Dinh and Lauren Greenlief alongside Mimi McAndrew, Ashley Freeman, Jasmeen Somrock, Betsy Kelly, Sarah Spicer-Baldwin, and Alexandra Grove, all fighting over just four match-play berths on the par-5 10th hole. Four-time champion Meghan Stasi qualified at 10-over in a tie for 32nd, while 2025 runner-up Hanley Long advanced at 11-over and two-time champion Julia Potter-Bobb made it through at 13-over. Match play begins Monday with the Round of 64 after the playoff is settled. midamgolfHQ will be tracking the action all week from West Orange.",
+        ],
+      },
+      {
         slug: "2026-us-womens-mid-amateur-r1-recap",
         title:
           "U.S. Women's Mid-Amateur R1: Johnson and Shepherd Share Lead at 1-Under as Montclair Tests the Field",
