@@ -1,6 +1,39 @@
 {
   "briefs": [
     {
+      "date": "2026-08-31",
+      "title": "Daily Brief - August 31, 2026",
+      "items": [
+        {
+          "title": "AJGA Debuts in South Dakota This Week as Junior at Red Rock Qualifier Goes Wednesday in Rapid City",
+          "url": "https://www.ajga.org/tournaments/2026138",
+          "source": "AJGA",
+          "why": "The AJGA's new three-year Rapid City partnership tips off with a Wednesday qualifier at the Golf Club at Red Rock, followed by a Junior-Am and practice round Thursday and 54 holes of stroke play Sept. 4-6. The 78-player boys and girls field marks the association's first championship in the Black Hills, with the event locked in through 2028.",
+          "tags": [
+            "juniors"
+          ]
+        },
+        {
+          "title": "Catherine McEvoy Answers a 77 With the Low Round of the Championship, a 4-Under 66, to Reach Montclair Match Play",
+          "url": "https://mgagolf.org/montclair-welcomes-u-s-womens-mid-amateur/",
+          "source": "Metropolitan Golf Association",
+          "why": "The Women's Met Amateur champion birdied four of her last five on the front nine Sunday for a 66, the best round of the week at the U.S. Women's Mid-Amateur, after opening with a 7-over 77. Only seven sub-par rounds were posted across two days; the cut fell at 14-over 154, tying the championship record, and McEvoy meets Taya Battistella at 1:10 p.m. in today's Round of 64.",
+          "tags": [
+            "mid-am"
+          ]
+        },
+        {
+          "title": "Trae Cassell Runs Away With Medalist Honors by Seven at U.S. Senior Amateur; McCoy Headed to 13-for-3 Playoff",
+          "url": "https://www.societyofseniors.com/news/cassell-grabs-medalist-at-71st-u-s-senior-amateur/",
+          "source": "Society of Seniors",
+          "why": "Cassell (Rancho Santa Fe, Calif.) followed a 68 with a 67 to post 5-under 135 at Baltimore Country Club's East Course, seven clear of the field. Defending champion Mike McCoy and 2025 runner-up Greg Sanders are among 13 players in a 7:30 a.m. playoff for the last three match-play spots, with the Round of 64 starting at 8:30.",
+          "tags": [
+            "senior"
+          ]
+        }
+      ]
+    },
+    {
       "date": "2026-08-30",
       "title": "Daily Brief - August 30, 2026",
       "items": [
