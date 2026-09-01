@@ -1728,6 +1728,19 @@ export const MIDAM_TOURNAMENTS: Tournament[] = [
     format: "Match play",
     news: [
       {
+        slug: "2026-us-womens-mid-amateur-round-of-64-recap",
+        title:
+          "U.S. Women's Mid-Amateur: Kim-Schaad Dispatches Dinh, Doran Dominates as Match Play Opens at Montclair",
+        date: "2026-08-31",
+        author: "midamgolfHQ Staff",
+        summary:
+          "Defending champion Kim-Schaad beats former champion Dinh 3 and 2, co-medalist Doran routs Freeman 7 and 6, and four-time champion Stasi falls as match play opens at Montclair Golf Club.",
+        content: [
+          "Defending champion Ina Kim-Schaad dispatched former champion Kimberly Dinh 3 and 2 to open match play at the 39th U.S. Women's Mid-Amateur Championship at Montclair Golf Club, advancing to a Round of 32 meeting with Brooke Tyree. Co-medalist Emilia Doran posted the most dominant win of the day, routing Ashley Freeman 7 and 6, while France's Justine Fournand matched that pace with a 7-and-5 victory over Madison Isaacson. The day's biggest upset saw four-time champion Meghan Stasi fall to Victoria Jackson 3 and 2, while 2025 runner-up Hanley Long was eliminated by Annick Haczkiewicz 6 and 4. Co-medalist Lucy Jamieson survived a scare from former champion Lauren Greenlief, advancing 1 up. Live scoring and full tournament coverage can be found on the [U.S. Women's Mid-Amateur tournament hub here](/midamgolfhq/usga-womens-mid-am).",
+          "The Round of 32 is set for tomorrow morning with several marquee matchups. Kim-Schaad (4) faces Brooke Tyree at 7:06 a.m., co-medalist Doran (2) draws Jackson (31) at 7:42 a.m., Talia Campbell (5) meets Kirsty Hodgkins-Redner of Australia at 7:24 a.m., and championship-low-round shooter Catherine McEvoy (6) takes on Jennifer Peng at 8:36 a.m. Three matches needed extra holes to decide, with Hodgkins-Redner prevailing on the 19th, Maria Ouimet surviving on the 20th, and Ali Schrock advancing on the 19th. midamgolfHQ will be tracking the action through the final on Thursday from West Orange.",
+        ],
+      },
+      {
         slug: "2026-us-womens-mid-amateur-stroke-play-recap",
         title:
           "U.S. Women's Mid-Amateur Stroke Play: Shepherd, Doran, and Jamieson Share Lead at 1-Over Heading Into Match Play",
