@@ -746,7 +746,7 @@ export const SENIOR_MAJOR_EVENTS_2026: SeniorMajorEvent[] = [
     courseDesigner: "A.W. Tillinghast (1926)",
     tournamentWebsite: "https://championships.usga.org/ussenioramateur.html",
     golfGeniusUrl: "https://championships.usga.org/ussenioramateur/2026/scoring.html",
-    golfGeniusUrlLabel: "2026 Results",
+    golfGeniusUrlLabel: "Live Scoring",
     note: "Rotating venue; 2026 host: Baltimore Country Club (East Course), Lutherville, MD",
     overview: "The USGA Men\u2019s Senior Amateur is America\u2019s most prestigious senior amateur title, contested annually since 1955 at rotating private courses nationwide. Open to amateurs 55+ with a Handicap Index of 5.4 or lower, the championship combines 36 holes of qualifying stroke play with match play elimination \u2014 mirroring the historic format of the U.S. Amateur.",
     winners: [
