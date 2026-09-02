@@ -1728,6 +1728,19 @@ export const MIDAM_TOURNAMENTS: Tournament[] = [
     format: "Match play",
     news: [
       {
+        slug: "2026-us-womens-mid-amateur-qf-sf-recap",
+        title:
+          "U.S. Women's Mid-Amateur: McEvoy Stuns Co-Medalist Doran to Set Up Shepherd Final at Montclair",
+        date: "2026-09-02",
+        author: "midamgolfHQ Staff",
+        summary:
+          "Catherine McEvoy beats Jalufka 2 and 1 and co-medalist Doran 1 up to reach the final, where she'll face top seed Ivy Shepherd, who dispatched Potter-Bobb and Wang to stay unbeaten at Montclair.",
+        content: [
+          "Catherine McEvoy's remarkable run through the bracket continued Wednesday at Montclair Golf Club, as the sixth-seeded Met Amateur champion knocked off co-medalist Emilia Doran 1 up in the semifinals to earn a spot in Thursday's 18-hole championship match against top seed Ivy Shepherd. McEvoy, who opened stroke play with a 7-over 77 before firing the championship's low round of 66 to make the cut, beat Jensen Jalufka 2 and 1 in the quarterfinals before toppling the second-seeded Doran. Shepherd continued her dominant week with a 1 up quarterfinal win over two-time champion Julia Potter-Bobb and a 2 up semifinal victory over 52nd-seeded Vanessa Wang. Live scoring and full tournament coverage can be found on the [U.S. Women's Mid-Amateur tournament hub here](/midamgolfhq/usga-womens-mid-am).",
+          "In the other quarterfinal results, Wang upset 2025 runner-up Hanley Long 1 up to continue her Cinderella run from the 52nd seed, while Doran routed Whitney French 7 and 6 in the most lopsided match of the day. The championship match between Shepherd and McEvoy tees off at 7:30 a.m. Thursday, with the winner earning an exemption into the 2027 U.S. Women's Open at Inverness Club. midamgolfHQ will be tracking the final from West Orange.",
+        ],
+      },
+      {
         slug: "2026-us-womens-mid-amateur-r32-r16-recap",
         title:
           "U.S. Women's Mid-Amateur: Kim-Schaad's Title Defense Ends in R32 as Shepherd, Doran, Campbell Roll Into Quarterfinals",
