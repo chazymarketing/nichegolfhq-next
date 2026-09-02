@@ -1728,6 +1728,19 @@ export const MIDAM_TOURNAMENTS: Tournament[] = [
     format: "Match play",
     news: [
       {
+        slug: "2026-us-womens-mid-amateur-r32-r16-recap",
+        title:
+          "U.S. Women's Mid-Amateur: Kim-Schaad's Title Defense Ends in R32 as Shepherd, Doran, Campbell Roll Into Quarterfinals",
+        date: "2026-09-01",
+        author: "midamgolfHQ Staff",
+        summary:
+          "Defending champion Kim-Schaad falls to 36th-seeded Tyree in the Round of 32, while top seed Shepherd dominates Thomas 6 and 5 and co-medalist Doran advances 3 and 1 before weather suspends two R16 matches.",
+        content: [
+          "Defending champion Ina Kim-Schaad's bid for back-to-back titles ended in the Round of 32 at Montclair Golf Club, falling to 36th-seeded Brooke Tyree of Scottsdale, Ariz. in Tuesday's morning session. The two-time champion's exit headlined a day of upsets in the 39th U.S. Women's Mid-Amateur Championship, with seventh-seeded Justine Fournand and 15th-seeded Hana Ku also falling in the R32. Top seed Ivy Shepherd was dominant in the afternoon's Round of 16, dispatching Sarah Thomas 6 and 5, while co-medalist Emilia Doran cruised past Erin Houtsma 3 and 1 and Talia Campbell eliminated 2025 runner-up Hanley Long 4 and 3. Tyree continued her run with a 1 up win over Vanessa Wang, and Katherine Zhu ended two-time champion Julia Potter-Bobb's comeback bid 1 up. Live scoring and full tournament coverage can be found on the [U.S. Women's Mid-Amateur tournament hub here](/midamgolfhq/usga-womens-mid-am).",
+          "Play was suspended at 6:09 p.m. ET due to weather with two Round of 16 matches still on the course. Amanda Jacobs holds a commanding 3 up lead through 12 over Whitney French, while Catherine McEvoy, who fired the championship's low round of 66 in stroke play, leads Sarah Willis 1 up through 15. Both matches will resume at 7:30 a.m. Wednesday, with the quarterfinals and semifinals to follow. Jensen Jalufka of Austin, Texas advanced 4 and 3 over Thailand's Ket Preamchuen Vanderpool in the day's other completed R16 match. midamgolfHQ will be tracking the action through the final on Thursday from West Orange.",
+        ],
+      },
+      {
         slug: "2026-us-womens-mid-amateur-round-of-64-recap",
         title:
           "U.S. Women's Mid-Amateur: Kim-Schaad Dispatches Dinh, Doran Dominates as Match Play Opens at Montclair",
