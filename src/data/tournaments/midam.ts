@@ -1703,7 +1703,7 @@ export const MIDAM_TOURNAMENTS: Tournament[] = [
     slug: "usga-womens-mid-am",
     name: "USGA Women’s Mid-Am",
     channel: "midam",
-    liveStatus: "live",
+    liveStatus: "completed",
     logo: "/brand/USGA 2.jpeg",
     month: 9,
     dates2026: "August/September 2026",
@@ -1727,6 +1727,17 @@ export const MIDAM_TOURNAMENTS: Tournament[] = [
 
     format: "Match play",
     news: [
+      {
+        slug: "2026-us-womens-mid-amateur-final-recap",
+        title: "39th U.S. Women's Mid-Amateur Final: Shepherd Dominates McEvoy 5 and 4 to Claim Title at Montclair",
+        date: "2026-09-03",
+        author: "midamgolfHQ Staff",
+        summary: "Top seed Ivy Shepherd caps a dominant week with a 5 and 4 victory over Catherine McEvoy in the 18-hole final at Montclair Golf Club to win the 39th U.S. Women's Mid-Amateur Championship.",
+        content: [
+          "Top seed Ivy Shepherd of Peachtree City, Ga. capped a dominant week at Montclair Golf Club with a 5 and 4 victory over sixth-seeded Catherine McEvoy in Thursday's 18-hole championship match to win the 39th U.S. Women's Mid-Amateur Championship. Shepherd was in control throughout the bracket, posting wins of 6 and 5, 1 up, 2 up, and 5 and 4 en route to the title, and never trailed in the final against McEvoy, who had stunned co-medalist Emilia Doran in Wednesday's semifinals. The victory earns Shepherd an exemption into the 2027 U.S. Women's Open at Inverness Club. Live scoring and full tournament coverage can be found on the [U.S. Women's Mid-Amateur tournament hub here](/midamgolfhq/usga-womens-mid-am).",
+          "McEvoy's run through the bracket was one of the week's best stories, as the Met Amateur champion rallied from a 7-over 77 in the opening round of stroke play by firing the championship's low round of 66 to make the cut, then knocked off Jensen Jalufka and co-medalist Doran to reach her first USGA final. Shepherd's wire-to-wire dominance from the top seed proved too much in the final, as she closed out the match on the 14th hole. midamgolfHQ will be back with coverage from the U.S. Mid-Amateur at Sand Valley.",
+        ],
+      },
       {
         slug: "2026-us-womens-mid-amateur-qf-sf-recap",
         title:
@@ -1807,6 +1818,7 @@ export const MIDAM_TOURNAMENTS: Tournament[] = [
       },
     ],
     pastResults: [
+      { year: 2026, champion: "Ivy Shepherd" },
       { year: 2025, champion: "Ina Kim-Schaad" },
       { year: 2024, champion: "Hana Ryskova" },
       { year: 2023, champion: "Kimberly Dinh" },
