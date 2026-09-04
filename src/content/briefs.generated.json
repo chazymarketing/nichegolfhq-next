@@ -1,6 +1,39 @@
 {
   "briefs": [
     {
+      "date": "2026-09-04",
+      "title": "Daily Brief - September 4, 2026",
+      "items": [
+        {
+          "title": "Junior PLAYERS Championship Tees Off Today at TPC Sawgrass Without Two-Time Champ Miles Russell",
+          "url": "https://www.ajga.org/tournaments/2026135/leaderboard",
+          "source": "AJGA",
+          "why": "The 20th Junior PLAYERS runs Sept. 4-6 on the Stadium Course, with defending champion Miles Russell absent for the Walker Cup at Lahinch. No. 2 Jaden Soong, Grayson Baucom, Sam Carraher and Charlie Woods headline the no-cut field.",
+          "tags": [
+            "juniors"
+          ]
+        },
+        {
+          "title": "Ivy Shepherd Completes Medalist-to-Champion Run, Beats McEvoy 5 and 4 for U.S. Women's Mid-Amateur Title",
+          "url": "https://www.nichegolfhq.com/midamgolfhq/usga-womens-mid-am",
+          "source": "nichegolfHQ",
+          "why": "The 26-year-old from Peachtree City, Ga., shared stroke-play medalist honors at 1-over 141 as the No. 1 seed, then survived six matches to win her first USGA title in her first USGA championship. She earns a spot in the 2027 U.S. Women's Open at Inverness.",
+          "tags": [
+            "mid-am"
+          ]
+        },
+        {
+          "title": "Mike Sposa Wins Four of Five Holes Early, Beats Todd White 3 and 2 in All-Spartanburg U.S. Senior Amateur Final",
+          "url": "https://www.nichegolfhq.com/seniorgolfhq/usga-mens-senior-amateur",
+          "source": "nichegolfHQ",
+          "why": "White birdied the opening hole, but Sposa answered by taking four of the next five to go 4 up through seven at Baltimore Country Club's East Course and never trailed again. Sposa, 57, is a Callaway equipment rep from Spartanburg, S.C.",
+          "tags": [
+            "senior"
+          ]
+        }
+      ]
+    },
+    {
       "date": "2026-09-03",
       "title": "Daily Brief - September 3, 2026",
       "items": [
