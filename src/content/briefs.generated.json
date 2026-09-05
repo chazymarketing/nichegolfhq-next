@@ -1,6 +1,39 @@
 {
   "briefs": [
     {
+      "date": "2026-09-05",
+      "title": "Daily Brief - September 5, 2026",
+      "items": [
+        {
+          "title": "Junior Solheim Cup Opens Monday at Bernardus in First Shared Venue With the Solheim Cup",
+          "url": "https://www.nichegolfhq.com/juniorgolfhq/junior-solheim-cup",
+          "source": "nichegolfHQ",
+          "why": "Morgan Pressel's 12-player U.S. squad faces Anne van Dam's European team Sept. 7-8 at Bernardus Golf in Cromvoirt. It's the first time in the event's history that the Junior and senior Solheim Cups share a course.",
+          "tags": [
+            "juniors"
+          ]
+        },
+        {
+          "title": "Trans-Miss Mid-Master Heads to Lakewood CC Sept. 13-16 With Ben Briscoe Defending",
+          "url": "https://www.nichegolfhq.com/midamgolfhq/trans-miss-mid-master-championship",
+          "source": "nichegolfHQ",
+          "why": "The 54-hole stroke-play championship returns to the 6,894-yard, par-72 layout in Lakewood, Colo., where Ben Briscoe won in 2025. It's the next mid-am event on the calendar ahead of the Crump Cup and the U.S. Mid-Amateur at Sand Valley.",
+          "tags": [
+            "mid-am"
+          ]
+        },
+        {
+          "title": "Senior Porter Cup Returns to Niagara Falls CC Sept. 9-11 as Howard Clendenin Defends",
+          "url": "https://www.nichegolfhq.com/seniorgolfhq/senior-porter-cup",
+          "source": "nichegolfHQ",
+          "why": "The invitation-only spinoff of the Porter Cup plays 54 holes across four age divisions (55+, 65+, 70+, 75+) above the Niagara River. Clendenin won last year at 66-72-71 for a 209 total.",
+          "tags": [
+            "senior"
+          ]
+        }
+      ]
+    },
+    {
       "date": "2026-09-04",
       "title": "Daily Brief - September 4, 2026",
       "items": [
