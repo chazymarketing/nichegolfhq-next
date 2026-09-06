@@ -734,7 +734,7 @@ export const SENIOR_MAJOR_EVENTS_2026: SeniorMajorEvent[] = [
     name: "USGA Men's Senior Amateur",
     logo: "/brand/usga-mens-senior-amateur.png",
     month: "August/September 2026",
-    liveStatus: "live",
+    liveStatus: "completed",
     startDate: "2026-08-29",
     endDate: "2026-09-03",
     dates2026: "Aug 29 – Sep 3, 2026",
@@ -750,6 +750,7 @@ export const SENIOR_MAJOR_EVENTS_2026: SeniorMajorEvent[] = [
     note: "Rotating venue; 2026 host: Baltimore Country Club (East Course), Lutherville, MD",
     overview: "The USGA Men\u2019s Senior Amateur is America\u2019s most prestigious senior amateur title, contested annually since 1955 at rotating private courses nationwide. Open to amateurs 55+ with a Handicap Index of 5.4 or lower, the championship combines 36 holes of qualifying stroke play with match play elimination \u2014 mirroring the historic format of the U.S. Amateur.",
     winners: [
+      { year: 2026, champion: "Mike Sposa" },
       { year: 2025, champion: "Mike McCoy" },
       { year: 2024, champion: "Louis Brown" },
       { year: 2023, champion: "Todd White" },

@@ -1,6 +1,39 @@
 {
   "briefs": [
     {
+      "date": "2026-09-06",
+      "title": "Daily Brief - September 6, 2026",
+      "items": [
+        {
+          "title": "Three-Way Tie at 4-Under Heading Into Junior PLAYERS Final Round at TPC Sawgrass",
+          "url": "https://www.ajga.org/tournaments/2026135/leaderboard",
+          "source": "AJGA",
+          "why": "Sam Carraher, Giuseppe Puebla and Dawson Lew are deadlocked at 140 through 36 holes on the Stadium Course, with Chase Bauer and Brady Barnum one back. Charlie Woods sits T14 at even par; No. 2-ranked Jaden Soong has fallen to T47.",
+          "tags": [
+            "juniors"
+          ]
+        },
+        {
+          "title": "USA Sweeps Sunday Foursomes to Take 9.5-6.5 Lead Into Walker Cup Singles at Lahinch",
+          "url": "https://championships.usga.org/walkercup.html",
+          "source": "USGA",
+          "why": "The United States won all four Sunday morning foursomes at Lahinch Golf Club to turn a one-point deficit into a three-point lead heading into the final ten singles matches. The USA needs 3.5 points from singles to retain the Walker Cup; GB&I needs 7 to win it back on home soil.",
+          "tags": [
+            "mid-am"
+          ]
+        },
+        {
+          "title": "U.S. Senior Women's Amateur Lands at Portland Golf Club Sept. 26 as Dawn Woodard Defends",
+          "url": "https://championships.usga.org/usseniorwomensamateur.html",
+          "source": "USGA",
+          "why": "The 50-and-over championship runs Sept. 26 through Oct. 1 at the Oregon club. Woodard won last year at The Omni Homestead, beating Sue Wooster on the 20th hole.",
+          "tags": [
+            "senior"
+          ]
+        }
+      ]
+    },
+    {
       "date": "2026-09-05",
       "title": "Daily Brief - September 5, 2026",
       "items": [
